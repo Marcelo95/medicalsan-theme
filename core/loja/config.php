@@ -104,7 +104,7 @@ function feedbacks_custom_post()
 }
 
 
-add_theme_support( 'post-thumbnails',['produtos',"feedbacks"] );
+add_theme_support( 'post-thumbnails',['post','produtos',"feedbacks"] );
 
 
 // Register Custom 

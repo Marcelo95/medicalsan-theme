@@ -21,7 +21,7 @@
 
     }
 
-    loop_animate1();
+    //loop_animate1();
     function loop_animate1() {
         animate1(10, 0).then((func) => func(360, 356)).then((func) => func(356, 360)).then((func) => func(0, 10)).then(() => loop_animate1());
     }
@@ -58,3 +58,4 @@ const handleScrollAnimation = () => {
 window.addEventListener('scroll', () => {
     handleScrollAnimation();
 })
+
