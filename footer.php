@@ -10,7 +10,7 @@
 
     <div class="container">
 
-        <div id="footer-bloco-level-0" class="js-scroll fade-in-bottom  ">
+        <div id="footer-bloco-level-0" class=" ">
             <div id="widget_1_3_footer" class="primary-sidebar widget-area" role="complementary">
                 <h2><a href="<?php echo home_url("/"); ?>"><?php echo _("Home"); ?></a></h2>
 

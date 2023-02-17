@@ -8,7 +8,6 @@ update_option( 'show_on_front', 'page' );
 $pid_home = create_page( 'Sobre', '');
 $pid_home = create_page( 'Onde estamos', '');
 $pid_home = create_page( 'Pós-Venda', '');
-$pid_home = create_page( 'Blog', '');
 
 
 
