@@ -1,6 +1,6 @@
 <?php
-// ini_set('display_errors','on');
-// ini_set('error_reporting', E_ALL );
+ ini_set('display_errors','on');
+ ini_set('error_reporting', E_ALL );
  
 include __DIR__ . "/core/configs.php";
 include __DIR__ . "/core/widgets.php";
@@ -11,7 +11,9 @@ include __DIR__ . "/core/loja/custom-fields/init.php";
 include __DIR__ . "/core/plugins/index.php";
 
 
-
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 
 
 add_filter( 'query_vars', 'addnew_query_vars', 10, 1 );
@@ -32,6 +34,17 @@ function sym_nearme_rewrite_rule()
     );
 }
 
+add_filter( 'upload_mimes', 'my_myme_types', 1, 1 );
+function my_myme_types( $mime_types ) {
+
+$mime_types['svg'] = 'image/svg+xml';  // Adiciona extensão .svg
+$mime_types['json'] = 'application/json';  // Adiciona extensão .json
+
+unset( $mime_types['xls'] ); // Remove extensão .xls
+unset( $mime_types['xlsx'] ); // Remove extensão .xlsx
+
+return $mime_types;
+}
 
 
 
@@ -53,3 +66,11 @@ function trpc_custom_language_switcher(){
 	$html .= "</div>";
 	return $html;
 }
+
+function custom_posts_per_page( $query ) {
+
+    if ( $query->is_archive('produtos') ) {
+        set_query_var('posts_per_page', 10);
+    }
+}
+add_action( 'pre_get_posts', 'custom_posts_per_page' );

@@ -83,11 +83,13 @@ settings_defaults_slider_2["responsive"] = [{
     }
 }];
 settings_defaults_slider_2["centerMode"] = true;
-    console.log(settings_defaults_slider_2)
+
 $('.slider-2').slick(settings_defaults_slider_2);
 
 
 
+settings_defaults["infinite"] = false;
+settings_defaults_slider_2["centerMode"] = false;
 settings_defaults["centerMode"] = false;
 settings_defaults["variableWidth"] = false;
 settings_defaults["slidesToShow"] = Math.min(2, $(".slider-3 a").length);
@@ -96,13 +98,15 @@ settings_defaults["prevArrow"] = '.slider-3-setas .seta-esquerda';
 settings_defaults["nextArrow"] = '.slider-3-setas .seta-direita';
 settings_defaults["responsive"] = [
     {
-        breakpoint: 660,
+        breakpoint: 712,
         settings: {
             slidesToShow: Math.min(1, $(".slider-3 a").length),
-            slidesToScroll: Math.min(1, $(".slider-3 a").length),
+            slidesToScroll: Math.min(1, $(".slider-3 a").length),   
             infinite: true,
         }
-    }]
+    },
+]
+    console.log(settings_defaults)
 $('.slider-3').slick(settings_defaults);
 
 
