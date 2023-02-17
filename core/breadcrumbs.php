@@ -72,6 +72,11 @@ function custom_breadcrumbs()
                 $cat_name       = $taxonomy_terms[0]->name;
             }
 
+            if($post_type == 'post'){
+                echo '<li class="separator separator-' . get_the_time('m') . '"> ' . $separator . ' </li>';
+                echo '<li class="item-home"><a class="bread-link bread-blog" href="' . home_url("blog") . '" title="Blog">Blog</a></li>';
+            }
+
             // Verifique se o post está em uma categoria
             if (!empty($last_category)) {
                 echo $cat_display;

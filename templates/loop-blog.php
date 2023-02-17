@@ -10,7 +10,7 @@
             ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="box-thumbnail">
                     <?php 
-                    the_post_thumbnail(); // Declare pixel size you need inside the array 
+                    the_post_thumbnail(array(1200,400)); // Declare pixel size you need inside the array 
 
 
                     ?>
