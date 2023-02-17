@@ -1,32 +1,5 @@
 <?php
 
-/**
- * Widget Home
- *
- */
-function widget_0() {
-
-	register_sidebar( array(
-		'name'          => 'Home - Widget 1',
-		'id'            => 'home_widget_1',
-        'description' => __( 'Widge', 'text_domain' ),
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h6 class="rounded">',
-		'after_title'   => '</h6>',
-	) );
-	register_sidebar( array(
-		'name'          => 'Home - Widget 2',
-		'id'            => 'home_widget_2',
-        'description' => __( 'Widge', 'text_domain' ),
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h6 class="rounded">',
-		'after_title'   => '</h6>',
-	) );
-
-}
-add_action( 'widgets_init', 'widget_0' );
 
 /**
  * Menu com todos departamentos topo
