@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 
+<section class="banner-principal">
+    <a href="<?php echo home_url("produtos/omer-premium"); ?>">
+        <img src="<?php echo asset("images/banner-principal.svg"); ?>" alt="">
+    </a>
+</section>
+
 <?php get_template_part("templates/content"); ?>
-
-
-
 
 
 
