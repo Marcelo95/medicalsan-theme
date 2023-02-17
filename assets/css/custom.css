@@ -659,7 +659,7 @@ section.box-lancamento .wp-block-column {
 
 .archive article {
     display: flex;
-    flex-direction: inherit;
+    flex-direction: row;
     background: #cccccc3d;
     padding: 22px;
     margin-bottom: 10px;
@@ -909,6 +909,17 @@ a.navbar-tool-icon-box.bg-secondary.dropdown-toggle i {
 
 .navbar-tool-icon-box {
     background: #230077 !important;
+}
+
+  .archive article {
+    flex-direction: column;
+    text-align: justify;
+}
+
+.archive article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
     
 }
