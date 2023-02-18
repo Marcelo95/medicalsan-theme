@@ -8,10 +8,12 @@
     </div>
 
 
-    <div class="container js-scroll fade-in-bottom">
+    <div class="container ">
 
 
-        <?php get_template_part(sprintf("templates/produtos/%s/content",  get_post_field('post_name', get_post())), "priority"); ?>
+        <div class="text-default js-scroll fade-in-bottom">
+            <?php get_template_part(sprintf("templates/produtos/%s/content",  get_post_field('post_name', get_post())), "priority"); ?>
+        </div>
 
         <p class="text-center mt-5 mb-5 js-scroll fade-in-bottom">
             <a href="#orcamento" class="botao-6">
@@ -20,8 +22,13 @@
 
         </p>
 
+        <div class="prod-360">
+            <?php get_template_part(sprintf("templates/produtos/%s/content-360",  get_post_field('post_name', get_post()))); ?>
+        </div>
+
 
         <?php get_template_part("templates/orcamento/content"); ?>
+
 
 
     </div>
