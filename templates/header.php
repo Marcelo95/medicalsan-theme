@@ -1,18 +1,18 @@
-<header class="shadow-sm header-style-1 js-scroll fade-in scrolled">
+<header class="header-style-1 js-scroll fade-in scrolled">
 
-    <div class="navbar-sticky ">
+    <div class="navbar-sticky shadow-sm ">
 
         <div class="navbar navbar-expand-lg nav-top">
             <div class="container">
                 <a class="navbar-brand d-none d-sm-block flex-shrink-0" href="<?php echo home_url(); ?>">
 
-                <?php if( get_post_type() == "produtos" && is_single() ) :?>
-                    <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
-                <?php else:?>
-                    <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
-                <?php endif;?>
-                
-             
+                    <?php if (get_post_type() == "produtos" && is_single()) : ?>
+                        <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
+                    <?php else : ?>
+                        <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
+                    <?php endif; ?>
+
+
                 </a>
                 <a class="navbar-brand d-sm-none flex-shrink-0 me-2" href="<?php echo home_url(); ?>">
                     <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
@@ -24,13 +24,15 @@
 
                     <button type="button" class="btn block-text desktop" data-bs-toggle="collapse" data-bs-target="#collapseFormSearch"><i class=" material-icons" style="font-size: 21px;margin-left: -11px;">search</i></button>
                     <!-- Search-->
-                    <form action="<?php echo home_url(); ?>" class="input-group my-3 collapse desktop" id="collapseFormSearch">
-                        <input name="s" class="form-control rounded-start" type="text" placeholder="Pesquisar por...">
-                        <button type="button" class="style-hidden-button close-right" data-bs-toggle="collapse" data-bs-target="#collapseFormSearch"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">close</i></button>
+                    <div id="collapseFormSearch" class="collapse desktop">
+                        <form action="<?php echo home_url(); ?>" class="input-group my-3 ">
+                            <input name="s" class="form-control rounded-start" type="text" placeholder="Pesquisar por...">
+                            <button type="button" class="style-hidden-button close-right" data-bs-toggle="collapse" data-bs-target="#collapseFormSearch"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">close</i></button>
 
-                        <button type="submit" class="style-hidden-button"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">search</i></button>
+                            <button type="submit" class="style-hidden-button"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">search</i></button>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="languages desktop">
@@ -78,10 +80,10 @@
             </div>
         </div>
     </div>
-    <?php if(get_post_type() == "produtos" && is_single()):?>
+    <?php if (get_post_type() == "produtos" && is_single()) : ?>
         <div class="container desktop">
-        <?php custom_breadcrumbs(); ?>
-    </div>
-    <?php endif;?>
+            <?php custom_breadcrumbs(); ?>
+        </div>
+    <?php endif; ?>
 
 </header>

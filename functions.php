@@ -74,3 +74,10 @@ function custom_posts_per_page( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'custom_posts_per_page' );
+
+
+function get_count_images($path, $allowed_extensions = array("jpg", "jpeg", "png", "gif"))
+{
+    $files = glob($path . "*.{".implode(",", $allowed_extensions)."}", GLOB_BRACE);
+    return count($files);
+}

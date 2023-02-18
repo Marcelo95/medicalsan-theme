@@ -43,7 +43,7 @@ const displayScrollElement = (elem) => {
     elem.classList.add('scrolled');
 }
 const hideScrollElement = (elem) => {
-    elem.classList.remove('scrolled');
+    //elem.classList.remove('scrolled');
 }
 const handleScrollAnimation = () => {
     scrollElement.forEach(elem => {

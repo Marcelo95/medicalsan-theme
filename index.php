@@ -26,7 +26,7 @@
                 <h5>O laser de despigmentação
                     mais leve do mercado</h5>
 
-                <a href="" class="botao-5"> Conheça </a>
+                <a href="<?php echo home_url("produtos/omer-smart");?>" class="botao-5"> Conheça </a>
 
             </div>
 
@@ -48,7 +48,7 @@
             <h2>Hakon</h2>
             <h5>Laser 4D para todos os fototipos de pele</h5>
 
-            <a href="" class="botao-5"> Saiba mais </a>
+            <a href="<?php echo home_url("produtos/hakon");?>" class="botao-5"> Saiba mais </a>
 
         </div>
         <div class=" box-image js-scroll fade-in-bottom">
@@ -70,7 +70,7 @@
                 <h2>Ultramed</h2>
                 <h5>Rejuvenescimento com ultrassom</h5>
 
-                <a href="" class="botao-5"> Confira </a>
+                <a href="<?php echo home_url("produtos/ultramed");?>" class="botao-5"> Confira </a>
 
             </div>
             <div class=" box-image js-scroll fade-in-bottom">
@@ -85,7 +85,7 @@
                     Criolipólise corporal e facial com
                     placas para áreas maiores</h5>
 
-                <a href="" class="botao-5"> Entenda </a>
+                <a href="<?php echo home_url("produtos/criodermis");?>" class="botao-5"> Entenda </a>
 
             </div>
             <div class=" box-image js-scroll fade-in-bottom">
@@ -143,7 +143,7 @@
 </section>
 
 
-<section class="only-text text-center js-scroll  fade-in scrolled">
+<section class="only-text text-center js-scroll  fade-in-bottom">
     <div class="container">
         <p>
             Todos os produtos têm selos de qualidade
@@ -155,7 +155,7 @@
 </section>
 
 <section class="mapa-home">
-    <div class="container js-scroll  fade-in scrolled">
+    <div class="container js-scroll  fade-in-bottom">
         <div class="col">
             <div class="box-text-left m-auto me-xl-0">
                 <h2>
@@ -166,7 +166,7 @@
                     pelo Brasil
                 </h2>
 
-                <a href="" class="botao-1">Faça parte da nossa família</a>
+                <a href="<?php echo home_url("contato");?>" class="botao-1">Faça parte da nossa família</a>
 
             </div>
         </div>
@@ -178,7 +178,7 @@
 
 
 
-<section class="products box-blog js-scroll  fade-in scrolled">
+<section class="products box-blog js-scroll  fade-in-bottom">
     <div class="container">
         <h2>BLOG</h2>
         <div class="slider-slick">

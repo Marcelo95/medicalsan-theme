@@ -13,6 +13,7 @@
 
     <link href="<?php echo asset('images/favicon.ico'); ?>" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
+    <script defer src="<?php echo asset("js/JavascriptViewer.min.js"); ?>"></script>
     <link rel="stylesheet" href="<?php echo asset('bootstrap/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo asset('slick/slick.min.css'); ?>">
     <script src="<?php echo asset('jquery/jquery-3.3.1.min.js'); ?>"></script>

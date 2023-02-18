@@ -65,9 +65,22 @@ section.products > .container > h2 {
     text-align: center;
 }
 
-form#collapseFormSearch {
+#collapseFormSearch {
     position: absolute;
     top: -12px;
+    left: 0;
+    width: 100%;
+    height: 83px;
+    background: #fff;
+}
+
+.single-produtos #collapseFormSearch {
+    background: transparent;
+}
+
+#collapseFormSearch form input {
+    padding-left: 46px;
+    padding-right: 39px;
 }
 
 .navbar .dropdown-fullwidth {
@@ -130,7 +143,7 @@ header.header-style-1 {
     background: #fff;
     background-size: 100%;
     padding-top: 25px;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
     position: relative;
     z-index: 9;
 }
@@ -141,6 +154,10 @@ header.header-style-1 {
     z-index: 99999;
     top: 0;
     background: transparent;
+}
+
+header .navbar-sticky {
+    min-height: 112px;
 }
 
 @keyframes bg-slide {
@@ -784,6 +801,42 @@ section.box-text-estilo-1 {
     margin: 30px 0px;
 }
 
+
+.prod-360 {
+    position: relative;
+    text-align: center;
+}
+
+.area-360 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+div#jsv-holder {
+    margin: auto;
+    min-width: 44%;
+    max-width: 100%;
+}
+
+.area-360 > img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    position: absolute;
+}
+
+.images-360 {
+    /* position: absolute; */
+    top: 0;
+}
+
+.images-360 {
+    width: 100%;
+    /* position: absolute; */
+    text-align: center;
+    bottom: 0;
+    top: auto;
+}
 
 @media (max-width: 978px){
     html .cheio.navbar-tool .navbar-tool-label {
@@ -2083,6 +2136,7 @@ section.box-lancamento .col .box-text a {
 section.box-lancamento .box-image img {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: -6px;
 }
 
 section.box-lancamento:before {
@@ -2165,6 +2219,7 @@ section.box-lancamento.estilo-1 {
 
 .single-produtos ul#breadcrumbs {
     margin-top: 29px;
+    color: #fff;
 }
 
 .single-produtos #breadcrumbs a, .single-produtos #breadcrumbs li {
@@ -2205,6 +2260,7 @@ section.box-lancamento.estilo-1 {
     background: #E2E2E2;
     padding: 31px;
     border-radius: 36px;
+    padding-bottom: 0;
 }
 
 .form-footer h2 {
@@ -2791,7 +2847,8 @@ section.comentarios > .container {
 .desktop {
     display: none!important;
 }
-
+  
+header .navbar-sticky {min-height: 85px;}
 
 .menu-principal {
     text-align: right;
