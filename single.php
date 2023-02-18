@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
-<section class="m-5 content-blog" style=" min-height: 38vw; ">
+<section class="mt-5 mb-5 content-blog" style=" min-height: 38vw; ">
     <div class="container">
     <?php custom_breadcrumbs(); ?>
         <div class="blog-box">
             <h1><?php the_title(); ?></h1>
             <h5><?php if(has_excerpt()) : the_excerpt(); endif;?></h5>
             <div class="thumbnail">
-                <?php the_post_thumbnail(); ?>
+                <?php the_post_thumbnail(array(1200,400)); ?>
             </div>
 
 

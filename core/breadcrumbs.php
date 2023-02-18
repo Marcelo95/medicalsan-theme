@@ -28,7 +28,7 @@ function custom_breadcrumbs()
 
 
         if (is_archive() && !is_tax() && !is_category() && !is_tag()) {
-
+            $prefix = '';
             echo '<li class="item-current item-archive"><span class="bread-current bread-archive">' . post_type_archive_title($prefix, false) . '</span></li>';
         } else if (is_archive() && is_tax() && !is_category() && !is_tag()) {
 
@@ -89,7 +89,10 @@ function custom_breadcrumbs()
                 echo '<li class="separator"> ' . $separator . ' </li>';
                 echo '<li class="item-current item-' . $post->ID . '"><span class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</span></li>';
             } else {
-                echo '<li class="separator"> ' . $separator . ' </li>';
+                if(!$post_type == 'produtos' || $post_type == "post" ){
+                    echo '<li class="separator"> ' . $separator . ' </li>';
+                }
+
                 echo '<li class="item-current item-' . $post->ID . '"><span class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</span></li>';
             }
         } else if (is_category()) {

@@ -13,12 +13,11 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-
 }
 
 h2 {
     font-size: 2.4rem;
-    font-family: 'gotham', sans-serif;
+    font-family: 'Gotham', sans-serif;
     font-weight: 700;
 }
 
@@ -35,6 +34,10 @@ section.products > .container > h2 {
 }
 .container {
     max-width: 1140px;
+}
+
+.page-blog.archive img {
+    max-width: 100%;
 }
 
 @keyframes fade-in  {
@@ -130,6 +133,14 @@ header.header-style-1 {
     padding-bottom: 25px;
     position: relative;
     z-index: 9;
+}
+
+.single-produtos header.header-style-1 {
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    background: transparent;
 }
 
 @keyframes bg-slide {
@@ -616,9 +627,9 @@ section.box-lancamento .wp-block-column {
     background: #fff;
     padding: 20px;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     margin: auto;
-    max-width: 1286px;
+    /* max-width: 1286px; */
 }
 
 .blog-box h1 {
@@ -639,8 +650,9 @@ section.box-lancamento .wp-block-column {
 }
 
 .blog-box .thumbnail img {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
+    max-width: 100%;
 }
 
 .blog-box .page-content {
@@ -665,8 +677,9 @@ section.box-lancamento .wp-block-column {
     background: #cccccc3d;
     padding: 22px;
     margin-bottom: 10px;
-    min-width: 350px;
+    /* min-width: 350px; */
     margin-top: 15px;
+    word-break: break-all;
 }
 
 .archive article h2 {
@@ -690,6 +703,10 @@ section.box-lancamento .wp-block-column {
     /* color: black; */
     text-decoration: none;
     margin-right: 15px;
+}
+
+.archive article h2 a {
+    color: black;
 }
 
 .archive h1 {
@@ -730,6 +747,43 @@ section.box-lancamento .wp-block-column {
 .nav-links a {
     text-decoration: none;
 }
+
+.single-produtos .banner-principal {
+    position: relative;
+    z-index: 9999;
+    height: auto;
+}
+
+.single-produtos .imagem-frente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.single-produtos .imagem-fundo {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.single-produtos .desktop .menu-principal a {
+    color: #fff;
+}
+
+.single-produtos  header .desktop i.material-icons {
+    color: #fff;
+}
+
+section.box-text-estilo-1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+
 
 @media (max-width: 978px){
     html .cheio.navbar-tool .navbar-tool-label {
@@ -922,6 +976,15 @@ header input.form-control.rounded-end.pe-5 {
     
 }
 
+@media (max-width: 576px){
+.single-produtos header.header-style-1 {
+    background: #fff;
+    position: relative;
+}
+
+
+}
+
 @media (max-width: 520px){
 
     
@@ -951,6 +1014,7 @@ a.navbar-tool-icon-box.bg-secondary.dropdown-toggle i {
   .archive article {
     flex-direction: column;
     text-align: justify;
+    max-width: 100%;
 }
 
 .archive article img {
@@ -1066,7 +1130,22 @@ a.dropdown-item {
 }
 
 .menu-principal a:hover {
-    color: #0D2B78;
+    color: #ffffff !important;
+    background: #00367E;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.mobile .menu-principal  a {
+    padding: 10px !important;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.menu-principal .current-menu-item  a{
+    color: #ffffff !important;
+    background: #00367E;
+    border-radius: 20px;
 }
 
 .nav-link:focus, .nav-link:hover {
@@ -1157,6 +1236,11 @@ div#bs-example-navbar-collapse-1 {
     border-radius: 23px;
     width: auto;
 }
+
+  section.box-text-estilo-1 {
+    font-size: 1.2rem;
+  }
+  
 
     .box-user-logged .navbar-tool-text.ms-n3.user-name {
         display:block;
@@ -1579,6 +1663,31 @@ div[aria-label="Slide"] {
     transform: translate(2px,0);
 }
 
+
+
+.botao-6 {
+    position: relative;
+    color: #ffffff;
+    background: black;
+    border: 1px solid #000000;
+    text-decoration: none;
+    padding: 16px 24px;
+    width: 255px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 53px;
+    border-radius: 42px;
+    position: relative;
+    font-family: "Gotham", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.botao-6:hover {
+    color: #0a58ca;
+}
+
 html .banner-home.slider-home-2 .n2-ss-slider-2.n2-ow {
     border-radius: 25px !important;
 }
@@ -1691,6 +1800,7 @@ section#page-404 h3 {
     margin-left: 20px;
     transform: translate(5px,0);
 }
+
 
 
 .marcas-photo {
@@ -1983,7 +2093,7 @@ section.box-lancamento:before {
 }
 
 section.box-lancamento h2 {
-    font-family: 'gotham', sans-serif;
+    font-family: 'Gotham', sans-serif;
     font-size: 3rem;
     margin-bottom: 17px;
     font-weight: 700;
@@ -2048,6 +2158,65 @@ section.box-lancamento.estilo-1 {
 .archive section.container {
     margin: 40px auto;
 }
+
+.single-produtos ul#breadcrumbs {
+    margin-top: 29px;
+}
+
+.single-produtos #breadcrumbs a, .single-produtos #breadcrumbs li {
+    color: #fff;
+}
+
+#breadcrumbs li span {
+    font-weight: 900;
+}
+
+.form-footer form.wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-footer form.wpcf7-form p {
+    width: 50%;
+    padding: 10px;
+    color: black;
+}
+
+.wpcf7-response-output {
+    width: 100%;
+}
+.form-footer 
+ input[type=submit] {
+    margin: auto;
+    display: block;
+}
+
+.form-footer form.wpcf7-form p *:not(.botao-6) {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.form-footer {
+    background: #E2E2E2;
+    padding: 31px;
+    border-radius: 36px;
+}
+
+.form-footer h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.form-footer form.wpcf7-form input:not(.botao-6), .form-footer form.wpcf7-form select {
+    border-radius: 22px;
+    border: none;
+    padding: 11px 10px;
+    margin-top: 10px;
+    background: #fff;
+}
+
 
 @media (max-width: 978px){
     .sub-title span {
@@ -2602,7 +2771,8 @@ section.comentarios > .container {
     .mobile {
         display: none!important;
     }
-    
+
+
 }
 
 @media (max-width: 1090px){
@@ -2869,3 +3039,8 @@ title-top-prod {
     /* font-weight: 700; */
 }
 
+@media (max-width:768px){
+      .form-footer form.wpcf7-form p {
+    width : 100% !important;
+  }
+}
