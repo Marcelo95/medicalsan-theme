@@ -1240,6 +1240,10 @@ div#bs-example-navbar-collapse-1 {
   section.box-text-estilo-1 {
     font-size: 1.2rem;
   }
+
+html .form-footer h2 {
+    font-size: 1.5rem;
+}
   
 
     .box-user-logged .navbar-tool-text.ms-n3.user-name {
@@ -2191,7 +2195,7 @@ section.box-lancamento.estilo-1 {
     display: block;
 }
 
-.form-footer form.wpcf7-form p *:not(.botao-6) {
+.form-footer form.wpcf7-form p *:not(.botao-6):not(.wpcf7-spinner) {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;

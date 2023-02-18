@@ -8,20 +8,22 @@
     </div>
 
 
-    <div class="container ">
-    <div class="form-footer">
-        <h2>Leve essa tecnologia até você:</h2>
-    <?php echo do_shortcode('[contact-form-7 title="Formulário de contato 001"]'); ?>
-    </div> 
+    <div class="container js-scroll fade-in-bottom">
 
-        <?php get_template_part(sprintf("templates/produtos/%s/content",  get_post_field('post_name', get_post())),"priority"); ?>
 
-       <p class="text-center mt-5 mb-5">
-       <a href="#orcamento" class="botao-6">
-            Quero meu orçamento
-        </a>
+        <?php get_template_part(sprintf("templates/produtos/%s/content",  get_post_field('post_name', get_post())), "priority"); ?>
 
-       </p>
+        <p class="text-center mt-5 mb-5 js-scroll fade-in-bottom">
+            <a href="#orcamento" class="botao-6">
+                Quero meu orçamento
+            </a>
+
+        </p>
+
+
+        <?php get_template_part("templates/orcamento/content"); ?>
+
+
     </div>
 </section>
 

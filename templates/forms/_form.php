@@ -1,4 +1,4 @@
-<label> Seu nome
+<label> Nome
     [text* your-name autocomplete:name] </label>
 
 <label> Whatsapp
