@@ -837,6 +837,20 @@ div#jsv-holder {
     bottom: 0;
     top: auto;
 }
+section.texto-colorido-1 {
+    background: linear-gradient(180deg, #032047 0%, #73BCFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Gotham';
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 5rem;
+}
 
 @media (max-width: 978px){
     html .cheio.navbar-tool .navbar-tool-label {
@@ -2304,20 +2318,32 @@ section.box-lancamento.estilo-1 {
     background: url();
     padding: 76px 10px;
     text-align: center;
-    /* min-height: 900px; */
     color: #fff;
-    background: url('../../assets/images/bg-azul.jpg') left bottom no-repeat;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    min-height: 386px;
 }
 
 .content-10-text .box-center p {
     margin-bottom: 31px;
     color: #fff;
+    font-size: 1.7rem;
 }
 
 section.content-10-text {
     margin-bottom: 10px;
     margin-top: 10px;
+    background: url(../../assets/images/bg-azul.jpg) center no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+section.content-10-text h2 {
+    font-size: 2.6rem;
 }
 
 

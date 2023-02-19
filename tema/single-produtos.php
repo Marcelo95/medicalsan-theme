@@ -26,14 +26,20 @@
             <?php get_template_part(sprintf("templates/produtos/%s/content-360",  get_post_field('post_name', get_post()))); ?>
         </div>
 
+    </div>
 
+    <div class="js-scroll fade-in-bottom">
         <?php get_template_part("templates/produtos/content-10"); ?>
+    </div>
 
+    <?php get_template_part(sprintf("templates/produtos/%s/content-11",  get_post_field('post_name', get_post()))); ?>
+
+
+    <div class="container ">
         <?php get_template_part("templates/orcamento/content"); ?>
 
-
-
     </div>
+
 </section>
 
 
