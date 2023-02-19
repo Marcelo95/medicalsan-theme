@@ -111,18 +111,6 @@ function hook_theme_was_activation()
     $pid = create_page( 'Onde estamos', '');
     $pid = create_page( 'Pós-Venda', '');
 
-    //Formulario Contact Form 7
-    $form1 = file_get_contents(__DIR__ . "/../templates/forms/cf7.php", true);
-    $form_id = create_page( 'Formulário de contato 001', $form1, null, "wpcf7_contact_form");
-
-    if(!metadata_exists("post", $form_id, "_form")) { add_post_meta($form_id, "_form", file_get_contents(__DIR__ . "/../templates/forms/_form.php", true)); }
-    if(!metadata_exists("post", $form_id, "_mail")) { add_post_meta($form_id, "_mail", file_get_contents(__DIR__ . "/../templates/forms/_mail.php", true)); }
-    //if(!metadata_exists("post", $form_id, "_mail_2")) { add_post_meta($form_id, "_mail_2", file_get_contents(__DIR__ . "/../templates/forms/_mail_2.php", true)); }
-    //if(!metadata_exists("post", $form_id, "_messages")) { add_post_meta($form_id, "_messages", file_get_contents(__DIR__ . "/../templates/forms/_messages.php", true)); }
-    if(!metadata_exists("post", $form_id, "_additional_settings")) { add_post_meta($form_id, "_additional_settings", file_get_contents(__DIR__ . "/../templates/forms/_additional_settings.php", true)); }
-    if(!metadata_exists("post", $form_id, "_locale")) { add_post_meta($form_id, "_locale", file_get_contents(__DIR__ . "/../templates/forms/_locale.php", true)); }
-    if(!metadata_exists("post", $form_id, "_config_errors")) { add_post_meta($form_id, "_config_errors", file_get_contents(__DIR__ . "/../templates/forms/_config_errors.php", true)); }
-
     //Criando as categorias padrões
     $cat_tecnologias = my_wp_create_category("Tecnologias");
     $cat_criofrequencia = my_wp_create_category("Criofrequência", $cat_tecnologias);

@@ -27,6 +27,8 @@
         </div>
 
 
+        <?php get_template_part("templates/produtos/content-10"); ?>
+
         <?php get_template_part("templates/orcamento/content"); ?>
 
 
