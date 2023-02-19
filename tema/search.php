@@ -12,12 +12,7 @@
 		<?php get_template_part('templates/loop'); ?>
 	</div>
 
-	<?php the_posts_pagination(array(
-		'mid_size'  => 2,
-		'prev_text' => __('&laquo; Anterior', 'textdomain'),
-		'next_text' => __('Próxima »', 'textdomain'),
-	)); ?>
-
+	<?php get_template_part('templates/pagination'); ?>
 	</div>
 
 </section>
