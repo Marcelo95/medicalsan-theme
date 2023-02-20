@@ -2,28 +2,31 @@
     <div class="container">
         <div class="init-bloco-3-text">
             <div>
-                <h2> ##TEXTO 1 ## </h2>
+                <h2> Para quais tratamentos
+                    é indicado? </h2>
             </div>
             <div>
                 <ul>
-                    <li>ITEM 1</li>
-                    <li>ITEM 2</li>
-                    <li>ITEM 3</li>
-                    <li>ITEM 4</li>
+
+                    <li>Celulite</li>
+                    <li>Definição corporal</li>
+                    <li>Gordura localizada</li>
+                    <li>Papada</li>
+
                 </ul>
 
             </div>
         </div>
         <div class="init-bloco-3-text">
             <div>
-                <h2> ##TEXTO 2 ## </h2>
+                <h2> Quais são as frequências e a potência?  </h2>
             </div>
             <div>
                 <ul class="lista-estilo-1">
-                    <li>ITEM 1</li>
-                    <li>ITEM 2</li>
-                    <li>ITEM 3</li>
-                    <li class="active">ITEM 4</li>
+                    <li>80KHz </li>
+                    <li>650KHz</li>
+                    <li class="active">70W de potência</li>
+
                 </ul>
 
             </div>
