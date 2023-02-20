@@ -907,6 +907,37 @@ section.texto-colorido-1 {
     flex-wrap: wrap;
 }
 
+.slick-dots li.slick-active, .slick-dots li:hover {
+    background: #003963 !important;
+    opacity: 1;
+}
+
+.slick-dots li {
+    border-color: #003963 !important;
+    height: 30px !important;
+    width: 30px !important;
+    background: #003963 !important;
+    opacity: 0.4;
+}
+
+ul.slick-dots {
+    bottom: 13px;
+    left: 0;
+}
+
+.init-carroussel{
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 36px;
+    width: 100%;
+    margin: auto;
+    display: flex !important;
+    align-items: center;
+    border: 3.68005px solid #588BA5;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 @media (max-width: 978px){
     html .cheio.navbar-tool .navbar-tool-label {
         display:block;

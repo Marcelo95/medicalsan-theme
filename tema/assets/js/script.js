@@ -18,7 +18,7 @@ var settings_defaults = {
                 slidesToScroll: 1,
                 infinite: true,
             }
-        },        
+        },
         {
             breakpoint: 1024,
             settings: {
@@ -26,7 +26,7 @@ var settings_defaults = {
                 slidesToScroll: 1,
                 infinite: true,
             }
-        },        
+        },
         {
             breakpoint: 992,
             settings: {
@@ -73,7 +73,7 @@ settings_defaults_slider_2["responsive"] = [{
         infinite: true,
         centerMode: false,
     }
-},{
+}, {
     breakpoint: 915,
     settings: {
         slidesToShow: 1,
@@ -101,12 +101,12 @@ settings_defaults["responsive"] = [
         breakpoint: 712,
         settings: {
             slidesToShow: Math.min(1, $(".slider-3 a").length),
-            slidesToScroll: Math.min(1, $(".slider-3 a").length),   
+            slidesToScroll: Math.min(1, $(".slider-3 a").length),
             infinite: true,
         }
     },
 ]
-    console.log(settings_defaults)
+console.log(settings_defaults)
 $('.slider-3').slick(settings_defaults);
 
 
@@ -140,20 +140,18 @@ $('.slider-4-0').slick({
     arrows: false,
     fade: true,
     asNavFor: '.slider-4'
-    });
+});
 
 settings_defaults["nextArrow"] = '.slider-4-setas .seta-direita';
-settings_defaults["asNavFor"] ='.slider-4-0';
+settings_defaults["asNavFor"] = '.slider-4-0';
 settings_defaults["focusOnSelect"] = true;
 $('.slider-4').slick(settings_defaults);
 
-// $.ajax( {
-//     url: wpApiSettings.root + 'wp/v2/users/me',
-//     method: 'GET',
-//     beforeSend: function ( xhr ) {
-//         xhr.setRequestHeader( 'X-WP-Nonce', wpApiSettings.nonce );
-//     }
-// } ).done( function ( response ) {
-//     console.log( response );
-// } );
-
+$('.carroussel-text .init-carroussel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    arrows: false,
+    fade: true
+});
