@@ -3,13 +3,19 @@
         <div class="border-blue">
             <div class="init-carroussel">
                 <div>
-                    ## TEXTO 1 ##
+                    O <b>Tekah Evolution</b> na
+                    versão smart oferece alta performance na tecarterapia.
                 </div>
                 <div>
-                    ## TEXTO 2 ##
+                    Possui ainda as tecnologias de <b>radiofrequência e
+                        eletroporação</b>
+                    e é ideal para transporte entre atendimentos!
+
                 </div>
                 <div>
-                    ## TEXTO 3 ##
+                    "Nessa nossa plataforma vocês têm três tecnologias disponíveis em um
+                    só equipamento:<b> tecarterapia, radiofrequência e eletroporação"</b>
+
                 </div>
             </div>
         </div>
