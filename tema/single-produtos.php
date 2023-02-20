@@ -28,11 +28,20 @@
 
     </div>
 
+        
+    <?php get_template_part(sprintf("templates/produtos/%s/content-12",  get_post_field('post_name', get_post()))); ?>
+
+
+
+
     <div class="js-scroll fade-in-bottom">
         <?php get_template_part("templates/produtos/content-10"); ?>
     </div>
 
+
     <?php get_template_part(sprintf("templates/produtos/%s/content-11",  get_post_field('post_name', get_post()))); ?>
+
+
 
 
     <div class="container ">
