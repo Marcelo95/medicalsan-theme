@@ -855,8 +855,6 @@ section.texto-colorido-1 {
 .boxes-img-text .boxes {
     background: #030303;
     padding: 56px;
-    width: 47%;
-    margin: 13px;
     border-radius: 35px;
     color: #fff;
     height: 387px;
@@ -864,7 +862,9 @@ section.texto-colorido-1 {
     position: relative;
     overflow: hidden;
     flex-wrap: wrap;
+    width: 100%;
     min-width: 290px;
+    border: 10px solid white;
 }
 
 .boxes-img-text {
@@ -904,7 +904,6 @@ section.texto-colorido-1 {
 .boxes-img-text > .container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .slick-dots li.slick-active, .slick-dots li:hover {
@@ -937,6 +936,25 @@ ul.slick-dots {
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 45px;
+}
+
+.init-bloco-2-text {
+    display: flex;
+}
+
+.init-bloco-2-text > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 21px;
+    text-align: center;
+    background: red;
+    margin: 10px;
+    border-radius: 50px;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
 }
 
 @media (max-width: 978px){
@@ -1382,6 +1400,12 @@ div#bs-example-navbar-collapse-1 {
 .link-topo a:hover {
     color: #0D2B78;
 }
+
+section.bloco-2-text.css-ultraplace {
+    margin-top: -145px;
+    position: relative;
+    z-index: 9999;
+}
 @media (max-width: 768px) {
     html .user-not-logged.box-user-logged {
     background: #2FA757;
@@ -1433,8 +1457,7 @@ a.box-user-logged {
     width: auto;
 }
 
-
-    .navbar-expand-lg .dropdown-menu.dropdown-menu-end {
+.navbar-expand-lg .dropdown-menu.dropdown-menu-end {
     left: auto;
     position: fixed;
     top: 0;
@@ -1448,6 +1471,14 @@ a.box-user-logged {
 
 .widget.widget-cart {
     width: 100% !important;
+}
+
+    .init-bloco-2-text {
+    flex-direction: column;
+}
+
+    .boxes-img-text > .container {
+    flex-direction: column;
 }
 }
 
