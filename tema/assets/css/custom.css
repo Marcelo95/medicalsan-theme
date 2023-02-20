@@ -927,7 +927,7 @@ ul.slick-dots {
 
 .init-carroussel{
     min-height: 300px;
-    padding: 20px;
+    padding: 6% 15%;
     border-radius: 36px;
     width: 100%;
     margin: auto;
@@ -936,6 +936,7 @@ ul.slick-dots {
     border: 3.68005px solid #588BA5;
     font-size: 1.5rem;
     text-align: center;
+    padding-bottom: 45px;
 }
 
 @media (max-width: 978px){

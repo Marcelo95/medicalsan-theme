@@ -7,6 +7,9 @@
         <img class="imagem-frente js-scroll fade-in-bottom scrolled" src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal.svg", get_post_field('post_name', get_post()))); ?>" alt="">
     </div>
 
+    <?php get_template_part(sprintf("templates/produtos/%s/content-13",  get_post_field('post_name', get_post()))); ?>
+
+
 
     <div class="container ">
 
