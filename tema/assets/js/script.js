@@ -155,3 +155,24 @@ $('.carroussel-text .init-carroussel').slick({
     arrows: false,
     fade: true
 });
+
+$('.slider-images-text-2').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: false,
+    infinite: false,
+    dots: true,
+    autoplay: true,
+    arrows: true,
+    fade: false,
+    responsive: [
+        {
+            breakpoint: 824,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+    ]
+});
