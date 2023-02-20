@@ -5,7 +5,7 @@
         <p>
              O <?php the_title(); ?> tem sua eficácia comprovada por estudo!
         </p>
-        <a href="" class="botao-7">Confira aqui</a>
+        <a href="#orcamento" class="botao-7">Confira aqui</a>
         </div>
     </div>
 </section>
