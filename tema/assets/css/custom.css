@@ -850,6 +850,7 @@ section.texto-colorido-1 {
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 0 5rem;
+    padding-bottom: 11px;
 }
 
 .boxes-img-text .boxes {
@@ -1646,6 +1647,7 @@ section.slider-images-text-2-init .slick-track > div img {
 button.slick-arrow {
     flex-direction: column-reverse;
     color: transparent;
+    border-radius: 50% !important;
 }
 
 button.slick-arrow:before {
