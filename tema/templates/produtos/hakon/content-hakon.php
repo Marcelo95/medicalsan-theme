@@ -36,7 +36,7 @@
             alt="">
 
         <div class="content-text-desc">
-            <h2> <span>4</span> comprimentos de ondas </h2>
+           <div class="container"> <h2> <span>4</span> comprimentos de ondas </h2></div>
         </div>
 
     </div>

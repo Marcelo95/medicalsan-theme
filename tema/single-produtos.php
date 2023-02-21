@@ -59,6 +59,11 @@
 
     </div>
 
+    <div class="js-scroll fade-in-bottom">
+    <?php get_template_part(sprintf("templates/produtos/%s/content-ethernia-cold", get_post_field('post_name', get_post()))); ?>
+
+    </div>
+
 
     <div class="js-scroll fade-in-bottom">
         <?php get_template_part("templates/produtos/content-10"); ?>

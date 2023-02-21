@@ -1394,6 +1394,133 @@ section.quais-tecnologias .container > .box-center > div.col-bt-2 .bg-v1 {
     margin: 0;
 }
 
+section.barras-css-ethernia-cold .content-text-desc h2 {
+    color: black;
+}
+
+section.barras-css-ethernia-cold .lista.l1 {
+    background: #B0B0B0;
+}
+
+section.barras-css-ethernia-cold .lista.l2 {
+    background: #767676;
+}
+
+section.barras-css-ethernia-cold .lista.l3 {
+    background: black;
+}
+
+section.aplicadores {
+    background: linear-gradient(351.91deg, rgba(0, 0, 0, 0.5) 14.18%, rgba(157, 154, 154, 0.5) 32.79%, rgba(237, 232, 232, 0.5) 51.61%, rgba(0, 0, 0, 0.5) 81.89%), #000000;
+    color: #fff;
+    overflow: hidden;
+}
+
+section.aplicadores img {
+    max-width: 100%;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row2 p {
+    color: #fff;
+}
+
+.col-aplicador {
+    max-width: 325px;
+}
+
+
+.row2 h2 {
+    color: #0085FF;
+    margin-bottom: 27px;
+    position: relative;
+}
+
+html .row2 p {
+    color: #fff;
+}
+
+.linha1:before {
+    content: '';
+    width: 146px;
+    height: 73px;
+    display: flex;
+    border-top: 1px solid #0085FF;
+    border-right: 1px solid #0085FF;
+    position: absolute;
+    top: -69px;
+    right: 98%;
+}
+
+.linha2:before {
+    content: '';
+    width: 124px;
+    height: 63px;
+    display: flex;
+    border-bottom: 1px solid #0085FF;
+    border-left: 1px solid #0085FF;
+    position: absolute;
+    top: -41px;
+    right: 99%;
+}
+
+
+.linha3:before {
+    content: '';
+    width: 105px;
+    height: 63px;
+    display: flex;
+    border-bottom: 1px solid #0085FF;
+    position: absolute;
+    top: 7px;
+    right: 99%;
+}
+
+
+.linha4:after {
+    content: '';
+    width: 200px;
+    height: 63px;
+    display: flex;
+    border-bottom: 1px solid #0085FF;
+    position: absolute;
+    bottom: 21px;
+    left: 77%;
+}
+
+section.funcoes-e-indicacoes .container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.funcoes-e-indicacoes .container > div > div {
+    width: 100%;
+    display: flex;
+    max-width: 279px;
+    width: 100%;
+}
+
+section.funcoes-e-indicacoes ul {
+    padding: 0;
+    list-style: none;
+}
+
+section.funcoes-e-indicacoes ul li {
+    margin-bottom: 10px;
+}
+
+section.funcoes-e-indicacoes {
+    padding: 40px 0px;
+}
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {
