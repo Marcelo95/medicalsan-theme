@@ -3552,6 +3552,9 @@ section.content-10-text h2 {
 .box-image-and-text > div {
     max-width: 100%;
 }
+    .content-text-desc h2 {
+    padding: 10px;
+}
     
 }
 
