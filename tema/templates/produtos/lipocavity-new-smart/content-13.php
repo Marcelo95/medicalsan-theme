@@ -11,3 +11,9 @@
         </div>
     </div>
 </section>
+
+<style>
+    section.page-content {
+    background: linear-gradient(0deg, #FFFFFF 0%, #DBDBDB 61.46%, #000000 100%);
+}
+</style>

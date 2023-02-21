@@ -785,6 +785,10 @@ section.box-lancamento .wp-block-column {
     width: 100%;
 }
 
+.single-produtos .imagem-fundo.img-o-melhor {
+    margin-bottom: -26%;
+}
+
 .single-produtos .desktop .menu-principal a {
     color: #fff;
 }
@@ -843,7 +847,6 @@ section.texto-colorido-1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-family: 'Gotham';
     font-weight: 800;
     font-size: 3.5rem;
     line-height: 3.7rem;
@@ -851,6 +854,12 @@ section.texto-colorido-1 {
     margin-bottom: 40px;
     padding: 0 5rem;
     padding-bottom: 11px;
+    font-family: 'Gotham', sans-serif;
+}
+
+section.texto-colorido-1 p {
+    font-family: 'Gotham', sans-serif;
+    padding: 20px;
 }
 
 .boxes-img-text .boxes {
@@ -866,6 +875,10 @@ section.texto-colorido-1 {
     width: 100%;
     min-width: 290px;
     border: 10px solid white;
+}
+
+.css-lipocavity-new-smart.boxes-img-text .boxes {
+    border: 10px solid #ededed;
 }
 
 .boxes-img-text {
@@ -940,7 +953,7 @@ section.slider-images-text-2-init ul.slick-dots {
     border: 3.68005px solid #588BA5;
     font-size: 1.5rem;
     text-align: center;
-    padding-bottom: 45px;
+    padding-bottom: 83px;
 }
 
 .init-bloco-2-text {
@@ -1120,7 +1133,7 @@ background: linear-gradient(137.46deg, #010101 27.13%, #727272 75.51%);
 
 section.bloco-3-text.css-3-ethernia-cold-smart  .container > div > div ul.lista-estilo-1 li.active {
     background:#ffffff57;
-    border-color: #fff;
+    border-color: #ffffff00;
 }
 
 section.bloco-3-text.css-3-ethernia-cold-smart  .container > div > div ul.lista-estilo-1 li {border-color: #fff;}
@@ -1132,6 +1145,262 @@ section.bloco-3-text.css-3-ultraplace  > .container {
 
 section.bloco-3-text.css-3-tekah  > .container {
     background: linear-gradient(137.46deg, #000000 27.13%, #808080 75.51%);
+}
+
+section.conceito > .container > .row1 {
+    display: flex;
+    position: relative;
+    padding: 28px;
+    min-height: 278px;
+    background-size: cover !important;
+    background-position: top center !important;
+    background: linear-gradient(130.33deg, #305BA1 10.84%, #2097D5 36.32%, #28589E 66.43%);
+    mix-blend-mode: hard-light;
+    overflow: hidden;
+    margin: -12px;
+    flex-wrap: wrap;
+    border-radius: 23px;
+}
+
+section.conceito > .container {background-position: bottom;border-radius: 23px;}
+
+section.conceito {
+    margin: 30px 0px;
+}
+
+section.conceito > .container .col {
+    position: relative;
+    color: #fff;
+    padding: 33px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    z-index: 999999;
+    min-width: 290px;
+}
+
+section.conceito > .container .col.col-dir {
+    align-items: baseline;
+    font-weight: 700;
+}
+
+section.conceito > .container .col p {
+    color: #fff;
+}
+
+
+
+section.descricao {
+    text-align: center;
+    color: #0D2B78;
+    font-family: 'Gotham';
+}
+
+section.descricao img {
+    max-width: 110px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+section.descricao p {
+    color: #0D2B78;
+}
+
+.title-principal h2 {
+    font-size: 3rem;
+}
+
+.title-principal p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+section.quais-tecnologias img {
+    float: right;
+    max-width: 452px;
+    margin-top: -95px;
+    position: absolute;
+    right: -35px;
+    top: 25px;
+}
+
+
+section.quais-tecnologias .container > .box-center {
+    background: linear-gradient(156.61deg, #4E0A6C 35.77%, #AA2CE1 79.28%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px 67px;
+    margin: 14px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+section.quais-tecnologias .container > .box-center > div {
+    max-width: 519px;
+    /* margin: auto; */
+    padding: 30px;
+}
+
+section.quais-tecnologias .container p {
+    color: #fff;
+}
+
+section.quais-tecnologias .container b {
+    color: #fff;
+}
+
+
+section.quais-tecnologias .container > .box-center > div.col-bt-2 {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+section.quais-tecnologias .container > .box-center > div.col-bt-2 h2 {word-wrap: break-word;line-height: normal;margin-bottom: -20px;}
+
+section.quais-tecnologias .container > .box-center > div.col-bt-2 ul {list-style: none;padding: 0;display: flex;align-items: center;justify-content: center;width: 100%;flex-wrap: wrap;}
+
+section.quais-tecnologias .container > .box-center > div.col-bt-2 ul li {
+    border: 3px solid #D329FF;
+    margin: 8px;
+    padding: 9px;
+    border-radius: 15px;
+}
+
+section.quais-tecnologias .container > .box-center > div.col-bt-2 ul li.active {
+    background: #D72BFF;
+    font-weight: 800;
+}
+
+section.quais-tecnologias .container > .box-center > div.col-bt-2 h3 {
+    font-weight: 700;
+}
+
+section.quais-tecnologias .container > .box-center > div.col-bt-2 .bg-v1 {
+    background-repeat: no-repeat;
+    padding: 70px 0px;
+    background-position: center;
+    background-size: contain;
+}
+
+.barras > div {
+    padding: 20px 40px;
+    background: red;
+    color: #fff;
+    text-align: right;
+    -webkit-transition: width 1.6s ease-in-out;
+    -moz-transition: width 1.6s ease-in-out;
+    -o-transition: width 1.6s ease-in-out;
+    transition: width 1.6s ease-in-out;
+    width: 0px;
+}
+
+.barras.scrolled > div {
+    width: 100%;
+}
+
+.lista.l4 {
+    background: #032047;
+    max-width: 77%;
+}
+
+.lista.l3 {
+    background: #00367E;
+    max-width: 70%;
+}
+
+.lista.l2 {
+    background: #0085FF;
+    max-width: 64%;
+}
+
+.lista.l1 {
+    background: #73BCFF;
+    max-width: 57%;
+}
+
+.barras {
+    margin-bottom: 100px;
+    opacity: 0;
+}
+
+.barras.js-scroll.scrolled {
+    opacity: 1;
+}
+
+.barras > div b {
+    color: #fff;
+}
+
+.content-text-desc h2 {
+    color: #0D2B78;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 61px;
+    padding-left: 67px;
+}
+
+.content-text-desc h2 span {
+    font-size: 4rem;
+}
+
+.cruz {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cruz.cruzbottom {
+    margin-bottom: 30px;
+}
+
+.cruz.cruztop {
+    border-bottom: 1px solid #0D2B78;
+    margin-top: 20px;
+}
+
+.cruzquad {
+    width: 50%;
+    /* padding: 41px; */
+    color: #0D2B78;
+    text-align: center;
+    font-family: 'Gotham';
+    font-weight: 700;
+    max-width: 200px;
+    margin: auto;
+    min-width: 50%;
+    font-size: 1.6rem;
+    margin: 0;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.cruzquad span {
+    font-size: 4rem;
+    display: block;
+}
+
+.cruzquad.cruzborderleft {
+    border-right: 1px solid #0D2B78;
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+    section.quais-tecnologias img {
+    position: relative;
+    left: 0;
+    float: none;
+}
 }
 
 @media (max-width: 978px){
@@ -1730,7 +1999,7 @@ a.box-user-logged {
 }
 
     
-section.bloco-3-text > .container > div > div {margin: auto;max-width: 100%;position: relative;min-height: 150px;}
+section.bloco-3-text > .container > div > div {margin: auto;max-width: 100%;position: relative;/* min-height: 150px; */}
 
 section.bloco-3-text > .container > div {
     flex-direction: column;
@@ -1745,6 +2014,21 @@ section.bloco-3-text > .container > div {
     max-width: 258px;
 }
 
+section.texto-colorido-1{
+    font-size: 1.8rem;
+    line-height: initial;
+    padding: 3px;
+}
+
+    .cruzquad {
+    font-size: 1rem;
+    padding: 30px 12px;
+}
+    html section.content-10-text h2 {font-size: 2.1rem;}
+
+html .content-10-text .box-center p {
+    font-size: 1.4rem;
+}
 }
 
 .nav-top-level-0 {
@@ -2724,7 +3008,7 @@ section.content-10-text > .container > div {
     width: 100%;
     background-size: cover;
     border-radius: 23px;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 section.content-10-text h2 {
