@@ -3488,6 +3488,10 @@ section.content-10-text h2 {
 }
 
 
+.content-text-desc {
+    margin-top: -9%;
+}
+
 @media (max-width: 978px){
     .sub-title span {
     padding-left: 10px;
