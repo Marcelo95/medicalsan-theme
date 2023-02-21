@@ -1810,6 +1810,50 @@ section.sem-limites-de-disparos p b {
     font-size: 1.6rem;
 }
 
+
+.list-links a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 20px 9px;
+    font-weight: 600;
+    max-width: 242px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 187px;
+}
+
+.list-links a i {
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+.list-links a:hover {
+    background: black;
+    color: #fff;
+}
+
+.list-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links h2 {
+    color: #0D2B78;
+    text-align: center;
+}
+
+.list-links > div {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {
@@ -2451,6 +2495,9 @@ html .content-10-text .box-center p {
 
     .box-image-and-text h2 {
     font-size: 2rem;
+}
+    section.quais-tecnologias .container > .box-center {
+    padding: 10px;
 }
 }
 
@@ -3388,6 +3435,8 @@ section.box-lancamento.estilo-1 {
     padding: 31px;
     border-radius: 36px;
     padding-bottom: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
 }
 
 .form-footer h2 {
