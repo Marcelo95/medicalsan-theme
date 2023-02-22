@@ -157,17 +157,46 @@ $('.carroussel-text .init-carroussel').slick({
 });
 
 $('.slider-images-text-2').slick({
-    slidesToShow: 3,
+    slidesToShow: Math.min(3, $('.slider-images-text-2 > div').length),
     slidesToScroll: 1,
     centerMode: false,
     infinite: false,
     dots: true,
+    autoplay: false,
+    arrows: true,
+    fade: false,
+    responsive: [
+        {
+            breakpoint: 824,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+    ]
+});
+
+$('.init-slider-video').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    infinite: true,
+    dots: false,
     autoplay: true,
     arrows: true,
     fade: false,
     responsive: [
         {
             breakpoint: 824,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,

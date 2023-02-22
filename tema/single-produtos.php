@@ -29,6 +29,10 @@
 
         </p>
 
+        <div class="slider-videos  js-scroll fade-in-bottom">
+            <?php get_template_part(sprintf("templates/produtos/%s/content-slider-videos", get_post_field('post_name', get_post()))); ?>
+        </div>
+
         <div class="prod-360">
             <?php get_template_part(sprintf("templates/produtos/%s/content-360", get_post_field('post_name', get_post()))); ?>
         </div>

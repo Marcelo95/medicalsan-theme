@@ -48,7 +48,10 @@ function custom_breadcrumbs()
 
         // Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_single()) {
-            if (has_category()) echo my_get_the_category_list($sep);
+            if (has_category()) {
+                echo my_get_the_category_list($sep);
+                
+            };
             //if(has_category()) echo  str_replace('</a>','</a></li>',str_replace('<a','<li><a', my_get_the_category_list($sep) )) .$sep;
         } elseif (is_archive() || is_single()) {
             echo '<li>';
@@ -62,10 +65,15 @@ function custom_breadcrumbs()
                 _e('Blog Archives', 'text_domain');
             }
             echo '</li>' . $sep;
+            
         }
 
         if (is_single() || is_page()) {
             echo sprintf("<li><span>%s</span></li>", get_the_title());
+        }
+
+        if (is_category() ) {
+            echo sprintf("<li><span>%s</span></li>", get_cat_name( get_query_var('cat') ));
         }
 
         if (is_home()) {
@@ -78,7 +86,7 @@ function custom_breadcrumbs()
                 rewind_posts();
             }
         }
-
+        
         echo '</ul>';
     }
 }

@@ -81,3 +81,27 @@ function get_count_images($path, $allowed_extensions = array("jpg", "jpeg", "png
     $files = glob($path . "*.{".implode(",", $allowed_extensions)."}", GLOB_BRACE);
     return count($files);
 }
+
+
+function getYouTubeVideoId($pageVideUrl) {
+    $link = $pageVideUrl;
+    $video_id = explode("?v=", $link);
+    if (!isset($video_id[1])) {
+        $video_id = explode("youtu.be/", $link);
+    }
+    $youtubeID = $video_id[1];
+    if (empty($video_id[1])) $video_id = explode("/v/", $link);
+    $video_id = explode("&", $video_id[1]);
+    $youtubeVideoID = $video_id[0];
+    if ($youtubeVideoID) {
+        return $youtubeVideoID;
+    } else {
+        return false;
+    }
+}
+
+function getUrlThumbnailYoutube($link_video)
+{
+    $youtubeID = getYouTubeVideoId($link_video);
+    return 'https://img.youtube.com/vi/' . $youtubeID . '/mqdefault.jpg';
+}

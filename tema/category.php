@@ -4,6 +4,10 @@
 		<!-- section -->
 		<section class="container">
 
+		<div class="container desktop">
+            <?php custom_breadcrumbs(); ?>
+        </div>
+
 			<h1><?php _e( 'Categories for ' ); single_cat_title(); ?></h1>
 
 			<?php get_template_part('loop'); ?>
