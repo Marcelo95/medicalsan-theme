@@ -15,26 +15,43 @@ $categories = get_categories($args);
 ?>
 
 <main role="main">
-    <!-- section -->
-    <section class="container">
+    <div class="mt-4 container desktop">
+        <?php custom_breadcrumbs(); ?>
+    </div>
+    <div class="banner-categories">
+        <div class="container">
+            <h1> A Medical San tem linhas completas de equipamentos de alta performance. </h1>
 
-        <div class="container desktop">
-            <?php custom_breadcrumbs(); ?>
+            <h2>
+                Escolha a tecnologia e confira nossos produtos:
+            </h2>
         </div>
+    </div>
 
-        <h1>
-            <?php _e('Categories for ');
-            single_cat_title(); ?>
-        </h1>
+    <section class="container">
+        <div class="lista-categories">
 
-        <?php foreach ($categories as $category) {
-    echo '<p>Category: id: ' . $category->term_id . ' <a href="' . get_category_link($category->term_id) . '" title="' . sprintf(__("View all posts in %s"), $category->name) . '" ' . '>' . $category->name . '</a> </p> ';
-    echo '<p> Description:' . $category->description . '</p>';
-    echo '<p> Post Count: ' . $category->count . '</p>';
-}
-?>
+            <?php foreach ($categories as $category) {
+                echo sprintf('
+                <div>
+                    <a href="%s">
+                        <div>
+                            <img  src="%s"  alt="">
+                        </div>
+                        <div>
+                            <h2>%s <i class="fa fa-angle-right"></i></h2>
+                        </div>                
+                    </a>                    
+                </div>
 
 
+            ', get_category_link($category->term_id), asset(sprintf("../templates/categories/images/%s.svg", $category->slug)), $category->name);
+
+
+            }
+            ?>
+
+        </div>
     </section>
     <!-- /section -->
 </main>

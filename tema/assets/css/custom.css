@@ -1905,6 +1905,71 @@ section.slider-video .slick-track {
     padding-bottom: 20px;
 }
 
+.banner-categories {
+    color: #fff;
+    padding: 56px;
+    background: black url('../../assets/images/bg-banner.svg') left bottom no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner-categories h1 {
+    font-size: 3rem;
+}
+
+.banner-categories h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.lista-categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-categories img {
+    max-width: 68%;
+    margin: auto;
+    /* display: block; */
+}
+
+.lista-categories > div {
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.lista-categories a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.lista-categories a h2 {
+    font-size: 2rem;
+    color: #0D2B78;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.lista-categories a > div {
+    width: 50%;
+    min-width: 217px;
+    text-align: center;
+}
+
+.lista-categories > div:nth-child(2n+1) {
+    background: #E5E5E5;
+}
+
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {
@@ -2571,6 +2636,13 @@ html .content-10-text .box-center p {
 }
     section.quais-tecnologias .container > .box-center {
     padding: 10px;
+}
+    .banner-categories {
+    padding: 40px 10px;
+}
+
+.banner-categories h1 {
+    font-size: 2.5rem;
 }
 }
 
@@ -4395,4 +4467,5 @@ title-top-prod {
       .form-footer form.wpcf7-form p {
     width : 100% !important;
   }
+    .lista-categories a h2 {font-size: 1.2rem;display: block;}
 }
