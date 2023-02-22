@@ -5,7 +5,18 @@
 function my_get_the_category_list($sep)
 {
 
-    $categories = get_the_category(get_the_ID());
+    $current_term = get_category(get_query_var( 'cat' ));
+    $term_id = property_exists($current_term, "term_id") ? $current_term->term_id : false;
+    $args = array(
+        'orderby' => 'name',
+        'order' => 'ASC',
+        'taxonomy' => 'category',
+        'hide_empty' => false,
+        'exclude' => [get_cat_ID("Sem Categoria"), $term_id],
+        'parent' => 0
+      );
+      $categories = get_categories($args);
+
 
     // Ordenar pelo ID da categoria pai (ordem hierárquica)
     usort($categories, function ($a, $b) {
@@ -18,6 +29,7 @@ function my_get_the_category_list($sep)
     $html = "";
 
     $count = 0;
+
     foreach ($categories as $key => $category) {
 
         $html .= '<li><a href="' . esc_url(get_category_link($category->term_id)) . '">' . $category->name . '</a></li>';
@@ -48,10 +60,11 @@ function custom_breadcrumbs()
 
         // Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_single()) {
-            if (has_category()) {
+    
+           // if (has_category()) {
                 echo my_get_the_category_list($sep);
                 
-            };
+           // };
             //if(has_category()) echo  str_replace('</a>','</a></li>',str_replace('<a','<li><a', my_get_the_category_list($sep) )) .$sep;
         } elseif (is_archive() || is_single()) {
             echo '<li>';

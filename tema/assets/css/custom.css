@@ -1970,6 +1970,39 @@ section.slider-video .slick-track {
     background: #E5E5E5;
 }
 
+main.main.main-categories {
+    background: linear-gradient(180deg, #E5E5E5 0%, rgba(229, 229, 229, 0) 29%);
+    padding-top: 18px;
+    text-align: center;
+    color: #0D2B78;
+}
+
+main.main.main-categories h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+main.main.main-categories h3 {
+    color: black;
+    font-size: 1.5rem;
+    /* max-width: 700px; */
+    margin: auto;
+}
+
+main.main.main-categories h4 {
+    margin: 25px auto;
+    /* max-width: 700px; */
+    font-size: calc(1.275rem + .3vw);
+    font-weight: 800;
+}
+
+main.main.main-categories h2 {
+    color: black;
+    font-size: 1.5rem;
+    /* max-width: 700px; */
+    margin: auto;
+}
+
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {
@@ -2644,6 +2677,18 @@ html .content-10-text .box-center p {
 .banner-categories h1 {
     font-size: 2.5rem;
 }
+    main.main.main-categories h1 {
+    font-size: 2rem;
+}
+
+main.main.main-categories h3 {
+    font-size: 1.1rem;
+}
+
+main.main.main-categories h2 {
+    font-size: 1.1rem;
+}
+
 }
 
 .nav-top-level-0 {
