@@ -1940,6 +1940,7 @@ section.slider-video .slick-track {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    min-height: 176px;
 }
 
 .lista-categories a {
@@ -1971,7 +1972,7 @@ section.slider-video .slick-track {
 }
 
 main.main.main-categories {
-    background: linear-gradient(180deg, #E5E5E5 0%, rgba(229, 229, 229, 0) 29%);
+    background: linear-gradient(180deg, #E5E5E5 0%, rgba(229, 229, 229, 0) 100px);
     padding-top: 18px;
     text-align: center;
     color: #0D2B78;
@@ -2003,6 +2004,153 @@ main.main.main-categories h2 {
     margin: auto;
 }
 
+.lista-categories-prods {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.lista-categories-prods > div {
+    background: black;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+
+.lista-categories-prods > div.item-ultraplace {
+    background: url(../../assets/images/images-categories-prods/bg-ultraplace.png), linear-gradient(0deg, #FFFFFF 0%, #DBDBDB 0.01%, #000000 100%) !important;
+    background-size: contain;
+}
+
+.lista-categories-prods > div.item-ultramed {
+    background-color: #3E3B3A;
+    background-size: auto;
+    background-repeat: repeat-x;
+}
+
+.lista-categories-prods > div.lista-categories-prods > div {
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.lista-categories-prods > div.item-lipocavity {
+    background: linear-gradient(360deg, #525063 50%, #7C7D95 83.24%), #525063;
+}
+
+.lista-categories-prods > div.item-lipocavity-new {background-color: #003963;}
+
+.lista-categories-prods > div.item-narniah {
+    background: radial-gradient(15.58% 33.6% at 0% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #4E0B6C;
+}
+
+.lista-categories-prods > div.item-omer-smart {
+    background-color: #1B0D59;
+}
+
+.lista-categories-prods > div.item-hakon {background-size: cover;}
+
+.lista-categories-prods > div.item-criodermis {
+    background: linear-gradient(130.33deg, #305BA1 10.84%, #2097D5 36.32%, #28589E 66.43%), #FFFFFF;
+    mix-blend-mode: multiply;
+}
+
+.lista-categories-prods > div.item-ethernia-cold {
+    background: radial-gradient(98.51% 98.51% at 50% 100%, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 71.35%, rgba(0, 0, 0, 0.2) 100%), #000000;
+}
+
+.lista-categories-prods > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 36%;
+    min-width: 200px;
+    height: 100%;
+}
+
+.lista-categories-prods > div > div img {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 365px;
+}
+
+.lista-categories-prods > div > div.logo-and-text {
+    padding: 0 32px;
+}
+
+.lista-categories-prods > div > div.logo-and-text img {
+    max-width: 258px;
+    width: 100%;
+}
+
+.lista-categories-prods > div > div.logo-and-text a {
+    color: #fff;
+}
+
+.lista-categories-prods > div > div.logo-and-text a:hover {
+    color: blue;
+}
+
+
+.slider-icons-categories {
+    display: flex;
+    text-align: center;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.slider-icons-categories div.boxes-cats {
+    min-width: 243px;
+    padding: 20px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-icons-categories .slick-track {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-icons-categories .slick-slide {
+    border-top: 1px solid black;
+    max-width: 250px;
+}
+
+.slider-icons-categories div.boxes-cats img {
+    margin: auto;
+}
+
+.slider-icons-categories a {
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 0.05em;
+}
+
+.slider-icons-categories button.slick-arrow {
+    background: transparent;
+}
+
+.slider-icons-categories button.slick-arrow:before {
+    color: black;
+}
+
+
+.slider-icons-categories button.slick-arrow:hover:before {
+    color: white;
+}
+
+.slider-icons-categories h2 {
+    font-family: 'Gotham';
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {

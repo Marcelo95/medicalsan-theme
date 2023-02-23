@@ -205,3 +205,45 @@ $('.init-slider-video').slick({
         },
     ]
 });
+
+$('.slider-icons-categories').slick({
+    slidesToShow: Math.min(6, $('.slider-icons-categories > div').length),
+    slidesToScroll: 1,
+    centerMode: false,
+    infinite: false,
+    dots: false,
+    autoplay: true,
+    arrows: true,
+    fade: false,
+    responsive: [
+        {
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: Math.min(6, $('.slider-icons-categories > div').length),
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },{
+            breakpoint: 940,
+            settings: {
+                slidesToShow: Math.min(4, $('.slider-icons-categories > div').length),
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },{
+            breakpoint: 630,
+            settings: {
+                slidesToShow: Math.min(2, $('.slider-icons-categories > div').length),
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },{
+            breakpoint: 368,
+            settings: {
+                slidesToShow: Math.min(1, $('.slider-icons-categories > div').length),
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        }
+    ]
+});

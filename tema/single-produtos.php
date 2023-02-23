@@ -121,14 +121,6 @@
                 <a href="" target="_blank"><i class="fa fa-file-video-o	"></i>Vídeos de treinamento</a>
             </div>
 
-
-
-
-
-
-
-
-
         </div>
 
     </div>
