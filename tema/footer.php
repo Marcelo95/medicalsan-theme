@@ -23,15 +23,18 @@
 
             <div id="widget_2_3_footer" class="primary-sidebar widget-area" role="complementary">
 
+                <?php if (is_active_sidebar('widget_2_3_footer')) : ?>
+                    <?php dynamic_sidebar('widget_2_3_footer'); ?>
+
+                <?php endif; ?>
+            </div>
+            <div id="widget_2_3_footer" class="primary-sidebar widget-area" role="complementary">
+
                 <h2><a href="<?php echo home_url("/sobre"); ?>"><?php echo _("Sobre"); ?></a></h2>
                 <h2><a href="<?php echo home_url("/onde-estamos"); ?>"><?php echo _("Onde Estamos"); ?></a></h2>
                 <h2><a href="<?php echo home_url("/pos-venda"); ?>"><?php echo _("Pós-venda"); ?></a></h2>
                 <h2><a href="<?php echo home_url("/blog"); ?>"><?php echo _("Blog"); ?></a></h2>
 
-                <?php if (is_active_sidebar('widget_2_3_footer')) : ?>
-                    <?php dynamic_sidebar('widget_2_3_footer'); ?>
-
-                <?php endif; ?>
             </div>
             <div id="widget_3_3_footer" class="primary-sidebar widget-area" role="complementary">
                 <h2><?php echo __("Redes Sociais"); ?></h2>
@@ -43,6 +46,20 @@
                 <?php if (is_active_sidebar('widget_3_3_footer')) : ?>
                     <?php dynamic_sidebar('widget_3_3_footer'); ?>
                 <?php endif; ?>
+
+                <div class="apps">
+                    <h2>Baixe o app</h2>
+
+                    <div class="d-flex">
+                    <a href="https://apps.apple.com/br/app/medical-san/id1460618465?l=en" target="_blank"> 
+                        <img class="logo" src="<?php echo asset('images/apple2.png?v2'); ?>" alt="Logo App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.manptecnologia.medicalsanconnect&hl=pt_BR&gl=US&pli=1" target="_blank"> 
+                        <img src="<?php echo asset('images/android.png'); ?>" alt="Logo Google Play">
+                    </a>
+           
+                    </div>
+                </div>
 
                 <h2>
                     <a href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">

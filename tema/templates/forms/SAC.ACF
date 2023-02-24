@@ -1,0 +1,45 @@
+<label> Distribuidor
+    [text your-equipment] </label>
+
+<label> Equipamento
+    [text your-equipment] </label>
+
+<div style="width: 100%;display: flex;">
+
+<label> Número de Série
+    [number your-numero-de-serie]</label>
+
+<label> Número da NF
+    [number* your-nf]</label>
+
+</div>
+
+<div style="width: 100%;display: flex;"></div>
+
+<label> Data de Emissão da NF
+    [date* your-date] </label>
+    
+<label> Nome Cliente
+        [text* your-name autocomplete:name] </label>
+
+</div>
+    
+
+<div style="width: 100%;display: flex;">
+
+
+<label> Cidade e Estado Do Cliente
+        [text* your-city autocomplete:city] </label>
+
+<label> Email do Cliente
+    [email* your-email autocomplete:email] </label>
+</div>    
+
+<div style="width: 100%;display: flex;">
+
+<label> Descrição Do Problema: (opcional)
+    [textarea your-message] </label>
+
+</div>
+
+[submit "Enviar"]

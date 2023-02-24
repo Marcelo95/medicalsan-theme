@@ -1871,12 +1871,12 @@ section.sem-limites-de-disparos p b {
     display: flex;
 }
 
-section.slider-video {
+.slider-video {
     margin: 100px 0px;
 }
 
 
-section.slider-video  .slick-center .imagem-thumbnail {
+.slider-video  .slick-center .imagem-thumbnail {
     height: 160px;
     width: 160px !important;
     filter: drop-shadow(0px 15.0455px 15.0455px rgba(0, 0, 0, 0.25));
@@ -1885,7 +1885,7 @@ section.slider-video  .slick-center .imagem-thumbnail {
 }
 
 
-section.slider-video  .slick-center .imagem-thumbnail:before {
+.slider-video  .slick-center .imagem-thumbnail:before {
     content:'\e037';
     font-family: 'Material Icons';
     width:30px;
@@ -1900,7 +1900,7 @@ section.slider-video  .slick-center .imagem-thumbnail:before {
     margin-top:-20px;
 }
 
-section.slider-video .slick-track {
+.slider-video .slick-track {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -2168,6 +2168,14 @@ div#video-show {
     margin-bottom: 30px;
 }
 
+footer .apps a {
+    width: 50%;
+    margin: 5px;
+}
+
+footer .apps a img {
+    width: 100%;
+}
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {

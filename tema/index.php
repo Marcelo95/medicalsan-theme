@@ -1,12 +1,6 @@
 <?php get_header(); ?>
 
-<section class="banner-principal">
-    <a href="<?php echo home_url("produtos/omer-premium"); ?>">
-        <img src="<?php echo asset("images/banner-principal.svg"); ?>" alt="">
-    </a>
-</section>
-
-<?php get_template_part("templates/content"); ?>
+<?php get_template_part("templates/content-home"); ?>
 
 
 
@@ -96,16 +90,25 @@
 </section>
 
 
+<?php 
 
+$itens = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'limit' => 10,'tax_query' => array(
+    array(
+        'taxonomy' => 'post_tag',
+        'field'    => 'name',
+        'terms'    => 'novidades',
+    ),
+),));
+$itens = (array) $itens->posts;
+
+if(count($itens)): ?>
 <section class="products box-novidades js-scroll  fade-in scrolled">
     <div class="container">
         <h2>NOVIDADES</h2>
         <div class="slider-slick">
             <div class="slider-2">
 
-                <?php $itens = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'limit' => 10));
-                $itens = $itens->posts;
-                $itens = array_merge([], $itens, $itens, $itens, $itens, $itens, $itens, $itens, $itens, $itens);
+                <?php 
 
                 foreach ($itens as $key => $item) {
 
@@ -141,6 +144,8 @@
 
     </div>
 </section>
+
+<?php endif; ?>
 
 
 <section class="only-text text-center js-scroll  fade-in-bottom">

@@ -1,8 +1,8 @@
 <?php  
 
-$entries = get_post_meta(get_the_ID(), '_metabox_for_produtos_2_box', true);
+$entries = (array) get_post_meta(get_the_ID(), '_metabox_for_produtos_2_box', true);
 
-if(count((array) $entries) > 0): ?>
+if(count($entries) > 0 && $entries[0] ): ?>
 
 <section class="slider-videos  js-scroll fade-in-bottom">
 <div class="slider-video">
@@ -12,7 +12,7 @@ if(count((array) $entries) > 0): ?>
         <?php
 
 
-        foreach ((array) $entries as $key => $entry) {
+        foreach (  $entries as $key => $entry) {
 
             if (isset($entry['_metabox_for_produtos_2_link_video'])) {
                 $link_video = esc_html($entry['_metabox_for_produtos_2_link_video']);
