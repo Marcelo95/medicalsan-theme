@@ -2114,7 +2114,7 @@ main.main.main-categories h2 {
 
 .slider-icons-categories .slick-track {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .slider-icons-categories .slick-slide {
@@ -2151,6 +2151,23 @@ main.main.main-categories h2 {
     text-transform: uppercase;
     margin-top: 10px;
 }
+
+
+.slider-video {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+div#video-show {
+    width: 100%;
+    margin-top: 26px;
+    margin-bottom: 30px;
+}
+
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {

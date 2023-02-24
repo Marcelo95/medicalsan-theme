@@ -178,7 +178,7 @@ $('.slider-images-text-2').slick({
 });
 
 $('.init-slider-video').slick({
-    slidesToShow: 3,
+    slidesToShow: Math.min(3, $('.init-slider-video > div').length),
     slidesToScroll: 1,
     centerMode: true,
     infinite: true,

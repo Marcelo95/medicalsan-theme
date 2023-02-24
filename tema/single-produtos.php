@@ -29,9 +29,9 @@
 
         </p>
 
-        <div class="slider-videos  js-scroll fade-in-bottom">
-            <?php get_template_part(sprintf("templates/produtos/%s/content-slider-videos", get_post_field('post_name', get_post()))); ?>
-        </div>
+      
+        <?php get_template_part(sprintf("templates/produtos/content-slider-videos", get_post_field('post_name', get_post()))); ?>
+  
 
         <div class="prod-360">
             <?php get_template_part(sprintf("templates/produtos/%s/content-360", get_post_field('post_name', get_post()))); ?>
@@ -107,18 +107,79 @@
 
 <section class="links">
     <div class="container">
-        <h2>Registro Anvisa: ######</h2>
+        <?php $text = get_post_meta(get_the_ID(), '_metabox_for_produtos_codigo', true);
+        if ($text):
+            ?>
+            <h2>Registro Anvisa:
+                <?php _e($text) ?>
+            </h2>
+
+        <?php endif; ?>
 
         <div class="list-links">
             <div>
-                <a href="" target="_blank"><i class="fa fa-question-circle	"></i> Dúvidas frequentes</a>
-                <a href="" target="_blank"><i class="fa fa-file-text-o"></i> Ficha Técnica</a>
-                <a href="" target="_blank"><i class="fa fa-book	"></i>  Manual de instruções</a>
+                <?php $text1 = get_post_meta(get_the_ID(), '_metabox_for_produtos_link_duvida_frequentes', true);
+                if ($text1):
+                    ?>
+
+                    <a href="<?php _e($text1) ?>" target="_blank"><i class="fa fa-question-circle	"></i> Dúvidas
+                        frequentes</a>
+
+                <?php endif; ?>
+
+                <?php $text2 = get_post_meta(get_the_ID(), '_metabox_for_produtos_link_ficha_tecnica', true);
+                if ($text2):
+                    ?>
+
+                    <a href="<?php _e($text2) ?>" target="_blank"><i class="fa fa-file-text-o"></i> Ficha Técnica</a>
+
+                <?php endif; ?>
+
+
+                <?php $text3 = get_post_meta(get_the_ID(), '_metabox_for_produtos_link_manual_de_instrucao', true);
+                if ($text3):
+                    ?>
+
+                    <a href="<?php _e($text3) ?>" target="_blank"><i class="fa fa-book	"></i> Manual de instruções</a>
+
+                <?php endif; ?>
+
+
+
+
             </div>
             <div>
-                <a href="" target="_blank"><i class="material-icons">contact_phone</i> Assistência express</a>
-                <a href="" target="_blank"><i class="material-icons">library_books</i> Guia Rápido</a>
-                <a href="" target="_blank"><i class="fa fa-file-video-o	"></i>Vídeos de treinamento</a>
+
+
+                <?php $text4 = get_post_meta(get_the_ID(), '_metabox_for_produtos_link_assistencia_express', true);
+                if ($text4):
+                    ?>
+
+
+                    <a href="<?php _e($text4) ?>" target="_blank"><i class="material-icons">contact_phone</i> Assistência
+                        express</a>
+
+                <?php endif; ?>
+
+                <?php $text5 = get_post_meta(get_the_ID(), '_metabox_for_produtos_link_guia_rapido', true);
+                if ($text5):
+                    ?>
+
+                    <a href="<?php _e($text5) ?>" target="_blank"><i class="material-icons">library_books</i> Guia
+                        Rápido</a>
+
+                <?php endif; ?>
+                <?php $text6 = get_post_meta(get_the_ID(), '_metabox_for_produtos_link_videos_de_treinamento', true);
+                if ($text6):
+                    ?>
+
+                    <a href="<?php _e($text6) ?>" target="_blank"><i class="fa fa-file-video-o	"></i>Vídeos de
+                        treinamento</a>
+
+                <?php endif; ?>
+
+
+
             </div>
 
         </div>
