@@ -4,16 +4,16 @@ on:
     branches: [ main, Development ]
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       # Here is the deployment action
       - name: Upload from public_html via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           protocol: ${{secrets.FTP_PROTOCOL}}
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: "./tema"
+          local-dir: "./tema/"
           server-dir: "/wp-content/themes/medicalsan-theme/"
