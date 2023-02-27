@@ -13,7 +13,14 @@
 </section>
 
 <style>
+
+section.page-content {
+    background: linear-gradient(0deg, #FFFFFF 0%, #DBDBDB 57.46%, #000000 100%);
+}
+
+@media (max-width:768px){
     section.page-content {
-    background: linear-gradient(0deg, #FFFFFF 0%, #DBDBDB 61.46%, #000000 100%);
+    background: linear-gradient(0deg, #FFFFFF 52%, #DBDBDB 86.46%, #000000 90%);
+}
 }
 </style>

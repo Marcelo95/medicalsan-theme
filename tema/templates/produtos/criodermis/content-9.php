@@ -1,12 +1,12 @@
 <section class="descricao">
     <div class="container">
         <div class="title-principal">
-        <h2 class="title">7 quilos
-        </h2>
-        <p>
-            Equipamento mais
-            leve do mercado
-        </p>
+            <h2 class="title">7 quilos
+            </h2>
+            <p>
+                Equipamento mais
+                leve do mercado
+            </p>
         </div>
         <img
             src="<?php echo asset(sprintf("../templates/produtos/%s/images/controlin.png", get_post_field('post_name', get_post()))); ?>" />
@@ -25,28 +25,31 @@
 </section>
 
 <section class="conceito <?php echo 'css-bg-' . get_post_field('post_name', get_post()); ?>">
-    <div class="container" style="background-image:url('<?php echo asset(sprintf("../templates/produtos/%s/images/bg-conceito.png", get_post_field('post_name', get_post()))); ?>')">
+    <div class="container">
+    <div class="bg"
+        style="background-image:url('<?php echo asset(sprintf("../templates/produtos/%s/images/bg-conceito.png", get_post_field('post_name', get_post()))); ?>')">
 
-   <div class="row1" >
-   <div class="col">
-            <h2>Conceito Crioplace</h2>
-        </div>
-        <div class="col col-dir">
-            <p>
-                Maior área de tratamento
-            </p>
-            <p>
-                Otimização de tempo 
-            </p>
-            <p>
-                Mais segurança
-            </p>
-            <p>
-                4 saídas permitem aplicação simultânea em 2 pessoas
-            </p>
+        <div class="row1">
+            <div class="col">
+                <h2>Conceito Crioplace</h2>
+            </div>
+            <div class="col col-dir">
+                <p>
+                    Maior área de tratamento
+                </p>
+                <p>
+                    Otimização de tempo 
+                </p>
+                <p>
+                    Mais segurança
+                </p>
+                <p>
+                    4 saídas permitem aplicação simultânea em 2 pessoas
+                </p>
 
+            </div>
         </div>
-   </div>
+    </div>
     </div>
 </section>
 

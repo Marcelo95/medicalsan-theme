@@ -145,13 +145,13 @@ header.header-style-1 {
     padding-top: 25px;
     /* padding-bottom: 25px; */
     position: relative;
-    z-index: 9;
+    z-index: 999999;
 }
 
 .single-produtos header.header-style-1 {
     position: absolute;
     width: 100%;
-    z-index: 99999;
+    z-index: 999999;
     top: 0;
     background: transparent;
 }
@@ -867,19 +867,18 @@ section.texto-colorido-1 p {
     padding: 56px;
     border-radius: 35px;
     color: #fff;
-    height: 387px;
+    min-height: 300px;
     display: flex;
     position: relative;
     overflow: hidden;
     flex-wrap: wrap;
     width: 100%;
     min-width: 290px;
-    border: 10px solid white;
+    width: calc(100% - 1em);
+    margin: 0.5em;
 }
 
-.css-lipocavity-new-smart.boxes-img-text .boxes {
-    border: 10px solid #ededed;
-}
+
 
 .boxes-img-text {
     margin-bottom: 20px;
@@ -1162,7 +1161,7 @@ section.conceito > .container > .row1 {
     border-radius: 23px;
 }
 
-section.conceito > .container {background-position: bottom;border-radius: 23px;}
+section.conceito > .container .bg {background-position: bottom;border-radius: 23px;}
 
 section.conceito {
     margin: 30px 0px;
@@ -1560,7 +1559,7 @@ section.content-text-css-omer-premium p i {
     color: black !important;
     max-width: 300px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -1871,9 +1870,6 @@ section.sem-limites-de-disparos p b {
     display: flex;
 }
 
-.slider-video {
-    margin: 100px 0px;
-}
 
 
 .slider-video  .slick-center .imagem-thumbnail {
@@ -2176,12 +2172,20 @@ footer .apps a {
 footer .apps a img {
     width: 100%;
 }
+section.carroussel-text .slick-track {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {
     position: relative;
     left: 0;
     float: none;
+    width: 100%;
+    margin: 0;
+    top: 0;
 }
 }
 
@@ -2811,11 +2815,31 @@ section.bloco-3-text > .container > div {
     position: relative;
 }
 
+section.bloco-3-text.css-3-ultraplace > .container > div {
+    overflow: hidden;
+}
+
+section.bloco-3-text.css-3-tekah > .container > div {
+    overflow: hidden;
+}
+
     section.bloco-3-text > .container > div > div img {
     /* position: relative; */
     bottom: auto;
     right: -20px;
     max-width: 258px;
+}
+
+section.bloco-3-text.css-3-ultraplace > .container > div > div img {
+    position: relative;
+    right: -43px;
+}
+
+section.bloco-3-text.css-3-tekah > .container > div > div img {
+    position: relative;
+    /* margin: 0; */
+    right: -42px;
+    width: auto;
 }
 
 section.texto-colorido-1{
@@ -2842,6 +2866,7 @@ html .content-10-text .box-center p {
 }
     section.quais-tecnologias .container > .box-center {
     padding: 10px;
+    margin: 0;
 }
     .banner-categories {
     padding: 40px 10px;
@@ -2862,6 +2887,17 @@ main.main.main-categories h2 {
     font-size: 1.1rem;
 }
 
+    .init-bloco-2-text > div{
+    min-height: 100px;
+    font-size: 1.1rem;
+    border-radius: 19px !important;
+}
+
+    section.bloco-3-text > .container{
+    padding: 0;
+}
+
+    .boxes-img-text .boxes {margin: 0.5em 0;width: 100%;}
 }
 
 .nav-top-level-0 {
@@ -3837,8 +3873,8 @@ section.box-lancamento.estilo-1 {
 }
 
 section.content-10-text > .container > div {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     background: url(../../assets/images/bg-azul.jpg) center no-repeat;
     width: 100%;
     background-size: cover;
@@ -3917,6 +3953,11 @@ section.content-10-text h2 {
 }
     .content-text-desc h2 {
     padding: 10px;
+    margin: 10px;
+}
+
+.barras {
+    margin-bottom: 50px;
 }
     
 }
@@ -4448,7 +4489,7 @@ header .navbar-sticky {min-height: 85px;}
     
 .navbar-stuck-menu {
     position: fixed;
-    z-index: 9999999;
+    z-index: 9999999999988888999999999999999999;
     background: #ffffff;
     width: 100%;
     top: 0;
@@ -4686,4 +4727,13 @@ title-top-prod {
     width : 100% !important;
   }
     .lista-categories a h2 {font-size: 1.2rem;display: block;}
+
+    section.aplicador-3-botoes img {
+    display: none;
+}
+
+section.transdutoress {
+    padding-top: 16px;
+}
+    
 }
