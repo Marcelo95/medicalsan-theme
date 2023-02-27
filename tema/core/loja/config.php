@@ -52,7 +52,7 @@ function produtos_custom_post()
  
 }
 
-add_action('init', 'feedbacks_custom_post');
+//add_action('init', 'feedbacks_custom_post');
 function feedbacks_custom_post()
 {
 
