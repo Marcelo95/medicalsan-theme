@@ -52,10 +52,10 @@
 
                     <div class="d-flex">
                     <a href="https://apps.apple.com/br/app/medical-san/id1460618465?l=en" target="_blank"> 
-                        <img class="logo" src="<?php echo asset('images/apple2.png?v2'); ?>" alt="Logo App Store">
+                        <img class="logo" src="<?php echo asset('images/apple.png?v1'); ?>" alt="Logo App Store">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.manptecnologia.medicalsanconnect&hl=pt_BR&gl=US&pli=1" target="_blank"> 
-                        <img src="<?php echo asset('images/android.png'); ?>" alt="Logo Google Play">
+                        <img src="<?php echo asset('images/android.png?v1'); ?>" alt="Logo Google Play">
                     </a>
            
                     </div>
