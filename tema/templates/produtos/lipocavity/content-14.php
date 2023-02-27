@@ -20,7 +20,7 @@
         </div>
         <div class="init-bloco-3-text">
             <div>
-                <h2> Quais são as frequências e a potência?  </h2>
+                <h2> Quais são as frequências e a potência?</h2>
             </div>
             <div>
                 <ul class="lista-estilo-1">
