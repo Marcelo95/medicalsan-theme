@@ -3487,6 +3487,10 @@ html .fa-arrow-right:before {
     padding-right: 26px;
 }
 
+.content-nossas-tecologia .slider-slick {
+    padding: 0;
+}
+
 .slider-slick a {
     text-decoration: none;
 }
@@ -4130,7 +4134,7 @@ section.content-nossas-tecologia h2 {
 }
 
 section.content-nossas-tecologia {
-    margin: 51px 25px;
+    margin: 51px 0px;
 }
 
 .catalogos {
