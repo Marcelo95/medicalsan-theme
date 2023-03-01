@@ -29,9 +29,9 @@
 
         </p>
 
-      
+
         <?php get_template_part(sprintf("templates/produtos/content-slider-videos", get_post_field('post_name', get_post()))); ?>
-  
+
 
         <div class="prod-360">
             <?php get_template_part(sprintf("templates/produtos/%s/content-360", get_post_field('post_name', get_post()))); ?>
@@ -187,6 +187,50 @@
     </div>
 </section>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">####</h5>
+                <button type="button" class="close btn btn-light" data-dismiss="modal" aria-label="Close"
+                    onClick="jQuery('#exampleModal').modal('hide')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <iframe id="iframeURL" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  frameborder="0" style=" width: 100%; min-height: calc(100vh - 200px); "></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function ($) {
+
+
+
+        function showPopupIframe(title = "", url = "", iconClass = "") {
+
+            $("#exampleModalLabel").html(`<i class="${iconClass}"></i> ${title}`);
+
+            $('#exampleModal').modal('toggle');
+            $('#iframeURL').attr("src", url);
+
+            
+        }
+
+
+        $(".list-links a").on("click", function(e){
+            e.preventDefault();
+
+            showPopupIframe($(this).text(), $(this).attr("href"),  $(this).find("i").attr("class") );
+        })
+
+    })(jQuery);
+</script>
 
 
 <?php get_footer(); ?>
