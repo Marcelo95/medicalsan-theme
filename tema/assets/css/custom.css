@@ -4556,6 +4556,12 @@ span.details_1 {
 
 }
 
+@media (max-width:320px){
+    .item-photo{
+    width: 200px;
+}
+}
+
 .page-content h1 {
     font-size: 32px;
     margin-bottom: 25px;
