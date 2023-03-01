@@ -3710,7 +3710,6 @@ section.box-lancamento .col .box-text a {
 section.box-lancamento .box-image img {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: -6px;
 }
 
 section.box-lancamento:before {
@@ -4558,7 +4557,21 @@ span.details_1 {
 
 @media (max-width:320px){
     .item-photo{
-    width: 200px;
+    width: 218px;
+}
+
+    .slider-icons-categories div.boxes-cats{
+    min-width: 100%;
+}
+
+    .slider-icons-categories .slick-slide {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 2px;
+}
+
+    section.content-nossas-tecologia {
+    margin: 40px  0px;
 }
 }
 

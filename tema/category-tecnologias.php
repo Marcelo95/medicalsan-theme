@@ -68,7 +68,7 @@ $categories = get_categories($args);
                 </div>
 
 
-            ', get_category_link($category->term_id), asset(sprintf("../templates/categories/images/%s.svg", $category->slug)), $category->name);
+            ', get_category_link($category->term_id), asset(sprintf("../templates/categories/images/png/%s.png", $category->slug)), $category->name);
 
 
             }

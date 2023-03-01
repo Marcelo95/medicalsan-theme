@@ -4,6 +4,42 @@
 
 
 
+<section class="content-nossas-tecologia js-scroll fade-in">
+    <div class="container">
+        <div class="slider-slick">
+            <div class="setas slider-1-setas noselect">
+
+                <i class="material-icons seta-esquerda" style="font-size: 36px;margin-left: -7px;">keyboard_arrow_left</i>
+                <h2 class="font-2"><?php echo __("Nossas tecnologias"); ?></h2>
+                <i class="material-icons seta-direita" style="font-size: 36px;margin-left: -7px;">keyboard_arrow_right</i>
+
+            </div>
+
+            <div class="slider-1">
+
+                <?php
+                $marcas = get_terms(array(
+                    'taxonomy' => 'category',
+                    'hide_empty' => false,
+                    'parent' => get_cat_ID('tecnologias'),
+                ));
+
+
+                foreach ($marcas as $key => $item) {
+                    $style_img_bg = asset_image_background(get_term_meta($item->term_id, 'image', true));
+                    echo sprintf('<a href="%s"><div class="marcas-photo font-2" %s >%s</div></a>', esc_url(get_term_link($item)), $style_img_bg, $item->name);
+                }
+
+                ?>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+
 <section class="box-lancamento js-scroll fade-in estilo-1">
     <div class="container">
         <?php if (is_active_sidebar('home_widget_1')) : ?>
@@ -12,7 +48,7 @@
 
             <div class=" box-image js-scroll fade-in-bottom">
 
-                <img src="<?php echo asset("images/produtos/omer-smart/1.svg"); ?>" alt="">
+                <img src="<?php echo asset("images/produtos/omer-smart/1.png"); ?>" alt="">
             </div>
             <div class="box-text js-scroll fade-in-bottom">
                 <h4>LANÇAMENTO</h4>

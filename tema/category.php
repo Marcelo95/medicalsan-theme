@@ -71,7 +71,7 @@ $the_query = new WP_Query($args);
 				while ($the_query->have_posts()):
 					$the_query->the_post();
 					$slug = basename(get_permalink());
-					$image_prod = asset(sprintf("images/images-categories-prods/prod-%s.svg", $slug));
+					$image_prod = asset(sprintf("images/images-categories-prods/png/prod-%s.png", $slug));
 					$logo_prod = asset(sprintf("images/images-categories-prods/logo-%s.png", $slug));
 					$link = get_permalink();
 
