@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="<?php echo asset('css/custom.css'); ?>">
+    <link rel="stylesheet" href="<?php echo asset('css/custom.css?v0.0.1'); ?>">
 
     <?php wp_head(); ?>
 </head>
