@@ -147,7 +147,7 @@ function metabox_for_produtos()
 
   $cmb_demo->add_field(
     array(
-      'name' => __('Vídeos de treinamento', 'cmb2'),
+      'name' => __('Vídeo de treinamento', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_videos_de_treinamento',
       'type' => 'text_url',
