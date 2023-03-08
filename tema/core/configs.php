@@ -2,7 +2,7 @@
 
 
 //Chama as funções assim que o tema é ativado
-add_action( 'after_switch_theme', 'hook_theme_was_activation' );
+//add_action( 'after_switch_theme', 'hook_theme_was_activation' );
 
 function create_page($title_of_the_page,$content,$parent_id = NULL, $post_type = "page", $categories_IDs = array()) 
 {
