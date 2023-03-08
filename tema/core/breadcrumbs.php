@@ -2,25 +2,28 @@
 
 // BREADCRUMBS  --------------------------------------------------------------------------------------------------------
 
+
 function my_get_the_category_list($sep)
 {
+    $categories = [];
+
     if (!is_single()) {
         $current_term = get_category(get_query_var('cat'));
         $term_id = property_exists($current_term, "term_id") ? $current_term->term_id : false;
-        $args = array(
-            'orderby' => 'name',
-            'hierarchical' => true,
-            'order' => 'ASC',
-            'taxonomy' => 'category',
-            'hide_empty' => false,
-            'exclude' => [get_cat_ID("Sem Categoria"), $term_id],
-            'parent' => 0
-        );
-        $categories = get_categories($args);
-    } else {
-        $categories = apply_filters('the_category_list', get_the_category(get_the_ID()), get_the_ID());
+
+        if ($term_id) {
+            $parent = $current_term->parent;
+            while ($parent != 0) {
+                $cat = get_category($parent);
+                $categories[] = $cat;
+                $parent = $cat->parent;
+            }
+        }
     }
 
+    if (is_singular()) {
+        $categories = array_merge($categories, apply_filters('the_category_list', get_the_category(get_the_ID()), get_the_ID()));
+    }
 
 
 
@@ -34,17 +37,12 @@ function my_get_the_category_list($sep)
 
     $html = "";
 
-    $count = 0;
-
-
     foreach ($categories as $key => $category) {
 
         $html .= '<li><a href="' . esc_url(get_category_link($category->term_id)) . '">' . $category->name . '</a></li>';
         $html .= $sep;
-
     }
     return $html;
-
 }
 
 function custom_breadcrumbs()
@@ -63,29 +61,33 @@ function custom_breadcrumbs()
         echo '</a><li>' . $sep;
 
         // Check if the current page is a category, an archive or a single page. If so show the category or archive name.
-        if (is_category() || is_single()) {
-
-            // if (has_category()) {
+        if (is_category() || is_singular("produtos")) {
             echo my_get_the_category_list($sep);
+        }
 
-            // };
-            //if(has_category()) echo  str_replace('</a>','</a></li>',str_replace('<a','<li><a', my_get_the_category_list($sep) )) .$sep;
-        } elseif (is_archive() || is_single()) {
-            echo '<li>';
-            if (is_day()) {
-                printf(__('%s', 'text_domain'), get_the_date());
-            } elseif (is_month()) {
-                printf(__('%s', 'text_domain'), get_the_date(_x('F Y', 'monthly archives date format', 'text_domain')));
-            } elseif (is_year()) {
-                printf(__('%s', 'text_domain'), get_the_date(_x('Y', 'yearly archives date format', 'text_domain')));
-            } else {
-                _e('Blog Archives', 'text_domain');
-            }
-            echo '</li>' . $sep;
-
+        if (is_singular('post')) {
+            echo '<li><a href="' . home_url("blog") . '">Blog</a></li>';
+            echo $sep;
         }
 
         if (is_single() || is_page()) {
+            $page_parent_ID = wp_get_post_parent_id();
+
+            if ($page_parent_ID) {
+                $_posts = [];
+                while ($page_parent_ID != 0) {
+                    $_post = get_post($page_parent_ID);
+                    $_posts[] = $_post;
+                    $page_parent_ID = wp_get_post_parent_id($_post);
+                }
+
+                foreach ($_posts as $key => $p) {
+                    echo '<li><a href="' . get_permalink($p) . '">' . $p->post_title . '</a></li>';
+                    echo $sep;
+                }
+            }
+
+
             echo sprintf("<li><span>%s</span></li>", get_the_title());
         }
 
