@@ -110,6 +110,7 @@ function getYouTubeVideoId($pageVideUrl)
 function getUrlThumbnailYoutube($link_video)
 {
     $youtubeID = getYouTubeVideoId($link_video);
+    if(!$youtubeID) return false;
     return 'https://img.youtube.com/vi/' . $youtubeID . '/mqdefault.jpg';
 }
 
