@@ -51,7 +51,7 @@ if (count($entries) > 0 && $entries[0]) : ?>
 
     foreach ($entries as $key => $entry) {
         $carr .= '<div>';
-        $carr .= cmb2_texto($entry["_metabox_for_produtos_2_carroussel_content"]);
+        $carr .= cmb2_texto($entry["_metabox_for_produtos_2_carroussel_content"] ?? '');
         $carr .= '</div>';
     }
 
