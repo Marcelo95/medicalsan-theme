@@ -33,7 +33,7 @@ function create_page($title_of_the_page,$content,$parent_id = NULL, $post_type =
 
 function asset($filename)
 {
-    return get_template_directory_uri() . "/assets/" . $filename;
+    return get_template_directory_uri() . "/assets/" . $filename . '?v=' .  wp_get_theme()->get('Version');
 }
 
 function asset_image_background($filename, $no_image = false)

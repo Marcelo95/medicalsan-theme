@@ -91,12 +91,13 @@ function metabox_for_produtos()
       'name' => __('Dúvidas frequentes', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_duvida_frequentes',
-      'type' => 'text_url',
-      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
-      // Array of allowed protocols
+      'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
-      )
+      ),
+      'options' => array(
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
     )
   );
   $cmb_demo->add_field(
@@ -104,12 +105,13 @@ function metabox_for_produtos()
       'name' => __('Ficha Técnica', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_ficha_tecnica',
-      'type' => 'text_url',
-      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
-      // Array of allowed protocols
+      'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
-      )
+      ),
+      'options' => array(
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
     )
   );
 
@@ -118,12 +120,13 @@ function metabox_for_produtos()
       'name' => __('Manual de instruções', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_manual_de_instrucao',
-      'type' => 'text_url',
-      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
-      // Array of allowed protocols
+      'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
-      )
+      ),
+      'options' => array(
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
     )
   );
 
@@ -132,12 +135,13 @@ function metabox_for_produtos()
       'name' => __('Assistência express', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_assistencia_express',
-      'type' => 'text_url',
-      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
-      // Array of allowed protocols
+      'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
-      )
+      ),
+      'options' => array(
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
     )
   );
 
@@ -146,12 +150,13 @@ function metabox_for_produtos()
       'name' => __('Guia Rápido', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_guia_rapido',
-      'type' => 'text_url',
-      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
-      // Array of allowed protocols
+      'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
-      )
+      ),
+      'options' => array(
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
     )
   );
 
@@ -160,12 +165,13 @@ function metabox_for_produtos()
       'name' => __('Vídeo de treinamento', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_videos_de_treinamento',
-      'type' => 'text_url',
-      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
-      // Array of allowed protocols
+      'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
-      )
+      ),
+      'options' => array(
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
     )
   );
 }

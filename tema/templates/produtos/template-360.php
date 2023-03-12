@@ -27,7 +27,7 @@ $total_images = get_count_images(sprintf(__DIR__ . "/%s/images/360/", get_post_f
 
 if ($total_images > 1) : ?>
 
-
+<script defer src="<?php echo asset("js/JavascriptViewer.min.js"); ?>"></script>
     <script type="application/javascript">
         window.addEventListener('load', () => {
             const jsv = new JavascriptViewer({
