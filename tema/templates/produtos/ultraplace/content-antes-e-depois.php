@@ -1,0 +1,1 @@
+<?php do_action("AntesDepoisComponent", ["name" => "Abdômen","description" => "Resultado clínico do estudo realizado pela professora Patrícia Froes, onde pode-se observar uma redução imediata de medidas de perimetria supra umbilical e umbilical e plicometria abdominal umbilical bilateral."]); ?>

@@ -1,57 +1,68 @@
-<?php  
+<?php
 
 $entries = (array) get_post_meta(get_the_ID(), '_metabox_for_produtos_2_box', true);
 
-if(count($entries) > 0 && $entries[0] ): ?>
+if (count($entries) > 0 && $entries[0]) : ?>
 
-<section class="slider-videos  js-scroll fade-in-bottom">
-<div class="slider-video">
+    <section class="slider-videos  js-scroll fade-in-bottom">
+        <div class="slider-video">
 
-    <div class="init-slider-video">
+            <div class="init-slider-video">
 
-        <?php
-
-
-        foreach (  $entries as $key => $entry) {
-
-            if (isset($entry['_metabox_for_produtos_2_link_video'])) {
-                $link_video = esc_html($entry['_metabox_for_produtos_2_link_video']);
-                echo sprintf(' <div><div class="imagem-thumbnail" data-id-youtube="%s" style="background-image:url(%s);"></div></div>', 
-                    getYouTubeVideoId($link_video), getUrlThumbnailYoutube($link_video));
-            }
-
-        }
+                <?php
 
 
 
-        ?>
-     
+                foreach ($entries as $key => $entry) {
+                    $_link_thumb = $entry['_metabox_for_produtos_2_carroussel_content_thumbnail'];
+                    $link_thumb = asset("images/no-image.svg");
+                    if (isset($_link_thumb) && $_link_thumb != "") {
 
-    </div>
+                        $link_thumb = $_link_thumb;
+                    }
 
+                ?>
 
+                    <div>
+                        <a href="" data-bs-target="#content_carroussel" data-bs-toggle="modal" data-bs-target="#content_carroussel" class="imagem-thumbnail" style="background-image:url(<?php _e($link_thumb); ?>);"></a>
 
-    <div id="video-show" style="display:none;">
-        <iframe width="100%" height="500" src="" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    </div>
-
-    <script>
-        (function ($) {
-            'use strict';
-
-            $(".imagem-thumbnail").on("click", function () {
-                $("#video-show").show();
-                $("#video-show iframe").attr("src", "https://www.youtube.com/embed/" + $(this).attr("data-id-youtube") + "?autoplay=1");
-            })
-
-        })(jQuery);
-
-    </script>
+                    </div>
+                <?php
 
 
-    </div>
-</section>
+                }
+
+
+
+                ?>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <?php
+
+
+    $carr = '<div class="init-slider-video-for">';
+
+    foreach ($entries as $key => $entry) {
+        $carr .= '<div>';
+        $carr .= cmb2_texto($entry["_metabox_for_produtos_2_carroussel_content"]);
+        $carr .= '</div>';
+    }
+
+
+    $carr .= '</div>';
+
+    do_action("PopupComponent", ["id" => "content_carroussel", "cass_modal" => "", "body" =>  $carr]);
+
+    ?>
+
+
+
 
 <?php endif; ?>

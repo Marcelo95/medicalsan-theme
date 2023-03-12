@@ -4,10 +4,10 @@
 
     <div class="banner-principal">
         <img class="imagem-fundo"
-            src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal-fundo.svg", get_post_field('post_name', get_post()))); ?>"
+            src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal-fundo.png?v1", get_post_field('post_name', get_post()))); ?>"
             alt="">
         <img class="imagem-frente js-scroll fade-in-bottom scrolled"
-            src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal.png", get_post_field('post_name', get_post()))); ?>"
+            src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal.png?v1", get_post_field('post_name', get_post()))); ?>"
             alt="">
     </div>
 
@@ -84,15 +84,12 @@
     </div>
 
 
+    <?php get_template_part(sprintf("templates/produtos/%s/content-antes-e-depois", get_post_field('post_name', get_post()))); ?>
 
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part("templates/produtos/content-10"); ?>
-    </div>
 
+    <?php do_action("EntendaMaisComponent"); ?>
 
     <?php get_template_part(sprintf("templates/produtos/%s/content-11", get_post_field('post_name', get_post()))); ?>
-
-
 
 
     <div class="container ">

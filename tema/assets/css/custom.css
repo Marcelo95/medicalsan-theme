@@ -36,6 +36,10 @@ section.products > .container > h2 {
     max-width: 1140px;
 }
 
+.container-800 {
+    max-width: 800px;
+}
+
 .page-blog.archive img {
     max-width: 100%;
 }
@@ -1305,22 +1309,22 @@ section.quais-tecnologias .container > .box-center > div.col-bt-2 .bg-v1 {
 
 .lista.l4 {
     background: #032047;
-    max-width: 77%;
+    max-width: 92%;
 }
 
 .lista.l3 {
     background: #00367E;
-    max-width: 70%;
+    max-width: 88%;
 }
 
 .lista.l2 {
     background: #0085FF;
-    max-width: 64%;
+    max-width: 83%;
 }
 
 .lista.l1 {
     background: #73BCFF;
-    max-width: 57%;
+    max-width: 78%;
 }
 
 .barras {
@@ -2176,6 +2180,172 @@ footer .apps a img {
 section.carroussel-text .slick-track {
     display: flex;
     align-items: center;
+}
+
+.list-vantagens-0 {
+    color: #0D2B78;
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 64px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-vantagens-0 > div {
+    max-width: 23%;
+    position: relative;
+    line-height: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    word-break: break-word;
+    padding-top: 20px;
+    min-width: 234px;
+    padding-bottom: 20px;
+    min-height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-vantagens-0 > div .maior {
+    font-size: 4rem;
+    float: left;
+    width: 100%;
+    line-height: 54px;
+}
+
+.list-vantagens-0 > div.mapabr {
+    display: flex;
+    background: url("../../assets/images/brasil-cinza.png") center no-repeat;
+    background-size: contain;
+}
+
+.list-vantagens-0 > div img {width: 100%;height: auto;display: none;}
+
+.list-vantagens-0 > div.borderleft {
+    background: black;
+    width: 1px;
+    height: 9px;
+    display: block;
+    padding: 0;
+    min-width: auto;
+    min-height: 101px;
+}
+
+
+.single-produtos section.page-content .container {
+    max-width: 988px;
+}
+
+
+@media(min-width:958px){ /*responsive*/
+
+    
+.produtos-hakon div#jsv-holder {
+    margin-right: 20px;
+    margin-top: -99px;
+}
+}
+@media(min-width:991px){  /*responsive*/
+   section.linhas-4-ondas {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+    width: 100%;
+    align-items: center;
+}
+
+.content-text-desc h2 {
+    padding: 0;
+}
+
+section.linhas-4-ondas .barras.js-scroll.scrolled {
+    min-width: 65%;
+    margin-top: 53px;
+}
+
+section.linhas-4-ondas > div {width: 35%;word-break: break-word;} 
+}
+
+@media(min-width: 728px) and (max-width:961px){
+    .list-vantagens-0 > div:nth-last-child(2) {
+    display: none;
+}
+
+
+}
+
+
+@media(max-width: 727px) {
+    .list-vantagens-0 > div:nth-last-child(4) {
+    display: none;
+}
+
+    
+
+.list-vantagens-0 > div {width: 100%;max-width: 320px;}
+}
+
+@media(max-width:670px){
+.list-vantagens-0 > div.borderleft {
+    display: none !important;
+}
+
+
+
+       .list-vantagens-0 > div img {
+        display:block !important;
+        height: fit-content;
+    }
+
+ .list-vantagens-0 > div.mapabr {
+     background:none;
+ }
+}
+
+
+section.box-o-melhor-handplace {
+    background: #0D2B78;
+}
+
+.box-2-quad {
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-2-quad img {
+    max-width: 100%;
+}
+
+.box-2-quad img.imgmais {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.box-2-quad > div {
+    min-width: 203px;
+}
+
+
+section.box-o-melhor-handplace ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 65px;
+}
+
+section.box-o-melhor-handplace ul li {margin-bottom: 20px;}
+
+section.box-o-melhor-handplace h2 {
+    font-weight: 400;
 }
 
 @media (max-width: 1000px){
@@ -3302,12 +3472,12 @@ div[aria-label="Slide"] {
     background: black;
     border: 1px solid #000000;
     text-decoration: none;
-    padding: 23px 17px;
-    width: 255px;
+    padding: 13px 22px;
+    width: auto;
     border-radius: 5px;
     font-weight: 700;
     font-size: 16px;
-    height: 70px;
+    height: 48px;
     border-radius: 42px;
     position: relative;
     font-family: "Gotham", sans-serif;
@@ -3857,8 +4027,7 @@ section.box-lancamento.estilo-1 {
 }
 
 .content-10-text .box-center {
-    background: url();
-    /* padding: 76px 10px; */
+
     text-align: center;
     color: #fff;
     display: flex;
@@ -3876,13 +4045,13 @@ section.box-lancamento.estilo-1 {
     font-size: 1.7rem;
 }
 
-section.content-10-text > .container > div {
+section.content-10-text .box-center {
     margin-bottom: 15px;
     margin-top: 15px;
     background: url(../../assets/images/bg-azul.jpg) center no-repeat;
     width: 100%;
     background-size: cover;
-    border-radius: 23px;
+    /* border-radius: 23px; */
     padding: 50px 20px;
 }
 
@@ -3892,7 +4061,7 @@ section.content-10-text h2 {
 
 
 .content-text-desc {
-    margin-top: -9%;
+    /* margin-top: -9%; */
 }
 
 @media (max-width: 978px){
@@ -4474,7 +4643,7 @@ section.comentarios > .container {
     background-position: center bottom !important;
 }
 }
-@media (max-width: 992px){
+@media (max-width: 991px){
 
 .desktop {
     display: none!important;

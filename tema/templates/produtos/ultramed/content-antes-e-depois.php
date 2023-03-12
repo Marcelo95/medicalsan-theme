@@ -1,0 +1,2 @@
+<?php do_action("AntesDepoisComponent", ["name" => "Mandíbula","description" => "
+Aplicação em terço médio e superior para ancoragem tecidual e realização de desenho da mandíbula. Foi realizada uma sessão de microfocado com Ultramed."]); ?>

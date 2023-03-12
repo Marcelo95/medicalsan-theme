@@ -1,0 +1,1 @@
+<?php do_action("AntesDepoisComponent", ["name" => "Abdômen","description" => "Este resultado foi obtido por meio de uma sessão de aplicação do equipamento de Criolipólise de Placas (Criodermis). Com utilização de protocolo exclusivo da professora Geovana Viana, onde uma das técnicas utilizadas além da Criolipólise é a associação com suplementação."]); ?>

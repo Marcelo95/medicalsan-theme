@@ -36,6 +36,45 @@
     z-index: 9999999;
 }
 
+div#eficacia {
+    text-align: center;
+}
+
+div#eficacia table {
+    background: #0085FF;
+    border-radius: 20px;
+    color: #fff;
+    max-width: 90%;
+    margin: auto;
+    font-weight: 600;
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+}
+
+div#eficacia .description {
+    margin: 25px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+div#eficacia  h2 {
+    margin-bottom: 36px;
+}
+
+div#eficacia table h3 {
+    text-transform: uppercase;
+    margin: 24px 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+div#eficacia table img {
+    margin-bottom: 26px;
+}
+
+div#eficacia table img {
+    max-width: 100%;
+}
+
 
 table {
   border-collapse: collapse;

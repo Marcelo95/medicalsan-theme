@@ -1,0 +1,1 @@
+<?php do_action("AntesDepoisComponent", ["name" => "Pulso","description" => "Resultado em evolução, obtido após 3 sessões com Ômer Smart em tatuagem com pigmento preto, localizada na região de pulso. O intervalo entre as sessões foram de 45 dias."]); ?>
