@@ -89,7 +89,7 @@
 </main>
 
 <script src="<?php echo asset('bootstrap/js/bootstrap.min.js'); ?>"></script>
-<script src="<?php echo asset('js/script.js'); ?>"></script>
+<script src="<?php echo asset('js/script.js?v=1'); ?>"></script>
 <script src="<?php echo asset('js/custom-animate.js'); ?>"></script>
 <?php wp_footer(); ?>
 </body>

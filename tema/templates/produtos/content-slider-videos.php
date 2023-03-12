@@ -61,7 +61,7 @@ if (count($entries) > 0 && $entries[0]) : ?>
 
     $carr .= '</div>';
 
-    do_action("PopupComponent", ["id" => "content_carroussel", "cass_modal" => "", "body" =>  $carr]);
+    do_action("PopupComponent", ["id" => "content_carroussel", "css_modal" => "modal-lg", "body" =>  $carr]);
 
     ?>
 

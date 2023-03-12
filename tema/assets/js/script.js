@@ -184,6 +184,7 @@ $('.init-slider-video-for').slick({
     arrows: true,
     dots: true,
     fade: true,
+    autoplay: false,
     asNavFor: '.init-slider-video'
   });
 $('.init-slider-video').slick({

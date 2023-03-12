@@ -36,6 +36,16 @@
     z-index: 9999999;
 }
 
+.myPopup iframe {
+    min-width: 100%;
+}
+
+.myPopup ul.slick-dots {
+    border: 0;
+    margin-top: 10px;
+    position: relative;
+}
+
 div#eficacia {
     text-align: center;
 }
