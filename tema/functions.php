@@ -105,3 +105,47 @@ function getUrlThumbnailYoutube($link_video)
     $youtubeID = getYouTubeVideoId($link_video);
     return 'https://img.youtube.com/vi/' . $youtubeID . '/mqdefault.jpg';
 }
+
+
+
+function add_slug_body_class($classes)
+{
+    global $post;
+    if (isset($post)) {
+        $classes[] = $post->post_type . '-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter('body_class', 'add_slug_body_class');
+
+function cmb2_texto( $content) {
+    global $wp_embed;
+    $content = $wp_embed->autoembed( $content );
+    $content = $wp_embed->run_shortcode( $content );
+    $content = wpautop( $content );
+    $content = do_shortcode( $content );
+
+    return $content;
+}
+
+//importando todas as actions de components Ex de action: MeuTestComponent
+// Define o padrão de arquivo a ser importado
+$pattern =  __DIR__ . '/templates/components/*/content.php';
+// Usa a função glob para importar todos os arquivos que correspondem ao padrão
+$files = glob($pattern);
+
+// Itera sobre todos os arquivos importados e os inclui
+foreach ($files as $file) {
+    if (is_file($file)) {
+        $pathComponent = basename(dirname($file));
+        $component_name =  str_replace(' ', '', ucwords(str_replace('-', ' ', $pathComponent))) . 'Component';
+        add_action($component_name, function ($params) use($pathComponent, $component_name ) {
+            if(!is_array($params)){
+                $params = [];
+            }
+
+           $params = array_merge( $params, ["theme" => wp_get_theme()->name, "first_run" => boolval(did_action($component_name ) < 2)]);
+            get_template_part(sprintf("templates/components/%s/content", $pathComponent), null, $params);
+        }, 10, 1);
+    }
+}

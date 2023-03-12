@@ -1,0 +1,116 @@
+.myPopup .modal-header {
+    border: none;
+}
+
+.myPopup .modal-header .btn {
+    background: none;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: 23px;
+    padding: 9px !important;
+    width: 35px !important;
+    height: 35px !important;
+    line-height: 13px;
+}
+
+.myPopup .modal-title {
+    color: #230077;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+.myPopup .modal-title i {
+    margin-right: 5px;
+}
+.myPopup .modal-content {
+    border-radius: 20px;
+}
+
+.myPopup {
+    z-index: 9999999;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  height: auto !important;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+}
+
+table th iframe, table td iframe {
+    max-width: 100%;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    display: block;
+    font-size: .8em;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
