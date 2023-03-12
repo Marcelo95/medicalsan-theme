@@ -89,13 +89,14 @@ function metabox_for_produtos()
   $cmb_demo->add_field(
     array(
       'name' => __('Dúvidas frequentes', 'cmb2'),
-      'desc' => __('Link para página ou arquivo', 'cmb2'),
+      'desc' => __('', 'cmb2'),
       'id' => $prefix . 'link_duvida_frequentes',
       'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       ),
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
     )
@@ -103,13 +104,14 @@ function metabox_for_produtos()
   $cmb_demo->add_field(
     array(
       'name' => __('Ficha Técnica', 'cmb2'),
-      'desc' => __('Link para página ou arquivo', 'cmb2'),
+      'desc' => __('', 'cmb2'),
       'id' => $prefix . 'link_ficha_tecnica',
       'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       ),
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
     )
@@ -118,13 +120,14 @@ function metabox_for_produtos()
   $cmb_demo->add_field(
     array(
       'name' => __('Manual de instruções', 'cmb2'),
-      'desc' => __('Link para página ou arquivo', 'cmb2'),
+      'desc' => __('', 'cmb2'),
       'id' => $prefix . 'link_manual_de_instrucao',
       'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       ),
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
     )
@@ -133,13 +136,14 @@ function metabox_for_produtos()
   $cmb_demo->add_field(
     array(
       'name' => __('Assistência express', 'cmb2'),
-      'desc' => __('Link para página ou arquivo', 'cmb2'),
+      'desc' => __('', 'cmb2'),
       'id' => $prefix . 'link_assistencia_express',
       'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       ),
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
     )
@@ -148,13 +152,14 @@ function metabox_for_produtos()
   $cmb_demo->add_field(
     array(
       'name' => __('Guia Rápido', 'cmb2'),
-      'desc' => __('Link para página ou arquivo', 'cmb2'),
+      'desc' => __('', 'cmb2'),
       'id' => $prefix . 'link_guia_rapido',
       'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       ),
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
     )
@@ -163,13 +168,14 @@ function metabox_for_produtos()
   $cmb_demo->add_field(
     array(
       'name' => __('Vídeo de treinamento', 'cmb2'),
-      'desc' => __('Link para página ou arquivo', 'cmb2'),
+      'desc' => __('', 'cmb2'),
       'id' => $prefix . 'link_videos_de_treinamento',
       'type' => 'wysiwyg',
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       ),
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
     )
@@ -229,6 +235,7 @@ function metabox_for_produtos_2()
     'id' => $prefix . 'carroussel_content',
     'type' => 'wysiwyg',
     'options' => array(
+      'wpautop' => false,
       'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
     ),
     'attributes' => array(
