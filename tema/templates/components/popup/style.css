@@ -39,6 +39,14 @@
 }
 
 
+div#duvidas_frequentes p {
+    margin: 13px  15px;
+}
+
+div#duvidas_frequentes p:nth-child(2n+1) {
+    font-weight: bold;
+}
+
 .myPopup .wp-video .mejs-container {
 	width: 100% !important;
 	min-width: 100% !important;
