@@ -14,6 +14,8 @@
     line-height: 13px;
 }
 
+
+
 .myPopup .modal-title {
     color: #230077;
     text-transform: uppercase;
@@ -34,6 +36,18 @@
 
 .myPopup {
     z-index: 9999999;
+}
+
+div#manual_de_instrucoes .modal-body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#manual_de_instrucoes a {
+    min-width: 223px;
+    margin: 10px;
 }
 
 .myPopup iframe {
