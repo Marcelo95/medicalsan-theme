@@ -27,6 +27,28 @@
     align-items: center;
 }
 
+
+.myPopup .wp-video {
+    width: 100%;
+  min-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.myPopup .wp-video .mejs-container{
+  width: 100% !important;
+    min-width: 100% !important;
+  min-height: 400px;
+}
+
+.myPopup .wp-video video {
+  width: 100% !important;;
+  height: 100% !important;;
+}
 .myPopup .modal-title i {
     margin-right: 5px;
 }
