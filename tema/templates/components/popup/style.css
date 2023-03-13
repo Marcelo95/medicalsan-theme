@@ -39,10 +39,11 @@
 }
 
 
-.myPopup .wp-video .mejs-container{
-  width: 100% !important;
-    min-width: 100% !important;
-  min-height: 400px;
+.myPopup .wp-video .mejs-container {
+	width: 100% !important;
+	min-width: 100% !important;
+	min-height: 400px;
+	max-height: 400px !important;
 }
 
 .myPopup .wp-video video {
