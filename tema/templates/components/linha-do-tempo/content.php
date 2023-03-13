@@ -2,7 +2,10 @@
 <?php if( $args["first_run"] ): ?>
     <link rel="stylesheet" href="<?php _e(asset(sprintf("../templates/components/%s/style.css", basename(__DIR__)))); ?>">
 <?php endif; ?>
-<?php $linha_do_tempo = [
+<?php
+
+
+$linha_do_tempo = [
     [
         "ano" => 1994,
         "foto" => "1994.png",
@@ -90,13 +93,17 @@
 ]; ?>
 
 
-<section class="content-linha-do-tempo">
+<section class="content-linha-do-tempo <?php echo strpos(strtolower( wp_get_theme()->get("Name")), "san" ) ? "theme-medicalsan" : ""; ?>">
 
-    <div class="" style="padding-left: 20%;">
+    <div class="title-and-buttons" style="padding-left: 20%;">
 
 
         <h2>Nossa trajetória</h2>
 
+        <div class="buttons-linhas-do-tempo">
+            <button type="button" onclick="move('left')"> <i class="fa fa-arrow-left"></i> </button>
+            <button type="button" onclick="move('right')"> <i class="fa fa-arrow-right"></i> </button>
+        </div>
 
     </div>
 
@@ -203,6 +210,29 @@
             minhaDiv.addEventListener("touchend", function() {
                 isDragging = false;
             });
+
+            function move(direction) {
+                var andar = Math.floor((minhaDiv.scrollWidth - minhaDiv.clientWidth) * 0.2);
+                console.log(andar)
+                switch (direction) {
+                    case "left":
+                        minhaDiv.scrollLeft -= andar;
+                        break;                   
+                    case "right":
+                        minhaDiv.scrollLeft += andar;
+                        break;
+                
+                    default:
+                        break;
+                }
+
+
+                var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+                var porcentagem = ( minhaDiv.scrollLeft / larguraContainer) * 100;
+                
+                meuRange.value = Math.round(porcentagem);
+         
+            }
         }
     </script>
 

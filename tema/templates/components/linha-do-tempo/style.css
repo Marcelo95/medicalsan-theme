@@ -14,9 +14,18 @@
     position: relative;
 }
 
+
 .linha-item:nth-child(2n) .item_middle {
     border-top: 12px solid #230077;
     border-bottom: none;
+}
+
+section.content-linha-do-tempo.theme-medicalsan .linha-item:nth-child(2n) .item_middle {
+    border-color: #fff;
+}
+
+section.content-linha-do-tempo.theme-medicalsan .item_middle {
+    border-color: #fff;
 }
 
 .linha-item:first-child  .item_middle:before {
@@ -45,6 +54,14 @@
 }
 
 .linha-item {text-align: center;color: #230077;display: flex;flex-direction: column;}
+
+section.content-linha-do-tempo.theme-medicalsan .item_middle {
+    color: #fff;
+}
+
+section.content-linha-do-tempo.theme-medicalsan .item_bottom {
+    color: #fff;
+}
 
 .linha-item:last-child {
     padding-right: 25px;
@@ -86,9 +103,13 @@ section.content-linha-do-tempo {
     overflow: hidden;
 }
 
+section.content-linha-do-tempo.theme-medicalsan {
+    background: #00367E;
+    color: #fff;
+}
+
 section.content-linha-do-tempo h2 {
     font-weight: 400;
-    margin-bottom: 54px;
 }
 
 section.content-linha-do-tempo > .container {
@@ -132,6 +153,16 @@ section.content-linha-do-tempo > .container {
     z-index: 1;
 }
 
+.content-linha-do-tempo.theme-medicalsan .sombras-left-right:before {
+    background: #00367E;
+    box-shadow: 6px 0px 21px 7px #00367E;
+}
+
+.content-linha-do-tempo.theme-medicalsan .sombras-left-right:after {
+    box-shadow: -6px 0px 20px 10px #00367E;
+    background: #00367E;
+}
+
 .linha-scroll:active {
     cursor: grabbing;
 }
@@ -161,7 +192,125 @@ section.content-linha-do-tempo ::-webkit-scrollbar-thumb {
     padding: 20px;
     display: none;
 }
+.title-and-buttons {
+    display: flex;
+    margin-bottom: 33px;
+    align-items: center;
+}
 
+.buttons-linhas-do-tempo {margin-left: 20px;display: flex;}
+
+.buttons-linhas-do-tempo button i {
+    border: 0;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin-right: 0px;
+    background: #00367E;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content-linha-do-tempo.theme-medicalsan .buttons-linhas-do-tempo button i {
+    color: #00367E;
+    background: white;
+}
+
+.buttons-linhas-do-tempo button {border: none;background: none;}
+
+ @media screen and (-webkit-min-device-pixel-ratio: 0) {
+	 .content-linha-do-tempo input[type='range'] {
+		 overflow: hidden;
+		 width: 100%;
+		 -webkit-appearance: none;
+		 background-color: #230077;
+		 height: 20px;
+		 margin: 3px 4px;
+		 border-radius: 26px;
+	}
+
+section.content-linha-do-tempo.theme-medicalsan input[type='range'] {
+    background: whitesmoke;
+}
+	 .content-linha-do-tempo input[type='range']::-webkit-slider-runnable-track {
+		 height: 30px;
+		 -webkit-appearance: none;
+		 color: #fff;
+		 margin-top: -1px;
+	}
+
+
+ .content-linha-do-tempo input[type='range']::-webkit-slider-thumb {
+	 width: 30px;
+	 -webkit-appearance: none;
+	 height: 30px;
+	 background: white;
+	 box-shadow: -1086px 0 0 1080px white;
+	 border-radius: 50px;
+}
+
+	 section.content-linha-do-tempo.theme-medicalsan input[type='range']::-webkit-slider-thumb  {
+	background : #B6B6B6;
+		  box-shadow: -1086px 0 0 1080px #B6B6B6;
+}
+
+	 
+}
+ .content-linha-do-tempo input[type="range"]::-moz-range-progress {
+	 background-color: white;
+     height: 25px;
+     width:100%;
+     border-radius:23px;
+}
+
+section.content-linha-do-tempo.theme-medicalsan input[type="range"]::-moz-range-progress {
+		background : #B6B6B6;
+}
+
+ .content-linha-do-tempo input[type="range"]::-moz-range-thumb {
+  width: 50px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+     border: 0px;
+     border-radius: 0px;
+     border-top-right-radius:23px;
+     border-bottom-right-radius:23px;
+}
+
+section.content-linha-do-tempo.theme-medicalsan input[type="range"]::-moz-range-thumb {
+	background : #B6B6B6;
+}
+
+ .content-linha-do-tempo input[type="range"]::-moz-range-track {
+	 background-color: none;
+}
+ .content-linha-do-tempo input[type="range"]::-ms-fill-lower {
+	 background-color: none;
+}
+ .content-linha-do-tempo input[type="range"]::-ms-fill-upper {
+	 background-color: none;
+}
+ .content-linha-do-tempo .slidecontainer.text-center {
+	 max-width: 800px;
+	 margin: auto;
+	 background: #230077;
+	 display: flex;
+	 height: 26px;
+	 border-radius: 20px;
+	 width: 100%;
+	 overflow: hidden;
+}
+
+section.content-linha-do-tempo.theme-medicalsan .slidecontainer.text-center {
+    background: white;
+}
+ 
 
 @media (max-width:768px) {
 
@@ -174,8 +323,6 @@ section.content-linha-do-tempo ::-webkit-scrollbar-thumb {
         justify-content: center;
         padding-top: 20px;
         padding-bottom: 20px;
-        /* margin-top: -32px; */
-        /* margin-bottom: -50px; */
     }
 
 
@@ -197,7 +344,7 @@ section.content-linha-do-tempo ::-webkit-scrollbar-thumb {
         display: block;
     }
 
-    .item_bottom {
+    .item_bottom, .buttons-linhas-do-tempo, .content-linha-do-tempo .slidecontainer.text-center {
         display: none;
     }
 
@@ -207,6 +354,10 @@ section.content-linha-do-tempo ::-webkit-scrollbar-thumb {
         border-radius: 24px;
         border-color: #230077;
     }
+
+section.content-linha-do-tempo.theme-medicalsan .item_top img {
+    border-color: #fff;
+}
 
     .linha-item:nth-child(2n) .item_middle {
         border-left: 12px solid #230077;
@@ -239,7 +390,7 @@ section.content-linha-do-tempo ::-webkit-scrollbar-thumb {
 
     .item_top {
         position: relative;
-        left: -22px;
+        left: -24px;
         overflow: hidden;
         width: 50%;
     }
@@ -249,6 +400,10 @@ section.content-linha-do-tempo ::-webkit-scrollbar-thumb {
         height: auto;
         background: #230077;
     }
+
+section.content-linha-do-tempo.theme-medicalsan .item_top img {
+    background: #fff;
+}
 
     .linha-item:nth-child(2n) .item_top {
         left: -3px;
