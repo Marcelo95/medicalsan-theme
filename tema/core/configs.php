@@ -38,11 +38,17 @@ function asset($filename)
 
 function asset_image_background($filename, $no_image = false)
 {
-    if(!$filename && $no_image) $filename = "images/no-image.svg";
+    $more = "";
+    if(!$filename && $no_image) {
+        $more = "background-color: transparent !important;";
+        $filename = "images/no-image.svg";
+    };
     if(!$filename) return "";
+
     $filename = str_contains($filename, "http") ? $filename : asset($filename);
-    return sprintf(' style="background: url(%s) center no-repeat; background-size: cover;color:transparent;background-color: transparent !important;" ', $filename);
+    return sprintf(' style="background: url(%s) center no-repeat; background-size: cover;color:transparent; %s" ', $filename, $more);
 }
+
 
 function get_taxnomie($terms)
 {
