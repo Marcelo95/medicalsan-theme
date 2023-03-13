@@ -6,7 +6,7 @@
         <article id="post-<?php the_ID(); ?>" <?php post_class((1 == $current_post) ? "first-post" : ""); ?>>
 
             <!-- post thumbnail -->
-            <?php if (has_post_thumbnail() && 1 == $current_post) : // Check if thumbnail exists 
+            <?php if (has_post_thumbnail()) : // Check if thumbnail exists 
             ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="box-thumbnail">
                     <?php 
@@ -26,7 +26,7 @@
                 </h2>
 
 
-                <?php the_excerpt(); // Build your custom callback length in functions.php 
+                <?php //the_excerpt(); // Build your custom callback length in functions.php 
                 ?>
                 <a class="botao-5" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                     Leia mais
