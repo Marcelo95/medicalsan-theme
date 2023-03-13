@@ -4,7 +4,7 @@
 
 <?php endif; 
 
-$relative_path = home_url(str_replace($_SERVER['DOCUMENT_ROOT'], '', __DIR__));
+$relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '/'. str_replace( '%2F', '/', rawurlencode( get_template() ) ), "", __DIR__);
 
 
 $name_show = "";
