@@ -40,6 +40,11 @@ section.content-linha-do-tempo.theme-medicalsan .item_middle {
     border-bottom-left-radius: 14px;
 }
 
+section.content-linha-do-tempo.theme-medicalsan .linha-item:first-child .item_middle:before {
+    background: white;
+}
+
+
 .linha-item:last-child .item_middle:after {
     content: '';
     width: 15px;
@@ -51,6 +56,10 @@ section.content-linha-do-tempo.theme-medicalsan .item_middle {
     bottom: -12px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 14px;
+}
+
+section.content-linha-do-tempo.theme-medicalsan .linha-item:last-child .item_middle:after {
+    background: white;
 }
 
 .linha-item {text-align: center;color: #230077;display: flex;flex-direction: column;}
