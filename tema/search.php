@@ -1,3 +1,18 @@
+<?php
+
+$post_type = (get_query_var('post_type')) ? get_query_var('post_type') : false;
+
+if($post_type && $post_type == "post"): ?>
+
+
+
+<?php get_template_part( 'page-blog' ); ?>
+
+
+
+<?php  else: ?>
+
+
 <?php get_header(); ?>
 
 <section class="container archive">
@@ -18,3 +33,6 @@
 </section>
 
 <?php get_footer(); ?>
+
+
+<?php  endif; ?>

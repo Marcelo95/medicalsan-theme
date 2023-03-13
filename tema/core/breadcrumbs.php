@@ -70,6 +70,12 @@ function custom_breadcrumbs()
             echo $sep;
         }
 
+        if (is_search() && get_query_var('post_type')) {
+            echo '<li><a href="' . home_url("blog") . '">Blog</a></li>';
+            echo $sep;
+            echo sprintf("<li><span>%s</span></li>", "Pesquisa");
+        }
+
         if (is_single() || is_page()) {
             $page_parent_ID = wp_get_post_parent_id();
 
