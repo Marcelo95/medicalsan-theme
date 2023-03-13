@@ -184,16 +184,8 @@ if(count($itens)): ?>
 <?php endif; ?>
 
 
-<section class="only-text text-center js-scroll  fade-in-bottom">
-    <div class="container">
-        <p>
-            Todos os produtos têm selos de qualidade
-        </p>
-        <h2>ICBR INMETRO</h2>
-        <h2>ABNT</h2>
-        <h2>ANVISA</h2>
-    </div>
-</section>
+<?php do_action("SelosDeQualidadeComponent");  ?>
+
 
 <section class="mapa-home">
     <div class="container js-scroll  fade-in-bottom">

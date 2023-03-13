@@ -1,0 +1,70 @@
+
+.selos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.bt3 {
+    background: #0D2B78;
+    padding: 33px 24px;
+    text-align: center;
+    color: #ffff;
+    font-size: 25px;
+    border-radius: 31.4823px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: auto;
+}
+
+.bt3.botao-3.bt2-medicalsan {
+    background: black;
+}
+
+.bt3.botao-3.bt2-medicalsan:hover {
+    color: #31F1C5;
+}
+
+.bt3 span {
+    width: 100%;
+}
+
+.bt3:after {
+    font-size: xx-large;
+    top: 50%;
+    margin-top: -1px;
+    padding: 0;
+    height: 40px;
+    right: 9px;
+}
+
+.selos img {
+    margin: 23px;
+    height: auto;
+}
+
+.selos h2 {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    line-height: normal !important;
+}
+
+
+@media (max-width: 768px){
+.bt3 {
+  font-size: 16px;
+  padding: 20px 9px;
+}
+}
