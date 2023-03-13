@@ -107,6 +107,7 @@ table tr {
 table th,
 table td {
   padding: .625em;
+  vertical-align: baseline;
 }
 
 table th iframe, table td iframe {
