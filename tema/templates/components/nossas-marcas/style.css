@@ -1,0 +1,43 @@
+.lista-nossas-marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lista-nossas-marcas img {
+    margin-right: 10px;
+    max-width: 213px;
+}
+
+.lista-nossas-marcas div {
+    /* min-width: 255px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px;
+}
+
+.lista-nossas-marcas div a {
+    position: absolute;
+    margin-bottom: 13px;
+    text-decoration: none;
+    bottom: 0;
+    height: auto;
+    text-align: center;
+}
+
+.lista-nossas-marcas div a:hover {
+    color: #fff;
+}
+
+section#nossas-marcas h2 {
+    color: #1D2A7D;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section#nossas-marcas {
+    margin: 59px 0px;
+}
