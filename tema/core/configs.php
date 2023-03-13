@@ -38,9 +38,9 @@ function asset($filename)
 
 function asset_image_background($filename, $no_image = false)
 {
-    $more = "";
+    $more = "background-color: transparent !important;";
     if(!$filename && $no_image) {
-        $more = "background-color: transparent !important;";
+        $more = "";
         $filename = "images/no-image.svg";
     };
     if(!$filename) return "";
