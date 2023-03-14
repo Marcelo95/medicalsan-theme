@@ -181,6 +181,10 @@ header.header-style-1 {
     background: transparent;
 }
 
+.header-simple header.header-style-1 {
+    position: relative;
+}
+
 header .navbar-sticky {
     min-height: 112px;
 }
@@ -824,8 +828,16 @@ section.box-lancamento .wp-block-column {
     color: #fff;
 }
 
+.header-simple.single-produtos .desktop .menu-principal a {
+    color: #202020;
+}
+
 .single-produtos  header .desktop i.material-icons {
     color: #fff;
+}
+
+.header-simple.single-produtos header .desktop i.material-icons {
+    color: #202020;
 }
 
 section.box-text-estilo-1 {
@@ -4006,6 +4018,10 @@ section.box-lancamento.estilo-1 {
 
 .single-produtos #breadcrumbs a, .single-produtos #breadcrumbs li {
     color: #fff;
+}
+
+.header-simple.single-produtos #breadcrumbs a, .header-simple.single-produtos #breadcrumbs li {
+    color: black;
 }
 
 #breadcrumbs li span {

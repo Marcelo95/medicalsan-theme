@@ -1,5 +1,27 @@
-<?php get_header(); ?>
+<?php global $wpdb; ?>
 
+
+<?php if (realpath(__DIR__ . sprintf('/templates/produtos/%s', get_post_field('post_name', get_post()))) === false) : ?>
+
+    <?php  get_header("simple"); ?>
+<section class="container archive ">
+
+	<div class="mt-5 mb-5">
+		<?php //custom_breadcrumbs(); ?>
+		
+
+		<div class="loop">
+			<?php get_template_part('templates/content'); ?>
+		</div>
+
+	</div>
+
+</section>
+
+
+<?php else : ?>
+
+    <?php global $wpdb; get_header(); ?>
 <section class="page-content">
 
     <div class="banner-principal">
@@ -103,5 +125,8 @@
 </section>
 
 <?php do_action("LinksComponent"); ?>
+
+
+<?php endif; ?>
 
 <?php get_footer(); ?>
