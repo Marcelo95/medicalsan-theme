@@ -1189,7 +1189,7 @@ section.bloco-3-text.css-3-tekah  > .container {
     background: linear-gradient(137.46deg, #000000 27.13%, #808080 75.51%);
 }
 
-section.conceito > .container .row1 {
+section.conceito  .row1 {
     display: flex;
     position: relative;
     padding: 28px;
@@ -1204,14 +1204,14 @@ section.conceito > .container .row1 {
     border-radius: 23px;
 }
 
-section.conceito > .container .bg {background-position: bottom;border-radius: 23px;}
+section.conceito .bg {background-position: bottom;background-repeat: no-repeat;background-size: cover;}
 
 
 section.conceito {
     margin: 30px 0px;
 }
 
-section.conceito > .container .col {
+section.conceito  .col {
     position: relative;
     color: #fff;
     padding: 33px;
@@ -1223,12 +1223,12 @@ section.conceito > .container .col {
     min-width: 290px;
 }
 
-section.conceito > .container .col.col-dir {
+section.conceito  .col.col-dir {
     align-items: baseline;
     font-weight: 700;
 }
 
-section.conceito > .container .col p {
+section.conceito  .col p {
     color: #fff;
 }
 
@@ -1238,6 +1238,11 @@ section.descricao {
     text-align: center;
     color: #0D2B78;
     font-family: 'Gotham';
+}
+
+section.descricao .container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section.descricao img {
@@ -1286,6 +1291,14 @@ section.quais-tecnologias .container > .box-center > div {
     max-width: 519px;
     /* margin: auto; */
     padding: 30px;
+}
+
+@media(max-width:1000px){ /*responsive*/
+
+    section.quais-tecnologias .container > .box-center > div {
+    margin: auto;
+    max-width: 100%;
+}
 }
 
 section.quais-tecnologias .container p {
@@ -1630,6 +1643,44 @@ section.content-text-css-omer-premium p i {
     margin-top: 50px;
 }
 
+section.content-css-ultramed > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+section.content-css-ultramed > div > div > div {
+    width: 33.3%;
+    position: relative;
+    min-width: 242px;
+}
+
+section.content-css-ultramed > div > div > div > div {
+    padding: 21px;
+    min-width: 242px;
+}
+
+section.content-css-ultramed > div > div > div > div p {
+    margin: 6px 0;
+}
+
+section.content-css-ultramed > div > div > div:after {
+    content: '';
+    width: 1px;
+    height: 60px;
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -30px;
+}
+
+section.content-css-ultramed > div > div > div:last-child:after {
+    display: none;
+}
+
 section.aplicador-3-botoes {
     background: #ECECEC;
     position: relative;
@@ -1743,6 +1794,39 @@ section.content-text-css-omer-smart {
     text-align: center;
 }
 
+section.content-text-css-omer-smart > div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.content-text-css-omer-smart > div > div {
+    width: 50%;
+    position: relative;
+    min-width: 362px;
+}
+
+section.content-text-css-omer-smart > div > div > div {
+    padding: 20px;
+}
+
+section.content-text-css-omer-smart > div > div:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 60px;
+    background: black;
+    margin-top: -30px;
+}
+
+section.content-text-css-omer-smart > div > div:last-child:after {
+    display: none;
+}
+
 section.content-text-css-omer-smart p {
     color: #1B0D59;
 }
@@ -1819,6 +1903,12 @@ section.sem-limites-de-disparos p b {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    max-width: 1400px;
+}
+
+.init-img-custom {
+    display: flex;
+    flex-direction: revert;
 }
 
 .box-image-and-text > div {
@@ -1851,11 +1941,13 @@ section.sem-limites-de-disparos p b {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 41px;
 }
 
 .box-border-white h2 {
     color: #00E6EF;
     text-align: center;
+    font-size: 2rem;
 }
 
 .dois-box {
@@ -2301,6 +2393,51 @@ section.carroussel-text .slick-track {
 
 .single-produtos section.page-content .container {
     max-width: 988px;
+}
+
+section.content-css-ultramed {
+    margin-bottom: -9px;
+}
+
+.single-produtos section.page-content 
+.descricao .container > div {
+    max-width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.single-produtos section.page-content .descricao .container > div > div {
+    padding: 20px;
+}
+
+.single-produtos section.page-content .descricao .container > div:after {
+    background: black;
+    content: '';
+    height: 120px;
+    width:1px;
+    display:block;
+    position:absolute;
+    right:0;
+    top: 50%;
+    margin-top: -60px;
+}
+
+.single-produtos section.page-content .descricao .container > div:last-child:after {
+    display: none;
+}
+
+.single-produtos section.page-content .descricao .container > div h2 {
+    font-size: 1.6rem;
+}
+
+.single-produtos section.page-content .descricao .container > div h2.title {
+    font-size: 2.3rem;
+}
+
+.single-produtos section.page-content .descricao .container > div p {
+    font-size: 1rem;
 }
 
 .container.two-h2 {
@@ -2944,7 +3081,7 @@ div#bs-example-navbar-collapse-1 {
 }
 
 section.bloco-2-text {
-    margin-top: -145px;
+    margin-top: -10px;
     position: relative;
     z-index: 9999;
 }
@@ -3126,7 +3263,7 @@ section.bloco-3-text.css-3-ultraplace > .container > div > div img {
 section.bloco-3-text.css-3-tekah > .container > div > div img {
     position: relative;
     /* margin: 0; */
-    right: -42px;
+    right: -35%;
     width: auto;
 }
 
@@ -3146,7 +3283,8 @@ html .content-10-text .box-center p {
     font-size: 1.4rem;
 }
     .box-image-and-text img {
-    margin: 0;
+    /* margin: 0; */
+    left: -30px;
 }
 
     .box-image-and-text h2 {
@@ -3186,6 +3324,34 @@ main.main.main-categories h2 {
 }
 
     .boxes-img-text .boxes {margin: 0.5em 0;width: 100%;}
+    .single-produtos section.page-content .descricao .container > div:after {
+    display: none;
+}
+
+section.descricao .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-produtos section.page-content .descricao .container > div {
+    max-width: 100%;
+}
+    section.content-text-css-omer-smart > div > div:after {
+    display: none;
+}
+    section.content-css-ultramed > div > div > div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section.content-css-ultramed > div > div > div:after {
+    display: none;
+}
+
+
 }
 
 .nav-top-level-0 {
@@ -5052,5 +5218,7 @@ title-top-prod {
 section.transdutoress {
     padding-top: 16px;
 }
-    
+section.bloco-2-text {
+    margin: 0;
+}
 }
