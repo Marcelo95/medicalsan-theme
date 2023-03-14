@@ -20,7 +20,7 @@ if (count($entries) > 0 && $entries[0]) : ?>
                     if (isset($entry["_metabox_for_produtos_2_carroussel_content"]) && $entry["_metabox_for_produtos_2_carroussel_content"]) {
 
                         $thumb_youtube = getUrlThumbnailYoutube($entry["_metabox_for_produtos_2_carroussel_content"]);
-                        if($thumb_youtube) $link_thumb = $thumb_youtube;
+                        if($thumb_youtube) $link_thumb = wp_strip_all_tags($thumb_youtube);
 
 
                 ?>

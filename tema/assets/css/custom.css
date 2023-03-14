@@ -2280,6 +2280,18 @@ section.carroussel-text .slick-track {
     max-width: 988px;
 }
 
+.content-text-css-omer-premium .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-text-css-omer-premium .container > p {
+    width: 50%;
+    min-width: 200px;
+}
+
 html h1.title-blog {
     color: #fff;
     font-family: 'Gotham', sans-serif;
