@@ -86,6 +86,22 @@ function metabox_for_produtos()
     )
   );
 
+
+  $cmb_demo->add_field(
+    array(
+      'name' => __('Como funciona', 'cmb2'),
+      'desc' => __('Como funciona', 'cmb2'),
+      'id' => $prefix . 'link_videos_de_como_funciona',
+      'type' => 'wysiwyg',
+      'options' => array(
+        'wpautop' => false,
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
+      'attributes' => array(
+        'placeholder' => 'Digite aqui',
+      )
+    )
+  );
   $cmb_demo->add_field(
     array(
       'name' => __('Dúvidas frequentes', 'cmb2'),
