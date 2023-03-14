@@ -1,0 +1,121 @@
+svg path:hover {
+    fill: #fff;
+    cursor: pointer;
+}
+.lista-enderecos > div h2 {margin-bottom: 30px;font-size: 18px;}
+
+.estados-carregados > div {
+    display: none;
+}
+
+select#seletor {
+    color: #230077;
+    border: 1px solid #230077;
+    background: #fff;
+    text-align: center;
+    border-radius: 7px;
+    height: 35px;
+    display: block;
+    margin: 35px auto;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.init-mapa-estados {
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+    min-width: 480px;
+    padding-top: 45px;
+}
+
+.box-mapa-e-enderecos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.init-mapa-estados svg {
+    height: 542px !important;
+    width: 100%;
+}
+
+.lista-enderecos {
+    padding: 20px;
+    width: 40%;
+}
+
+.seletor-estados {
+    display: none;
+}
+
+section.mapa-de-estados {
+    background: #00367E;
+    color: #fff;
+    border-radius: 20px;
+    padding: 26px 0px;
+}
+
+section.archive.page-onde-estamos.theme-medstart section.mapa-de-estados {
+    background: #230077;
+    padding: 58px 22px;
+}
+
+section.mapa-de-estados .chamadas * {
+    color: #fff;
+    text-align: center;
+}
+
+section.mapa-de-estados .chamadas h1 {
+    font-weight: 700;
+}
+
+section.mapa-de-estados .chamadas h2 {font-weight: 200;font-size: 17px;margin-top: 40px;margin-bottom: 30px;}
+
+section.mapa-de-estados .chamadas h3 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+section.mapa-de-estados b {
+    color: #fff;
+}
+section.archive.page-onde-estamos {
+    border-top: 150px solid #00367E;
+}
+
+section.archive.page-onde-estamos.theme-medstart {
+    border: none;
+}
+
+.content-topo {
+    margin-top: -31px;
+    background: #00367E;
+}
+
+section.archive.page-onde-estamos.theme-medstart .content-topo {
+    margin: 0;
+    background: none;
+}
+
+section.archive.page-onde-estamos.theme-medstart {}
+
+
+@media(max-width:800px){
+    .lista-enderecos {
+    width: 100%;
+}
+    .init-mapa-estados {
+    display: none;
+}
+
+    .seletor-estados {
+    display: block;
+}
+section.archive.page-onde-estamos {
+    border-top: 27px solid #00367E;
+    padding-top: 0;
+}
+    
+}
+
