@@ -45,114 +45,36 @@
 <section class="aplicadores">
 
     <div class="container">
-        <img class="mb-5"
-            src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicadores.svg", get_post_field('post_name', get_post()))); ?>"
-            alt="">
+        <img class="mb-5" src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicadores.svg", get_post_field('post_name', get_post()))); ?>" alt="">
 
         <div class="row2">
+            <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/1-row.svg", get_post_field('post_name', get_post()))); ?>" alt="">
 
-            <div class="col-aplicador">
-                <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicador1.png", get_post_field('post_name', get_post()))); ?>"
-                    alt="">
-            </div>
-
-            <div class="col-aplicador">
-                <h2>Corporal</h2>
-                <p>
-                    Conta com área de 42 cm², operando no modo capacitivo, tem alta eficiência para regiões corporais
-
-                </p>
-
-            </div>
-
-
-        </div>
-        <div class="row2">
-            <div class="col-aplicador">
-                <h2>FACIAL</h2>
-                <p>
-                    Possui área de 20 cm²
-                    no modo resistivo e é indicado para a face ou regiões corporais menores
-                </p>
-
-            </div>
-
-            <div class="col-aplicador">
-                <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicador2.png", get_post_field('post_name', get_post()))); ?>"
-                    alt="">
-            </div>
-
-        </div>
-        <div class="row2">
-            <div class="col-aplicador">
-                <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicador3.png", get_post_field('post_name', get_post()))); ?>"
-                    alt="">
-            </div>
-            <div class="col-aplicador">
-                <h2 class="linha1">INTIMY</h2>
-                <p>
-                    Com ponteira autoclavável é indicado para realizar radiofrequência na região íntima
-
-                </p>
-                <h2 class="linha2">ELETROPORAÇÃO</h2>
-                <p>
-                    Indicado para permeação de princípios ativos, contém três ponteiras de tamanhos diferentes
-                </p>
-
-            </div>
-
-        </div>
-        <div class="row2">
-            <div class="col-aplicador">
-                <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicador4.png", get_post_field('post_name', get_post()))); ?>"
-                    alt="">
-            </div>
-            <div class="col-aplicador">
-                <h2 class="linha3 linha4"> TECAR
-                    CAPACITIVO
-                    E RESISTIVO</h2>
-                <p>
-
-                    Dois modelos para tratar de acordo com a área do corpo e ter contato mais próximo do paciente
-                </p>
-
-
-            </div>
-            <div class="col-aplicador">
-                <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicador5.png", get_post_field('post_name', get_post()))); ?>"
-                    alt="">
-            </div>
         </div>
 
         <div class="row2">
-            <div class="col-aplicador">
-                <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/aplicador6.png", get_post_field('post_name', get_post()))); ?>"
-                    alt="">
-            </div>
-            <div class="col-aplicador">
-                <h2> BIPOLAR</h2>
-                <p>
+            <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/2-row.svg", get_post_field('post_name', get_post()))); ?>" alt="">
 
-                    Tem duas polaridades para atingir de forma eficiente os contornos da face no tratamento de
-                    radiofrequência
-
-                </p>
-
-
-            </div>
         </div>
+
+        <div class="row2">
+            <img src="<?php echo asset(sprintf("../templates/produtos/%s/images/3-row.svg", get_post_field('post_name', get_post()))); ?>" alt="">
+
+        </div>
+
     </div>
 </section>
 
 
 <section class="barras-<?php echo 'css-' . get_post_field('post_name', get_post()); ?>">
     <div class="">
-        <img class="img-o-melhor imagem-fundo"
-            src="<?php echo asset(sprintf("../templates/produtos/%s/images/o-melhor.svg", get_post_field('post_name', get_post()))); ?>"
-            alt="">
+        <img class="img-o-melhor imagem-fundo" src="<?php echo asset(sprintf("../templates/produtos/%s/images/o-melhor.svg", get_post_field('post_name', get_post()))); ?>" alt="">
 
         <div class="content-text-desc">
-           <div class="container"> <h2> Faixas de onda </h2></div>
+            <div class="container two-h2">
+                <h2> Faixas de onda </h2>
+                <h2 ><b>500W</b> <span class="menor">potência</span> </h2>
+            </div>
         </div>
 
     </div>

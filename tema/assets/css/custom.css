@@ -1440,7 +1440,9 @@ section.quais-tecnologias .container > .box-center > div.col-bt-2 .bg-v1 {
 section.barras-css-ethernia-cold .content-text-desc h2 {
     color: black;
 }
-
+.barras-css-ethernia-cold .barras {
+    max-width: 1450px;
+}
 section.barras-css-ethernia-cold .lista.l1 {
     background: #B0B0B0;
 }
@@ -1461,6 +1463,7 @@ section.aplicadores {
 
 section.aplicadores img {
     max-width: 100%;
+    width: 100%;
 }
 
 .row2 {
@@ -1476,7 +1479,8 @@ section.aplicadores img {
 }
 
 .col-aplicador {
-    max-width: 325px;
+    /* max-width: 325px; */
+    max-width: 33.33%;
 }
 
 
@@ -1541,20 +1545,39 @@ html .row2 p {
 section.funcoes-e-indicacoes .container > div {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 50%;
+    min-width: 240px;
+}
+
+section.funcoes-e-indicacoes .container {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 section.funcoes-e-indicacoes .container > div > div {
-    width: 100%;
     display: flex;
-    max-width: 279px;
-    width: 100%;
+    width: 44%;
+    min-width: 210px;
+    height: auto;
+    padding-left: 18px;
+}
+
+
+@media(max-width:867px){ /*responsive*/
+    section.funcoes-e-indicacoes .container > div {
+    flex-direction: column;
+}
+
 }
 
 section.funcoes-e-indicacoes ul {
     padding: 0;
     list-style: none;
+    padding-left: 18px;
+    width: 100%;
 }
 
 section.funcoes-e-indicacoes ul li {
@@ -2278,6 +2301,22 @@ section.carroussel-text .slick-track {
 
 .single-produtos section.page-content .container {
     max-width: 988px;
+}
+
+.container.two-h2 {
+    display: flex;
+}
+
+.container.two-h2 h2 {
+    width: 50%;
+    max-width: none;
+    margin-bottom: 14px;
+    margin-top: 50px;
+}
+
+.container.two-h2 h2 .menor {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .init-videos.container iframe  {
