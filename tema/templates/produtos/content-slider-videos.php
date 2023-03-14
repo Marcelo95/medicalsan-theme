@@ -26,7 +26,7 @@ if (count($entries) > 0 && $entries[0]) : ?>
                 ?>
 
                         <div>
-                            <a href="" data-bs-target="#content_carroussel" data-bs-toggle="modal" data-bs-target="#content_carroussel" class="imagem-thumbnail" style="background-image:url(<?php _e($link_thumb); ?>);"></a>
+                            <a href="" data-bs-target="#content_carroussel" data-bs-toggle="modal"  class="imagem-thumbnail" style="background-image:url(<?php _e($link_thumb); ?>);"></a>
 
                         </div>
                 <?php

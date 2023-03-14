@@ -1,0 +1,215 @@
+.myPopup .modal-header {
+    border: none;
+}
+
+.myPopup .modal-header .btn {
+    background: none;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: 23px;
+    padding: 9px !important;
+    width: 35px !important;
+    height: 35px !important;
+    line-height: 13px;
+}
+
+
+
+.myPopup .modal-title {
+    color: #230077;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.myPopup .wp-video {
+    width: 100%;
+  min-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+div#duvidas_frequentes p {
+    margin: 13px  15px;
+}
+
+div#duvidas_frequentes p:nth-child(2n+1) {
+    font-weight: bold;
+}
+
+.myPopup .wp-video .mejs-container {
+	width: 100% !important;
+	min-width: 100% !important;
+	min-height: 400px;
+	max-height: 400px !important;
+}
+
+.myPopup .wp-video video {
+  width: 100% !important;;
+  height: 100% !important;;
+}
+.myPopup .modal-title i {
+    margin-right: 5px;
+}
+.myPopup .modal-content {
+    border-radius: 20px;
+}
+
+.myPopup {
+    z-index: 9999999;
+}
+
+div#link_video_1 iframe {
+    max-width: 100%;
+}
+
+div#manual_de_instrucoes .modal-body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#manual_de_instrucoes a {
+    min-width: 223px;
+    margin: 10px;
+}
+
+.myPopup iframe {
+    min-width: 100%;
+}
+
+.myPopup ul.slick-dots {
+    border: 0;
+    margin-top: 10px;
+    position: relative;
+}
+
+div#eficacia {
+    text-align: center;
+}
+
+div#eficacia table {
+    background: #0085FF;
+    border-radius: 20px;
+    color: #fff;
+    max-width: 90%;
+    margin: auto;
+    font-weight: 600;
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+}
+
+div#eficacia .description {
+    margin: 25px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+div#eficacia  h2 {
+    margin-bottom: 36px;
+}
+
+div#eficacia table h3 {
+    text-transform: uppercase;
+    margin: 24px 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+div#eficacia table img {
+    margin-bottom: 26px;
+}
+
+div#eficacia table img {
+    max-width: 100%;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  height: auto !important;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  vertical-align: baseline;
+}
+
+table th iframe, table td iframe {
+    max-width: 100%;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    display: block;
+    font-size: .8em;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
