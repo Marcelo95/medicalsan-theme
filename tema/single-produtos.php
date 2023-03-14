@@ -81,27 +81,7 @@
     </div>
 
     <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-hakon", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-ethernia-cold", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-omer-premium", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-ultramed", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-omer-smart", get_post_field('post_name', get_post()))); ?>
+        <?php get_template_part(sprintf("templates/produtos/%s/content-%s", get_post_field('post_name', get_post()),get_post_field('post_name', get_post()))); ?>
 
     </div>
 

@@ -2372,6 +2372,26 @@ section.carroussel-text .slick-track {
     line-height: 54px;
 }
 
+
+section.ultraplace-list-vantagens .list-vantagens-0 > div {
+    color: #588BA5;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+section.ultraplace-list-vantagens .list-vantagens-0 > div h2 {
+    font-size: 1.6rem;
+}
+
+section.ultraplace-list-vantagens .list-vantagens-0 > div.black {
+    color: black;
+}
+
+section.ultraplace-list-vantagens .list-vantagens-0 > div .maior {
+    font-size: 37px;
+    font-weight: 700;
+}
+
 .list-vantagens-0 > div.mapabr {
     display: flex;
     background: url("../../assets/images/brasil-cinza.png") center no-repeat;
