@@ -100,8 +100,14 @@ section.archive.page-onde-estamos.theme-medstart .content-topo {
     background: none;
 }
 
-section.archive.page-onde-estamos.theme-medstart {}
 
+.page-onde-estamos a.navbar-brand.d-none.d-sm-block.flex-shrink-0.logo-white {
+    display: block !important;
+}
+
+.page-onde-estamos a.navbar-brand.d-sm-none.flex-shrink-0.me-2.logo-black {
+    display: none !important;
+}
 
 @media(max-width:800px){
     .lista-enderecos {
@@ -115,7 +121,7 @@ section.archive.page-onde-estamos.theme-medstart {}
     display: block;
 }
 section.archive.page-onde-estamos {
-    border-top: 27px solid #00367E;
+    border-top: 142px solid #00367E;
     padding-top: 0;
 }
     

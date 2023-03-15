@@ -187,6 +187,12 @@ header.header-style-1 {
     z-index: 999999;
 }
 
+.page-home header.header-style-1 {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+
 .single-produtos header.header-style-1 {
     position: absolute;
     width: 100%;
@@ -194,6 +200,10 @@ header.header-style-1 {
     top: 0;
     background: transparent;
 }
+
+.page-onde-estamos.single-produtos header.header-style-1 {
+}
+
 
 .header-simple header.header-style-1 {
     position: relative;
@@ -221,7 +231,7 @@ img.rectangle {
 }
 
 .nav-top {
-    /* padding: 29px 0px; */
+    padding: 29px 0px;
     /* z-index: 8; */
 }
 
@@ -2779,7 +2789,7 @@ section.box-o-melhor-handplace h2 {
 }
 
 header button.navbar-toggler.toggler-mobile {
-    color: #230077;
+    color: #fff;
     position: relative;
     width: 2.875rem;
     height: 2.875rem;
@@ -2787,10 +2797,44 @@ header button.navbar-toggler.toggler-mobile {
     border-radius: 50%;
     line-height: 2rem;
     text-align: center;
-    background: #fff;
+    background: black;
     margin-left: 12px;
     font-size: 24px;
+    position: relative;
     border: 1px solid #000;
+}
+
+header button.navbar-toggler.open.toggler-mobile:after {
+    width: 26px;
+    height: 12px;
+    background: transparent;
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 16px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.page-onde-estamos 
+ header button.navbar-toggler.open.toggler-mobile:after {
+    border-color: black;
+}
+
+.page-home header button.navbar-toggler.open.toggler-mobile:after {
+    border-color: white;
+}
+
+header button.navbar-toggler.open.toggler-mobile {
+    color: transparent;
+}
+
+.page-onde-estamos header button.navbar-toggler.open.toggler-mobile {
+    background: #fff;
+}
+
+.page-home header button.navbar-toggler.open.toggler-mobile {
+    background: black;
 }
 
 #navbarCollapse header button.navbar-toggler.toggler-mobile {
@@ -2898,6 +2942,11 @@ header input.form-control.rounded-end.pe-5 {
 .single-produtos header.header-style-1 {
     background: #fff;
     position: relative;
+}
+
+.page-onde-estamos.single-produtos header.header-style-1 {
+    position: absolute;
+    background: transparent;
 }
 html section.page-blog {
     border-top: 37px solid black;
@@ -4166,7 +4215,7 @@ section.marcas {
     margin-bottom: 100px;
 }
 
-input.form-control.rounded-start {border-color: #000000;border-radius: 39px !important;color: #0085FF;z-index: 0 !important;font-weight: 300;}
+input.form-control.rounded-start {border-color: #000000;border-radius: 39px !important;color: #0085FF;z-index: 0 !important;font-weight: 500;}
 
 form#collapseFormSearch input.form-control.rounded-start {
     padding-left: 45px;
@@ -4383,6 +4432,8 @@ section.box-lancamento.estilo-1 {
     margin-top: 49px;
     color: #fff;
 }
+
+.page-onde-estamos.single-produtos ul#breadcrumbs {margin: 0;padding-top: 30px;}
 
 .single-produtos #breadcrumbs a, .single-produtos #breadcrumbs li {
     color: #fff;
@@ -5087,6 +5138,18 @@ header .navbar-sticky {min-height: 85px;}
 .menu-principal {
     text-align: right;
     padding-right: 14px;
+}
+
+.is_admin_bar_showing.page-onde-estamos.single-produtos header.header-style-1 {
+    margin-top: 30px;
+}
+
+
+.page-home header.header-style-1 {
+    background: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .nav-top {
     padding: 8px 0px;

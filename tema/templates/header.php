@@ -4,17 +4,22 @@
 
         <div class="navbar navbar-expand-lg nav-top">
             <div class="container">
-                <a class="navbar-brand d-none d-sm-block flex-shrink-0" href="<?php echo home_url(); ?>">
+               
 
                     <?php if (get_post_type() == "produtos" && is_single()) : ?>
-                        <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
+                        <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-white" href="<?php echo home_url(); ?>">
+                            <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
+                        </a>
                     <?php else : ?>
+                        <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-black" href="<?php echo home_url(); ?>">
                         <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
+                        </a>
+                      
                     <?php endif; ?>
 
 
-                </a>
-                <a class="navbar-brand d-sm-none flex-shrink-0 me-2" href="<?php echo home_url(); ?>">
+                
+                <a class="navbar-brand d-sm-none flex-shrink-0 me-2 logo-black" href="<?php echo home_url(); ?>">
                     <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
                 </a>
 
@@ -44,7 +49,7 @@
 
                 <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
 
-                    <button class="navbar-toggler toggler-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <button class="navbar-toggler toggler-mobile open" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <i class="material-icons" style="font-size: 36px;margin-left: -7px;">menu</i>
 
                     </button>
