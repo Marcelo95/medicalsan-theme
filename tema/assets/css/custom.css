@@ -4787,6 +4787,7 @@ section.categorias {
     width: 100%;
     box-shadow: none;
     max-height: 240px;
+    background-position: center center !important;
     margin-bottom: 3px;
 }
 
