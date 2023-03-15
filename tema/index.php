@@ -151,11 +151,11 @@ if(count($itens)): ?>
 
 <section class="products box-blog js-scroll  fade-in-bottom">
     <div class="container">
-        <h2>BLOG</h2>
-        <div class="slider-slick">
-            <div class="slider-3">
+        <h2 class="desktop">BLOG</h2>
+        <div class="slider-slick--disable">
+            <div class="slider-3--disable">
 
-                <?php $itens = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'limit' => 10));
+                <?php $itens = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3));
                 $itens = $itens->posts;
                 // $itens = array_merge([], $itens, $itens, $itens, $itens, $itens, $itens, $itens, $itens, $itens);
 
@@ -170,6 +170,7 @@ if(count($itens)): ?>
                     echo sprintf('
                             <a %s  class="box-item-prod ">
                                 <div class="area">
+                                    <h2 class="mobile">BLOG</h2>
                                     <div class="item-photo " %s ></div>
                                     <div class="all-details">
                                     <h2 class="details_2 font-2">%s <i class="material-icons">keyboard_arrow_right</i></h2>
@@ -184,11 +185,7 @@ if(count($itens)): ?>
 
 
             </div>
-            <div class="setas slider-3-setas noselect">
-                <i class="fa fa-arrow-left  seta-esquerda"></i>
-                <i class="fa fa-arrow-right seta-direita"></i>
 
-            </div>
 
         </div>
 
