@@ -57,6 +57,7 @@
     <div class="container">
 
         <div class="col white">
+            <div class="col-esq">
             <div class="box-text js-scroll fade-in-bottom">
                 <h4>LANÇAMENTO</h4>
                 <h2>Ultramed</h2>
@@ -68,8 +69,10 @@
             <div class=" box-image js-scroll fade-in-bottom">
                 <img src="<?php echo asset("images/produtos/ultramed/1.svg"); ?>" alt="">
             </div>
+            </div>
         </div>
         <div class="col black">
+            <div class="col-dir">
             <div class="box-text js-scroll fade-in-bottom">
                 <h4>LANÇAMENTO</h4>
                 <h2>Criodermis</h2>
@@ -82,6 +85,7 @@
             </div>
             <div class=" box-image js-scroll fade-in-bottom">
                 <img src="<?php echo asset("images/produtos/criodermis/1.svg"); ?>" alt="">
+            </div>
             </div>
         </div>
     </div>

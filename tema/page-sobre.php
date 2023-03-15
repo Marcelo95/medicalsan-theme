@@ -16,7 +16,7 @@
 
 <?php do_action("LinhaDoTempoComponent"); ?>
 
-<?php do_action("NossasMarcasComponent"); ?>
+<?php //do_action("NossasMarcasComponent"); ?>
 
 
 <?php get_footer(); ?>

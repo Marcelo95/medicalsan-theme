@@ -4282,6 +4282,11 @@ section.box-lancamento {
 
 section.box-lancamento.estilo-3 .container {
     padding: 0;
+    max-width: none;
+}
+
+section.box-lancamento.estilo-3 .container > div > div {
+    max-width: 580px;
 }
 
 html section.box-lancamento.estilo-3 .col.white h5 {
@@ -4295,10 +4300,13 @@ section.box-lancamento.estilo-3:before {
 section.box-lancamento.estilo-3 .black {
     background: black;
     color: #fff;
+    display: flex;
 }
 
 section.box-lancamento.estilo-3 .white {
     background: #fff;
+    display: flex;
+    justify-content: end;
 }
 
 section.box-lancamento.estilo-2 {
@@ -4619,6 +4627,10 @@ section.content-10-text h2 {
 
   section.box-lancamento> div {
     flex-direction: column;
+}
+
+section.box-lancamento.estilo-3 .container > div {
+    justify-content: center;
 }
 
       section.box-lancamento.estilo-1> div, section.box-lancamento.estilo-1> div, section.box-lancamento.estilo-1> div .wp-block-columns {
