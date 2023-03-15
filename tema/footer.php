@@ -30,7 +30,7 @@
             <div id="widget_2_3_footer" class="primary-sidebar widget-area" role="complementary">
 
                 <h2><a href="<?php echo home_url("/sobre"); ?>"><?php echo _("Sobre"); ?></a></h2>
-                <h2><a href="<?php echo home_url("/onde-estamos"); ?>"><?php echo _("Onde Estamos"); ?></a></h2>
+                <h2><a href="<?php echo home_url("/onde-estamos"); ?>"><?php echo _("Assistência Técnica"); ?></a></h2>
                 <h2><a href="<?php echo home_url("/pos-venda"); ?>"><?php echo _("Pós-venda"); ?></a></h2>
                 <h2><a href="<?php echo home_url("/blog"); ?>"><?php echo _("Blog"); ?></a></h2>
 
