@@ -240,6 +240,10 @@ img.rectangle {
     color: #fff;
 }
 
+.page-blog a.navbar-brand.d-none.d-sm-block.flex-shrink-0.logo-white {
+    display: block !important;
+}
+
 
 .nav-bottom {
     /* background: #F8F8F8; */
