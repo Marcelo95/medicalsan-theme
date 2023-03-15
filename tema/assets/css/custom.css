@@ -113,7 +113,7 @@ body.page-sobre {
     background: #fff;
 }
 
-.page-home div#collapseFormSearch {
+.page-home div#collapseFormSearch , .page-sobre div#collapseFormSearch{
     background: transparent;
 }
 
@@ -196,6 +196,11 @@ header.header-style-1 {
     width: 100%;
     background: transparent;
 }
+
+.page-sobre header.header-style-1 {
+    background: transparent;
+}
+
 
 .single-produtos header.header-style-1 {
     position: absolute;
@@ -2034,6 +2039,7 @@ section.sem-limites-de-disparos p b {
 .links h2 {
     color: #0D2B78;
     text-align: center;
+    font-size: 33px;
 }
 
 .list-links > div {
@@ -2866,6 +2872,17 @@ button.style-hidden-button {
     border: none;
 }
 
+header button.style-hidden-button[type=submit] {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    width: 27px;
+}
+
+header button.style-hidden-button[type=submit] i {
+    margin: 0 !important;
+}
+
 
 a.box-user-logged {
     text-decoration:none;
@@ -3297,6 +3314,9 @@ button.slick-arrow:before {
     width: auto;
 }
 
+.links h2 {
+    font-size: 20px;
+}
   section.box-text-estilo-1 {
     font-size: 1.2rem;
   }

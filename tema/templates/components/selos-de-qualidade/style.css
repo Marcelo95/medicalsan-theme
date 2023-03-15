@@ -26,6 +26,7 @@
 
 .bt3.botao-3.bt2-medicalsan {
     background: black;
+    border-radius: 20px;
 }
 
 .bt3.botao-3.bt2-medicalsan:hover {
