@@ -4,21 +4,21 @@
 
         <div class="navbar navbar-expand-lg nav-top">
             <div class="container">
-               
 
-                    <?php if (get_post_type() == "produtos" && is_single()) : ?>
-                        <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-white" href="<?php echo home_url(); ?>">
-                            <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
-                        </a>
-                    <?php else : ?>
-                        <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-black" href="<?php echo home_url(); ?>">
+
+                <?php if (get_post_type() == "produtos" && is_single()) : ?>
+                    <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-white" href="<?php echo home_url(); ?>">
+                        <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
+                    </a>
+                <?php else : ?>
+                    <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-black" href="<?php echo home_url(); ?>">
                         <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
-                        </a>
-                      
-                    <?php endif; ?>
+                    </a>
+
+                <?php endif; ?>
 
 
-                
+
                 <a class="navbar-brand d-sm-none flex-shrink-0 me-2 logo-black" href="<?php echo home_url(); ?>">
                     <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
                 </a>
@@ -88,6 +88,13 @@
     <?php if (get_post_type() == "produtos" && is_single()) : ?>
         <div class="container desktop">
             <?php custom_breadcrumbs(); ?>
+        </div>
+        <div class="container mobile">
+            <ul id="breadcrumbs" class="breadcrumb">
+                <li><a href="<?php _e(get_category_link(get_cat_ID( 'tecnologias' ))); ?>">Tecnologias</a></li>
+                <li class="separator"> &gt; </li>
+                <li><span><?php the_title(); ?></span></li>
+            </ul>
         </div>
     <?php endif; ?>
 

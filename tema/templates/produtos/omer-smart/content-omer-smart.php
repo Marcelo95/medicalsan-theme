@@ -20,7 +20,7 @@
 
                 <p>
                     O que existe de mais
-                    tecnológico no mercado 
+                    tecnológico no mercado
                 </p>
             </div>
         </div>

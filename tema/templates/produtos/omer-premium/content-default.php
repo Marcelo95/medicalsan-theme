@@ -1,5 +1,5 @@
 <p>
-    <b>Ômer Premium é um laser alto nível que oferece mais precisão e eficácia na despigmentação. </b>
+    <b>Ômer Premium é um laser alto nível que oferece mais precisão e eficácia na despigmentação.</b>
 </p>
 
 <p>

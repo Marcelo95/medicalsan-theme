@@ -16,6 +16,10 @@
     font-weight: 500;
 }
 
+.banner-content-single-produtos {
+    overflow: hidden;
+}
+
 b, strong {
     font-weight: 600;
 }
@@ -242,6 +246,13 @@ img.rectangle {
 
 .nav-top a{
     color: #fff;
+}
+.single-produtos a.navbar-brand.d-none.d-sm-block.flex-shrink-0.logo-white {
+display:block !important
+}
+
+.single-produtos a.navbar-brand.d-sm-none.flex-shrink-0.me-2.logo-black {
+    display: none;
 }
 
 
@@ -2823,7 +2834,7 @@ header button.navbar-toggler.open.toggler-mobile:after {
 }
 
 .page-onde-estamos 
- header button.navbar-toggler.open.toggler-mobile:after {
+ header button.navbar-toggler.open.toggler-mobile:after, .single-produtos header button.navbar-toggler.open.toggler-mobile:after {
     border-color: black;
 }
 
@@ -2835,7 +2846,7 @@ header button.navbar-toggler.open.toggler-mobile {
     color: transparent;
 }
 
-.page-onde-estamos header button.navbar-toggler.open.toggler-mobile {
+.page-onde-estamos header button.navbar-toggler.open.toggler-mobile, .single-produtos header button.navbar-toggler.open.toggler-mobile {
     background: #fff;
 }
 
@@ -2957,8 +2968,8 @@ header input.form-control.rounded-end.pe-5 {
 
 @media (max-width: 576px){
 .single-produtos header.header-style-1 {
-    background: #fff;
-    position: relative;
+    /* background: #fff; */
+    /* position: relative; */
 }
 
 .page-onde-estamos.single-produtos header.header-style-1 {
@@ -4463,8 +4474,20 @@ section.box-lancamento.estilo-1 {
 }
 
 .single-produtos ul#breadcrumbs {
-    margin-top: 49px;
+    /* margin-top: 49px; */
     color: #fff;
+}
+
+.single-produtos .container.mobile ul#breadcrumbs {
+    padding-left: 14px;
+}
+
+.page-blog.single-produtos ul#breadcrumbs {
+    margin-top: 77px;
+}
+
+.search.single-produtos ul#breadcrumbs {
+    margin-top: 86px;
 }
 
 .page-onde-estamos.single-produtos ul#breadcrumbs {

@@ -9,7 +9,7 @@
                 <ul>
                     <li> Celulite</li>
                     <li>Dor crônica</li>
-                    <li>Flacidez </li>
+                    <li>Flacidez</li>
                     <li>Gordura localizada</li>
 
                 </ul>

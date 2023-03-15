@@ -21,7 +21,7 @@
                         </div>
                         <div class="col-bt-2">
                                 <h2 class="title2">
-                                        Quais são as frequências e a potência? 
+                                        Quais são as frequências e a potência?
                                 </h2>
                                 <h3>
                                         Ultrassom e Ultracavitação

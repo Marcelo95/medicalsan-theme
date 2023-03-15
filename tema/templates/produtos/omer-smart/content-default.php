@@ -5,5 +5,5 @@
 </p>
 <p>
 
-Equipamento portátil, ideal para locação e deslocamentos em atendimentos para remoção de tatuagem, micropigmentação e para rejuvenescimento da pele. 
+Equipamento portátil, ideal para locação e deslocamentos em atendimentos para remoção de tatuagem, micropigmentação e para rejuvenescimento da pele.
 </p>
