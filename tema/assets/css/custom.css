@@ -4754,6 +4754,13 @@ section.categorias {
     text-transform: none;
 }
 
+.slider-3--disable .cats {
+    margin-top: 11px;
+    color: #CECECE;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .slider-3--disable > a:nth-child(3) {
     display: none !important;
 }

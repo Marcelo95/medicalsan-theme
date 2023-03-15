@@ -173,6 +173,7 @@ if(count($itens)): ?>
                                     <h2 class="mobile">BLOG</h2>
                                     <div class="item-photo " %s ></div>
                                     <div class="all-details">
+                                    <label class="cats">'. implode(" ", wp_get_post_categories( $item->ID, array( 'fields' => 'names', 'number' => 1  ) )) .'</label>
                                     <h2 class="details_2 font-2">%s <i class="material-icons">keyboard_arrow_right</i></h2>
                                     <span class="details_1"> %s </span>     
                                     </div>
