@@ -2269,7 +2269,7 @@ main.main.main-categories h2 {
     width: 100%;
     margin-top: 24px;
     max-width: 399px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 
 .lista-categories-prods > div > div.logo-and-text {
@@ -2553,6 +2553,7 @@ html h1.title-blog {
 @media(max-width:873px){ /*responsive*/
     .lista-categories-prods.duas-grades > div {
     height: auto;
+    width: 100%;
 }
 
     .lista-categories-prods.duas-grades > div > div {
@@ -3482,7 +3483,7 @@ footer a{
 }
 
 footer a:hover{
-    color: #3c6;
+    color: #0085FF;
     text-decoration:underline;
 }
 
@@ -3548,7 +3549,7 @@ footer h2 {
     font-size: 20px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     margin-top: 25px;
 }
 
@@ -3558,7 +3559,7 @@ footer ul {
 }
 
 footer ul li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 footer h6 {
@@ -4371,6 +4372,11 @@ section.box-lancamento.estilo-1 {
 
 #breadcrumbs li span {
     font-weight: 600;
+    color: black;
+}
+
+header #breadcrumbs li span {
+    color: #fff;
 }
 
 .form-footer form.wpcf7-form {

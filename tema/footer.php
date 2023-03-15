@@ -47,7 +47,7 @@
                     <?php dynamic_sidebar('widget_3_3_footer'); ?>
                 <?php endif; ?>
 
-                <div class="apps">
+                <!-- <div class="apps">
                     <h2>Baixe o app</h2>
 
                     <div class="d-flex">
@@ -59,7 +59,7 @@
                     </a>
            
                     </div>
-                </div>
+                </div> -->
 
                 <h2>
                     <a href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
