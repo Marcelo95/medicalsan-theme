@@ -53,8 +53,7 @@
             <div class="box-text js-scroll fade-in-bottom">
                 <h4>LANÇAMENTO</h4>
                 <h2>Ômer Smart</h2>
-                <h5>O laser de despigmentação
-                    mais leve do mercado</h5>
+                <h5>Laser de despigmentação com tecnologia de nanossegundos</h5>
 
                 <a href="<?php echo home_url("produtos/omer-smart");?>" class="botao-5"> Conheça </a>
 
