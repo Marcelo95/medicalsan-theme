@@ -218,7 +218,7 @@ $('.init-slider-video').slick({
 });
 
 $('.slider-icons-categories').slick({
-    slidesToShow: Math.min(6, $('.slider-icons-categories > div').length),
+    slidesToShow: Math.min(10, $('.slider-icons-categories > div').length),
     slidesToScroll: 1,
     centerMode: false,
     infinite: false,
@@ -227,6 +227,14 @@ $('.slider-icons-categories').slick({
     arrows: true,
     fade: false,
     responsive: [
+        {
+            breakpoint: 1550,
+            settings: {
+                slidesToShow: Math.min(9, $('.slider-icons-categories > div').length),
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
         {
             breakpoint: 1280,
             settings: {

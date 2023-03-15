@@ -54,10 +54,12 @@ $the_query = new WP_Query($args);
 
 			
 
-		</div>
+</div>
 
 
-<main class="main main-categories">
+
+
+		<main class="main main-categories">
 	<!-- section -->
 	<section class="container">
 
