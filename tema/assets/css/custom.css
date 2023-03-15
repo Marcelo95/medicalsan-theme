@@ -3480,6 +3480,7 @@ footer {
 footer a{
     color: #fff;
     text-decoration:none;
+    font-weight: 500;
 }
 
 footer a:hover{
@@ -3546,11 +3547,15 @@ div#widget_3_3_footer {
 }
 
 footer h2 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     color: #FFFFFF;
     margin-bottom: 6px;
     margin-top: 25px;
+}
+
+footer h2 a {
+    font-weight: 600;
 }
 
 footer ul {
