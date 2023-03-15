@@ -1,8 +1,7 @@
-
 <div class="link-topo">
     <a href="#" class="topo font-2">
-    <i class="material-icons" style="font-size:36px">keyboard_arrow_up</i>
-    Topo
+        <i class="material-icons" style="font-size:36px">keyboard_arrow_up</i>
+        Topo
     </a>
 </div>
 
@@ -62,10 +61,11 @@
                 </div> -->
 
                 <h2>
-                    <a href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
-                        386 Business Park <br>
-                        Rodovia BR-386, km 357. Estrela - RS
+                    <a class="point-marker" href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-map-marker	"></i> <span>386 Business Park <br>
+                            Rodovia BR-386, km 357. Estrela - RS</span>
                     </a>
+
 
 
                 </h2>

@@ -3558,6 +3558,22 @@ footer h2 a {
     font-weight: 600;
 }
 
+a.point-marker {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+a.point-marker:hover {
+    text-decoration: none;
+}
+
+a.point-marker i {
+    font-size: 37px;
+    margin-right: 14px;
+    text-decoration: none;
+}
+
 footer ul {
     list-style: none;
     padding: 0;
