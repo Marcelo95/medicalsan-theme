@@ -227,8 +227,6 @@ img.rectangle {
 
 .nav-top a{
     color: #fff;
-    margin-left: auto;
-    margin-right: auto !important;
 }
 
 
@@ -4382,7 +4380,7 @@ section.box-lancamento.estilo-1 {
 }
 
 .single-produtos ul#breadcrumbs {
-    margin-top: 29px;
+    margin-top: 49px;
     color: #fff;
 }
 
@@ -5136,7 +5134,12 @@ span.details_1 {
     width: 35%;
     margin-bottom: -1px;
 }
-  
+
+    .nav-top a {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto !important;
+}
 }
 
 @media (max-width: 446px){
