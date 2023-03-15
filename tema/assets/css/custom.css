@@ -4372,7 +4372,7 @@ section.box-lancamento.estilo-1 {
 
 #breadcrumbs li span {
     font-weight: 600;
-    color: black;
+    /* color: black; */
 }
 
 header #breadcrumbs li span {
