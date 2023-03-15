@@ -114,8 +114,16 @@ body.page-sobre {
     background: #fff;
 }
 
+.page-home div#collapseFormSearch {
+    background: transparent;
+}
+
 .single-produtos #collapseFormSearch {
     background: transparent;
+}
+
+.page-blog.single-produtos #collapseFormSearch {
+    background: black;
 }
 
 #collapseFormSearch form input {
