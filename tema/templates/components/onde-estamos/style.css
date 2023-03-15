@@ -6,6 +6,7 @@ svg path:hover {
 
 .estados-carregados > div {
     display: none;
+    font-weight: 500;
 }
 
 select#seletor {
@@ -79,6 +80,7 @@ section.mapa-de-estados .chamadas h3 {
 
 section.mapa-de-estados b {
     color: #fff;
+    font-weight: 800;
 }
 section.archive.page-onde-estamos {
     border-top: 150px solid #00367E;

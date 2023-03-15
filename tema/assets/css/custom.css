@@ -12,7 +12,16 @@
 @import url("../Gotham/Gotham-XLight/style.css");
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 500;
 }
 
 .page-blog .loop {
@@ -42,7 +51,7 @@ section.products > .container > h2 {
 }
 
 .font-1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Gotham', sans-serif;
     font-weight: 900;
 }
 .font-2 {
@@ -59,6 +68,11 @@ section.page-blog {
 .container-800 {
     max-width: 800px;
 }
+
+body.page-sobre {
+    background: url("../../assets/images/bg-page-sobre.png") top no-repeat;
+}
+
 
 .page-blog.archive img {
     max-width: 100%;
@@ -755,6 +769,7 @@ section.box-lancamento .wp-block-column {
     /* color: black; */
     text-decoration: none;
     margin-right: 15px;
+    font-weight: 600;
 }
 
 .archive article h2 a {
@@ -890,7 +905,7 @@ section.texto-colorido-1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-weight: 800;
+    font-weight: 300;
     font-size: 3.5rem;
     line-height: 3.7rem;
     margin-top: 40px;
@@ -898,6 +913,10 @@ section.texto-colorido-1 {
     padding: 0 5rem;
     padding-bottom: 11px;
     font-family: 'Gotham', sans-serif;
+}
+
+section.texto-colorido-1 p {
+    font-weight: 400;
 }
 
 section.texto-colorido-1 p {
@@ -2993,7 +3012,7 @@ div#header_menu_all_departments_top a:hover {
 .menu-principal a {
     color: #202020;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 a.dropdown-item {
@@ -3703,7 +3722,7 @@ div[aria-label="Slide"] {
     text-decoration: none;
     width: 255px;
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     height: 53px;
     border-radius: 42px;
@@ -4096,7 +4115,7 @@ section.marcas {
     margin-bottom: 100px;
 }
 
-input.form-control.rounded-start {border-color: #000000;border-radius: 39px !important;color: #0085FF;z-index: 0 !important;}
+input.form-control.rounded-start {border-color: #000000;border-radius: 39px !important;color: #0085FF;z-index: 0 !important;font-weight: 300;}
 
 form#collapseFormSearch input.form-control.rounded-start {
     padding-left: 45px;
@@ -4149,7 +4168,7 @@ section.box-lancamento .col .box-image, section.box-lancamento .col .box-text {
 
 section.box-lancamento .box-text *, .box-lancamento h5, .box-lancamento h2, .box-lancamento p, .box-lancamento h4{
     max-width: 379px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     word-break: keep-all;
     width: 100%;
 }
@@ -4160,7 +4179,7 @@ section.box-lancamento .box-text *, .box-lancamento h5, .box-lancamento h2, .box
     width: 255px
 px;
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     height: 53px;
     border-radius: 42px;
@@ -4189,7 +4208,7 @@ section.box-lancamento.estilo-2 .box-text a {
 
 section.box-lancamento .col .box-text * {
     max-width: 396px;
-    padding: 0px;
+    padding: 0px 25px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -4257,8 +4276,8 @@ section.box-lancamento h4 {
 }
 
 section.box-lancamento h5 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    /* font-weight: 600; */
     margin-bottom: 30px;
 }
 
@@ -4323,7 +4342,7 @@ section.box-lancamento.estilo-1 {
 }
 
 #breadcrumbs li span {
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .form-footer form.wpcf7-form {
@@ -5106,6 +5125,12 @@ span.details_1 {
     font-weight: 700;
 }
 
+.page-sobre h1, .page-sobre p, .page-sobre b, .page-sobre strong, .page-sobre div#valores3 h2 {
+    color: #00367E !important;
+}
+
+h1 {}
+
 .page-content h5 {
     font-size: 16px;
     margin-bottom: 32px;
@@ -5140,6 +5165,11 @@ span.details_1 {
     text-decoration: none;
     color: #999999;
     font-size: 1em;
+    font-weight: 500;
+}
+
+.page-sobre #breadcrumbs a, .page-sobre #breadcrumbs li {
+    color: black;
 }
 
 #breadcrumbs a:hover {

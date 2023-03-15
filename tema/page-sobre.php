@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="container main-page archive page-blog">
+<section class="container main-page archive ">
 
 	<div class="mt-5 mb-5">
 		<?php custom_breadcrumbs(); ?>
