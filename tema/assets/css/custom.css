@@ -71,6 +71,7 @@ section.page-blog {
 
 body.page-sobre {
     background: url("../../assets/images/bg-page-sobre.png") top no-repeat;
+    background-size: 100%;
 }
 
 
@@ -2804,6 +2805,10 @@ header button.navbar-toggler.toggler-mobile {
     border: 1px solid #000;
 }
 
+.page-blog header button.navbar-toggler.toggler-mobile {
+    background: white;
+}
+
 header button.navbar-toggler.open.toggler-mobile:after {
     width: 26px;
     height: 12px;
@@ -2814,6 +2819,10 @@ header button.navbar-toggler.open.toggler-mobile:after {
     top: 16px;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+}
+
+.page-blog header button.navbar-toggler.open.toggler-mobile:after {
+    border-color: black;
 }
 
 .page-onde-estamos 
@@ -3166,6 +3175,10 @@ div#navbarCollapse ul.menu-principal.navbar-nav.menu-principal-todos-dptos > li 
 .menu-principal {
     justify-content: center;
     flex-grow: 1;
+}
+
+.page-blog a.navbar-brand.d-sm-none.flex-shrink-0.me-2.logo-black {
+    display: none !important;
 }
 
 div#bs-example-navbar-collapse-1 {
@@ -5138,6 +5151,17 @@ header .navbar-sticky {min-height: 85px;}
 .menu-principal {
     text-align: right;
     padding-right: 14px;
+}
+
+
+section.page-blog {
+    border-top: 14px solid black;
+}
+
+
+.page-blog.single-produtos header.header-style-1 {
+    position: relative;
+    background: black;
 }
 
 .is_admin_bar_showing.page-onde-estamos.single-produtos header.header-style-1 {
