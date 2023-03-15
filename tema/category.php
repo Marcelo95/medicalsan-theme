@@ -5,8 +5,8 @@ $current_category = get_queried_object(); ////getting current category
 $args = array(
 	'post_type' => 'produtos',
 	// your post type,
-	'orderby' => 'post_date',
-	'order' => 'DESC',
+	'orderby' => 'title',
+	'order' => 'ASC',
 	'cat' => $current_category->cat_ID // current category ID
 );
 $the_query = new WP_Query($args);
