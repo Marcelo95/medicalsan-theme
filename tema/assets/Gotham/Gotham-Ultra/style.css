@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Gotham';
-    src: local('Gotham Ultra'), local('Gotham-Ultra'),
-        url('Gotham-Ultra.woff2') format('woff2'),
-        url('Gotham-Ultra.woff') format('woff'),
-        url('Gotham-Ultra.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }

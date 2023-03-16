@@ -2,14 +2,8 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('../font-awesome/css/font-awesome.min.css');
 
-@import url("../Gotham/Gotham-Black/style.css");
-@import url("../Gotham/Gotham-Bold/style.css");
-@import url("../Gotham/Gotham-Book/style.css");
-@import url("../Gotham/Gotham-Light/style.css");
-@import url("../Gotham/Gotham-Medium/style.css");
-@import url("../Gotham/Gotham-Thin/style.css");
-@import url("../Gotham/Gotham-Ultra/style.css");
-@import url("../Gotham/Gotham-XLight/style.css");
+@import url("../Gotham/style.css");
+
 
 * {
     font-family: 'Gotham', sans-serif;
@@ -2355,10 +2349,10 @@ main.main.main-categories h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
     max-width: 36%;
-    min-width: 200px;
+    min-width: 135px;
     height: 100%;
 }
 
@@ -2383,6 +2377,14 @@ main.main.main-categories h2 {
 
 .lista-categories-prods > div > div.logo-and-text a:hover {
     color: blue;
+}
+@media(max-width:426px){ /*responsive*/
+html .lista-categories-prods.duas-grades > div > div {
+    height:106px;
+}
+html .lista-categories-prods > div > div.logo-and-text a {
+    font-size: 12px;
+}
 }
 
 
@@ -2413,6 +2415,8 @@ main.main.main-categories h2 {
 
 .slider-icons-categories div.boxes-cats img {
     margin: auto;
+    max-height: 72px;
+    width: auto;
 }
 
 .slider-icons-categories a {
