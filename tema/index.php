@@ -194,7 +194,7 @@ if(count($itens)): ?>
 
         </div>
 
-
+        <div class="mt-5 text-center mobile"><a class="botao-1 var-1" href="<?php echo home_url("blog"); ?>">Ver mais</a></div>
     </div>
 </section>
 

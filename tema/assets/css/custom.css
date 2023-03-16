@@ -39,6 +39,9 @@ p {
     background: black;
     padding: 20px;
     margin-top: -64px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
 }
 
 .content-header-blog form {
@@ -3929,7 +3932,11 @@ div[aria-label="Slide"] {
     transform: translate(2px,0);
 }
 
-
+.var-1 {
+    margin: auto;
+    color: #fff;
+    background: #0085FF;
+}
 .botao-5 {
     color: #0085FF;
     text-decoration: none;
@@ -5421,10 +5428,12 @@ html .slider-3--disable > a:nth-child(3) {
 
 html .slider-3--disable > a {
     min-width: 165px;
+    padding: 3px;
 }
 
 .slider-3--disable > a > div {
     padding: 15px;
+    margin-bottom: 6px;
 }
 }
 

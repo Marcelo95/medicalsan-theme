@@ -13,24 +13,51 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
 
         <div class="lista-nossas-marcas">
             <div>
-                <img src="<?php _e($relative_path . "/images/medicalsan.png"); ?>" alt="">
-                <a href="https://www.medicalsan.com.br/" class="botao-5" target="_blank">Acesse o site</a>
-            </div>            
+                <div style="background-image:url(<?php _e($relative_path . "/images/medicalsan.png"); ?>);">
+                    <a href="https://www.medicalsan.com.br/" class="botao-5" target="_blank">Acesse o site</a>
+                    <div class="text-ocult">
+                        <p>Equipamentos de excelência para as áreas da dermatologia, odontologia, estética e medicina estética.</p>
+                        <a href="https://www.medicalsan.com.br/" class="botao-5" target="_blank">Acesse o site</a>
+                    </div>
+                </div>
+            </div>
             <div>
-                <img src="<?php _e($relative_path . "/images/medstart.png"); ?>" alt="">
-                <a href="https://www.medstart.com.br/" class="botao-5" target="_blank">Acesse o site</a>
-            </div>            
+                <div style="background-image:url(<?php _e($relative_path . "/images/medstart.png"); ?>);">
+                    <a href="https://www.medstart.com.br/" class="botao-5" target="_blank">Acesse o site</a>
+
+                    <div class="text-ocult">
+                        <p>Posicionada nas linhas de entrada para atender profissionais que estão iniciando sua jornada empreendedora.</p>
+                        <a href="https://www.medstart.com.br/" class="botao-5" target="_blank">Acesse o site</a>
+                    </div>
+                </div>
+            </div>
             <div>
-                <img src="<?php _e($relative_path . "/images/sanbank.png"); ?>" alt="">
-                <a href="https://www.sanbank.com.br/" class="botao-5" target="_blank">Acesse o site</a>
-            </div>           
-             <div>
-                <img src="<?php _e($relative_path . "/images/vitoria.png"); ?>" alt="">
-                <a href="<?php _e("/404"); ?>" class="botao-5" target="_blank">Acesse o site</a>
-            </div>            
-             <div>
-                <img src="<?php _e($relative_path . "/images/tech5.png"); ?>" alt="">
-                <a href="http://www.tech5.com.br/novosite/index.aspx" class="botao-5" target="_blank">Acesse o site</a>
+                <div style="background-image:url(<?php _e($relative_path . "/images/sanbank.png"); ?>);">
+                    <a href="https://www.sanbank.com.br/" class="botao-5" target="_blank">Acesse o site</a>
+
+                    <div class="text-ocult">
+                        <p>Braço financeiro do Grupo para acessibilizar o crédito e viabilizar as operações de longo prazo.</p>
+                        <a href="https://www.sanbank.com.br/" class="botao-5" target="_blank">Acesse o site</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="background-image:url(<?php _e($relative_path . "/images/vitoria.png"); ?>);">
+                    <a href="<?php _e("/404"); ?>" class="botao-5" target="_blank">Acesse o site</a>
+                    <div class="text-ocult">
+                        <p>Fornecimento de placas e circuitos eletrônicos para o mercado nacional.</p>
+                        <a href="<?php _e("/404"); ?>" class="botao-5" target="_blank">Acesse o site</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="background-image:url(<?php _e($relative_path . "/images/tech5.png"); ?>);">
+                    <a href="http://www.tech5.com.br/novosite/index.aspx" class="botao-5" target="_blank">Acesse o site</a>
+                    <div class="text-ocult">
+                        <p>Soluções em tecnologia para produção em larga escala.</p>
+                        <a href="http://www.tech5.com.br/novosite/index.aspx" class="botao-5" target="_blank">Acesse o site</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
