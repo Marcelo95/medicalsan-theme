@@ -20,6 +20,8 @@
     overflow: hidden;
 }
 
+.banner-content-single-produtos {}
+
 b, strong {
     font-weight: 600;
 }
@@ -853,6 +855,70 @@ section.box-lancamento .wp-block-column {
     width: 100%;
 }
 
+.banner-mobile-test {
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 0;
+    background-position: center bottom;
+    position: absolute;
+}
+
+.banner-mobile-test-fundo {
+    width: 100%;
+    height: 431px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center top;
+}
+
+.produtos-ethernia-cold-smart .mobile.banner-mobile-test-fundo {
+    height: 700px;
+}
+
+.produtos-lipocavity-new-smart .mobile.banner-mobile-test-fundo {
+    height: 650px;
+}
+
+.produtos-narniah .mobile.banner-mobile-test-fundo {
+    height: 600px;
+}
+
+.produtos-tekah .mobile.banner-mobile-test-fundo {
+    height: 730px;
+}
+
+.produtos-ultraplace .mobile.banner-mobile-test-fundo {
+    height: 450px;
+}
+
+.produtos-ultramed .mobile.banner-mobile-test-fundo {
+    height: 600px;
+}
+
+.produtos-omer-smart .mobile.banner-mobile-test-fundo {
+    height: 600px;
+}
+
+.produtos-omer-premium .mobile.banner-mobile-test-fundo {
+    height: 542px;
+    border-top: 100px solid black;
+}
+
+.produtos-ethernia-cold .mobile.banner-mobile-test-fundo {
+    height: 600px;
+}
+
+.produtos-criodermis .banner-mobile-test-fundo {
+    height: 600px;
+}
+
+.produtos-lipocavity-new .banner-mobile-test-fundo {
+    height: 600px;
+}
+
 .single-produtos .imagem-fundo {
     position: relative;
     left: 0;
@@ -1443,6 +1509,7 @@ section.quais-tecnologias .container > .box-center > div.col-bt-2 .bg-v1 {
     max-width: 300px;
     margin-bottom: 61px;
     padding-left: 67px;
+    word-break: break-word;
 }
 
 .content-text-desc h2 span {
