@@ -3369,17 +3369,16 @@ div#header_menu_all_departments_top a:hover {
 
 .menu-principal a {
     color: #202020;
-    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     margin-left: 20px;
     padding: 0;
     display: inline-flex;
-    align-items: self-end;
-    padding-top: 10px;
-    height: 32.7px;
-    padding-bottom: 10.3px;
-    line-height: 0.6;
+    align-items: center;
+    padding-top: 2px;
+    height: 32.6px;
+    line-height: 9px;
+    font-size: 14.49px;
 }
 
 .menu-principal li {}
