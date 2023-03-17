@@ -4289,7 +4289,9 @@ div[aria-label="Slide"] {
     transform: translate(2px, 0);
 }
 
-
+.navegador-safari [class*="botao"] {
+ line-height: 17px;
+}
 html .banner-home.slider-home-2 .n2-ss-slider-2.n2-ow {
     border-radius: 25px !important;
 }
@@ -4737,7 +4739,7 @@ section.box-lancamento h4 {
 
 section.box-lancamento h5 {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 100;
     margin-bottom: 30px;
 }
 
