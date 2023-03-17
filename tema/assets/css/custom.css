@@ -8,7 +8,9 @@
     font-weight: 500;
 }
 
-
+a{
+    display: inline-block;
+}
 
 .search.search-blog main.page-wrapper {
     padding-top: 0;
