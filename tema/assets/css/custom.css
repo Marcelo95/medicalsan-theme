@@ -214,9 +214,8 @@ span.navbar-toggler-icon {
 header.header-style-1 {
     background: #fff;
     background-size: 100%;
-
     position: fixed;
-    z-index: 999999;
+    z-index: 99999;
     width: 100%;
     top: 0;
 }
@@ -244,7 +243,6 @@ header.header-style-1.scroll-down {
 .single-produtos header.header-style-1 {
     position: fixed;
     width: 100%;
-    z-index: 999999;
     top: 0;
     background: transparent;
 }
