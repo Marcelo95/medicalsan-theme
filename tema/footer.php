@@ -112,7 +112,7 @@
 
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         // Código para o Safari aqui
-        window.document.classList.add("navegador-safari")
+        window.document.body.classList.add("navegador-safari");
     }
 </script>
 <?php wp_footer(); ?>
