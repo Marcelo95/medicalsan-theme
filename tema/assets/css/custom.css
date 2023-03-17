@@ -159,6 +159,10 @@ body.page-sobre {
     padding-top: 9px;
 }
 
+.navegador-safari input {
+    font-family: sans-serif;
+}
+
 .navbar .dropdown-fullwidth {
     position: static;
 }
