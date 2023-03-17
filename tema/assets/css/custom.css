@@ -3367,21 +3367,6 @@ div#header_menu_all_departments_top a:hover {
     box-shadow: none;
 }
 
-.menu-principal a {
-    color: #202020;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-left: 20px;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    padding-top: 10.8px;
-    height: 32.6px;
-    line-height: 1;
-    font-size: 14.49px;
-}
-
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
  .menu-principal a {
     color: #202020;
     font-weight: 400;
@@ -3394,8 +3379,21 @@ div#header_menu_all_departments_top a:hover {
     height: 32.6px;
     line-height: 9px;
     font-size: 14.49px;
-}   
+    padding: 0;
+    font-size: 14.49px;
+    line-height: 32px;
+    transform: translateY(0.11em);
+    padding-top: 1px;
 }
+
+.menu-principal a::before {
+	 content: "";
+	 margin-top: -9px;
+	 display: block;
+	 height: 0;
+}
+
+
 
 
 .menu-principal a[title="tecnologias" i] {
