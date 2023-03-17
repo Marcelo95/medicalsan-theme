@@ -2513,7 +2513,9 @@ main.main.main-categories h2 {
 }
 
 .lista-categories-prods>div>div.logo-and-text img {
-    width: 100%;
+    width: auto;
+    max-height: 58px;
+    max-width: 132px;
 }
 
 .lista-categories-prods>div>div.logo-and-text a {
@@ -2533,6 +2535,7 @@ main.main.main-categories h2 {
 
     html .lista-categories-prods>div>div.logo-and-text a {
         font-size: 12px;
+        margin-top: 1px;
     }
 }
 
@@ -3853,7 +3856,7 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 footer a:hover {
