@@ -3375,10 +3375,26 @@ div#header_menu_all_departments_top a:hover {
     padding: 0;
     display: inline-flex;
     align-items: center;
+    padding-top: 10.8px;
+    height: 32.6px;
+    line-height: 1;
+    font-size: 14.49px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm){
+ .menu-principal a {
+    color: #202020;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
     padding-top: 2.8px;
     height: 32.6px;
     line-height: 9px;
     font-size: 14.49px;
+}   
 }
 
 
