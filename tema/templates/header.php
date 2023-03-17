@@ -4,22 +4,12 @@
 
         <div class="navbar navbar-expand-lg nav-top">
             <div class="container">
+                <a class="navbar-brand d-none flex-shrink-0 logo-white" href="<?php echo home_url(); ?>">
 
+                    <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
 
-                <?php if (get_post_type() == "produtos" && is_single()) : ?>
-                    <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-white" href="<?php echo home_url(); ?>">
-                        <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
-                    </a>
-                <?php else : ?>
-                    <a class="navbar-brand d-none d-sm-block flex-shrink-0 logo-black" href="<?php echo home_url(); ?>">
-                        <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
-                    </a>
-
-                <?php endif; ?>
-
-
-
-                <a class="navbar-brand d-sm-none flex-shrink-0 me-2 logo-black" href="<?php echo home_url(); ?>">
+                </a>
+                <a class="navbar-brand flex-shrink-0 me-2 logo-black" href="<?php echo home_url(); ?>">
                     <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
                 </a>
 
@@ -51,12 +41,13 @@
                     <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
 
                         <button class="navbar-toggler toggler-mobile open" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <i class="material-icons" style="font-size: 36px;margin-left: -7px;">menu</i>
+                            <i class="material-icons" style="font-size: 24px;margin-left: -7px;">menu</i>
 
                         </button>
 
 
                     </div>
+
                 </div>
             </div>
         </div>
@@ -64,8 +55,8 @@
             <div class="collapse navbar-collapse navbar-stuck-menu " id="navbarCollapse">
                 <div class="container">
 
-                    <button class="navbar-toggler toggler-mobile float-end m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
-                        <i class="material-icons" style="font-size: 36px;margin-left: -7px;">close</i>
+                    <button class="navbar-toggler toggler-mobile float-end me-0 m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
+                        <i class="material-icons icon-fechado" style="font-size: 24px;margin-left: -7px;">close</i>
                     </button>
                     <!-- Search-->
                     <form action="<?php echo home_url(); ?>" class="input-group d-lg-none my-3">
@@ -90,13 +81,6 @@
     <?php if (get_post_type() == "produtos" && is_single()) : ?>
         <div class="container desktop">
             <?php custom_breadcrumbs(); ?>
-        </div>
-        <div class="container mobile">
-            <ul id="breadcrumbs" class="breadcrumb">
-                <li><a href="<?php _e(get_category_link(get_cat_ID('tecnologias'))); ?>">Tecnologias</a></li>
-                <li class="separator"> &gt; </li>
-                <li><span><?php the_title(); ?></span></li>
-            </ul>
         </div>
     <?php endif; ?>
 

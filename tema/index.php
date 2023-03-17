@@ -59,7 +59,7 @@
         <div class="col white">
             <div class="col-esq">
             <div class="box-text js-scroll fade-in-bottom">
-                <h4>LANÇAMENTO</h4>
+                <h4>MAIS VENDIDOS</h4>
                 <h2>Ultramed</h2>
                 <h5>Rejuvenescimento com ultrassom</h5>
 
@@ -74,7 +74,7 @@
         <div class="col black">
             <div class="col-dir">
             <div class="box-text js-scroll fade-in-bottom">
-                <h4>LANÇAMENTO</h4>
+                <h4>MAIS VENDIDOS</h4>
                 <h2>Criodermis</h2>
                 <h5>
                     Criolipólise corporal e facial com

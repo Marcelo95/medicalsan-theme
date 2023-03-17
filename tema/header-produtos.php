@@ -28,7 +28,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class([is_admin_bar_showing() ? "is_admin_bar_showing" : "", "single-produtos", "search-blog"]); ?>>
+<body <?php body_class([is_admin_bar_showing() ? "is_admin_bar_showing" : "", "single-produtos"]); ?>>
 
     <main class="page-wrapper">
 

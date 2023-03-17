@@ -41,7 +41,7 @@
                     <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
 
                         <button class="navbar-toggler toggler-mobile open" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <i class="material-icons" style="font-size: 36px;margin-left: -7px;">menu</i>
+                            <i class="material-icons" style="font-size: 24px;margin-left: -7px;">menu</i>
 
                         </button>
 
@@ -55,8 +55,8 @@
             <div class="collapse navbar-collapse navbar-stuck-menu " id="navbarCollapse">
                 <div class="container">
 
-                    <button class="navbar-toggler toggler-mobile float-end m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
-                        <i class="material-icons" style="font-size: 36px;margin-left: -7px;">close</i>
+                    <button class="navbar-toggler toggler-mobile float-end me-0 m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
+                        <i class="material-icons icon-fechado" style="font-size: 24px;margin-left: -7px;">close</i>
                     </button>
                     <!-- Search-->
                     <form action="<?php echo home_url(); ?>" class="input-group d-lg-none my-3">
