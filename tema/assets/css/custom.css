@@ -3382,29 +3382,16 @@ div#header_menu_all_departments_top a:hover {
     padding: 0;
     font-size: 14.49px;
     line-height: 32px;
-    transform: translateY(0.11em);
-    padding-top: 1px;
 }
 
-
+/* Estilo para altura de linha somente no Safari */
 @media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
+  @supports (-webkit-line-clamp: 2) {
  .menu-principal a {
-    padding-top: 8.8px !important;
+    padding-top: 8.8px;
 }
-
   }
 }
-
-.menu-principal a::before {
-	 content: "";
-	 margin-top: -9px;
-	 display: block;
-	 height: 0;
-}
-
-
-
 
 .menu-principal a[title="tecnologias" i] {
     color: #ffffff !important;
