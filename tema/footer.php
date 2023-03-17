@@ -91,6 +91,25 @@
 <script src="<?php echo asset('bootstrap/js/bootstrap.min.js'); ?>"></script>
 <script src="<?php echo asset('js/script.js'); ?>"></script>
 <script src="<?php echo asset('js/custom-animate.js'); ?>"></script>
+<script>
+    // Seleciona o elemento do header
+    const header = document.querySelector('header');
+    
+    // Define a posição de rolagem em que a cor do header deve ser alterada
+    const scrollPosition = 100;
+    
+    // Adiciona um evento de rolagem à página
+    window.addEventListener('scroll', function() {
+      // Verifica se a posição de rolagem é maior ou igual à posição definida
+      if (window.scrollY >= scrollPosition) {
+        // Se for, adiciona a classe que altera a cor do header
+        header.classList.add('scroll-down');
+      } else {
+        // Se não for, remove a classe que altera a cor do header
+        header.classList.remove('scroll-down');
+      }
+    });
+  </script>
 <?php wp_footer(); ?>
 </body>
 
