@@ -135,7 +135,7 @@ body.page-sobre {
 
 #collapseFormSearch {
     position: absolute;
-    top: -16px;
+    top: -20px;
     left: 0;
     width: 100%;
     height: 83px;
@@ -283,12 +283,7 @@ img.rectangle {
     padding: 29px 0px;
 }
 
-.nav-top>.container {
-
-    justify-content: space-between;
-    margin: auto;
-    position: relative;
-}
+.nav-top>.container {justify-content: space-between;margin: auto;position: relative;align-items: end;}
 
 .nav-top .header-dir {
     position: relative;
@@ -3376,8 +3371,16 @@ div#header_menu_all_departments_top a:hover {
     font-weight: 400;
     text-transform: uppercase;
     margin-left: 20px;
-    padding-top: 12px;
+    padding: 0;
+    display: inline-flex;
+    align-items: self-end;
+    padding-top: 10px;
+    height: 32.6px;
+    padding-bottom: 11px;
+    line-height: 0.6;
 }
+
+.menu-principal li {}
 
 .menu-principal a[title="tecnologias" i] {
     color: #ffffff !important;
@@ -3385,10 +3388,6 @@ div#header_menu_all_departments_top a:hover {
     border-radius: 22px;
     padding-left: 14px !important;
     padding-right: 14px !important;
-    padding-top: 5px;
-    height: 28px;
-    padding-bottom: 3px;
-    margin-top: 5px;
 }
 
 .page-onde-estamos .menu-principal a[title="tecnologias" i] {
@@ -3414,13 +3413,8 @@ a.dropdown-item {
 }
 
 html .mobile .menu-principal a {
-    padding: 10px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-html .mobile .menu-principal a[title="tecnologias" i] {
-    padding-top: 5px;
+    /* display: inline-block; */
+    margin-bottom: 15px;
 }
 
 .menu-principal .current-menu-item a {
