@@ -1004,8 +1004,12 @@ section.box-lancamento .wp-block-column {
 }
 
 .produtos-omer-premium .mobile.banner-mobile-test-fundo {
-    height: 542px;
-    border-top: 100px solid black;
+    height: 498px;
+    border-top: 77px solid black;
+}
+
+.produtos-omer-premium .banner-mobile-test {
+    padding-top: 0;
 }
 
 .produtos-ethernia-cold .mobile.banner-mobile-test-fundo {
