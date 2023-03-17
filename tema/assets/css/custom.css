@@ -3375,8 +3375,8 @@ div#header_menu_all_departments_top a:hover {
     padding: 0;
     display: inline-flex;
     align-items: center;
-    padding-top: 2.9px;
-    height: 16.6px;
+    /* padding-top: 2.9px; */
+    /* height: 16.6px; */
     line-height: 13px;
     justify-content: center;
     font-size: 14.49px;
@@ -3386,7 +3386,7 @@ div#header_menu_all_departments_top a:hover {
 }
 
 .menu-principal a[title="tecnologias" i]:before {
-    content: '';
+    content: 'TECNOLOGIAS';
     height: 32.6px;
     width: 100%;
     background: #00367E;
@@ -3394,9 +3394,15 @@ div#header_menu_all_departments_top a:hover {
     position: absolute;
     left: 0;
     z-index: -1;
-    top: 0;
-    margin-top: -8.3px;
+    color: #fff;
+    /* top: 0; */
+    padding-top: 3px;
+    /* margin-top: -8.3px; */
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 
@@ -3406,8 +3412,7 @@ div#header_menu_all_departments_top a:hover {
 }
 
 .menu-principal a[title="tecnologias" i] {
-    color: #ffffff !important;
-    background: #00367E;
+    color: #ffffff00 !important;
     border-radius: 22px;
     padding-left: 14px !important;
     padding-right: 14px !important;
@@ -3427,7 +3432,7 @@ a.dropdown-item {
     color: #212529;
 }
 
-.menu-principal a:hover {border-radius: 20px;text-decoration: underline;}
+.menu-principal a:hover,.menu-principal a:hover:before {border-radius: 20px;text-decoration: underline;}
 
 html .mobile .menu-principal a {
     /* display: inline-block; */
