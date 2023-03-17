@@ -3386,23 +3386,7 @@ div#header_menu_all_departments_top a:hover {
 }
 
 .menu-principal a[title="tecnologias" i]:before {
-    content: 'TECNOLOGIAS';
-    height: 32.6px;
-    width: 100%;
-    background: #00367E;
-    display: block;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    color: #fff;
-    /* top: 0; */
-    padding-top: 3px;
-    /* margin-top: -8.3px; */
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
+
 }
 
 
@@ -3412,7 +3396,7 @@ div#header_menu_all_departments_top a:hover {
 }
 
 .menu-principal a[title="tecnologias" i] {
-    color: #ffffff00 !important;
+    /* color: #ffffff00 !important; */
     border-radius: 22px;
     padding-left: 14px !important;
     padding-right: 14px !important;
