@@ -3386,6 +3386,16 @@ div#header_menu_all_departments_top a:hover {
     padding-top: 1px;
 }
 
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+ .menu-principal a {
+    padding-top: 8.8px !important;
+}
+
+  }
+}
+
 .menu-principal a::before {
 	 content: "";
 	 margin-top: -9px;
