@@ -3376,7 +3376,7 @@ div#header_menu_all_departments_top a:hover {
     align-items: self-end;
     padding-top: 10px;
     height: 32.6px;
-    padding-bottom: 11px;
+    padding-bottom: 10.6px;
     line-height: 0.6;
 }
 
@@ -3404,13 +3404,7 @@ a.dropdown-item {
     color: #212529;
 }
 
-.menu-principal a:hover {
-
-
-    border-radius: 20px;
-    display: inline-block;
-    text-decoration: underline;
-}
+.menu-principal a:hover {border-radius: 20px;text-decoration: underline;}
 
 html .mobile .menu-principal a {
     /* display: inline-block; */
