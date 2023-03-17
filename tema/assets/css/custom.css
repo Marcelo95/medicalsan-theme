@@ -3384,12 +3384,11 @@ div#header_menu_all_departments_top a:hover {
     line-height: 32px;
 }
 
-/* Estilo para altura de linha somente no Safari */
-@supports (-webkit-overflow-scrolling: touch){
- .menu-principal a {
+.navegador-safari .menu-principal a {
     padding-top: 8.8px;
 }
-}
+
+
 
 .menu-principal a[title="tecnologias" i] {
     color: #ffffff !important;

@@ -94,22 +94,27 @@
 <script>
     // Seleciona o elemento do header
     const header = document.querySelector('header');
-    
+
     // Define a posição de rolagem em que a cor do header deve ser alterada
     const scrollPosition = 100;
-    
+
     // Adiciona um evento de rolagem à página
     window.addEventListener('scroll', function() {
-      // Verifica se a posição de rolagem é maior ou igual à posição definida
-      if (window.scrollY >= scrollPosition) {
-        // Se for, adiciona a classe que altera a cor do header
-        header.classList.add('scroll-down');
-      } else {
-        // Se não for, remove a classe que altera a cor do header
-        header.classList.remove('scroll-down');
-      }
+        // Verifica se a posição de rolagem é maior ou igual à posição definida
+        if (window.scrollY >= scrollPosition) {
+            // Se for, adiciona a classe que altera a cor do header
+            header.classList.add('scroll-down');
+        } else {
+            // Se não for, remove a classe que altera a cor do header
+            header.classList.remove('scroll-down');
+        }
     });
-  </script>
+
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        // Código para o Safari aqui
+        window.document.classList.add("navegador-safari")
+    }
+</script>
 <?php wp_footer(); ?>
 </body>
 
