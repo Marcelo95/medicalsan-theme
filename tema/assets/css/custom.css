@@ -154,6 +154,7 @@ body.page-sobre {
 #collapseFormSearch form input {
     padding-left: 46px;
     padding-right: 39px;
+    padding-top: 9px;
 }
 
 .navbar .dropdown-fullwidth {
@@ -172,12 +173,12 @@ header button.style-hidden-button.close-right {
     left: 28px;
     top: 11px;
     border-right: 1px solid #6c757d6b !important;
-    height: 14px;
+    height: 19px;
 }
 
 header button.style-hidden-button.close-right i {
     margin-right: 4px !important;
-    margin-top: 2px;
+    margin-top: 0px;
 }
 
 *:focus {
