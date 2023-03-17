@@ -3385,12 +3385,10 @@ div#header_menu_all_departments_top a:hover {
 }
 
 /* Estilo para altura de linha somente no Safari */
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-line-clamp: 2) {
+@supports (-webkit-overflow-scrolling: touch){
  .menu-principal a {
     padding-top: 8.8px;
 }
-  }
 }
 
 .menu-principal a[title="tecnologias" i] {
