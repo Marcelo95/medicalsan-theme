@@ -13,31 +13,31 @@ $the_query = new WP_Query($args);
 
 ?>
 
-<div class="mt-5 container desktop">
+<div class="mt-1 container desktop">
 	<?php custom_breadcrumbs(); ?>
 </div>
 
 
 <div class="slider-icons-categories">
-			<?php
+	<?php
 
 
-			if ($the_query->have_posts()):
-				while ($the_query->have_posts()):
-					$the_query->the_post();
-					$slug = basename(get_permalink());
-					$title = get_the_title();
-					$image_icon = asset("images/no-image.svg");
-					$link = get_permalink();
+	if ($the_query->have_posts()) :
+		while ($the_query->have_posts()) :
+			$the_query->the_post();
+			$slug = basename(get_permalink());
+			$title = get_the_title();
+			$image_icon = asset("images/no-image.svg");
+			$link = get_permalink();
 
 
-					$file_exist = sprintf("images/images-categories-prods/icon-%s.png", $slug);
+			$file_exist = sprintf("images/images-categories-prods/icon-%s.png", $slug);
 
-					if (file_exists(__DIR__ . '/assets/' . $file_exist)) {
-						$image_icon = asset($file_exist);
-					}
+			if (file_exists(__DIR__ . '/assets/' . $file_exist)) {
+				$image_icon = asset($file_exist);
+			}
 
-					echo sprintf('
+			echo sprintf('
 					<div class="boxes-cats">
 						<a href="%s">
 							<div>
@@ -48,30 +48,30 @@ $the_query = new WP_Query($args);
 					</div>
 
 				', $link, $image_icon, $title, $title);
-				endwhile;
-			endif; ?>
+		endwhile;
+	endif; ?>
 
 
-			
+
 
 </div>
 
 
 
 
-		<main class="main main-categories">
+<main class="main main-categories">
 	<!-- section -->
 	<section class="container">
 
-            <h1>Nossas tecnologias</h1>
+		<h1>Nossas tecnologias</h1>
 
 		<?php echo get_template_part(sprintf('templates/categories/%s/content', $current_term->slug)); ?>
 
 		<div class="lista-categories-prods duas-grades">
 			<?php
 
-			if ($the_query->have_posts()):
-				while ($the_query->have_posts()):
+			if ($the_query->have_posts()) :
+				while ($the_query->have_posts()) :
 					$the_query->the_post();
 					$slug = basename(get_permalink());
 					$image_prod = asset(sprintf("images/images-categories-prods/png/prod-%s.png", $slug));
