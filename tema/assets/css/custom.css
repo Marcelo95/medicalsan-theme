@@ -3373,25 +3373,33 @@ div#header_menu_all_departments_top a:hover {
     text-transform: uppercase;
     margin-left: 20px;
     padding: 0;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 2.8px;
+    height: 32.6px;
+    line-height: 9px;
     font-size: 14.49px;
 }
 
-.menu-principal a[title="tecnologias" i]:before {
-
-}
-
-
-.menu-principal li {
-    display: flex;
-    align-items: center;
-    margin-top: -2px;
-}
+.menu-principal li {}
 
 .menu-principal a[title="tecnologias" i] {
-    /* color: #ffffff00 !important; */
+    color: #ffffff !important;
+    background: #00367E;
     border-radius: 22px;
     padding-left: 14px !important;
     padding-right: 14px !important;
+}
+
+@supports (-webkit-touch-callout: none){
+  .menu-principal a[title="tecnologias" i] {
+    color: #ffffff !important;
+    background: #00367E;
+    border-radius: 22px;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+  
 }
 
 .page-onde-estamos .menu-principal a[title="tecnologias" i] {
@@ -3408,7 +3416,7 @@ a.dropdown-item {
     color: #212529;
 }
 
-.menu-principal a:hover,.menu-principal a:hover:before {border-radius: 20px;text-decoration: underline;}
+.menu-principal a:hover {border-radius: 20px;text-decoration: underline;}
 
 html .mobile .menu-principal a {
     /* display: inline-block; */
@@ -3473,7 +3481,6 @@ div#navbarCollapse ul.menu-principal.navbar-nav.menu-principal-todos-dptos>li {
 .menu-principal {
     justify-content: left;
     flex-grow: 1;
-    height: 14px;
 }
 
 div#bs-example-navbar-collapse-1 {
@@ -5606,14 +5613,10 @@ section.comentarios>.container {
         /* min-height: 85px; */
     }
 
-    .menu-principal li {
+    .menu-principal {
         text-align: right;
         padding-right: 14px;
     }
-
-.menu-principal li:has(a[title="tecnologias" i]) {
-    padding: 0;
-}
 
     .page-home header.header-style-1 {
         /* background: #fff; */
