@@ -15,9 +15,6 @@ li {
     display: block;
 }
 
-li::before {
-  content: "• ";
-}
 .search.search-blog main.page-wrapper {
     padding-top: 0;
 }
