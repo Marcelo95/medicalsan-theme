@@ -5,13 +5,19 @@
 
 * {
     font-family: 'Gotham', sans-serif;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 a{
     display: inline-block;
 }
+li {
+    display: block;
+}
 
+li::before {
+  content: "• ";
+}
 .search.search-blog main.page-wrapper {
     padding-top: 0;
 }
@@ -1563,7 +1569,7 @@ section.quais-tecnologias .container>.box-center>div.col-bt-2 {
 section.quais-tecnologias .container>.box-center>div.col-bt-2 h2 {
     word-wrap: break-word;
     line-height: normal;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
 }
 
 section.quais-tecnologias .container>.box-center>div.col-bt-2 ul {
