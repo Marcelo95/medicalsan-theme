@@ -39,7 +39,7 @@
     </div>
 </section>
 
-<section class="box-lancamento js-scroll fade-in  estilo-2">
+<section class="box-lancamento baixo js-scroll fade-in  estilo-2">
     <div class="container js-scroll fade-in-bottom">
 
         <?php if (is_active_sidebar('home_widget_2')) : ?>
@@ -48,7 +48,7 @@
             <div class="box-text js-scroll fade-in-bottom">
                 <h4>LANÇAMENTO</h4>
                 <h2>Hakon</h2>
-                <h5>Laser 4D para todos os fototipos de pele</h5>
+                <h5><span>Laser 4D para todos os fototipos de pele</span></h5>
 
                 <a href="<?php echo home_url("produtos/hakon"); ?>" class="botao-5"> Saiba mais </a>
 
