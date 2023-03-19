@@ -10,7 +10,7 @@
 </section>
 
 
-<?php //get_template_part("templates/content-home"); ?>
+<?php get_template_part("templates/content-home"); ?>
 
 
 <section class="box-lancamento js-scroll fade-in estilo-1">
@@ -39,7 +39,7 @@
     </div>
 </section>
 
-<section class="box-lancamento js-scroll fade-in estilo-2">
+<section class="box-lancamento js-scroll fade-in scrolled estilo-2">
     <div class="container js-scroll fade-in-bottom">
 
         <?php if (is_active_sidebar('home_widget_2')) : ?>
