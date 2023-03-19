@@ -1539,6 +1539,12 @@ section.quais-tecnologias .container>.box-center>div {
     padding: 30px;
 }
 
+@media(min-width:1024px) {
+    .max-width-1024 {
+        display: none;
+    }
+
+}
 @media(max-width:1000px) {
     /*responsive*/
 
@@ -4198,7 +4204,13 @@ div[aria-label="Slide"] {
     top: 9px;
     font-weight: 100;
 }
-
+.depicter .botao-5:after {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding-top: 4px;
+}
 .botao-5:hover {
     color: #0D2B78;
     -webkit-transition: background-color 100ms linear;
