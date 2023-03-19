@@ -19,11 +19,11 @@
             <?php dynamic_sidebar('home_widget_1'); ?>
         <?php else : ?>
 
-            <div class=" box-image js-scroll fade-in-bottom">
+            <div class=" box-image js-scroll fade-in-bottom scrolled">
 
                 <img src="<?php echo asset("images/produtos/omer-smart/1.png"); ?>" alt="">
             </div>
-            <div class="box-text js-scroll fade-in-bottom">
+            <div class="box-text js-scroll fade-in-bottom scrolled">
                 <h4>LANÇAMENTO</h4>
                 <h2>Ômer Smart</h2>
                 <h5>Laser de despigmentação com tecnologia de nanossegundos</h5>
