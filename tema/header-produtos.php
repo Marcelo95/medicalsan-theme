@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="<?php echo asset('css/custom.css'); ?>">
 
-    <base href="<?php echo home_url(); ?>"  />
+    
 
     <?php wp_head(); ?>
 </head>
