@@ -3435,11 +3435,7 @@ html .mobile .menu-principal a {
     margin-bottom: 15px;
 }
 
-.menu-principal .current-menu-item a {
-
-
-    border-radius: 20px;
-}
+.menu-principal .current-menu-item a {border-radius: 20px;text-decoration: underline;}
 
 .nav-link:focus,
 .nav-link:hover {
