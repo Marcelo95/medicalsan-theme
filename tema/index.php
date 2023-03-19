@@ -10,7 +10,7 @@
 </section>
 
 
-<?php get_template_part("templates/content-home"); ?>
+<?php //get_template_part("templates/content-home"); ?>
 
 
 <section class="box-lancamento js-scroll fade-in estilo-1">
