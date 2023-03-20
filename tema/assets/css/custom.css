@@ -4138,13 +4138,12 @@ div[aria-label="Slide"] {
     border-radius: 42px;
     width: 136px;
     height: 45px;
-    line-height: 0;
+    line-height: 1;
     margin-top: 15px;
 }
 
 .botao-1:after {
     content: '\e315';
-    display: inline-block;
     font-family: 'Material Icons';
     font-size: 28px;
     text-rendering: auto;
@@ -4152,12 +4151,14 @@ div[aria-label="Slide"] {
     -moz-osx-font-smoothing: grayscale;
     margin-left: 0px;
     transition: all 0.4s ease-out;
-    height: 20px;
+    height: 100%;
     width: 16px;
     background-size: contain;
     position: relative;
-    top: 9px;
+    top: 0;
     font-weight: 100;
+    display: flex;
+    align-items: center;
 }
 
 .botao-1:hover {
