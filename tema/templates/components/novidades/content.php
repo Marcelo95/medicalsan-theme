@@ -14,8 +14,11 @@ $itens = (array) $itens->posts;
 
 if (count($itens)) : ?>
     <section class="novo-estilo-de-slider products box-novidades js-scroll  fade-in scrolled">
-        <h2>NOVIDADES</h2>
+        <h2 class="desktop">NOVIDADES</h2>
 
+        <div class="container mobile">
+            <h2>NOVIDADES</h2>
+        </div>
         <div>
             <div class="linha-scroll-1">
                 <div>
