@@ -118,7 +118,7 @@ if (count($itens)) : ?>
         <div class="container">
             <h2>NOVIDADES</h2>
 
-        </div>
+      
         <div class="slider-slick">
             <div class="slider-2">
 
@@ -153,7 +153,7 @@ if (count($itens)) : ?>
             </div>
 
         </div>
-
+        </div>
 
     </section>
 
