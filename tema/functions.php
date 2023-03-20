@@ -171,7 +171,7 @@ function script_suport_safari_navigator()
     </script>
 <?php
 }
-add_action('wp_head', 'script_suport_safari_navigator', 1);
+add_action('wp_footer', 'script_suport_safari_navigator', 1);
 
 
 function custom_shortcode_onde_estamos()
