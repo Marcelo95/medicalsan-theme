@@ -4824,12 +4824,6 @@ section.box-lancamento.estilo-3 .col .box-text a {
     height: 20px;
 }
 
-section.box-lancamento .box-image img {
-    /* width: 100%; */
-    /* margin-top: 20px; */
-    /* height: 355px; */
-}
-
 section.box-lancamento.baixo .box-image img {
     margin-left: -136px;
 }
@@ -4842,7 +4836,6 @@ section.box-lancamento:before {
     background-image: url("../images/bg-lista.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.25;
 }
 
 section.box-lancamento.baixo:before {
