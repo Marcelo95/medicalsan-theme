@@ -203,7 +203,6 @@ if (count($itens)) : ?>
 
 
         </div>
-
         <div class="text-center"><a class="botao-1 var-1" href="<?php echo home_url("blog"); ?>"><span>Ver mais</span></a></div>
     </div>
 </section>
