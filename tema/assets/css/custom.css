@@ -4248,7 +4248,7 @@ div[aria-label="Slide"] {
 }
 
 .depicter-image-layer img {
-    cursor: initial;
+    cursor: initial !important;
 }
 
 .botao-5:hover {
