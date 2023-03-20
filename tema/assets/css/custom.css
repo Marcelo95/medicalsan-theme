@@ -5248,7 +5248,7 @@ section.novo-estilo-de-slider > div {
 
 .novo-estilo-de-slider .linha-scroll-1 > div {
     display: flex;
-    padding-left: 24%;
+    padding-left: 15%;
 }
 .slider-2 .item-photo {
 
@@ -5470,7 +5470,7 @@ span.details_1 {
 }
 
 .box-novidades.novo-estilo-de-slider > h2 {
-    padding-left: 25%;
+    padding-left: 17%;
 }
 
 
@@ -5519,6 +5519,12 @@ span.details_1 {
 .box-novidades.novo-estilo-de-slider > h2 {
     font-size: 20px;
     margin-bottom: 10px;
+    padding-left: 39px;
+    padding-top: 20px;
+}
+
+.novo-estilo-de-slider .linha-scroll-1 > div {
+    padding: 0;
 }
  
 }
