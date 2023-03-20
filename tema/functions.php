@@ -160,18 +160,12 @@ foreach ($files as $file) {
 }
 
 
-function script_suport_safari_navigator()
-{
-?>
-    <script>
-        if (navigator.userAgent.indexOf('Safari') != -1 || navigator.userAgent.indexOf("Mac") != -1) {
-            // Código para o Safari aqui
-            window.document.body.classList.add("navegador-safari");
-        }
-    </script>
-<?php
-}
-add_action('wp_footer', 'script_suport_safari_navigator', 1);
+add_filter( 'body_class', function( $classes ) {
+    if(strpos($_SERVER["HTTP_USER_AGENT"], 'Macintosh')  ){ // checa se é Sistema APPLE
+        return array_merge( $classes, array( 'navegador-safari' ) );  
+    }
+    return $classes;
+});
 
 
 function custom_shortcode_onde_estamos()
