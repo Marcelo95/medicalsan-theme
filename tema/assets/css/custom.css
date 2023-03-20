@@ -5375,7 +5375,7 @@ span.details_1 {
 }
 
 .novo-estilo-de-slider .details_2 i {
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }
 
 .details_3 {
@@ -5489,6 +5489,10 @@ span.details_1 {
     margin-bottom: 0;
     border-radius: 6.24712px;
     margin-bottom: 10px;
+}
+
+.novo-estilo-de-slider .linha-scroll-1 {
+    overflow: auto;
 }
 
 .novo-estilo-de-slider  h2.details_2.font-2 {
