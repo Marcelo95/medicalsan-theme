@@ -85,7 +85,6 @@ settings_defaults_slider_2["responsive"] = [{
     }
 }];
 
-console.log(settings_defaults_slider_2)
 
 $('.slider-2').slick(settings_defaults_slider_2);
 
@@ -109,7 +108,6 @@ settings_defaults["responsive"] = [
         }
     },
 ]
-console.log(settings_defaults)
 $('.slider-3').slick(settings_defaults);
 
 

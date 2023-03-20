@@ -14,7 +14,7 @@ $itens = (array) $itens->posts;
 
 if (count($itens)) : ?>
     <section class="novo-estilo-de-slider products box-novidades js-scroll  fade-in scrolled">
-        <h2 >NOVIDADES</h2>
+        <h2>NOVIDADES</h2>
 
         <div>
             <div class="linha-scroll-1">
@@ -63,21 +63,14 @@ if (count($itens)) : ?>
     var startX;
     var scrollLeft;
     var isDragging = false;
-    var isClickEnable = true;
+    var lastEvents = 0;
     var minhaDiv = document.querySelector(".novo-estilo-de-slider .linha-scroll-1");
 
     // Add event listeners to all anchor tags inside minhaDiv
     let links = minhaDiv.getElementsByTagName("a");
     for (let i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function(e) {
-            if (!isClickEnable) {
-                e.preventDefault();
-            } else {
-                let newEvent = new MouseEvent('click', e);
-                this.dispatchEvent(e);
-            }
-
-
+            if( lastEvents > 500) e.preventDefault();
         });
     }
 
@@ -86,6 +79,7 @@ if (count($itens)) : ?>
         startX = e.pageX - minhaDiv.offsetLeft;
         scrollLeft = minhaDiv.scrollLeft;
         isDragging = true;
+        lastEvents = (new Date()).getTime();
     });
 
     minhaDiv.addEventListener("touchstart", function(e) {
@@ -96,7 +90,6 @@ if (count($itens)) : ?>
 
     minhaDiv.addEventListener("mousemove", function(e) {
         if (!isDragging) return;
-        isClickEnable = false;
         e.preventDefault();
         var x = e.pageX - minhaDiv.offsetLeft;
         var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
@@ -110,7 +103,6 @@ if (count($itens)) : ?>
 
     minhaDiv.addEventListener("touchmove", function(e) {
         if (!isDragging) return;
-        isClickEnable = false;
         e.preventDefault();
         var x = e.touches[0].pageX - minhaDiv.offsetLeft;
         var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
@@ -125,16 +117,13 @@ if (count($itens)) : ?>
 
     minhaDiv.addEventListener("mouseup", function(e) {
         isDragging = false;
-        setTimeout(() => {
-            isClickEnable = true;
-        }, 500);
+        lastEvents = (new Date()).getTime() - lastEvents;
+
     });
 
     minhaDiv.addEventListener("touchend", function(e) {
         isDragging = false;
-        setTimeout(() => {
-            isClickEnable = true;
-        }, 500);
+        lastEvents = (new Date()).getTime() - lastEvents;
     });
 
     function move(direction) {
