@@ -1,5 +1,4 @@
-
-<?php if( $args["first_run"] ): ?>
+<?php if ($args["first_run"]) : ?>
     <link rel="stylesheet" href="<?php _e(asset(sprintf("../templates/components/%s/style.css", basename(__DIR__)))); ?>">
 <?php endif; ?>
 <?php
@@ -93,7 +92,7 @@ $linha_do_tempo = [
 ]; ?>
 
 
-<section class="content-linha-do-tempo <?php echo strpos(strtolower( wp_get_theme()->get("Name")), "san" ) ? "theme-medicalsan" : ""; ?>">
+<section class="content-linha-do-tempo <?php echo strpos(strtolower(wp_get_theme()->get("Name")), "san") ? "theme-medicalsan" : ""; ?>">
 
     <div class="title-and-buttons" style="padding-left: 20%;">
 
@@ -109,42 +108,42 @@ $linha_do_tempo = [
 
 
     <div class="sombras-left-right">
-            <div id="linha-scroll" class="linha-scroll">
-                <div id="init-linha-do-tempo" class="init-linha-do-tempo">
+        <div id="linha-scroll" class="linha-scroll">
+            <div id="init-linha-do-tempo" class="init-linha-do-tempo">
 
-                    <?php foreach ($linha_do_tempo as $key => $v) { ?>
-                        <div class="linha-item">
-                            <div class="item_top">
-                                <img src="<?php _e( asset( sprintf("../templates/components/%s/images/%s", basename(__DIR__), $v["foto"] ) )); ?>" width="332" height="188">
-                            </div>
-                            <div class="item_middle">
-                                <?php _e($v["ano"]); ?>
+                <?php foreach ($linha_do_tempo as $key => $v) { ?>
+                    <div class="linha-item">
+                        <div class="item_top">
+                            <img src="<?php _e(asset(sprintf("../templates/components/%s/images/%s", basename(__DIR__), $v["foto"]))); ?>" width="332" height="188">
+                        </div>
+                        <div class="item_middle">
+                            <?php _e($v["ano"]); ?>
 
-                                <div class=" text-mobile mobile">
-                                    <?php _e($v["texto"]); ?>
-
-                                </div>
-                            </div>
-                            <div class="item_bottom">
+                            <div class=" text-mobile mobile">
                                 <?php _e($v["texto"]); ?>
 
                             </div>
+                        </div>
+                        <div class="item_bottom">
+                            <?php _e($v["texto"]); ?>
 
                         </div>
 
-
-                    <?php } ?>
-
+                    </div>
 
 
-                </div>
+                <?php } ?>
+
+
 
             </div>
-        </div>
 
-        <div class="slidecontainer text-center">
-            <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
         </div>
+    </div>
+
+    <div class="slidecontainer text-center">
+        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+    </div>
 
     <script>
         if (/Mobi/i.test(window.navigator.userAgent) == false) {
@@ -159,7 +158,7 @@ $linha_do_tempo = [
                 var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
                 var scrollPosicao = (porcentagem / 100) * larguraContainer;
                 minhaDiv.scrollLeft = scrollPosicao;
-               
+
             });
 
             // adiciona os listeners de eventos
@@ -167,39 +166,45 @@ $linha_do_tempo = [
                 startX = e.pageX - minhaDiv.offsetLeft;
                 scrollLeft = minhaDiv.scrollLeft;
                 isDragging = true;
+                if (e.target.tagName === "A") {
+                    e.preventDefault(); // previne a ação padrão do link
+                }
             });
 
             minhaDiv.addEventListener("touchstart", function(e) {
                 startX = e.touches[0].pageX - minhaDiv.offsetLeft;
                 scrollLeft = minhaDiv.scrollLeft;
                 isDragging = true;
+                if (e.target.tagName === "A") {
+                    e.preventDefault(); // previne a ação padrão do link
+                }
             });
 
             minhaDiv.addEventListener("mousemove", function(e) {
-                if (!isDragging) return;
+                if (!isDragging || e.target.tagName === "A") return;
                 e.preventDefault();
                 var x = e.pageX - minhaDiv.offsetLeft;
                 var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
                 minhaDiv.scrollLeft = scrollLeft - walk;
 
                 var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-                var porcentagem = ( minhaDiv.scrollLeft / larguraContainer) * 100;
-                
+                var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
                 meuRange.value = Math.round(porcentagem);
 
             });
 
             minhaDiv.addEventListener("touchmove", function(e) {
-                if (!isDragging) return;
+                if (!isDragging || e.target.tagName === "A") return;
                 e.preventDefault();
                 var x = e.touches[0].pageX - minhaDiv.offsetLeft;
                 var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
                 minhaDiv.scrollLeft = scrollLeft - walk;
 
-                
+
                 var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-                var porcentagem = ( minhaDiv.scrollLeft / larguraContainer) * 100;
-                
+                var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
                 meuRange.value = Math.round(porcentagem);
 
             });
@@ -217,22 +222,30 @@ $linha_do_tempo = [
                 console.log(andar)
                 switch (direction) {
                     case "left":
-                        minhaDiv.scrollTo({ left:   minhaDiv.scrollLeft - andar, top: 0, behavior: 'smooth' }) 
-                        break;                   
-                    case "right":
-                        minhaDiv.scrollTo({ left: minhaDiv.scrollLeft +  andar, top: 0, behavior: 'smooth' }) 
+                        minhaDiv.scrollTo({
+                            left: minhaDiv.scrollLeft - andar,
+                            top: 0,
+                            behavior: 'smooth'
+                        })
                         break;
-                
+                    case "right":
+                        minhaDiv.scrollTo({
+                            left: minhaDiv.scrollLeft + andar,
+                            top: 0,
+                            behavior: 'smooth'
+                        })
+                        break;
+
                     default:
                         break;
                 }
 
 
                 var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-                var porcentagem = ( minhaDiv.scrollLeft / larguraContainer) * 100;
-                
+                var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
                 meuRange.value = Math.round(porcentagem);
-         
+
             }
         }
     </script>

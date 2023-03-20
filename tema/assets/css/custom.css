@@ -4173,7 +4173,7 @@ div[aria-label="Slide"] {
     width: 16px;
     background-size: contain;
     position: relative;
-    top: -2px;
+    top: 0;
     font-weight: 100;
     display: flex;
     align-items: center;
@@ -4356,7 +4356,7 @@ div[aria-label="Slide"] {
 }
 
 .navegador-safari [class*="botao"] span {
-    padding-top: 10px;
+    padding-top: 13px;
     line-height: 1;
     display: block;
 }
@@ -5223,16 +5223,16 @@ section.categorias {
 
 .box-novidades {
     background: rgba(217, 217, 217, 0.2);
-    padding: 62px 0px;
+    padding: 0;
     margin: 0 !important;
 }
 
-section.novo-estilo-de-slider {
+section.novo-estilo-de-slider > div {
     position: relative;
 }
 
-.novo-estilo-de-slider .linha-scroll-1 > .slider-slick {
-    overflow-x: auto;
+.novo-estilo-de-slider .linha-scroll-1 {
+    overflow-x: hidden;
     width: 100%;
     margin-left: auto;
     cursor: grab;
@@ -5241,8 +5241,14 @@ section.novo-estilo-de-slider {
     position: relative;
 }
 
-.novo-estilo-de-slider .slider-slick > div {
+.novo-estilo-de-slider .linha-scroll-1 a {
+    text-decoration: none;
+    width: auto;
+}
+
+.novo-estilo-de-slider .linha-scroll-1 > div {
     display: flex;
+    padding-left: 24%;
 }
 .slider-2 .item-photo {
 
@@ -5253,6 +5259,7 @@ section.novo-estilo-de-slider {
 .slider-2 .slick-current .item-photo {
     opacity: 1;
 }
+
 
 .slider-3--disable {
     display: flex;
@@ -5367,6 +5374,10 @@ span.details_1 {
     margin-left: 3px;
 }
 
+.novo-estilo-de-slider .details_2 i {
+    margin-top: 12px;
+}
+
 .details_3 {
     color: #43525F;
     opacity: 0.5;
@@ -5454,7 +5465,8 @@ span.details_1 {
 
 
 .box-novidades > h2 {
-    margin-bottom: 50px;
+    margin-bottom: 85px;
+    padding-top: 78px;
 }
 
 .box-novidades.novo-estilo-de-slider > h2 {
@@ -5470,6 +5482,44 @@ span.details_1 {
  box-shadow: none;
 }
 
+@media(max-width:992px){ /*responsive*/
+   .novo-estilo-de-slider .item-photo {
+    width: 159.53px;
+    height: 129.86px;
+    margin-bottom: 0;
+    border-radius: 6.24712px;
+    margin-bottom: 10px;
+}
+
+.novo-estilo-de-slider  h2.details_2.font-2 {
+    font-size: 10px;
+    margin: 0;
+}
+
+.details_2 i {
+    font-size: 14px;
+}
+
+.novo-estilo-de-slider  .setas i {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    padding: 0;
+    margin-top: -37px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.novo-estilo-de-slider .linha-scroll-1 a {
+    padding: 0;
+}
+
+.box-novidades.novo-estilo-de-slider > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+ 
+}
 html .novo-estilo-de-slider .box-item-prod:hover .item-photo {
      box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
 }
