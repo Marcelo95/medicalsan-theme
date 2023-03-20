@@ -110,7 +110,7 @@ function getYouTubeVideoId($pageVideUrl)
 function getUrlThumbnailYoutube($link_video)
 {
     $youtubeID = getYouTubeVideoId($link_video);
-    if(!$youtubeID) return false;
+    if (!$youtubeID) return false;
     return 'https://img.youtube.com/vi/' . $youtubeID . '/mqdefault.jpg';
 }
 
@@ -131,7 +131,7 @@ function cmb2_texto($content)
     global $wp_embed;
     $content = $wp_embed->autoembed($content);
     $content = $wp_embed->run_shortcode($content);
-   // $content = wpautop($content);
+    // $content = wpautop($content);
     $content = do_shortcode($content);
 
     return $content;
@@ -160,7 +160,22 @@ foreach ($files as $file) {
 }
 
 
-function custom_shortcode_onde_estamos() {
+function script_suport_safari_navigator()
+{
+?>
+    <script>
+        if (navigator.userAgent.indexOf('Safari') != -1 || navigator.userAgent.indexOf("Mac") != -1) {
+            // Código para o Safari aqui
+            window.document.body.classList.add("navegador-safari");
+        }
+    </script>
+<?php
+}
+add_action('wp_head', 'script_suport_safari_navigator', 1);
+
+
+function custom_shortcode_onde_estamos()
+{
     do_action("OndeEstamosComponent");
 }
-add_shortcode( 'onde-estamos', 'custom_shortcode_onde_estamos' );
+add_shortcode('onde-estamos', 'custom_shortcode_onde_estamos');
