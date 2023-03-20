@@ -59,7 +59,9 @@ $('.slider-1').slick(settings_defaults);
 
 
 var settings_defaults_slider_2 = Object.assign({}, settings_defaults)
-settings_defaults_slider_2["variableWidth"] = false;
+settings_defaults_slider_2["variableWidth"] = true;
+settings_defaults_slider_2["centerMode"] = false;
+settings_defaults_slider_2["infinite"] = false;
 settings_defaults_slider_2["slidesToShow"] = Math.min(3, $(".slider-2 a").length);
 settings_defaults_slider_2["slidesToScroll"] = 1;
 settings_defaults_slider_2["prevArrow"] = '.slider-2-setas .seta-esquerda';
@@ -70,19 +72,20 @@ settings_defaults_slider_2["responsive"] = [{
     settings: {
         slidesToShow: Math.min(3, $(".slider-2 a").length),
         slidesToScroll: 1,
-        infinite: true,
-        centerMode: false,
+        infinite: false,
+        centerMode: true,
     }
 }, {
     breakpoint: 915,
     settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
-        centerMode: false,
+        infinite: false,
+        centerMode: true,
     }
 }];
-settings_defaults_slider_2["centerMode"] = true;
+
+console.log(settings_defaults_slider_2)
 
 $('.slider-2').slick(settings_defaults_slider_2);
 

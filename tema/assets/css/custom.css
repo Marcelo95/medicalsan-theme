@@ -73,6 +73,7 @@ h2 {
 
 section.products>.container>h2 {
     padding-left: 17px;
+    margin-bottom: 50px;
 }
 
 .font-1 {
@@ -4172,7 +4173,7 @@ div[aria-label="Slide"] {
     width: 16px;
     background-size: contain;
     position: relative;
-    top: 0;
+    top: -2px;
     font-weight: 100;
     display: flex;
     align-items: center;
@@ -4244,6 +4245,10 @@ div[aria-label="Slide"] {
     align-items: center;
     top: 0;
     padding-top: 4px;
+}
+
+.depicter-image-layer img {
+    cursor: initial;
 }
 
 .botao-5:hover {
@@ -4351,7 +4356,7 @@ div[aria-label="Slide"] {
 }
 
 .navegador-safari [class*="botao"] span {
-    padding-top: 9px;
+    padding-top: 10px;
     line-height: 1;
     display: block;
 }
@@ -4530,6 +4535,8 @@ html .fa-arrow-right:before {
 
 .slider-slick a {
     text-decoration: none;
+    padding: 0;
+    margin-right: 45.18px;
 }
 
 .setas i {
@@ -5215,11 +5222,28 @@ section.categorias {
 }
 
 .box-novidades {
-    background: #D9D9D9;
+    background: rgba(217, 217, 217, 0.2);
     padding: 62px 0px;
     margin: 0 !important;
 }
 
+section.novo-estilo-de-slider {
+    position: relative;
+}
+
+.novo-estilo-de-slider .linha-scroll-1 > .slider-slick {
+    overflow-x: auto;
+    width: 100%;
+    margin-left: auto;
+    cursor: grab;
+    padding-bottom: 40px;
+    user-select: none;
+    position: relative;
+}
+
+.novo-estilo-de-slider .slider-slick > div {
+    display: flex;
+}
 .slider-2 .item-photo {
 
     box-shadow: none;
@@ -5428,6 +5452,32 @@ span.details_1 {
     top: 0;
 }
 
+
+.box-novidades > h2 {
+    margin-bottom: 50px;
+}
+
+.box-novidades.novo-estilo-de-slider > h2 {
+    padding-left: 25%;
+}
+
+
+
+.novo-estilo-de-slider .item-photo {
+ width: 572.01px;
+ height: 470px;
+ border-radius: 39.3484px;
+ box-shadow: none;
+}
+
+html .novo-estilo-de-slider .box-item-prod:hover .item-photo {
+     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
+}
+
+.details_2 {
+    font-size: 35.86px;
+    text-transform: inherit;
+}
 
 section.content-nossas-tecologia h2 {
     font-weight: 700;
