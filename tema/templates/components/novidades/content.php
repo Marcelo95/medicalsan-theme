@@ -60,111 +60,109 @@ if (count($itens)) : ?>
 
 
 <script>
-    if (/Mobi/i.test(window.navigator.userAgent) == false) {
-        var startX;
-        var scrollLeft;
-        var isDragging = false;
-        var isClickEnable = true;
-        var minhaDiv = document.querySelector(".novo-estilo-de-slider .linha-scroll-1");
+    var startX;
+    var scrollLeft;
+    var isDragging = false;
+    var isClickEnable = true;
+    var minhaDiv = document.querySelector(".novo-estilo-de-slider .linha-scroll-1");
 
-        // Add event listeners to all anchor tags inside minhaDiv
-        let links = minhaDiv.getElementsByTagName("a");
-        for (let i = 0; i < links.length; i++) {
-            links[i].addEventListener("click", function(e) {
-                if (!isClickEnable) {
-                    e.preventDefault();
-                } else {
-                    let newEvent = new MouseEvent('click', e);
-                    this.dispatchEvent(e);
-                }
-
-
-            });
-        }
-
-        // adiciona os listeners de eventos
-        minhaDiv.addEventListener("mousedown", function(e) {
-            startX = e.pageX - minhaDiv.offsetLeft;
-            scrollLeft = minhaDiv.scrollLeft;
-            isDragging = true;
-        });
-
-        minhaDiv.addEventListener("touchstart", function(e) {
-            startX = e.touches[0].pageX - minhaDiv.offsetLeft;
-            scrollLeft = minhaDiv.scrollLeft;
-            isDragging = true;
-        });
-
-        minhaDiv.addEventListener("mousemove", function(e) {
-            if (!isDragging) return;
-            isClickEnable = false;
-            e.preventDefault();
-            var x = e.pageX - minhaDiv.offsetLeft;
-            var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
-            minhaDiv.scrollLeft = scrollLeft - walk;
-
-            var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-            var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
-
-
-        });
-
-        minhaDiv.addEventListener("touchmove", function(e) {
-            if (!isDragging) return;
-            isClickEnable = false;
-            e.preventDefault();
-            var x = e.touches[0].pageX - minhaDiv.offsetLeft;
-            var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
-            minhaDiv.scrollLeft = scrollLeft - walk;
-
-
-            var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-            var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
-
-
-        });
-
-        minhaDiv.addEventListener("mouseup", function(e) {
-            isDragging = false;
-            setTimeout(() => {
-                isClickEnable = true;
-            }, 500);
-        });
-
-        minhaDiv.addEventListener("touchend", function(e) {
-            isDragging = false;
-            setTimeout(() => {
-                isClickEnable = true;
-            }, 500);
-        });
-
-        function move(direction) {
-            var andar = Math.floor((minhaDiv.querySelector("div > a").scrollWidth));
-            switch (direction) {
-                case "left":
-                    minhaDiv.scrollTo({
-                        left: minhaDiv.scrollLeft - andar,
-                        top: 0,
-                        behavior: 'smooth'
-                    })
-                    break;
-                case "right":
-                    minhaDiv.scrollTo({
-                        left: minhaDiv.scrollLeft + andar,
-                        top: 0,
-                        behavior: 'smooth'
-                    })
-                    break;
-
-                default:
-                    break;
+    // Add event listeners to all anchor tags inside minhaDiv
+    let links = minhaDiv.getElementsByTagName("a");
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function(e) {
+            if (!isClickEnable) {
+                e.preventDefault();
+            } else {
+                let newEvent = new MouseEvent('click', e);
+                this.dispatchEvent(e);
             }
 
 
-            var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-            var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+        });
+    }
+
+    // adiciona os listeners de eventos
+    minhaDiv.addEventListener("mousedown", function(e) {
+        startX = e.pageX - minhaDiv.offsetLeft;
+        scrollLeft = minhaDiv.scrollLeft;
+        isDragging = true;
+    });
+
+    minhaDiv.addEventListener("touchstart", function(e) {
+        startX = e.touches[0].pageX - minhaDiv.offsetLeft;
+        scrollLeft = minhaDiv.scrollLeft;
+        isDragging = true;
+    });
+
+    minhaDiv.addEventListener("mousemove", function(e) {
+        if (!isDragging) return;
+        isClickEnable = false;
+        e.preventDefault();
+        var x = e.pageX - minhaDiv.offsetLeft;
+        var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
+        minhaDiv.scrollLeft = scrollLeft - walk;
+
+        var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+        var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
 
 
+    });
+
+    minhaDiv.addEventListener("touchmove", function(e) {
+        if (!isDragging) return;
+        isClickEnable = false;
+        e.preventDefault();
+        var x = e.touches[0].pageX - minhaDiv.offsetLeft;
+        var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
+        minhaDiv.scrollLeft = scrollLeft - walk;
+
+
+        var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+        var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
+
+    });
+
+    minhaDiv.addEventListener("mouseup", function(e) {
+        isDragging = false;
+        setTimeout(() => {
+            isClickEnable = true;
+        }, 500);
+    });
+
+    minhaDiv.addEventListener("touchend", function(e) {
+        isDragging = false;
+        setTimeout(() => {
+            isClickEnable = true;
+        }, 500);
+    });
+
+    function move(direction) {
+        var andar = Math.floor((minhaDiv.querySelector("div > a").scrollWidth));
+        switch (direction) {
+            case "left":
+                minhaDiv.scrollTo({
+                    left: minhaDiv.scrollLeft - andar,
+                    top: 0,
+                    behavior: 'smooth'
+                })
+                break;
+            case "right":
+                minhaDiv.scrollTo({
+                    left: minhaDiv.scrollLeft + andar,
+                    top: 0,
+                    behavior: 'smooth'
+                })
+                break;
+
+            default:
+                break;
         }
+
+
+        var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+        var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
+
     }
 </script>
