@@ -159,6 +159,7 @@ $linha_do_tempo = [
                 var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
                 var scrollPosicao = (porcentagem / 100) * larguraContainer;
                 minhaDiv.scrollLeft = scrollPosicao;
+               
             });
 
             // adiciona os listeners de eventos
@@ -216,10 +217,10 @@ $linha_do_tempo = [
                 console.log(andar)
                 switch (direction) {
                     case "left":
-                        minhaDiv.scrollLeft -= andar;
+                        minhaDiv.scrollTo({ left:   minhaDiv.scrollLeft - andar, top: 0, behavior: 'smooth' }) 
                         break;                   
                     case "right":
-                        minhaDiv.scrollLeft += andar;
+                        minhaDiv.scrollTo({ left: minhaDiv.scrollLeft +  andar, top: 0, behavior: 'smooth' }) 
                         break;
                 
                     default:

@@ -4,51 +4,76 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 29px;
+    margin-bottom: 126px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-selos {
+    font-size: 24.28px;
+    font-weight: 400;
 }
 
 .bt3 {
     background: #0D2B78;
-    padding: 33px 24px;
+    padding: 0;
     text-align: center;
+    position: relative;
     color: #ffff;
-    font-size: 25px;
+    font-size: 35.68px;
+    font-weight: 700;
     border-radius: 31.4823px;
     text-decoration: none;
-    width: 100%;
+    width: 797px;
     display: flex;
-    height: auto;
+    height: 179px;
     align-items: center;
-    justify-content: space-between;
-    max-width: 700px;
+    justify-content: center;
     margin: auto;
+    font-family: 'Gotham';
 }
 
 .bt3.botao-3.bt2-medicalsan {
     background: black;
-    border-radius: 20px;
+    border-radius: 42px;
+    vertical-align: top;
 }
 
 .bt3.botao-3.bt2-medicalsan:hover {
-    color: #31F1C5;
+    color: #0085FF;
 }
 
 .bt3 span {
     width: 100%;
+    font-weight: 700;
+    font-size: 35.6765px;
+    /* display: inherit; */
+    padding-right: 20px;
+    font-style: normal;
 }
 
-.bt3:after {
-    font-size: xx-large;
-    top: 50%;
-    margin-top: -7px;
+html .bt3:after {
+    font-size: 58px;
+    margin: 0;
     padding: 0;
-    height: 40px;
-    right: 9px;
+    height: 100%;
+    right: 54px;
+    width: 21px;
+    position: absolute;
+    top: 0;
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .selos img {
-    margin: 23px;
+    margin-right: 52.975px;
+    margin-left: 52.975px;
     height: auto;
+    /* max-width: 131px; */
+    /* margin-left: 105.95px; */
+    margin-top: 20px;
 }
 
 .selos h2 {

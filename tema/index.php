@@ -71,13 +71,13 @@
                 <div class="box-text js-scroll fade-in-bottom">
                     <h4>MAIS VENDIDOS</h4>
                     <h2>Ultramed</h2>
-                    <h5>Rejuvenescimento com ultrassom</h5>
+                    <h5> <span>Rejuvenescimento com ultrassom</span> </h5>
 
                     <a href="<?php echo home_url("produtos/ultramed"); ?>" class="botao-5"> Confira </a>
 
                 </div>
                 <div class=" box-image js-scroll fade-in-bottom">
-                    <img src="<?php echo asset("images/produtos/ultramed/1.svg"); ?>" alt="">
+                    <div class="box-prod-quad" <?php echo asset_image_background(asset("images/produtos/ultramed/1.svg")); ?>> </div>
                 </div>
             </div>
         </div>
@@ -86,15 +86,15 @@
                 <div class="box-text js-scroll fade-in-bottom">
                     <h4>MAIS VENDIDOS</h4>
                     <h2>Criodermis</h2>
-                    <h5>
-                        Criolipólise corporal e facial com
-                        placas para áreas maiores</h5>
+                    <h5> <span>Criolipólise corporal e facial com
+                            placas para áreas maiores</span>
+                    </h5>
 
                     <a href="<?php echo home_url("produtos/criodermis"); ?>" class="botao-5"> Entenda </a>
 
                 </div>
                 <div class=" box-image js-scroll fade-in-bottom">
-                    <img src="<?php echo asset("images/produtos/criodermis/1.svg"); ?>" alt="">
+                    <div class="box-prod-quad" <?php echo asset_image_background(asset("images/produtos/criodermis/1.svg")); ?>> </div>
                 </div>
             </div>
         </div>
@@ -117,44 +117,44 @@ if (count($itens)) : ?>
     <section class="products box-novidades js-scroll  fade-in scrolled">
         <div class="container">
             <h2>NOVIDADES</h2>
-            <div class="slider-slick">
-                <div class="slider-2">
 
-                    <?php
+        </div>
+        <div class="slider-slick">
+            <div class="slider-2">
 
-                    foreach ($itens as $key => $item) {
+                <?php
 
-                        $photo = asset_image_background(get_the_post_thumbnail_url($item->ID), true);
-                        $link = sprintf('href="%s"', get_permalink($item->ID));
-                        $title = $item->post_title;
-                        $desc = $item->post_excerpt;
-                        $cod = get_post_meta($item->ID, '_metabox_for_produtos_codigo', true);
+                foreach ($itens as $key => $item) {
 
-                        echo sprintf('
+                    $photo = asset_image_background(get_the_post_thumbnail_url($item->ID), true);
+                    $link = sprintf('href="%s"', get_permalink($item->ID));
+                    $title = $item->post_title;
+                    $desc = $item->post_excerpt;
+                    $cod = get_post_meta($item->ID, '_metabox_for_produtos_codigo', true);
+
+                    echo sprintf('
                             <a %s  class="box-item-prod ">
                                 <div class="item-photo " %s ></div>
                                 <div class="all-details">
-                                <h2 class="details_2 font-2">%s <i class="material-icons">keyboard_arrow_right</i></h2>
-                                <span class="details_1"> %s </span>     
+                                <h2 class="details_2 font-2">%s <i class="material-icons">keyboard_arrow_right</i></h2>   
                                 </div>
                             </a>
                         
                     ', $link, $photo,  $title, $desc);
-                    }
-                    ?>
+                }
+                ?>
 
 
-                </div>
-                <div class="setas slider-2-setas noselect">
-                    <i class="fa fa-arrow-left  seta-esquerda"></i>
-                    <i class="fa fa-arrow-right seta-direita"></i>
-
-                </div>
+            </div>
+            <div class="setas slider-2-setas noselect">
+                <i class="fa fa-arrow-left  seta-esquerda"></i>
+                <i class="fa fa-arrow-right seta-direita"></i>
 
             </div>
 
-
         </div>
+
+
     </section>
 
 <?php endif; ?>
@@ -204,7 +204,7 @@ if (count($itens)) : ?>
 
         </div>
 
-        <div class="mt-5 text-center mobile"><a class="botao-1 var-1" href="<?php echo home_url("blog"); ?>">Ver mais</a></div>
+        <div class="  text-center"><a class="botao-1 var-1" href="<?php echo home_url("blog"); ?>">Ver mais</a></div>
     </div>
 </section>
 
