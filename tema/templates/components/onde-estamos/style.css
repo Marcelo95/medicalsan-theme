@@ -2,12 +2,17 @@ svg path:hover {
     fill: #fff;
     cursor: pointer;
 }
-.lista-enderecos > div h2 {margin-bottom: 30px;font-size: 18px;}
+.lista-enderecos > div h2 {margin-bottom: 30px;font-size: 18px;display: none;}
+@media(max-width:992px){
+    .lista-enderecos > div h2 {
+        display:block;
+    }
+}
 
 .estados-carregados > div {
     display: none;
     font-weight: 100;
-    line-height: 27px;
+    line-height: 22px;
 }
 
 select#seletor {
@@ -82,6 +87,9 @@ section.mapa-de-estados .chamadas h3 {
 section.mapa-de-estados b {
     color: #fff;
     font-weight: 800;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: uppercase;
 }
 section.archive.page-onde-estamos {
     border-top: 150px solid #00367E;
