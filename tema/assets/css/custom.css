@@ -5509,7 +5509,7 @@ span.details_1 {
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .box-item-prod:hover h2 {

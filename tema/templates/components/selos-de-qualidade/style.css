@@ -39,6 +39,10 @@
     vertical-align: top;
 }
 
+.bt3.botao-3.bt2-medicalsan span {
+    padding-top: 0;
+}
+
 .bt3.botao-3.bt2-medicalsan:hover {
     color: #0085FF;
 }
