@@ -5425,6 +5425,7 @@ section.novo-estilo-de-slider > div {
     padding-left: 10px;
     text-decoration: none;
     color: black;
+    justify-content: flex-start;
 }
 
 .slider-3--disable>a>div {
@@ -5632,6 +5633,14 @@ span.details_1 {
 
 .novo-estilo-de-slider .linha-scroll-1 a {
     padding: 0;
+    max-width: 210.53px;
+    justify-content: flex-start;
+}
+
+.novo-estilo-de-slider .linha-scroll-1 a:first-child {padding-left: 43px;}
+
+.novo-estilo-de-slider .linha-scroll-1 a:last-child {
+    padding-right: 43px;
 }
 
 .box-novidades.novo-estilo-de-slider > h2 {
@@ -6117,6 +6126,7 @@ img.logo {
 
     .slider-3--disable>a:first-child {
         width: 100%;
+        margin: auto;
     }
 
     html .slider-3--disable>a:nth-child(3) {
@@ -6463,6 +6473,8 @@ title-top-prod {
         font-weight: 700;
         font-size: 11.7728px;
    }
+
+section.products.box-blog {margin-top: 0;}
     .page-home .bt3.botao-3.bt2-medicalsan span {
         font-weight: 700;
         font-size: 11.7728px;
@@ -6474,13 +6486,30 @@ title-top-prod {
    }
     .page-home .selos {
         margin-bottom: 46.94px;
+        max-width: 390px;
    }
+
+.page-home .selos > div {
+    text-align: center;
+    width: 50%;
+}
     .page-home a.botao-1.var-1 {
         width: 81px;
         height: 22px;
         border-radius: 12px;
         padding: 13px 0;
+        margin-top: 10px;
    }
+
+.link-topo a {
+    font-weight: 300;
+    font-size: 7px;
+    line-height: 6px;
+}
+
+.link-topo a i {
+    font-size: 12px !important;
+}
     .page-home a.botao-1.var-1 span {
         font-style: normal;
         font-weight: 400;
@@ -6495,6 +6524,7 @@ title-top-prod {
         font-weight: 700;
         font-size: 8.31594px;
         line-height: 9px;
+        text-align: left;
    }
     .page-home .slider-3--disable .cats {
         font-style: normal;
@@ -6508,6 +6538,7 @@ title-top-prod {
         height: 114.16px;
         filter: drop-shadow(0px 1.96826px 1.96826px rgba(0, 0, 0, 0.25));
         border-radius: 12px;
+        max-width: 100%;
    }
     .page-home .slider-3--disable > a > div {
         width: 175.67px;
@@ -6526,6 +6557,7 @@ title-top-prod {
    }
     .page-home .slider-3--disable > a:first-child .area {
         width: 357px;
+        margin: auto;
    }
     .page-home .slider-3--disable a:first-child h2.mobile {
         font-style: normal;
