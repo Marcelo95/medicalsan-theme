@@ -38,9 +38,10 @@
             <div id="widget_3_3_footer" class="primary-sidebar widget-area" role="complementary">
                 <h2><?php echo __("Redes Sociais"); ?></h2>
                 <div class="list-redes image-mouseover">
-                    <a href="https://facebook.com/medsam.oficial" class="btn btn-link "> <i class="fa fa-facebook-square	"></i> </a>
-                    <a href="https://instagram.com/medsam.com.br" class="btn btn-link"> <i class="fa fa-instagram"></i> </a>
-                    <a href="https://youtube.com.br/ClubeDasEmpreendedoras" class="btn btn-link"><i class="fa fa-youtube-play		"></i> </a>
+                    <a href="https://www.facebook.com/medicalsanbr/?locale=pt_BR" class="btn btn-link "> <i class="fa fa-facebook-square	"></i> </a>
+                    <a href="https://www.instagram.com/medicalsanbr/" class="btn btn-link"> <i class="fa fa-instagram"></i> </a>
+                    <a href="https://www.youtube.com/c/MedicalSan/featured" class="btn btn-link"><i class="fa fa-youtube-play		"></i> </a>
+                    <a href="https://www.linkedin.com/company/medicalsan/?originalSubdomain=br" class="btn btn-link"><i class="fa fa fa-linkedin-square	"></i> </a>
                 </div>
                 <?php if (is_active_sidebar('widget_3_3_footer')) : ?>
                     <?php dynamic_sidebar('widget_3_3_footer'); ?>
@@ -63,7 +64,7 @@
                 <h2>
                     <a class="point-marker" href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-map-marker	"></i> <span>386 Business Park <br>
-                            Rodovia BR-386, km 357. Estrela - RS</span>
+                            Rodovia BR-386, km 357. <br> Estrela - RS</span>
                     </a>
 
 
