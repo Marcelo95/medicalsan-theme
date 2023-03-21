@@ -3187,29 +3187,33 @@ section.box-o-melhor-handplace h2 {
 header button.navbar-toggler.toggler-mobile {
     color: #fff;
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     transition: color .25s ease-in-out;
     border-radius: 50%;
     line-height: 2rem;
     text-align: center;
     background: black;
     margin-left: 12px;
-    font-size: 7px;
+    font-size: 4px;
     position: relative;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 
 header button.navbar-toggler.open.toggler-mobile:after {
-    width: 19px;
-    height: 10px;
+    width: 14px;
+    height: 8px;
     background: transparent;
     content: '';
     position: absolute;
-    left: 7px;
-    top: 12px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    left: 6px;
+    top: 9px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.page-sobre header button.navbar-toggler.open.toggler-mobile:after {
+    border-color: white;
 }
 
 .page-onde-estamos header button.navbar-toggler.open.toggler-mobile:after,
@@ -3225,9 +3229,17 @@ header button.navbar-toggler.open.toggler-mobile {
     color: transparent;
 }
 
+.page-sobre header button.navbar-toggler.open.toggler-mobile {border-color: transparent;}
+
+header button.navbar-toggler.toggler-mobile i {
+    font-size: 17px;
+    margin-left: -7px;
+}
+
 .page-onde-estamos header button.navbar-toggler.open.toggler-mobile,
 .single-produtos header button.navbar-toggler.open.toggler-mobile {
     background: #fff;
+    border-color: white;
 }
 
 .page-home header button.navbar-toggler.open.toggler-mobile {
@@ -3551,7 +3563,24 @@ a.dropdown-item {
 
 html .mobile .menu-principal a {
     /* display: inline-block; */
-    margin-bottom: 15px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    position: relative;
+}
+
+html .mobile .menu-principal a[title="tecnologias" i] {
+    background: no-repeat;
+    padding: 0 !important;
+}
+
+html .mobile .menu-principal a:after {
+    content: '';
+    width: 122%;
+    height: 0px;
+    position: absolute;
+    top: 29px;
+    right: 0;
+    border: 0.619935px solid rgba(255, 255, 255, 0.3);
 }
 
 .menu-principal .current-menu-item a {
@@ -5368,6 +5397,7 @@ section.novo-estilo-de-slider > div {
     font-weight: 700;
     line-height: 31.44px;
     text-transform: lowercase;
+    text-align: left !important;
 }
 
 .slider-3--disable .details_2::first-letter {
@@ -6006,9 +6036,17 @@ section.comentarios>.container {
         padding-right: 14px;
     }
 
+.menu-principal li a {
+    color: white;
+}
+
     .menu-principal li:has(a[title="tecnologias" i]) {
         padding-right: 0;
     }
+
+html .mobile .menu-principal li {
+    padding-right: 0px !important;
+}
 
     .page-home header.header-style-1 {
         /* background: #fff; */
@@ -6025,7 +6063,7 @@ section.comentarios>.container {
     .navbar-stuck-menu {
         position: fixed;
         z-index: 9999999999988888999999999999999999;
-        background: #ffffff;
+        background: #000000;
         width: 100%;
         top: 0;
         align-items: baseline;
@@ -6037,10 +6075,9 @@ section.comentarios>.container {
     }
 
 
-    .details_2.font-2 {
+    .details_2.font-2 {text-align: center;}
 
-        text-align: center;
-    }
+
 
     h2.details_2.font-2 {}
 
@@ -6073,6 +6110,11 @@ section.comentarios>.container {
         margin-right: auto !important;
     }
 
+img.logo {
+    width: 144px;
+    height: auto;
+}
+
     .slider-3--disable>a:first-child {
         width: 100%;
     }
@@ -6086,8 +6128,9 @@ section.comentarios>.container {
     }
 
     html .slider-3--disable>a {
-        min-width: 165px;
+        /* min-width: 165px; */
         padding: 3px;
+        width: auto;
     }
 
     .slider-3--disable>a>div {
@@ -6346,4 +6389,151 @@ title-top-prod {
     section.bloco-2-text {
         margin: 0;
     }
+}
+
+
+
+@media (max-width:992px) {
+    .page-home section.box-lancamento h4 {
+        font-size: 7px;
+        margin-bottom: 33px;
+        margin-top: 60px;
+   }
+    .page-home section.box-lancamento h2 {
+        font-size: 24px;
+        margin-bottom: 26px;
+   }
+    .page-home section.box-lancamento h5 {
+        font-size: 10px;
+        margin-bottom: 25px;
+        max-width: 168px !important;
+        min-width: auto !important;
+        margin: auto;
+   }
+   html .page-home  section.box-lancamento .box-text a {
+        font-size: 9px;
+        margin-bottom: 10px;
+        height: auto;
+   }
+    .page-home .box-lancamento a:after {
+        font-size: 14px;
+        top: 4px;
+   }
+    .page-home section.box-lancamento.baixo h5 {
+        margin-bottom: 26px;
+   }
+    .page-home section.box-lancamento .box-image img {
+        width: 100%;
+        margin: auto !important;
+   }
+    .page-home section.box-lancamento.estilo-3 .col {
+        min-height: auto;
+   }
+    .page-home section.box-lancamento.estilo-3 .col .box-text h4 {
+        font-size: 9px;
+        margin-top: 50px;
+        margin-bottom: 38px;
+   }
+    .page-home section.box-lancamento.estilo-3 .col .box-text h5 {
+        margin-bottom: 23px;
+   }
+    .page-home .box-prod-quad {
+        height: 144px;
+        width: 252px;
+   }
+    .page-home section.box-lancamento.estilo-1 {
+        min-height: auto;
+   }
+    .page-home section.box-lancamento.estilo-2 {
+        min-height: auto;
+   }
+   html .page-home  h2.title-selos {
+        font-size: 14.4204px;
+        max-width: 196px;
+        margin: auto;
+   }
+    .page-home .selos img {
+        margin: 20px 0;
+        max-width: 48%;
+   }
+    .page-home .bt3.botao-3.bt2-medicalsan {
+        border-radius: 13.8595px;
+        width: 263px;
+        height: 60.06px;
+        font-weight: 700;
+        font-size: 11.7728px;
+   }
+    .page-home .bt3.botao-3.bt2-medicalsan span {
+        font-weight: 700;
+        font-size: 11.7728px;
+   }
+    html .page-home  .bt3:after {
+        right: 10px;
+        font-size: 20px;
+        padding-top: 0;
+   }
+    .page-home .selos {
+        margin-bottom: 46.94px;
+   }
+    .page-home a.botao-1.var-1 {
+        width: 81px;
+        height: 22px;
+        border-radius: 12px;
+        padding: 13px 0;
+   }
+    .page-home a.botao-1.var-1 span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 7px;
+        line-height: 10px;
+        margin-left: 10px;
+   }
+    .page-home a.botao-1.var-1:after {
+        font-size: 17px;
+   }
+    .page-home h2.details_2.font-2 {
+        font-weight: 700;
+        font-size: 8.31594px;
+        line-height: 9px;
+   }
+    .page-home .slider-3--disable .cats {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8.31594px;
+        line-height: 9px;
+        margin-top: 9px;
+   }
+    .page-home .slider-3--disable > a > div .item-photo {
+        width: 151.56px;
+        height: 114.16px;
+        filter: drop-shadow(0px 1.96826px 1.96826px rgba(0, 0, 0, 0.25));
+        border-radius: 12px;
+   }
+    .page-home .slider-3--disable > a > div {
+        width: 175.67px;
+        padding: 12px;
+   }
+    .page-home span.details_1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 11px;
+   }
+    .page-home .slider-3--disable > a:first-child > div .item-photo {
+        width: 306px;
+        height: 227px;
+        width: 100%;
+   }
+    .page-home .slider-3--disable > a:first-child .area {
+        width: 357px;
+   }
+    .page-home .slider-3--disable a:first-child h2.mobile {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 17px;
+        margin-bottom: 14px;
+        padding-left: 7px;
+   }
+    
 }
