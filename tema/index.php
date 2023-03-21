@@ -21,7 +21,8 @@
 
             <div class=" box-image js-scroll fade-in-bottom scrolled">
 
-                <img src="<?php echo asset("images/produtos/omer-smart/1.png"); ?>" alt="">
+                <img class="desktop" src="<?php echo asset("images/produtos/omer-smart/1.png"); ?>" alt="">
+                <img class="mobile" src="<?php echo asset("images/produtos/omer-smart/1-mobile.svg"); ?>" alt="">
             </div>
             <div class="box-text js-scroll fade-in-bottom scrolled">
                 <h4>LANÇAMENTO</h4>
@@ -54,7 +55,8 @@
 
             </div>
             <div class=" box-image js-scroll fade-in-bottom">
-                <img src="<?php echo asset("images/produtos/hakon/1.svg"); ?>" alt="">
+                <img class="desktop" src="<?php echo asset("images/produtos/hakon/1.svg"); ?>" alt="">
+                <img class="mobile" src="<?php echo asset("images/produtos/hakon/1-mobile.svg"); ?>" alt="">
             </div>
 
         <?php endif; ?>
@@ -77,7 +79,8 @@
 
                 </div>
                 <div class=" box-image js-scroll fade-in-bottom">
-                    <div class="box-prod-quad" <?php echo asset_image_background(asset("images/produtos/ultramed/1.svg")); ?>> </div>
+                    <div class="box-prod-quad desktop" <?php echo asset_image_background(asset("images/produtos/ultramed/1.svg")); ?>> </div>
+                    <img class="mobile" src="<?php echo asset("images/produtos/ultramed/1-mobile.svg"); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -94,7 +97,8 @@
 
                 </div>
                 <div class=" box-image js-scroll fade-in-bottom">
-                    <div class="box-prod-quad" <?php echo asset_image_background(asset("images/produtos/criodermis/1.svg")); ?>> </div>
+                    <div class="box-prod-quad desktop" <?php echo asset_image_background(asset("images/produtos/criodermis/1.svg")); ?>> </div>
+                    <img class="mobile" src="<?php echo asset("images/produtos/criodermis/1-mobile.svg"); ?>" alt="">
                 </div>
             </div>
         </div>

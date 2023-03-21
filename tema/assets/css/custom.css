@@ -6127,6 +6127,7 @@ img.logo {
     .slider-3--disable>a:first-child {
         width: 100%;
         margin: auto;
+        max-width: 100%;
     }
 
     html .slider-3--disable>a:nth-child(3) {
@@ -6140,7 +6141,8 @@ img.logo {
     html .slider-3--disable>a {
         /* min-width: 165px; */
         padding: 3px;
-        width: auto;
+        width: fit-content;
+        max-width: 50%;
     }
 
     .slider-3--disable>a>div {
