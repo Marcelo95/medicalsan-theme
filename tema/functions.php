@@ -160,9 +160,11 @@ foreach ($files as $file) {
 }
 
 
-add_filter( 'body_class', function( $classes ) {
-    if(strpos($_SERVER["HTTP_USER_AGENT"], 'Macintosh')  ){ // checa se é Sistema APPLE
-        return array_merge( $classes, array( 'navegador-safari' ) );  
+add_filter('body_class', function ($classes) {
+    $browser_info = strtolower($_SERVER['HTTP_USER_AGENT']);
+
+    if (strpos($browser_info, 'macintosh') !== false || strpos($browser_info, 'iphone') !== false || strpos($browser_info, 'ipad') !== false || strpos($browser_info, 'ipod') !== false) { // checa se é Sistema APPLE
+        return array_merge($classes, array('navegador-safari'));
     }
     return $classes;
 });
