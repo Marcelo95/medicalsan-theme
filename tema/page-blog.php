@@ -19,13 +19,13 @@
 		</div>
 	</div>
 
-	<div class="container">
+
 		<div class="mt-5 mb-5">
 		
 
 			<?php
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			$args = array('s' => get_query_var('s'),'posts_per_page' => 10, 'paged' => $paged, 'post_type' => 'post');
+			$args = array('s' => get_query_var('s'),'posts_per_page' => 50, 'paged' => $paged, 'post_type' => 'post');
 			query_posts($args);
 
 
@@ -39,10 +39,9 @@
 
 			<?php endif; ?>
 
-			<div class="loop">
+		
 				<?php get_template_part('templates/loop-blog'); ?>
-			</div>
-
+		
 
 
 			<?php get_template_part('templates/pagination'); ?>
@@ -50,7 +49,6 @@
 
 		</div>
 
-	</div>
 </section>
 
 <?php get_footer(); ?>

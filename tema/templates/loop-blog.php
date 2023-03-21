@@ -2,43 +2,65 @@
     while (have_posts()) : $current_post++;
         the_post(); ?>
 
-        <!-- article -->
-        <article id="post-<?php the_ID(); ?>" <?php post_class((1 == $current_post) ? "first-post" : ""); ?>>
 
-            <!-- post thumbnail -->
-            <?php if (has_post_thumbnail()) : // Check if thumbnail exists 
-            ?>
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="box-thumbnail">
-                    <?php 
-                    the_post_thumbnail(array(1200,400)); // Declare pixel size you need inside the array 
+        <?php if ($current_post == 2) : ?>
+            <div class="block-with-2-post">
+                <div class="loop">
+                <?php endif; ?>
+
+                <!-- article -->
+                <article id="post-<?php the_ID(); ?>" <?php post_class([(1 == $current_post) ? "first-post" : "", "loop"]); ?>>
 
 
+                    <!-- post thumbnail -->
+                    <?php if (has_post_thumbnail()) : // Check if thumbnail exists 
                     ?>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                            <div class="box-thumbnail" <?php _e(asset_image_background(get_the_post_thumbnail_url(get_the_ID(), 'full'), $no_image = true)); ?>></div>
 
-                </a>
-            <?php endif; ?>
+                        </a>
+                    <?php else : ?>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                            <div class="box-thumbnail" <?php _e(asset_image_background(false, $no_image = true)); ?>></div>
+
+                        </a>
+                    <?php endif; ?>
 
 
 
-            <div class="content-text">
-                <h2>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                </h2>
+                    <div class="content-text">
+                        <label class="cats"><?php echo implode(" ", wp_get_post_categories(get_the_ID(), array('fields' => 'names', 'number' => 1))); ?></label>
+                        <h2>
+                              <?php if ($current_post == 2 || $current_post == 3) : ?>
+                                <a class="botao-5" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+
+                            <?php else : ?>
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                            <?php endif; ?>
+
+                        </h2>
 
 
-                <?php //the_excerpt(); // Build your custom callback length in functions.php 
-                ?>
-                <a class="botao-5" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                    Leia mais
-                </a>
+                        <?php if ($current_post != 2 && $current_post != 3) : ?>
+                            <a class="botao-5" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                Leia mais
+                            </a>
+                        <?php endif; ?>
+
+                    </div>
+
+
+
+
+
+                </article>
+                <!-- /article -->
+
+
+                <?php if ($current_post == 3) : ?>
+                </div>
             </div>
-
-
-
-
-
-        </article>
-        <!-- /article -->
+        <?php endif; ?>
 
     <?php endwhile; ?>
 
