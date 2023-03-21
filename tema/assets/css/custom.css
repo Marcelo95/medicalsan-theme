@@ -331,9 +331,7 @@ img.rectangle {
         padding-top: 112px;
     }
 
-    .page-onde-estamos main.page-wrapper,
-    .page-home main.page-wrapper,
-    .page-blog main.page-wrapper {
+    .page-template-template-page-clean main.page-wrapper, .page-onde-estamos main.page-wrapper, .page-home main.page-wrapper, .page-blog main.page-wrapper {
         padding-top: 0;
     }
 
