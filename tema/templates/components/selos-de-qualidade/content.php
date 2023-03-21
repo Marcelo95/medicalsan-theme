@@ -23,10 +23,10 @@ if (strpos(strtolower(wp_get_theme()->get("Name")), "start")) {
             Nossos selos de qualidade e certificações
         </h2>
         <div class="selos selos-images">
-            <img src="<?php echo $relative_path . "/images/ncc.png"; ?>" alt="NCC">
-            <img src="<?php echo $relative_path . "/images/iso.png"; ?>" alt="ISO-13485-2016">
-            <img src="<?php echo $relative_path . "/images/gptw.png"; ?>" alt="GPTW">
-            <img src="<?php echo $relative_path . "/images/patente.png"; ?>" alt="Patente Verde">
+            <div><img src="<?php echo $relative_path . "/images/ncc.png"; ?>" alt="NCC"></div>
+            <div><img src="<?php echo $relative_path . "/images/iso.png"; ?>" alt="ISO-13485-2016"></div>
+            <div><img src="<?php echo $relative_path . "/images/gptw.png"; ?>" alt="GPTW"></div>
+            <div><img src="<?php echo $relative_path . "/images/patente.png"; ?>" alt="Patente Verde"></div>
         </div>
         <div class="text-center">
             <a href="<?php _e(home_url("contato")); ?>" class="bt3 botao-3 <?php echo $is_theme_medicalsan ? "bt2-medicalsan" : ""; ?>"> <span>Seja um distribuidor <?php _e($name_show); ?></span></a>
