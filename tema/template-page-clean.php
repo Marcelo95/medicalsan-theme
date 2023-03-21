@@ -1,3 +1,10 @@
+<?php
+
+/* 
+ Template Name: Template onde-estamos
+*/
+?>
+
 <?php get_header("blog"); ?>
 
 <section class=" archive page-onde-estamos <?php echo strpos(strtolower( wp_get_theme()->get("Name")), "start" ) ? "theme-medstart" : ""; ?>">
