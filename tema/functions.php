@@ -170,6 +170,18 @@ add_filter('body_class', function ($classes) {
 });
 
 
+add_action("add_body_class", function ($args=false)
+{
+
+    add_filter('body_class', function ($classes) use($args){
+        if($args){
+            return array_merge($classes, $args);
+        }
+        return $classes;
+    });
+    
+}, 10 ,1);
+
 function custom_shortcode_onde_estamos()
 {
     do_action("OndeEstamosComponent");

@@ -1,5 +1,9 @@
-<?php get_header();
+<?php 
+do_action("add_body_class", ["category-tecnologias"]);
+
+get_header();
 $current_term = get_category(get_query_var('cat'));
+
 
 $current_category = get_queried_object(); ////getting current category
 $args = array(
@@ -7,7 +11,8 @@ $args = array(
     // your post type,
     'orderby' => 'title',
     'order' => 'ASC',
-    //'cat' => $current_category->cat_ID // current category ID
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
 );
 $the_query = new WP_Query($args);
 
@@ -22,46 +27,48 @@ $the_query = new WP_Query($args);
     </ul>
 </div>
 
+<div class="container">
 
-<div class="slider-icons-categories">
-    <?php
-
-
-    if ($the_query->have_posts()) :
-        while ($the_query->have_posts()) :
-            $the_query->the_post();
-            $slug = basename(get_permalink());
-            $title = get_the_title();
-            $image_icon = asset("images/no-image.svg");
-            $link = get_permalink();
+    <div class="slider-icons-categories">
+        <?php
 
 
-            $file_exist = sprintf("images/images-categories-prods/icon-%s.png", $slug);
+        if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) :
+                $the_query->the_post();
+                $slug = basename(get_permalink());
+                $title = get_the_title();
+                $image_icon = asset_image_background(asset("images/no-image.svg"));
+                $link = get_permalink();
 
-            if (file_exists(__DIR__ . '/assets/' . $file_exist)) {
-                $image_icon = asset($file_exist);
-            }
 
-            echo sprintf('
+                $file_exist = sprintf("images/images-categories-prods/icon-%s.png", $slug);
+
+                if (file_exists(__DIR__ . '/assets/' . $file_exist)) {
+                    $image_icon = asset_image_background(asset($file_exist));
+                }
+
+                echo sprintf('
 					<div class="boxes-cats">
 						<a href="%s">
 							<div>
-								<img src="%s"  alt="%s">
+                                <div class="image-icon-cats" %s title="%s"></div>
 								<h2>%s</h2>
 							</div>            
 						</a>                    
 					</div>
 
 				', $link, $image_icon, $title, $title);
-        endwhile;
-    endif; ?>
+            endwhile;
+        endif; ?>
 
 
+
+
+    </div>
 
 
 </div>
-
-
 
 
 <main class="main main-categories">
@@ -88,7 +95,7 @@ $the_query = new WP_Query($args);
 
                     if (file_exists(__DIR__ . '/assets/' . $file_exist)) {
                         $image_background = sprintf('style="background-image:url(%s);"', asset($file_exist));
-                    } 
+                    }
 
                     if (!file_exists(__DIR__ . sprintf("/assets/images/images-categories-prods/png/prod-%s.png", $slug))) {
                         $image_prod = asset("/images/no-image.svg");
