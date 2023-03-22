@@ -2653,6 +2653,7 @@ main.main.main-categories h2 {
 
 .lista-categories-prods>div>div.logo-and-text a {
     color: #fff;
+    font-weight: 400;
 }
 
 .lista-categories-prods>div>div.logo-and-text a:hover {
