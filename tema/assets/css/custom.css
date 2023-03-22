@@ -2552,6 +2552,10 @@ main.main.main-categories h2 {
 .lista-categories-prods.duas-grades {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: flex-start;
+    max-width: 969.87px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .lista-categories-prods>div {
@@ -2566,11 +2570,10 @@ main.main.main-categories h2 {
 }
 
 .lista-categories-prods.duas-grades>div {
-    width: 48%;
+    width: 465px;
     margin: 1%;
     overflow: hidden;
-    min-width: 288px;
-    height: 138px;
+    height: 137.4px;
 }
 
 .lista-categories-prods.duas-grades>div>div {}
@@ -2626,7 +2629,7 @@ main.main.main-categories h2 {
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    max-width: 36%;
+    /* max-width: 36%; */
     min-width: 135px;
     height: 100%;
 }
@@ -2660,7 +2663,7 @@ main.main.main-categories h2 {
 
     /*responsive*/
     html .lista-categories-prods.duas-grades>div>div {
-        height: 106px;
+        /* height: 106px; */
     }
 
     html .lista-categories-prods>div>div.logo-and-text a {
@@ -2955,15 +2958,7 @@ html h1.title-blog {
 
 @media(max-width:873px) {
 
-    /*responsive*/
-    .lista-categories-prods.duas-grades>div {
-        height: auto;
-        width: 100%;
-    }
 
-    .lista-categories-prods.duas-grades>div>div {
-        height: auto;
-    }
 }
 
 
@@ -6413,7 +6408,18 @@ title-top-prod {
 	 font-weight: 700;
 	 line-height: 0;
 }
- 
+ .image-prod-tec {
+    width: 202.17px;
+    height: 100%;
+    background-size: contain !important;
+    background-position: bottom !important;
+}
+
+.logo-prod-tec {
+    width: 120px;
+    height: 65px;
+    background-size: contain !important;
+}
 
 @media (max-width:768px) {
     .form-footer form.wpcf7-form p {
@@ -6681,6 +6687,44 @@ section.products.box-blog {margin-top: 0;}
 }
  html .page-blog.archive article a {
 	 max-width: 100%;
+}
+ .post-type-archive-produtos .lista-categories-prods.duas-grades > div {
+	 height: 91.4px;
+	 min-width: 303px !important;
+	 width: 303px;
+	 margin-bottom: 9.33px;
+}
+ .post-type-archive-produtos .lista-categories-prods.duas-grades > div > div {
+	 padding: 0;
+}
+ .post-type-archive-produtos .lista-categories-prods.duas-grades {
+	 display: inline-block;
+}
+ .post-type-archive-produtos main.main.main-categories h1 {
+	 color: black;
+	 font-weight: 700;
+	 font-size: 24px;
+	 line-height: 27px;
+}
+ .post-type-archive-produtos .image-prod-tec {
+	 width: 121px;
+}
+ .post-type-archive-produtos .logo-prod-tec {
+	 width: 105px;
+	 height: 82px;
+	 margin-top: 10px;
+	 background-position: center !important;
+}
+ .post-type-archive-produtos .lista-categories-prods > div > div.logo-and-text a {
+	 font-style: normal;
+	 font-weight: 400;
+	 font-size: 5.78147px;
+	 line-height: 8px;
+	 margin-top: 5px;
+}
+ .post-type-archive-produtos .lista-categories-prods > div > div.logo-and-text a::after {
+	 font-size: 12px;
+	 top: 4px;
 }
  
 }

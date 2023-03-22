@@ -108,10 +108,10 @@ $the_query = new WP_Query($args);
                     echo sprintf('
 					<div class="item-%s" %s >
 							<div>
-								<img class="imagem-frente js-scroll fade-in-bottom scrolled" src="%s" >
+                                <div class="image-prod-tec" %s></div>
 							</div>
 							<div class="logo-and-text">
-								<img class="imagem-frente js-scroll fade-in-bottom scrolled" src="%s">
+                                <div class="logo-prod-tec" %s></div>
 								<a href="%s" class="botao-5">
 									Conheça
 								</a>
@@ -119,13 +119,12 @@ $the_query = new WP_Query($args);
 						
 					</div>
 
-				', $slug, $image_background, $image_prod, $logo_prod, $link);
+				', $slug, $image_background, asset_image_background($image_prod), asset_image_background($logo_prod), $link);
                 endwhile;
             endif; ?>
 
 
         </div>
-
 
 
     </section>
