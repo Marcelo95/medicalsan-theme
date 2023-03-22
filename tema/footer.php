@@ -115,9 +115,6 @@
 <?php wp_footer(); ?>
 
 
-<pre style="display:none;">
-<?php echo $_SERVER['HTTP_USER_AGENT']; ?>
-</pre>
 </body>
 
 </html>
