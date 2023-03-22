@@ -86,6 +86,20 @@ function metabox_for_produtos()
     )
   );
 
+  $cmb_demo->add_field(
+    array(
+      'name' => __('Prioridade', 'cmb2'),
+      'desc' => __('<br><small>*Ao listar os produtos em tecnologias, esse campo definirá a ordem seguido pela data de criação.</small>', 'cmb2'),
+      'id' => 'product_priority',
+      'type' => 'text_small',
+      'attributes' => array(
+        'type' => 'number',
+        'pattern' => '\d*',
+        'min' => 0,
+      )
+    )
+  );
+
 
   $cmb_demo->add_field(
     array(

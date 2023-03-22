@@ -8,9 +8,21 @@ $current_term = get_category(get_query_var('cat'));
 $current_category = get_queried_object(); ////getting current category
 $args = array(
     'post_type' => 'produtos',
-    // your post type,
-    'orderby' => 'title',
-    'order' => 'ASC',
+    'orderby' => array( 
+        'meta_value_num' => 'ASC',
+        'date' => 'DESC',
+    ),
+    'meta_query' => array(
+        'relation' => 'OR',
+        array(
+            'key' => 'product_priority',
+            'compare' => 'EXISTS',
+        ),
+        array(
+            'key' => 'product_priority',
+            'compare' => 'NOT EXISTS',
+        ),
+    ),
     'post_status' => 'publish',
     'posts_per_page' => -1,
 );
