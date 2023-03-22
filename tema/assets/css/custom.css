@@ -2705,6 +2705,7 @@ main.main.main-categories h2 {
     text-decoration: none;
     color: #000000;
     letter-spacing: 0.05em;
+    position: relative;
 }
 
 .slider-icons-categories button.slick-arrow {
@@ -2722,9 +2723,21 @@ main.main.main-categories h2 {
 
 .slider-icons-categories h2 {
     font-family: 'Gotham';
-    font-size: 0.7rem;
     text-transform: uppercase;
     margin-top: 10px;
+    max-width: 95.09px;
+    font-weight: 400;
+    font-size: 8.10667px;
+    line-height: 8px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.slider-icons-categories .image-icon-cats {
+    width: 85px;
+    height: 67px;
+    background-size: contain !important;
+    margin: auto;
 }
 
 
@@ -4538,6 +4551,16 @@ section#page-404 h3 {
     position: relative;
 }
 
+.error404 a.botao-3 {
+    line-height: 0;
+}
+
+
+.navegador-safari.error404 a.botao-3 {
+    line-height: 1;
+}
+
+
 .botao-3:after {
     content: '\e315';
     display: inline-block;
@@ -5126,7 +5149,7 @@ header #breadcrumbs li span {
     padding: 10px;
     color: black;
 }
-
+mea
 .wpcf7-response-output {
     width: 100%;
 }
@@ -6381,6 +6404,15 @@ title-top-prod {
     font-size: 16px;
     font-weight: 700;
 }
+
+.category-tecnologias #breadcrumbs a, .category-tecnologias #breadcrumbs li, .category-tecnologias #breadcrumbs li.separator:after {
+	 color: black;
+	 font-size: 20px;
+}
+ .category-tecnologias #breadcrumbs li span {
+	 font-weight: 700;
+}
+ 
 
 @media (max-width:768px) {
     .form-footer form.wpcf7-form p {

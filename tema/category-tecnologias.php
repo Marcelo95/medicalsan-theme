@@ -7,6 +7,8 @@ $args = array(
 	// your post type,
 	'orderby' => 'title',
 	'order' => 'ASC',
+	'post_status' => 'publish',
+	'posts_per_page' => -1,
 	'cat' => $current_category->cat_ID // current category ID
 );
 $the_query = new WP_Query($args);
@@ -18,7 +20,11 @@ $the_query = new WP_Query($args);
 </div>
 
 
-<div class="slider-icons-categories">
+<div class="container">
+
+
+
+<div class="slider-icons-categories" >
 	<?php
 
 
@@ -27,21 +33,21 @@ $the_query = new WP_Query($args);
 			$the_query->the_post();
 			$slug = basename(get_permalink());
 			$title = get_the_title();
-			$image_icon = asset("images/no-image.svg");
+			$image_icon = asset_image_background(asset("images/no-image.svg"));
 			$link = get_permalink();
 
 
 			$file_exist = sprintf("images/images-categories-prods/icon-%s.png", $slug);
 
 			if (file_exists(__DIR__ . '/assets/' . $file_exist)) {
-				$image_icon = asset($file_exist);
+				$image_icon = asset_image_background(asset($file_exist));
 			}
 
 			echo sprintf('
 					<div class="boxes-cats">
 						<a href="%s">
 							<div>
-								<img src="%s"  alt="%s">
+								<div class="image-icon-cats" %s title="%s"></div>
 								<h2>%s</h2>
 							</div>            
 						</a>                    
@@ -53,6 +59,8 @@ $the_query = new WP_Query($args);
 
 
 
+
+</div>
 
 </div>
 
