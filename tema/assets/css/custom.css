@@ -5149,7 +5149,21 @@ header #breadcrumbs li span {
     padding: 10px;
     color: black;
 }
-mea
+.form-footer textarea{
+    width: 100%;
+    border-radius: 22px;
+    border: none;
+    margin-top: 10px;
+}
+
+.form-footer form.wpcf7-form p:has(textarea) {
+    width: 100%;
+        border-radius: 22px;
+    border: none;
+    margin-top: 10px;
+}
+
+.form-footer form.wpcf7-form p {margin: auto;}
 .wpcf7-response-output {
     width: 100%;
 }

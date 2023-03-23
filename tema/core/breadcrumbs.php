@@ -1,50 +1,6 @@
 <?php
 
 // BREADCRUMBS  --------------------------------------------------------------------------------------------------------
-
-
-function my_get_the_category_list($sep)
-{
-    $categories = [];
-
-    if (!is_single()) {
-        $current_term = get_category(get_query_var('cat'));
-        $term_id = property_exists($current_term, "term_id") ? $current_term->term_id : false;
-
-        if ($term_id) {
-            $parent = $current_term->parent;
-            while ($parent != 0) {
-                $cat = get_category($parent);
-                $categories[] = $cat;
-                $parent = $cat->parent;
-            }
-        }
-    }
-
-    if (is_singular()) {
-        $categories = array_merge($categories, apply_filters('the_category_list', get_the_category(get_the_ID()), get_the_ID()));
-    }
-
-
-
-    // Ordenar pelo ID da categoria pai (ordem hierárquica)
-    usort($categories, function ($a, $b) {
-        if ($a->parent == $b->parent) {
-            return strcmp($a->name, $b->name);
-        }
-        return $a->parent - $b->parent;
-    });
-
-    $html = "";
-
-    foreach ($categories as $key => $category) {
-
-        $html .= '<li><a href="' . esc_url(get_category_link($category->term_id)) . '">' . $category->name . '</a></li>';
-        $html .= $sep;
-    }
-    return $html;
-}
-
 function custom_breadcrumbs()
 {
 
@@ -62,7 +18,11 @@ function custom_breadcrumbs()
 
         // Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_singular("produtos")) {
-            echo my_get_the_category_list($sep);
+            $cats = get_same_array_categories();
+            if( count($cats) > 3 ) {
+                $cats = array_slice($cats, 0 ,2); // retornando as 3 primeiras cats do produto, caso tenha muitas cats
+            };
+            echo my_get_the_category_list($sep, $cats);
         }
 
         if (is_singular('post')) {
@@ -115,3 +75,51 @@ function custom_breadcrumbs()
         echo '</ul>';
     }
 }
+
+
+function my_get_the_category_list($sep, $categories_arr)
+{
+
+    $html = "";
+
+    foreach ($categories_arr as $key => $category) {
+
+        $html .= '<li><a href="' . esc_url(get_category_link($category->term_id)) . '">' . $category->name . '</a></li>';
+        $html .= $sep;
+    }
+    return $html;
+}
+
+function get_same_array_categories()
+{
+    $categories = [];
+
+    if (!is_single()) {
+        $current_term = get_category(get_query_var('cat'));
+        $term_id = property_exists($current_term, "term_id") ? $current_term->term_id : false;
+
+        if ($term_id) {
+            $parent = $current_term->parent;
+            while ($parent != 0) {
+                $cat = get_category($parent);
+                $categories[] = $cat;
+                $parent = $cat->parent;
+            }
+        }
+    }
+
+    if (is_singular()) {
+        $categories = array_merge($categories, apply_filters('the_category_list', get_the_category(get_the_ID()), get_the_ID()));
+    }
+
+    // Ordenar pelo ID da categoria pai (ordem hierárquica)
+    usort($categories, function ($a, $b) {
+        if ($a->parent == $b->parent) {
+            return strcmp($a->name, $b->name);
+        }
+        return $a->parent - $b->parent;
+    });
+
+    return $categories;
+}
+
