@@ -5168,12 +5168,14 @@ header #breadcrumbs li span {
     width: 100%;
 }
 
-.form-footer input[type=submit] {
+html .form-footer input[type=submit] {
     margin: auto;
     display: block;
     font-weight: 600;
     font-size: 18px;
     padding: 10px 23px;
+    background: black !important;
+    color: #fff;
 }
 
 @media(max-width:380px) {
