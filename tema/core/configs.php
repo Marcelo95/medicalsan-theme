@@ -27,13 +27,13 @@ function create_page($title_of_the_page,$content,$parent_id = NULL, $post_type =
             'post_category' => $categories_IDs
             )
         );
-   //echo "Created page_id=". $page_id." for page '".$title_of_the_page. "'<br/>";
     return $page_id;
 }
 
 function asset($filename)
 {
-    return get_template_directory_uri() . "/assets/" . $filename . '?v=' .  wp_get_theme()->get('Version');
+    $version = filemtime( __DIR__  . "/../" ); // Pega o timestamp de modificacao da pasta do tema 
+    return get_template_directory_uri() . "/assets/" . $filename . '?v=' .  $version;
 }
 
 function asset_image_background($filename, $no_image = false)
