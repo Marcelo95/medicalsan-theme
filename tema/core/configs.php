@@ -32,8 +32,8 @@ function create_page($title_of_the_page,$content,$parent_id = NULL, $post_type =
 
 function asset($filename)
 {
-    $version = filemtime( __DIR__  . "/../" ); // Pega o timestamp de modificacao da pasta do tema 
-    return get_template_directory_uri() . "/assets/" . $filename . '?v=' .  $version;
+    $version_ = filemtime( get_template_directory() ); // Pega o timestamp de modificacao da pasta do tema 
+    return get_template_directory_uri() . "/assets/" . $filename . '?v=' .  $version_;
 }
 
 function asset_image_background($filename, $no_image = false)
