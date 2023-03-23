@@ -3,6 +3,8 @@
 /* 
  Template Name: Template onde-estamos
 */
+
+do_action("add_body_class",['form-contact-7-estilo-1']);
 ?>
 
 <?php get_header("blog"); ?>
