@@ -6569,11 +6569,13 @@ title-top-prod {
 }
 
 @media (max-width:768px) {
-    body:not([class*="form-contact-7-estilo-"]) .form-footer form.wpcf7-form p {
+    body .form-footer form.wpcf7-form p {
         width: 100% !important;
     }
 
-    html .form-contact-7-estilo-1 .form-footer form.wpcf7-form p {}
+    .form-footer {
+    padding: 28px 9px;
+}
 
     .lista-categories a h2 {
         font-size: 1.2rem;
