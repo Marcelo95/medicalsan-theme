@@ -337,6 +337,10 @@ html .block-with-2-post > article {
         padding-top: 105px;
     }
 
+.page-sobre main.page-wrapper {
+    padding-top: 14px;
+}
+
     .category main.page-wrapper {
         padding-top: 112px;
     }
@@ -5604,7 +5608,7 @@ span.details_1 {
 
 
 .box-novidades > h2 {
-    margin-bottom: 85px;
+    margin-bottom: 14px;
     padding-top: 78px;
 }
 
@@ -5615,8 +5619,8 @@ span.details_1 {
 
 
 .novo-estilo-de-slider .item-photo {
- width: 572.01px;
- height: 470px;
+ width: 300px;
+ height: 247px;
  border-radius: 39.3484px;
  box-shadow: none;
 }

@@ -18,7 +18,7 @@ $linha_do_tempo = [
     ],    [
         "ano" => 2014,
         "foto" => "2014.png",
-        "texto" => "Além de mudar a sede para a cidade vizinha, a Medical San conquista as certificações do Inmetro e da Anvisa, iniciando um ousado projeto de expansão
+        "texto" => "Além de mudar para Estrela (RS), a Medical San conquista as certificações do Inmetro e da Anvisa, iniciando um ousado projeto de expansão
 
         "
     ],
@@ -40,18 +40,7 @@ $linha_do_tempo = [
     [
         "ano" => 2020,
         "foto" => "2020.png",
-        "texto" => "
-        Foi criada a Linha Smart®, com produtos compactos e de fácil transporte, além do conceito Black Experience, com tecnologias de altíssimo nível.
-
-        "
-    ],
-    [
-        "ano" => 2020,
-        "foto" => "2020.png",
-        "texto" => "
-        Foi criada a Linha Smart®, com produtos compactos e de fácil transporte, além do conceito Black Experience, com tecnologias de altíssimo nível.
-
-        "
+        "texto" => "Foi criada a Linha Smart®, com produtos compactos e de fácil transporte, além do conceito Black Experience, com tecnologias de altíssimo nível."
     ],
     [
         "ano" => 2021,
