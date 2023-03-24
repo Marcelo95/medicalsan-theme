@@ -4875,6 +4875,8 @@ section.box-lancamento .box-image,
 section.box-lancamento .box-text {
     width: 50%;
     /* min-width: 340px; */
+    /* transform: scale(.96); */
+    /* transform-origin: bottom; */
 }
 
 section.box-lancamento.estilo-3 .box-text * {
@@ -4893,6 +4895,10 @@ section.box-lancamento.estilo-3 .box-text {
     background-size: contain !important;
 }
 
+.box-image > img.desktop , .box-prod-quad.desktop {
+    transform: scale(.96);
+    transform-origin: bottom;
+}
 .box-image.js-scroll.fade-in-bottom.scrolled {
     text-align: right;
 }
