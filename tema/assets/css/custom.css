@@ -4896,8 +4896,6 @@ section.box-lancamento.estilo-3 .box-text {
 }
 
 .box-image > img.desktop , .box-prod-quad.desktop {
-    transform: scale(.96);
-    transform-origin: bottom;
 }
 .box-image.js-scroll.fade-in-bottom.scrolled {
     text-align: right;
