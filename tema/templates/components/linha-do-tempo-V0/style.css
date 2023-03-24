@@ -323,23 +323,118 @@ section.content-linha-do-tempo.theme-medicalsan .slidecontainer.text-center {
 
 @media (max-width:768px) {
 
+    .init-linha-do-tempo {
+        flex-direction: column;
+    }
 
-.slidecontainer.text-center {
-    transform: scale(.8);
+    .linha-item {
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .linha-item:nth-child(2n) {
+        flex-direction: row;
+    }
+
+    .item_middle {
+        border-right: 12px solid #230077;
+        border-bottom: none;
+        margin: -24px 0px;
+        padding: 36px 0px;
+        min-width: auto;
+        margin-right: 2px;
+        width: 50%;
+    }
+
+    .text-mobile.mobile {
+        display: block;
+    }
+
+    .item_bottom, .buttons-linhas-do-tempo, .content-linha-do-tempo .slidecontainer.text-center {
+        display: none;
+    }
+
+    .item_top img {
+        padding: 0px;
+        border: 12px solid #230077;
+        border-radius: 24px;
+        border-color: #230077;
+    }
+
+section.content-linha-do-tempo.theme-medicalsan .item_top img {
+    border-color: #fff;
 }
 
-.title-and-buttons {
-    transform: scale(.8);
-    padding: 0 !important;
-    margin-bottom: 0;
+    .linha-item:nth-child(2n) .item_middle {
+        border-left: 12px solid #230077;
+        border-right: none;
+        border-top: none;
+        margin-left: -25px;
+    }
+
+    .linha-item:first-child {
+        padding: 0;
+    }
+
+    .linha-item:last-child {
+        padding: 0;
+    }
+
+    div#linha-scroll {
+        overflow: unset;
+        margin-top: 101px;
+        margin-bottom: 38px;
+    }
+
+    .linha-item:first-child .item_middle:before {
+        display: none;
+    }
+
+    .linha-item:last-child .item_middle:after {
+        display: none;
+    }
+
+    .item_top {
+        position: relative;
+        left: -24px;
+        overflow: hidden;
+        width: 50%;
+    }
+
+    .item_top img {
+        width: 100%;
+        height: auto;
+        background: #230077;
+    }
+
+section.content-linha-do-tempo.theme-medicalsan .item_top img {
+    background: #fff;
 }
 
-	div#init-linha-do-tempo {
-    transform: scale(.8);
-}
+    .linha-item:nth-child(2n) .item_top {
+        left: -3px;
+    }
 
-.linha-item:first-child {
-    padding-left: 15px;
-}
+    .linha-item:first-child .item_top {
+        position: relative;
+        top: -57px;
+    }
+
+    .linha-item:last-child .item_top {
+        position: relative;
+        bottom: -57px;
+    }
+
+    .content-linha-do-tempo .sombras-left-right:before {
+        display: none;
+    }
+
+    .content-linha-do-tempo .sombras-left-right:after {
+        display: none;
+    }
+
 
 }
