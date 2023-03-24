@@ -135,107 +135,105 @@ $linha_do_tempo = [
     </div>
 
     <script>
-        if (/Mobi/i.test(window.navigator.userAgent) == false) {
-            var startX;
-            var scrollLeft;
-            var isDragging = false;
-            var minhaDiv = document.getElementById("linha-scroll");
-            var meuRange = document.getElementById("myRange");
+        var startX;
+        var scrollLeft;
+        var isDragging = false;
+        var minhaDiv = document.getElementById("linha-scroll");
+        var meuRange = document.getElementById("myRange");
 
-            meuRange.addEventListener("input", function() {
-                var porcentagem = this.value;
-                var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-                var scrollPosicao = (porcentagem / 100) * larguraContainer;
-                minhaDiv.scrollLeft = scrollPosicao;
+        meuRange.addEventListener("input", function() {
+            var porcentagem = this.value;
+            var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+            var scrollPosicao = (porcentagem / 100) * larguraContainer;
+            minhaDiv.scrollLeft = scrollPosicao;
 
-            });
+        });
 
-            // adiciona os listeners de eventos
-            minhaDiv.addEventListener("mousedown", function(e) {
-                startX = e.pageX - minhaDiv.offsetLeft;
-                scrollLeft = minhaDiv.scrollLeft;
-                isDragging = true;
-                if (e.target.tagName === "A") {
-                    e.preventDefault(); // previne a ação padrão do link
-                }
-            });
-
-            minhaDiv.addEventListener("touchstart", function(e) {
-                startX = e.touches[0].pageX - minhaDiv.offsetLeft;
-                scrollLeft = minhaDiv.scrollLeft;
-                isDragging = true;
-                if (e.target.tagName === "A") {
-                    e.preventDefault(); // previne a ação padrão do link
-                }
-            });
-
-            minhaDiv.addEventListener("mousemove", function(e) {
-                if (!isDragging || e.target.tagName === "A") return;
-                e.preventDefault();
-                var x = e.pageX - minhaDiv.offsetLeft;
-                var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
-                minhaDiv.scrollLeft = scrollLeft - walk;
-
-                var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-                var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
-
-                meuRange.value = Math.round(porcentagem);
-
-            });
-
-            minhaDiv.addEventListener("touchmove", function(e) {
-                if (!isDragging || e.target.tagName === "A") return;
-                e.preventDefault();
-                var x = e.touches[0].pageX - minhaDiv.offsetLeft;
-                var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
-                minhaDiv.scrollLeft = scrollLeft - walk;
-
-
-                var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-                var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
-
-                meuRange.value = Math.round(porcentagem);
-
-            });
-
-            minhaDiv.addEventListener("mouseup", function() {
-                isDragging = false;
-            });
-
-            minhaDiv.addEventListener("touchend", function() {
-                isDragging = false;
-            });
-
-            function move(direction) {
-                var andar = Math.floor((minhaDiv.scrollWidth - minhaDiv.clientWidth) * 0.2);
-                console.log(andar)
-                switch (direction) {
-                    case "left":
-                        minhaDiv.scrollTo({
-                            left: minhaDiv.scrollLeft - andar,
-                            top: 0,
-                            behavior: 'smooth'
-                        })
-                        break;
-                    case "right":
-                        minhaDiv.scrollTo({
-                            left: minhaDiv.scrollLeft + andar,
-                            top: 0,
-                            behavior: 'smooth'
-                        })
-                        break;
-
-                    default:
-                        break;
-                }
-
-
-                var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
-                var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
-
-                meuRange.value = Math.round(porcentagem);
-
+        // adiciona os listeners de eventos
+        minhaDiv.addEventListener("mousedown", function(e) {
+            startX = e.pageX - minhaDiv.offsetLeft;
+            scrollLeft = minhaDiv.scrollLeft;
+            isDragging = true;
+            if (e.target.tagName === "A") {
+                e.preventDefault(); // previne a ação padrão do link
             }
+        });
+
+        minhaDiv.addEventListener("touchstart", function(e) {
+            startX = e.touches[0].pageX - minhaDiv.offsetLeft;
+            scrollLeft = minhaDiv.scrollLeft;
+            isDragging = true;
+            if (e.target.tagName === "A") {
+                e.preventDefault(); // previne a ação padrão do link
+            }
+        });
+
+        minhaDiv.addEventListener("mousemove", function(e) {
+            if (!isDragging || e.target.tagName === "A") return;
+            e.preventDefault();
+            var x = e.pageX - minhaDiv.offsetLeft;
+            var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
+            minhaDiv.scrollLeft = scrollLeft - walk;
+
+            var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+            var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
+            meuRange.value = Math.round(porcentagem);
+
+        });
+
+        minhaDiv.addEventListener("touchmove", function(e) {
+            if (!isDragging || e.target.tagName === "A") return;
+            e.preventDefault();
+            var x = e.touches[0].pageX - minhaDiv.offsetLeft;
+            var walk = (x - startX) * 2; // aumenta a velocidade da rolagem
+            minhaDiv.scrollLeft = scrollLeft - walk;
+
+
+            var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+            var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
+            meuRange.value = Math.round(porcentagem);
+
+        });
+
+        minhaDiv.addEventListener("mouseup", function() {
+            isDragging = false;
+        });
+
+        minhaDiv.addEventListener("touchend", function() {
+            isDragging = false;
+        });
+
+        function move(direction) {
+            var andar = Math.floor((minhaDiv.scrollWidth - minhaDiv.clientWidth) * 0.2);
+            console.log(andar)
+            switch (direction) {
+                case "left":
+                    minhaDiv.scrollTo({
+                        left: minhaDiv.scrollLeft - andar,
+                        top: 0,
+                        behavior: 'smooth'
+                    })
+                    break;
+                case "right":
+                    minhaDiv.scrollTo({
+                        left: minhaDiv.scrollLeft + andar,
+                        top: 0,
+                        behavior: 'smooth'
+                    })
+                    break;
+
+                default:
+                    break;
+            }
+
+
+            var larguraContainer = minhaDiv.scrollWidth - minhaDiv.clientWidth;
+            var porcentagem = (minhaDiv.scrollLeft / larguraContainer) * 100;
+
+            meuRange.value = Math.round(porcentagem);
+
         }
     </script>
 
