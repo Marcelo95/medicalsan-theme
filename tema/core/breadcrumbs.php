@@ -19,7 +19,7 @@ function custom_breadcrumbs()
         // Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_singular("produtos")) {
             $cats = get_same_array_categories();
-            if( count($cats) > 3 ) {
+            if( count($cats) > 2 ) {
                 $cats = array_slice($cats, 0 ,2); // retornando as 3 primeiras cats do produto, caso tenha muitas cats
             };
             echo my_get_the_category_list($sep, $cats);
