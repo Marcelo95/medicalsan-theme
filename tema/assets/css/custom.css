@@ -6401,8 +6401,12 @@ h1 {}
 }
 
 .navegador-safari.single-produtos .page-content .box-text-estilo-1 p {
-    line-height: 23px;
-    margin-bottom: 50px;
+    line-height: 33px;
+    margin-bottom: 40px;
+}
+
+.navegador-safari.single-produtos .page-content .box-text-estilo-1 p b, .navegador-safari.single-produtos .page-content .box-text-estilo-1 p strong {
+    line-height: 10px;
 }
 
 .page-content b,
@@ -6959,5 +6963,12 @@ title-top-prod {
     font-size: 14px;
     line-height: 15.68px;
     padding: 0 48px;
+}
+    .navegador-safari.single-produtos .page-content .box-text-estilo-1 p {
+    line-height: 21px;
+}
+    html .single-produtos .botao-6 {
+    width: 237.73px;
+    font-size: 12.5px;
 }
 }
