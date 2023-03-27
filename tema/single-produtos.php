@@ -40,10 +40,8 @@
         </div>
 
         <?php get_template_part(sprintf("templates/produtos/%s/content-popup-video", get_post_field('post_name', get_post()))); ?>
+        
         <div class="container ">
-
-
-
 
             <p class="text-center mt-5 mb-5 js-scroll fade-in-bottom">
                 <a href="#orcamento" class="botao-6">
@@ -59,8 +57,6 @@
             <div class="prod-360">
                 <?php get_template_part(sprintf("templates/produtos/%s/content-360", get_post_field('post_name', get_post()))); ?>
             </div>
-
-
 
 
         </div>
