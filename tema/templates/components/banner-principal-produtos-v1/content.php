@@ -12,7 +12,7 @@
 
     </div>
 
-    <div class="mobile banner-mobile-test-fundo" style="background-image:url(<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal-fundo-mobile.png?v1", get_post_field('post_name', get_post()))); ?>);">
+    <div class="mobile banner-mobile-test-fundo <?php _e($args["class"] ?? ''); ?> " style="background-image:url(<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal-fundo-mobile.png?v1", get_post_field('post_name', get_post()))); ?>);">
 
         <div class="banner-mobile-test fade-in-bottom scrolled" style="background-image:url(<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal-mobile.png", get_post_field('post_name', get_post()))); ?>);">
 

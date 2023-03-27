@@ -1119,27 +1119,15 @@ html .page-blog .block-with-2-post h2 a.botao-5 {
 
 .banner-mobile-test-fundo {
     width: 100%;
-    height: 431px;
+    height: 450px;
     position: relative;
     overflow: hidden;
     background-size: cover;
     background-position: center bottom;
 }
 
-.produtos-ethernia-cold-smart .mobile.banner-mobile-test-fundo {
-    height: 700px;
-}
-
-.produtos-lipocavity-new-smart .mobile.banner-mobile-test-fundo {
-    height: 650px;
-}
-
-.produtos-narniah .mobile.banner-mobile-test-fundo {
+.banner-mobile-test-fundo.modelo-2 {
     height: 600px;
-}
-
-.produtos-tekah .mobile.banner-mobile-test-fundo {
-    height: 730px;
 }
 
 .produtos-ultraplace .mobile.banner-mobile-test-fundo {
@@ -1168,10 +1156,6 @@ html .page-blog .block-with-2-post h2 a.botao-5 {
 }
 
 .produtos-criodermis .banner-mobile-test-fundo {
-    height: 600px;
-}
-
-.produtos-lipocavity-new .banner-mobile-test-fundo {
     height: 600px;
 }
 
@@ -1402,6 +1386,16 @@ section.slider-images-text-2-init ul.slick-dots {
     line-height: 31px;
     padding: 20px 90px;
     height: 256px;
+}
+
+.produtos-tekah .init-bloco-2-text>div {padding: 20px 25px;}
+
+.produtos-tekah .init-bloco-2-text>div span.ladoA {
+    max-width: 321.57px;
+}
+
+.produtos-tekah .init-bloco-2-text>div span.ladoB {
+    max-width: 253px;
 }
 
 section.bloco-2-text.css-ultraplace .init-bloco-2-text>div {
