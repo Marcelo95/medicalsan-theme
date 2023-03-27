@@ -12,6 +12,7 @@
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .imagem-frente-v1 {

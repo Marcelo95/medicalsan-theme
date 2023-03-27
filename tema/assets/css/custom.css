@@ -1123,7 +1123,7 @@ html .page-blog .block-with-2-post h2 a.botao-5 {
     position: relative;
     overflow: hidden;
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
 }
 
 .produtos-ethernia-cold-smart .mobile.banner-mobile-test-fundo {
@@ -1384,6 +1384,7 @@ section.slider-images-text-2-init ul.slick-dots {
 .init-bloco-2-text {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .init-bloco-2-text>div {
@@ -1391,16 +1392,16 @@ section.slider-images-text-2-init ul.slick-dots {
     align-items: center;
     justify-content: center;
     min-height: 200px;
-    padding: 21px;
     text-align: center;
-    background: red;
     margin: 10px;
     border-radius: 50px;
-    width: 100%;
     color: #fff;
-    font-weight: 600;
-    font-size: 1.4rem;
-    max-width: 100%;
+    width: 416.98px;
+    font-weight: 700;
+    font-size: 28.3657px;
+    line-height: 31px;
+    padding: 20px 90px;
+    height: 256px;
 }
 
 section.bloco-2-text.css-ultraplace .init-bloco-2-text>div {
@@ -3858,9 +3859,6 @@ button.slick-arrow:before {
         width: 100% !important;
     }
 
-    .init-bloco-2-text {
-        flex-direction: column;
-    }
 
     .boxes-img-text>.container {
         flex-direction: column;
@@ -3958,11 +3956,7 @@ button.slick-arrow:before {
         font-size: 1.1rem;
     }
 
-    .init-bloco-2-text>div {
-        min-height: 100px;
-        font-size: 1.1rem;
-        border-radius: 19px !important;
-    }
+
 
     section.bloco-3-text>.container {
         padding: 0;
@@ -4472,6 +4466,16 @@ div[aria-label="Slide"] {
     font-family: "Gotham", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.single-produtos .botao-6 {
+    padding-top: 32px;
+    height: auto;
+    padding-bottom: 32px;
+    font-size: 19.0561px;
+    font-family: gotham black;
+    border-radius: 46.6873px;
+    width: 319.67px;
 }
 
 .botao-6:hover {
@@ -6617,7 +6621,7 @@ title-top-prod {
     }
 
     section.bloco-2-text {
-        margin: 0;
+        margin-top: -40px;
     }
 }
 
@@ -6970,5 +6974,21 @@ title-top-prod {
     html .single-produtos .botao-6 {
     width: 237.73px;
     font-size: 12.5px;
+    height: auto;
+    padding: 13px 22px;
+}
+
+.init-bloco-2-text>div {
+    width: 331px;
+    height: auto;
+    min-height: 85px;
+    font-size: 14px;
+    line-height: 15px;
+    border-radius: 13px;
+    padding: 10px 35px;
+}
+
+.init-bloco-2-text {
+    flex-direction: column;
 }
 }
