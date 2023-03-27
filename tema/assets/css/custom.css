@@ -4478,6 +4478,10 @@ div[aria-label="Slide"] {
     width: 319.67px;
 }
 
+.navegador-safari.single-produtos .botao-6 {
+    font-weight: 450;
+}
+
 .botao-6:hover {
     color: #0a58ca;
 }
