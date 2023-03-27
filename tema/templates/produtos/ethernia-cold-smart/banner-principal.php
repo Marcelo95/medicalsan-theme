@@ -1,2 +1,2 @@
 
-<?php do_action("BannerPrincipalProdutosComponent"); ?>
+<?php do_action("BannerPrincipalProdutosV1Component"); ?>
