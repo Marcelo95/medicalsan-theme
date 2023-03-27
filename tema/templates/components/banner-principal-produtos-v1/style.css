@@ -14,7 +14,10 @@
     background-repeat: no-repeat;
     background-position: bottom;
 }
-
+.imagem-fundo-v1.pos-2 {
+    position: absolute;
+    top: 0;
+}
 .imagem-frente-v1 {
     width: 790px;
     height: 82vh;

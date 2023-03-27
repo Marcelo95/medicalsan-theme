@@ -1126,6 +1126,16 @@ html .page-blog .block-with-2-post h2 a.botao-5 {
     background-position: center bottom;
 }
 
+html .mobile.banner-mobile-test-fundo.pos-2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-position: center top;
+    width: 100%;
+    background-size: contain;
+}
+
 .banner-mobile-test-fundo.modelo-2 {
     height: 600px;
 }
