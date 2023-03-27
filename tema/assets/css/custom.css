@@ -5268,6 +5268,8 @@ html .form-footer input[type=submit] {
     border: none;
 }
 
+html .page-pos-venda .form-footer input[type=submit] {line-height: 0;}
+
 html .form-contact-7-estilo-1 .form-footer h2 {
     text-align: center;
     width: 100%;
