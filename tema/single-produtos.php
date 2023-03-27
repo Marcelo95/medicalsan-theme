@@ -27,7 +27,7 @@
     <section class="page-content">
 
     
-        <?php get_template_part(sprintf("templates/produtos/%s/banner-principal", get_post_field('post_name', get_post())), "component"); ?>
+        <?php get_template_part(sprintf("templates/produtos/%s/banner-principal", get_post_field('post_name', get_post()))); ?>
 
 
         <?php get_template_part(sprintf("templates/produtos/%s/content-13", get_post_field('post_name', get_post()))); ?>
