@@ -1221,6 +1221,10 @@ section.box-text-estilo-1 {
     max-width: 850px;
 }
 
+.navegador-safari section.box-text-estilo-1 {
+    margin-top: 60px;
+}
+
 
 .prod-360 {
     position: relative;
@@ -4461,6 +4465,7 @@ div[aria-label="Slide"] {
     border-radius: 5px;
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.3;
     height: 48px;
     border-radius: 42px;
     position: relative;
@@ -6393,6 +6398,11 @@ h1 {}
     font-weight: 400;
     font-size: 27px;
     line-height: 35px;
+}
+
+.navegador-safari.single-produtos .page-content .box-text-estilo-1 p {
+    line-height: 23px;
+    margin-bottom: 50px;
 }
 
 .page-content b,
