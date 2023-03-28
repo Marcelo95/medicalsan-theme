@@ -113,25 +113,26 @@
 <?php do_action("SelosDeQualidadeComponent");  ?>
 
 
-<section class="products box-blog js-scroll  fade-in-bottom">
-    <div class="container">
-        <h2 class="desktop">BLOG</h2>
-        <div class="slider-slick--disable">
-            <div class="slider-3--disable">
+<?php
+$tag = get_term_by('slug', 'novidades', 'post_tag');
+$itens = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3, 'tag__not_in' => array($tag->term_id)));
+$itens = $itens->posts;
+if (count($itens) > 0) : ?>
+    <section class="products box-blog js-scroll  fade-in-bottom">
+        <div class="container">
+            <h2 class="desktop">BLOG</h2>
+            <div class="slider-slick--disable">
+                <div class="slider-3--disable">
 
-                <?php $itens = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3));
-                $itens = $itens->posts;
-                // $itens = array_merge([], $itens, $itens, $itens, $itens, $itens, $itens, $itens, $itens, $itens);
+                    <?php foreach ($itens as $key => $item) {
 
-                foreach ($itens as $key => $item) {
+                        $photo = asset_image_background(get_the_post_thumbnail_url($item->ID), true);
+                        $link = sprintf('href="%s"', get_permalink($item->ID));
+                        $title = $item->post_title;
+                        $desc = $item->post_excerpt;
+                        $cod = get_post_meta($item->ID, '_metabox_for_produtos_codigo', true);
 
-                    $photo = asset_image_background(get_the_post_thumbnail_url($item->ID), true);
-                    $link = sprintf('href="%s"', get_permalink($item->ID));
-                    $title = $item->post_title;
-                    $desc = $item->post_excerpt;
-                    $cod = get_post_meta($item->ID, '_metabox_for_produtos_codigo', true);
-
-                    echo sprintf('
+                        echo sprintf('
                             <a %s  class="box-item-prod ">
                                 <div class="area">
                                     <h2 class="mobile">BLOG</h2>
@@ -145,18 +146,18 @@
                             </a>
                         
                     ', $link, $photo,  $title, $desc);
-                }
-                ?>
+                    }
+                    ?>
+
+
+                </div>
 
 
             </div>
-
-
+            <div class="text-center"><a class="botao-1 var-1" href="<?php echo home_url("blog"); ?>"><span>Ver mais</span></a></div>
         </div>
-        <div class="text-center"><a class="botao-1 var-1" href="<?php echo home_url("blog"); ?>"><span>Ver mais</span></a></div>
-    </div>
-</section>
-
+    </section>
+<?php endif; ?>
 
 
 
