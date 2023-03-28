@@ -1184,7 +1184,7 @@ html .mobile.banner-mobile-test-fundo.pos-2 {
     color: #fff;
 }
 
-.single-produtos .menu-principal a[title="tecnologias" i] {
+.check-menu-tecnologias .menu-principal a[title="tecnologias" i] {
     text-decoration: underline;
 }
 
