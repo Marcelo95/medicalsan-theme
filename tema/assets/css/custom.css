@@ -1184,6 +1184,10 @@ html .mobile.banner-mobile-test-fundo.pos-2 {
     color: #fff;
 }
 
+.single-produtos .menu-principal a[title="tecnologias" i] {
+    text-decoration: underline;
+}
+
 .single-produtos .scroll-down .desktop .menu-principal a {
     color: black;
 }
@@ -3581,22 +3585,22 @@ div#header_menu_all_departments_top a:hover {
 
 
 .menu-principal a[title="tecnologias" i] {
-    color: #ffffff !important;
-    background: #00367E;
-    border-radius: 22px;
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    /* color: #ffffff !important; */
+    /* background: #00367E; */
+    /* border-radius: 22px; */
+    /* padding-left: 14px !important; */
+    /* padding-right: 14px !important; */
 }
 
 
 .page-onde-estamos .menu-principal a[title="tecnologias" i] {
-    color: #00367E !important;
-    background: white;
+    /* color: #00367E !important; */
+    /* background: white; */
 }
 
 .page-onde-estamos .scroll-down .menu-principal a[title="tecnologias" i] {
-    color: #ffffff !important;
-    background: #00367E;
+    /* color: #ffffff !important; */
+    /* background: #00367E; */
 }
 
 a.dropdown-item {
