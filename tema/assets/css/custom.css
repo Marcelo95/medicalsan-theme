@@ -4604,7 +4604,7 @@ section#page-404 h3 {
 
 
 .navegador-safari.error404 a.botao-3 {
-    line-height: 1;
+    /* line-height: 1; */
 }
 
 
@@ -6940,7 +6940,10 @@ title-top-prod {
 
     .post-type-archive-produtos .lista-categories-prods.duas-grades {
         display: inline-block;
+        margin-top: 13px;
     }
+
+main.main.main-categories {background: transparent;padding-top: 0;}
 
     .post-type-archive-produtos main.main.main-categories h1 {
         color: black;
@@ -6999,5 +7002,32 @@ title-top-prod {
 
 .init-bloco-2-text {
     flex-direction: column;
+}
+    .slider-icons-categories .image-icon-cats {
+    width: 24.87px;
+    height: 41.27px;
+}
+
+.slider-icons-categories h2 {
+    font-size: 8px;
+}
+    .slider-icons-categories button.slick-arrow:before {
+    font-size: 16px;
+}
+
+.slider-icons-categories button.slick-arrow {
+    width: 20px;
+    height: 20px;
+}
+    #breadcrumbs.breadcrumb-estilo-1 {
+    margin-bottom: -25px;
+}
+
+#breadcrumbs.breadcrumb-estilo-1 li a, #breadcrumbs.breadcrumb-estilo-1 li {
+    font-size: 10px;
+}
+
+#breadcrumbs.breadcrumb-estilo-1 li.separator:after {
+    font-size: 12px;
 }
 }

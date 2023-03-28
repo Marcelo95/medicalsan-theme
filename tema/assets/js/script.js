@@ -253,7 +253,7 @@ $('.slider-icons-categories').slick({
         },{
             breakpoint: 630,
             settings: {
-                slidesToShow: Math.min(2, $('.slider-icons-categories > div').length),
+                slidesToShow: Math.min(4, $('.slider-icons-categories > div').length),
                 slidesToScroll: 1,
                 infinite: true,
             }
@@ -261,7 +261,7 @@ $('.slider-icons-categories').slick({
             breakpoint: 368,
             settings: {
                 slidesToShow: Math.min(1, $('.slider-icons-categories > div').length),
-                slidesToScroll: 1,
+                slidesToScroll: 2,
                 infinite: true,
             }
         }

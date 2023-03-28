@@ -30,12 +30,12 @@ $the_query = new WP_Query($args);
 
 ?>
 
-<div class="mt-1 container desktop">
-    <ul id="breadcrumbs" class="breadcrumb">
+<div class="mt-1 container ">
+    <ul id="breadcrumbs" class="breadcrumb breadcrumb-estilo-1">
         <li><a href="http://dev.medicalsan">Home</a></li>
         <li></li>
         <li class="separator"> &gt; </li>
-        <li><span>Nossas Tecnologias</span></li>
+        <li><span>Tecnologias</span></li>
     </ul>
 </div>
 
