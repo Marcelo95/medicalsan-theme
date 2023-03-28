@@ -3566,6 +3566,7 @@ div#header_menu_all_departments_top a:hover {
     font-weight: 400;
     text-transform: uppercase;
     margin-left: 20px;
+    margin-right: 20px;
     padding: 0;
     display: inline-flex;
     align-items: center;
