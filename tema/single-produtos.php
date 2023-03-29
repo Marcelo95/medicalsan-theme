@@ -27,7 +27,6 @@ do_action("add_body_class", ["check-menu-tecnologias"]);
     get_header("produtos"); ?>
     <section class="page-content">
 
-    
         <?php get_template_part(sprintf("templates/produtos/%s/banner-principal", get_post_field('post_name', get_post()))); ?>
 
 
