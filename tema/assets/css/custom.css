@@ -186,7 +186,8 @@ body.page-sobre {
 .menu-links {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
+    margin-left: 147px;
 }
 
 header button.style-hidden-button.close-right {
@@ -3565,8 +3566,8 @@ div#header_menu_all_departments_top a:hover {
     color: #202020;
     font-weight: 400;
     text-transform: uppercase;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px; */
+    /* margin-right: 50px; */
     padding: 0;
     display: inline-flex;
     align-items: center;
@@ -3692,11 +3693,14 @@ div#navbarCollapse ul.menu-principal.navbar-nav.menu-principal-todos-dptos>li {
 .menu-principal {
     justify-content: left;
     flex-grow: 1;
+    justify-content: space-between;
 }
 
 div#bs-example-navbar-collapse-1 {
     align-items: center;
     flex-grow: unset;
+    width: 100%;
+    margin-right: 44px;
 }
 
 
