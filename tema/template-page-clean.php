@@ -27,7 +27,7 @@ do_action("add_body_class",['form-contact-7-estilo-1']);
     
         <?php do_action("BotoesOndeEstamosComponent"); ?>
 
-        <div class="loop">
+        <div class="loop mt-5">
 
             <?php get_template_part('templates/content'); ?>
         </div>
