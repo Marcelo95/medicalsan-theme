@@ -145,8 +145,6 @@ if (count($itens) > 0) : ?>
                     ', $link, $photo,  $title, $desc);
                     }
                     ?>
-
-
                 </div>
 
 
