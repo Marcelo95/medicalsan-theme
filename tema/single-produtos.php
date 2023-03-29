@@ -4,6 +4,7 @@ do_action("add_body_class", ["check-menu-tecnologias"]);
 ?>
 
 
+
 <?php if (realpath(__DIR__ . sprintf('/templates/produtos/%s', get_post_field('post_name', get_post()))) === false) : ?>
 
     <?php get_header("simple"); ?>
