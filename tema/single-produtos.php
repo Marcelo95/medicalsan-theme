@@ -12,7 +12,6 @@ do_action("add_body_class", ["check-menu-tecnologias"]);
             <?php //custom_breadcrumbs(); 
             ?>
 
-
             <div class="loop">
                 <?php get_template_part('templates/content'); ?>
             </div>
