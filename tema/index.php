@@ -106,7 +106,6 @@
 </section>
 
 
-
 <?php do_action("NovidadesComponent");  ?>
 
 
