@@ -7,7 +7,9 @@
    <a href="<?php _e( home_url('pos-venda') ); ?>">
 
         <span>Acesse nosso <b class="maior">SAC</b> aqui</span>
+        <div>
         <img class="ico" src="<?php _e(asset(sprintf("../templates/components/%s/images/%s", basename(__DIR__), "sac.png"))); ?>" >
+        </div>
 
    </a>
 </div>

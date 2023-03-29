@@ -16,6 +16,16 @@
     text-decoration: none;
     font-size: 15.61px;
     font-weight: 500;
+    line-height: 0;
+}
+
+.botoes-sac a span {
+    line-height: 0;
+}
+
+.botoes-sac a .ico {
+    width: 30.82px;
+    height: auto;
 }
 
 .botoes-sac:hover {
@@ -26,3 +36,21 @@
     color: #fff;
 }
 
+
+
+@media (min-width:992px){
+
+    .botoes-sac {
+    width: 764px;
+    height: 147px;
+}
+
+.botoes-sac a .ico {
+    width: auto;
+}
+
+.botoes-sac a {
+    font-size: 43px;
+    font-weight: 400;
+}
+}
