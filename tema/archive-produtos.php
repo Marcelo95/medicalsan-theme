@@ -4,6 +4,7 @@ do_action("add_body_class", ["category-tecnologias"]);
 get_header();
 $current_term = get_category(get_query_var('cat'));
 
+
 $current_category = get_queried_object(); ////getting current category
 $args = array(
     'post_type' => 'produtos',
