@@ -110,7 +110,6 @@
 
 <?php do_action("SelosDeQualidadeComponent");  ?>
 
-
 <?php
 $tag = get_term_by('slug', 'novidades', 'post_tag');
 $itens = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3, 'tag__not_in' => array($tag->term_id)));
