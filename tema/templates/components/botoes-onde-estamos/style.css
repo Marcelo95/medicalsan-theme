@@ -23,6 +23,10 @@
     line-height: 0;
 }
 
+.botoes-sac a span b.maior {
+    font-size: 20.82px;
+}
+
 .botoes-sac a .ico {
     width: 30.82px;
     height: auto;
@@ -43,6 +47,10 @@
     .botoes-sac {
     width: 764px;
     height: 147px;
+}
+
+.botoes-sac a span b.maior {
+    font-size: 57.15px;
 }
 
 .botoes-sac a .ico {
