@@ -108,7 +108,6 @@
 
 <?php do_action("NovidadesComponent");  ?>
 
-
 <?php do_action("SelosDeQualidadeComponent");  ?>
 
 
