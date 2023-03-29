@@ -3,9 +3,42 @@ svg path:hover {
     cursor: pointer;
 }
 .lista-enderecos > div h2 {margin-bottom: 30px;font-size: 18px;display: none;}
+
+
+.botao-veja-lista {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 30px 0;
+}
+
+.botao-veja-lista div {
+    color: #fff;
+    width: 316px;
+    height: 65px;
+    left: 816px;
+    top: 1136px;
+    border: 1px solid #FFFFFF;
+    border-radius: 84px;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22.9611px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.botao-veja-lista div:hover {
+    background: #0085FF;
+}
+
+
 @media(max-width:992px){
     .lista-enderecos > div h2 {
         display:block;
+        font-size: 13.4462px;
     }
 }
 
@@ -16,16 +49,24 @@ svg path:hover {
 }
 
 select#seletor {
-    color: #230077;
-    border: 1px solid #230077;
-    background: #fff;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background: transparent;
     text-align: center;
     border-radius: 7px;
     height: 35px;
     display: block;
-    margin: 35px auto;
+    margin: 3px auto 34px auto;
     cursor: pointer;
     font-weight: 700;
+    width: 58px;
+    height: 30.74px;
+    font-size: 16.85px;
+}
+
+select#seletor option {
+    color: black;
+    text-align: center;
 }
 
 .init-mapa-estados {
@@ -119,6 +160,26 @@ section.archive.page-onde-estamos.theme-medstart .content-topo {
 }
 
 
+div#popup div#modalBody {
+    max-height: 80vh;
+    overflow: auto;
+    color: black;
+    font-size: 13px;
+}
+div#popup div#modalBody h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+div#popup div#modalBody * {
+    color: black;
+}
+div#popup div#modalBody h2 {
+    color: #00367e;
+}
+div#popup div#modalBody b {
+    margin-bottom: -15px;
+    margin-top: 20px;
+}
 
 
 @media(max-width:800px){
@@ -139,3 +200,73 @@ section.archive.page-onde-estamos {
     
 }
 
+
+.list-address .estados-carregados > div.isShow > div {
+    display: none;
+}
+
+.list-address .estados-carregados > div.isShow > div:nth-child(1), .list-address .estados-carregados > div.isShow > div:nth-child(2), .list-address .estados-carregados > div.isShow > div:nth-child(3) {
+    display: block;
+}
+
+
+@media(max-width:992px){
+    .botao-veja-lista div {
+    width: 113.4px;
+    height: 23.33px;
+    border: 0.358852px solid #FFFFFF;
+    border-radius: 30.1435px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8.23961px;
+    line-height: 8px;
+/* identical to box height */
+    color: #FFFFFF;
+}
+
+.estados-carregados {
+    font-size: 6.73803px;
+    text-align: center;
+}
+
+section.mapa-de-estados b {
+    margin-bottom: -10px;
+}
+
+.estados-carregados > div {
+    line-height: inherit;
+}
+
+div#popup div#modalBody {
+    font-size: 6px;
+    max-height: inherit;
+    line-height: inherit;
+}
+
+div#popup div#modalBody b {
+    margin: 0;
+}
+
+div#popup div#modalBody h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+section.mapa-de-estados .chamadas h3 {
+    font-size: 12.4966px;
+}
+
+section.mapa-de-estados .chamadas h2 {
+    font-size: 12.4966px;
+}
+
+section.mapa-de-estados .chamadas h1 {
+    font-size: 19.0832px;
+    max-width: 195px;
+}
+
+.chamadas {
+    max-width: 195px;
+    margin: auto;
+}
+}
