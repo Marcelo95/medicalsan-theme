@@ -64,7 +64,7 @@
         <h2>Aplicações em diversas áreas</h2>
 
         <p>
-            Abdômen   <span class="ball">•</span>   Coxas   <span class="ball">•</span>   Braços  
+            <span>Abdômen</span>   <span class="ball">•</span>   <span>Coxas</span>   <span class="ball">•</span>   <span>Braços</span>  
         </p>
     </div>
 </section>

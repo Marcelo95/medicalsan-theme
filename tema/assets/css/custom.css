@@ -7170,6 +7170,21 @@ title-top-prod {
 
 .produtos-hyper-slim section.more-text p {
     font-size: 14.6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.produtos-hyper-slim section.more-text p .ball {
+    display: none;
+}
+
+.produtos-hyper-slim section.more-text {
+    margin-bottom: 14px;
+}
+
+.produtos-hyper-slim section.more-text p span {
+    margin-bottom: 10px;
 }
 
 }
