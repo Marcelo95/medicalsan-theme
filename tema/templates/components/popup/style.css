@@ -149,8 +149,7 @@ table tr {
   padding: .35em;
 }
 
-table th,
-table td {
+.modal:not(#eficacia) table th, .modal:not(#eficacia)  table td {
   padding: .625em;
   vertical-align: baseline;
 }
@@ -166,15 +165,15 @@ table th {
 }
 
 @media screen and (max-width: 600px) {
-  .table {
+  table {
     border: 0;
   }
 
-  .table caption {
+  table caption {
     font-size: 1.3em;
   }
   
- .table thead {
+ table thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -185,24 +184,24 @@ table th {
     width: 1px;
   }
   
-  .table tr {
+  .modal:not(#eficacia)  table tr {
     display: block;
     margin-bottom: .625em;
   }
   
-  .table td {
+  .modal:not(#eficacia) table td {
     display: block;
     font-size: .8em;
   }
   
-  .table td::before {
+  .modal:not(#eficacia)  table td::before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
     text-transform: uppercase;
   }
   
-  .table td:last-child {
+  table td:last-child {
     border-bottom: 0;
   }
 
@@ -219,7 +218,7 @@ div#eficacia table span {
     font-size: 6.9px;
 }
 
-table th, table td {
+.modal:not(#eficacia) table th, .modal:not(#eficacia) table td {
     padding: 0px;
 }
 
@@ -227,7 +226,7 @@ div#eficacia .description {
     font-size: 10px;
     color: black;
     font-weight: 400;
-    max-width: 191px;
+    max-width: 289px;
     margin: 5px auto;
 }
 
