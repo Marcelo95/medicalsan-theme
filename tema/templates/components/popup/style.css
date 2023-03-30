@@ -166,15 +166,15 @@ table th {
 }
 
 @media screen and (max-width: 600px) {
-  table {
+  .table {
     border: 0;
   }
 
-  table caption {
+  .table caption {
     font-size: 1.3em;
   }
   
-  table thead {
+ .table thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -185,26 +185,57 @@ table th {
     width: 1px;
   }
   
-  table tr {
+  .table tr {
     display: block;
     margin-bottom: .625em;
   }
   
-  table td {
+  .table td {
     display: block;
     font-size: .8em;
   }
   
-  table td::before {
+  .table td::before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
     text-transform: uppercase;
   }
   
-  table td:last-child {
+  .table td:last-child {
     border-bottom: 0;
   }
+
+  div#eficacia table h3 {
+    font-size: 8.7px;
+}
+
+div#eficacia table img {
+    width: 83px;
+    height: auto;
+}
+
+div#eficacia table span {
+    font-size: 6.9px;
+}
+
+table th, table td {
+    padding: 0px;
+}
+
+div#eficacia .description {
+    font-size: 10px;
+    color: black;
+    font-weight: 400;
+    max-width: 191px;
+    margin: 5px auto;
+}
+
+div#eficacia h2 {
+    font-size: 14.41px;
+    max-width: 227px;
+    margin: 0px auto 30px auto;
+}
 }
 
 
