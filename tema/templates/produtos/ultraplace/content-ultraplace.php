@@ -1,5 +1,5 @@
 <section class="ultraplace-list-vantagens">
-    <div class="container">
+    <div class="container---">
         <div class="list-vantagens-0 ">
             <div>
                 <div>

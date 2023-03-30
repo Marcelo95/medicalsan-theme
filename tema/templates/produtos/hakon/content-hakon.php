@@ -1,5 +1,5 @@
 <section>
-    <div class="container">
+    <div class="container---">
         <div class="list-vantagens-0 ">
             <div>
                 Tecnologia única no mercado
