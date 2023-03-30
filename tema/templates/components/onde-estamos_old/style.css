@@ -201,6 +201,14 @@ section.archive.page-onde-estamos {
 }
 
 
+.list-address .estados-carregados > div.isShow > div {
+    display: none;
+}
+
+.list-address .estados-carregados > div.isShow > div:nth-child(1), .list-address .estados-carregados > div.isShow > div:nth-child(2), .list-address .estados-carregados > div.isShow > div:nth-child(3) {
+    display: block;
+}
+
 
 @media(max-width:992px){
     .botao-veja-lista div {

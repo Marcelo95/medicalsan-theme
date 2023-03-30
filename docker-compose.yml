@@ -15,18 +15,18 @@ services:
     networks:
       - wpsite
   # phpmyadmin
-  phpmyadmin_2:
-    depends_on:
-      - db_2
-    image: phpmyadmin/phpmyadmin
-    restart: always
-    ports:
-      - '8088:80'
-    environment:
-      PMA_HOST: db_2
-      MYSQL_ROOT_PASSWORD: password 
-    networks:
-      - wpsite
+  # phpmyadmin_2:
+  #   depends_on:
+  #     - db_2
+  #   image: phpmyadmin/phpmyadmin
+  #   restart: always
+  #   ports:
+  #     - '8088:80'
+  #   environment:
+  #     PMA_HOST: db_2
+  #     MYSQL_ROOT_PASSWORD: password 
+  #   networks:
+  #     - wpsite
   # Wordpress
   wordpress_medcalsan:
     depends_on:

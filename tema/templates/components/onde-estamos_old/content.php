@@ -69,6 +69,13 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
         </div>
 
 
+        <a data-bs-target="#popup" data-bs-toggle="modal" class="botao-veja-lista">
+            <div>
+                Veja a lista completa
+            </div>
+        </a>
+        <?php do_action("PopupComponent", ["id" => "popup", "body" => file_get_contents($relative_path . "/address.php")]);  ?>
+
     </div>
 
 
@@ -89,6 +96,13 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
         selectElement.value = stateClass;
 
 
+        if (jQuery(".estados-carregados ." + stateClass + " > div").length == 0) {
+            jQuery(".botao-veja-lista").hide();
+            console.log("foi")
+        } else {
+            console.log("nn foi")
+            jQuery(".botao-veja-lista").show();
+        }
 
 
         if (elem) {
