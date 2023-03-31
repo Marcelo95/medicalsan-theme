@@ -889,6 +889,8 @@ section.box-lancamento .wp-block-column {
     color: black;
 }
 
+h1 {}
+
 .blog-box h5 {
     color: #a19d9d;
 }
@@ -6434,8 +6436,12 @@ section.comentarios>.container {
     color: #00367E !important;
 }
 
-h1 {}
-
+.aligncenter {
+    clear: both;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
 .page-content h5 {
     font-size: 16px;
     margin-bottom: 32px;
