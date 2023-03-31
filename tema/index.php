@@ -21,15 +21,15 @@
 
             <div class=" box-image js-scroll fade-in-bottom scrolled">
 
-                <img class="desktop" src="<?php echo asset("images/produtos/omer-smart/1.png"); ?>" alt="">
-                <img class="mobile" src="<?php echo asset("images/produtos/omer-smart/1-mobile.svg"); ?>" alt="">
+                <img class="desktop" src="<?php echo asset("images/produtos/hyper-slim/1.png"); ?>" alt="">
+                <img class="mobile" src="<?php echo asset("images/produtos/hyper-slim/1-mobile.svg"); ?>" alt="">
             </div>
             <div class="box-text js-scroll fade-in-bottom scrolled">
                 <h4>LANÇAMENTO</h4>
-                <h2>Ômer Smart</h2>
-                <h5>Laser de despigmentação com tecnologia de nanossegundos</h5>
+                <h2>Hyper Slim</h2>
+                <h5>Plataforma de pulsos eletromagnéticos de alta performance</h5>
 
-                <a href="<?php echo home_url("produtos/omer-smart"); ?>" class="botao-5"> Conheça </a>
+                <a href="<?php echo home_url("produtos/hyper-slim"); ?>" class="botao-5"> Conheça </a>
 
             </div>
 

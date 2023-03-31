@@ -5063,9 +5063,10 @@ section.box-lancamento:before {
     content: '';
     height: 100%;
     width: 100%;
-    background-image: url("../images/bg-lista.svg");
+    background-image: url("../images/bg-lista-3.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.8;
 }
 
 section.box-lancamento.baixo:before {
@@ -5155,7 +5156,7 @@ section.box-lancamento>div>.col {
 }
 
 section.box-lancamento.estilo-1 {
-    background-color: black;
+    background-color: #111351;
     min-height: 678px;
     display: flex;
     align-items: center;
