@@ -14,7 +14,7 @@ if (count($entries) > 0 && $entries[0]) : ?>
 
                 foreach ($entries as $key => $entry) {
                     $_link_thumb = isset($entry['_metabox_for_produtos_2_carroussel_content_thumbnail']) ? $entry['_metabox_for_produtos_2_carroussel_content_thumbnail'] : '';
-                    $link_thumb = !empty($_link_thumb) ? $_link_thumb : asset("images/no-image.svg");
+                    $link_thumb = asset("images/no-image.svg");
 
                     if (isset($entry["_metabox_for_produtos_2_carroussel_content"]) && $entry["_metabox_for_produtos_2_carroussel_content"]) {
 
