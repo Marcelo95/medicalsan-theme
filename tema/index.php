@@ -125,7 +125,7 @@ if (count($itens) > 0) : ?>
 
                         $photo = asset_image_background(get_the_post_thumbnail_url($item->ID), true);
                         $link = sprintf('href="%s"', get_permalink($item->ID));
-                        $title = $item->post_title;
+                        $title = ucfirst($item->post_title);
                         $desc = $item->post_excerpt;
                         $cod = get_post_meta($item->ID, '_metabox_for_produtos_codigo', true);
 

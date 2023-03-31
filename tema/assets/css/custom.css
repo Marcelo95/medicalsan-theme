@@ -5610,7 +5610,7 @@ section.novo-estilo-de-slider>div {
     font-size: 28.45px;
     font-weight: 700;
     line-height: 31.44px;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     text-align: left !important;
 }
 
