@@ -14,9 +14,9 @@ if (count($entries) > 0 && $entries[0]) : ?>
 
                 foreach ($entries as $key => $entry) {
                     $_link_thumb = isset($entry['_metabox_for_produtos_2_carroussel_content_thumbnail']) ? $entry['_metabox_for_produtos_2_carroussel_content_thumbnail'] : '';
-                    $link_thumb = asset("images/no-image.svg");
+                    $link_thumb = !empty($_link_thumb) ? $_link_thumb : asset("images/no-image.svg");
 
-                    if (isset($entry["_metabox_for_produtos_2_carroussel_content"]) && $entry["_metabox_for_produtos_2_carroussel_content"]) {
+                    if (isset($entry["_metabox_for_produtos_2_carroussel_content"]) && !empty($entry["_metabox_for_produtos_2_carroussel_content"])) {
 
                         $thumb_youtube = getUrlThumbnailYoutube($entry["_metabox_for_produtos_2_carroussel_content"]);
                         if($thumb_youtube) $link_thumb = wp_strip_all_tags($thumb_youtube);
