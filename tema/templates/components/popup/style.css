@@ -66,8 +66,9 @@ div#duvidas_frequentes p:nth-child(2n+1) {
 }
 .area-video {
     width: 100%;
-    height: fit-content;
     display: block;
+    min-height: 400px;
+    margin-bottom: 10px;
 }
 
 .myPopup {

@@ -186,6 +186,7 @@ $('.init-slider-video-for').slick({
     dots: true,
     fade: true,
     respondTo: "slider",
+    centerPadding: '60px',
     autoplay: false,
     asNavFor: '.init-slider-video'
   });
