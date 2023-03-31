@@ -97,6 +97,9 @@ function getYouTubeVideoId($pageVideUrl)
         if (!isset($video_id[1])) {
             $video_id = explode("youtu.be/", $link);
         }
+        if(!isset($video_id[1])){
+            throw new Exception("Não é um link youtube", 1);
+        }
         $youtubeID = $video_id[1];
         if (empty($video_id[1])) $video_id = explode("/v/", $link);
         $video_id = explode("&", $video_id[1]);
