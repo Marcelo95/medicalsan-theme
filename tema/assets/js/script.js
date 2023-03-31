@@ -222,7 +222,7 @@ $('.init-slider-video').slick({
         },
     ]
 }).on('click', function (event) {
-    setTimeout(() => { $('.init-slider-video-for').slick('refresh'); }, 1500);
+    setTimeout(() => { $('.init-slider-video-for').slick('refresh'); }, 150);
 
 });
 
