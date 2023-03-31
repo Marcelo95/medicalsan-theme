@@ -30,12 +30,12 @@
 
 .myPopup .wp-video {
     width: 100%;
-  min-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+    min-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -64,11 +64,19 @@ div#duvidas_frequentes p:nth-child(2n+1) {
 .myPopup .modal-content {
     border-radius: 20px;
 }
+.area-video {
+    width: 100%;
+    height: fit-content;
+    display: block;
+}
 
 .myPopup {
     z-index: 9999999;
 }
 
+html .myPopup .slick-initialized .slick-slide > div {
+    width: 100%;
+}
 div#manual_de_instrucoes .modal-body {
     display: flex;
     align-items: center;
