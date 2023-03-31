@@ -50,8 +50,11 @@ do_action("add_body_class", ["check-menu-tecnologias"]);
 
             </p>
 
-
+            <div style="display:none;">
             <?php get_template_part(sprintf("templates/produtos/content-slider-videos", get_post_field('post_name', get_post()))); ?>
+        </div>
+
+ 
 
 
             <div class="prod-360">
