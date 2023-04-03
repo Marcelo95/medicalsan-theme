@@ -10,7 +10,7 @@
     <div class="container">
 
         <div id="footer-bloco-level-0" class=" ">
-            <div id="widget_1_3_footer" class="primary-sidebar widget-area" role="complementary">
+            <div id="widget_1_4_footer" class="primary-sidebar widget-area" role="complementary">
                 <h2><a href="<?php echo home_url("/"); ?>"><?php echo _("Home"); ?></a></h2>
 
                 <?php if (is_active_sidebar('widget_1_3_footer')) : ?>
@@ -20,22 +20,26 @@
                 <?php endif; ?>
             </div>
 
-            <div id="widget_2_3_footer" class="primary-sidebar widget-area" role="complementary">
+
+            <div id="widget_2_4_footer" class="primary-sidebar widget-area" role="complementary">
 
                 <?php if (is_active_sidebar('widget_2_3_footer')) : ?>
                     <?php dynamic_sidebar('widget_2_3_footer'); ?>
 
                 <?php endif; ?>
             </div>
-            <div id="widget_2_3_footer" class="primary-sidebar widget-area" role="complementary">
 
-                <h2><a href="<?php echo home_url("/sobre"); ?>"><?php echo _("Sobre"); ?></a></h2>
-                <h2><a href="<?php echo home_url("/assistencia-tecnica"); ?>"><?php echo _("Assistência Técnica"); ?></a></h2>
-                <h2><a href="<?php echo home_url("/pos-venda"); ?>"><?php echo _("Pós-venda"); ?></a></h2>
-                <h2><a href="<?php echo home_url("/blog"); ?>"><?php echo _("Blog"); ?></a></h2>
+            <div id="widget_3_4_footer" class="primary-sidebar widget-area" role="complementary">
+
+                <?php if (is_active_sidebar('widget_3_3_footer')) : ?>
+                    <?php dynamic_sidebar('widget_3_3_footer'); ?>
+                <?php endif; ?>
+
 
             </div>
-            <div id="widget_3_3_footer" class="primary-sidebar widget-area" role="complementary">
+
+
+            <div id="widget_4_4_footer" class="primary-sidebar widget-area" role="complementary">
                 <h2><?php echo __("Redes Sociais"); ?></h2>
                 <div class="list-redes image-mouseover">
                     <a href="https://www.facebook.com/medicalsanbr/?locale=pt_BR" class="btn btn-link "> <i class="fa fa-facebook-square	"></i> </a>
@@ -43,23 +47,7 @@
                     <a href="https://www.youtube.com/c/MedicalSan/featured" class="btn btn-link"><i class="fa fa-youtube-play		"></i> </a>
                     <a href="https://www.linkedin.com/company/medicalsan/?originalSubdomain=br" class="btn btn-link"><i class="fa fa fa-linkedin-square	"></i> </a>
                 </div>
-                <?php if (is_active_sidebar('widget_3_3_footer')) : ?>
-                    <?php dynamic_sidebar('widget_3_3_footer'); ?>
-                <?php endif; ?>
 
-                <!-- <div class="apps">
-                    <h2>Baixe o app</h2>
-
-                    <div class="d-flex">
-                    <a href="https://apps.apple.com/br/app/medical-san/id1460618465?l=en" target="_blank"> 
-                        <img class="logo" src="<?php echo asset('images/apple.png?v1'); ?>" alt="Logo App Store">
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.manptecnologia.medicalsanconnect&hl=pt_BR&gl=US&pli=1" target="_blank"> 
-                        <img src="<?php echo asset('images/android.png?v1'); ?>" alt="Logo Google Play">
-                    </a>
-           
-                    </div>
-                </div> -->
 
                 <h2>
                     <a class="point-marker" href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
@@ -70,16 +58,13 @@
 
 
                 </h2>
+                <small class="direitos"><?php echo _("Medical San 2023. Todos Os Direitos Reservados."); ?></small>
+
             </div>
 
 
         </div>
 
-        <div id="footer-bloco-level-1">
-
-            <?php echo _("Medical San 2023. Todos Os Direitos Reservados."); ?>
-
-        </div>
 
 
     </div>
@@ -110,7 +95,6 @@
             header.classList.remove('scroll-down');
         }
     });
-
 </script>
 <?php wp_footer(); ?>
 
