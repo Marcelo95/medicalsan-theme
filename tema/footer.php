@@ -39,6 +39,15 @@
 
 
             <div id="widget_4_4_footer" class="primary-sidebar widget-area" role="complementary">
+                <?php if (is_active_sidebar('widget_4_4_footer')) : ?>
+                    <?php dynamic_sidebar('widget_4_4_footer'); ?>
+                <?php endif; ?>
+
+
+            </div>
+
+
+            <div id="widget_5_5_footer" class="primary-sidebar widget-area" role="complementary">
                 <h2><?php echo __("Redes Sociais"); ?></h2>
                 <div class="list-redes image-mouseover">
                     <a href="https://www.facebook.com/medicalsanbr/?locale=pt_BR" class="btn btn-link "> <i class="fa fa-facebook-square	"></i> </a>
@@ -57,7 +66,7 @@
 
 
                 </h2>
-                <small class="direitos"><?php echo _("Medical San 2023. Todos Os Direitos Reservados."); ?></small>
+                <small class="d-block fa-500px mt-4" style=" font-size: 11.1158px; ">Medical San 2023. Todos Os Direitos Reservados.</small>
 
             </div>
 

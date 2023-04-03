@@ -46,26 +46,36 @@ add_action( 'widgets_init', 'widget_2' );
 function widget_1_footer() {
 
 	register_sidebar( array(
-		'name'          => 'Widget 1/3 - Footer topo',
+		'name'          => 'Widget 1/4 - Footer topo',
 		'id'            => 'widget_1_3_footer',
-        'description' => __( 'Widget 1/3 - Footer', 'text_domain' ),
+        'description' => __( 'Widget 1/4 - Footer', 'text_domain' ),
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h6 class="rounded">',
 		'after_title'   => '</h6>',
 	) );
 	register_sidebar( array(
-		'name'          => 'Widget 2/3 - Footer topo',
+		'name'          => 'Widget 2/4 - Footer topo',
 		'id'            => 'widget_2_3_footer',
-        'description' => __( 'Widget 2/3 - Footer', 'text_domain' ),
+        'description' => __( 'Widget 2/4 - Footer', 'text_domain' ),
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h6 class="rounded">',
 		'after_title'   => '</h6>',
 	) );
 	register_sidebar( array(
-		'name'          => 'Widget 3/3 - Footer topo',
+		'name'          => 'Widget 3/4 - Footer topo',
 		'id'            => 'widget_3_3_footer',
+        'description' => __( 'Widget 3/4 - Footer', 'text_domain' ),
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h6 class="rounded">',
+		'after_title'   => '</h6>',
+	) );	
+	
+	register_sidebar( array(
+		'name'          => 'Widget 4/4 - Footer topo',
+		'id'            => 'widget_4_4_footer',
         'description' => __( 'Widget 3/3 - Footer', 'text_domain' ),
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
