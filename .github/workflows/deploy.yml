@@ -23,13 +23,13 @@ jobs:
           local-dir: "./tema/"
           server-dir: "/wp-content/themes/medicalsan-theme/"
 
-      # - name: Deploy to Development
-      #   if: github.ref == 'refs/heads/developer'
-      #   uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      #   with:
-      #     protocol: ${{secrets.FTP_PROTOCOL}}
-      #     server: ${{ secrets.FTP_SERVER_PRODUCTION }}
-      #     username: ${{ secrets.FTP_USERNAME_PRODUCTION }}
-      #     password: ${{ secrets.FTP_PASSWORD_PRODUCTION }}
-      #     local-dir: "./tema/"
-      #     server-dir: "/wp-content/themes/medicalsan-theme/"
+      - name: Deploy to Development
+        if: github.ref == 'refs/heads/main'
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          protocol: ${{secrets.FTP_PROTOCOL}}
+          server: ${{ secrets.FTP_SERVER_PRODUCTION }}
+          username: ${{ secrets.FTP_USERNAME_PRODUCTION }}
+          password: ${{ secrets.FTP_PASSWORD_PRODUCTION }}
+          local-dir: "./tema/"
+          server-dir: "/newsite/wp-content/themes/medicalsan-theme/"

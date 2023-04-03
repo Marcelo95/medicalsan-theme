@@ -62,7 +62,7 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
 
 
             <div class="list-address">
-                <?php echo file_get_contents($relative_path . "/address.php"); ?>
+                <?php echo file_get_contents(__DIR__ . "/address.php"); ?>
             </div>
 
 
@@ -74,7 +74,7 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
                 Veja a lista completa
             </div>
         </a>
-        <?php do_action("PopupComponent", ["id" => "popup", "body" => file_get_contents($relative_path . "/address.php")]);  ?>
+        <?php do_action("PopupComponent", ["id" => "popup", "body" => file_get_contents(__DIR__ . "/address.php")]);  ?>
 
     </div>
 
