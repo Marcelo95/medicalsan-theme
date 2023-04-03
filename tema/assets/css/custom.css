@@ -887,6 +887,7 @@ section.box-lancamento .wp-block-column {
     font-size: 2.5rem;
     margin-top: 30px;
     color: black;
+    word-break: break-word;
 }
 
 h1 {}
@@ -4164,10 +4165,12 @@ footer h2 {
     color: #FFFFFF;
     margin-bottom: 6px;
     margin-top: 25px;
+    text-align: left;
 }
 
 footer h2 a {
     font-weight: 600;
+    text-align: left;
 }
 
 a.point-marker {
@@ -4189,6 +4192,7 @@ a.point-marker i {
 footer ul {
     list-style: none;
     padding: 0;
+    text-align: left;
 }
 
 footer ul li {

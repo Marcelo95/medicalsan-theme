@@ -28,8 +28,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           protocol: ${{secrets.FTP_PROTOCOL}}
-          server: ${{ secrets.FTP_SERVER_PRODUCTION }}
-          username: ${{ secrets.FTP_USERNAME_PRODUCTION }}
-          password: ${{ secrets.FTP_PASSWORD_PRODUCTION }}
+          server: ${{ env.FTP_SERVER_PRODUCTION }}
+          username: ${{ env.FTP_USERNAME_PRODUCTION }}
+          password: ${{ env.FTP_PASSWORD_PRODUCTION }}
           local-dir: "./tema/"
           server-dir: "/newsite/wp-content/themes/medicalsan-theme/"
