@@ -7198,5 +7198,9 @@ title-top-prod {
 .produtos-hyper-slim section.more-text p span {
     margin-bottom: 10px;
 }
+div#footer-bloco-level-0 > div {
+    min-width: 50%;
+    max-width: 50%;
+}
 
 }

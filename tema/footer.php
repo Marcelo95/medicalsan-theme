@@ -66,8 +66,14 @@
 
 
                 </h2>
-                <small class="d-block fa-500px mt-4" style=" font-size: 11.1158px; ">Medical San 2023. Todos Os Direitos Reservados.</small>
+                <div class="desktop">
+                    <small class="d-block fa-500px mt-4" style=" font-size: 11.1158px; ">Medical San 2023. Todos Os Direitos Reservados.</small>
+                </div>
 
+            </div>
+
+            <div id="widget_6_footer" class="primary-sidebar widget-area mobile" role="complementary" style="position: relative;">
+                <small class="d-block fa-500px mt-4" style="font-size: 11.1158px;position: absolute;bottom: 0px;">Medical San 2023. <br> Todos Os Direitos Reservados.</small>
             </div>
 
 
