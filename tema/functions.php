@@ -192,3 +192,9 @@ function custom_shortcode_onde_estamos()
     do_action("OndeEstamosComponent");
 }
 add_shortcode('onde-estamos', 'custom_shortcode_onde_estamos');
+
+
+function my_home_url_shortcode( $atts ) {
+    return home_url();
+}
+add_shortcode( 'home_url', 'my_home_url_shortcode' );
