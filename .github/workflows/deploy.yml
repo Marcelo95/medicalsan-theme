@@ -32,4 +32,4 @@ jobs:
           username: ${{ env.FTP_USERNAME_PRODUCTION }}
           password: ${{ env.FTP_PASSWORD_PRODUCTION }}
           local-dir: "./tema/"
-          server-dir: "/newsite/wp-content/themes/medicalsan-theme/"
+          server-dir: "/wp-content/themes/medicalsan-theme/"
