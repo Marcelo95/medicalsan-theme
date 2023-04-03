@@ -33,3 +33,6 @@ jobs:
           password: ${{ vars.FTP_PASSWORD_PRODUCTION }}
           local-dir: "./tema/"
           server-dir: "/wp-content/themes/medicalsan-theme/"
+          pre-deploy-commands: |
+            echo "Testing FTP connection"
+            ftp ${{ vars.FTP_SERVER_PRODUCTION }} <<< "user ${{ vars.FTP_USERNAME_PRODUCTION }} ${{ vars.FTP_PASSWORD_PRODUCTION }}" <<< "pwd"
