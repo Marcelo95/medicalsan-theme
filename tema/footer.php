@@ -11,7 +11,6 @@
 
         <div id="footer-bloco-level-0" class=" ">
             <div id="widget_1_4_footer" class="primary-sidebar widget-area" role="complementary">
-                <h2><a href="<?php echo home_url("/"); ?>"><?php echo _("Home"); ?></a></h2>
 
                 <?php if (is_active_sidebar('widget_1_3_footer')) : ?>
 
