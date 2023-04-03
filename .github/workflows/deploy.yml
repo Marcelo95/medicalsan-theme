@@ -27,7 +27,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          protocol: ${{secrets.FTP_PROTOCOL}}
+          protocol: ${{ vars.FTP_PROTOCOL_PRODUCTION }}
           server: ${{ vars.FTP_SERVER_PRODUCTION }}
           username: ${{ vars.FTP_USERNAME_PRODUCTION }}
           password: ${{ vars.FTP_PASSWORD_PRODUCTION }}
