@@ -12,24 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      #- name: Deploy to Production
-      #  if: github.ref == 'refs/heads/main'
-      #  uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      #  with:
-      #    protocol: ${{secrets.FTP_PROTOCOL}}
-      #    server: ${{ secrets.FTP_SERVER }}
-      #    username: ${{ secrets.FTP_USERNAME }}
-      #    password: ${{ secrets.FTP_PASSWORD }}
-      #    local-dir: "./tema/"
-      #    server-dir: "/wp-content/themes/medicalsan-theme/"
-
-      - name: Deploy to Development
+      - name: Deploy to Production
         if: github.ref == 'refs/heads/main'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          log-level: verbose
-          server: ${{ vars.FTP_SERVER_PRODUCTION }}
-          username: ${{ vars.FTP_USERNAME_PRODUCTION }}
-          password: ${{ vars.FTP_PASSWORD_PRODUCTION }}
+          protocol: ${{secrets.FTP_PROTOCOL}}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "./tema/"
           server-dir: "/wp-content/themes/medicalsan-theme/"
