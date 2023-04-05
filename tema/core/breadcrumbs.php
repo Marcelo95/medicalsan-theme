@@ -26,8 +26,15 @@ function custom_breadcrumbs()
         }
 
         if (is_singular('post')) {
+            $cats = get_same_array_categories();
+            if( count($cats) > 2 ) {
+                $cats = array_slice($cats, 0 ,2); // retornando as 3 primeiras cats do produto, caso tenha muitas cats
+            };
+           
+
             echo '<li><a href="' . home_url("blog") . '">Blog</a></li>';
             echo $sep;
+            echo my_get_the_category_list($sep, $cats);
         }
 
         if (is_search() && get_query_var('post_type')) {
