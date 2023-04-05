@@ -31,7 +31,6 @@ function custom_breadcrumbs()
                 $cats = array_slice($cats, 0 ,2); // retornando as 3 primeiras cats do produto, caso tenha muitas cats
             };
            
-
             echo '<li><a href="' . home_url("blog") . '">Blog</a></li>';
             echo $sep;
             echo my_get_the_category_list($sep, $cats);
