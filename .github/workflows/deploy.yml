@@ -12,7 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Deploy to Production
+      - name: Install lftp para deploy via FTP
+        run: sudo apt-get install lftp
+
+      - name: Deploy to homolog using developer branch
         if: github.ref == 'refs/heads/developer'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -22,3 +25,16 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "./tema/"
           server-dir: "/wp-content/themes/medicalsan-theme/"
+
+
+      - name: Deploy to Production using main branch
+        if: github.ref == 'refs/heads/main'
+        run: |
+            lftp -c "set net:max-retries 99999999999999999999999; set ftp:ssl-allow no; set ssl:verify-certificate no; set debug on; set ftp:passive-mode true; set net:timeout 5; open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST; mirror -R $LOCAL_PATH $REMOTE_PATH; quit"
+        env:
+          FTP_HOST: ${{ secrets.FTP_SERVER_PRODUCTION }}
+          FTP_USER: ${{ secrets.FTP_USERNAME_PRODUCTION }}
+          FTP_PASS: ${{ secrets.FTP_PASSWORD_PRODUCTION }}
+          REMOTE_PATH: "/wp-content/themes/medicalsan-theme"
+          LOCAL_PATH: "./tema"
+
