@@ -114,12 +114,13 @@ footer .container {
 }
 
 .page-sobre .banner-custom .image {
-    width: 100%;
-    display: block;
-    height: 1023px;
-    background: url("../../assets/images/bg-page-sobre.png") top no-repeat;
     margin-top: -90px;
-    background-size: contain;
+    text-align: center;
+    width: 100%;
+}
+
+.page-sobre .banner-custom .image img {
+    max-width: 100%;
 }
 
 .page-sobre ul#breadcrumbs {

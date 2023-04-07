@@ -97,7 +97,7 @@
     line-height: 14px;
 }
 
-.lista-nossas-marcas div a::after {font-size: 17px;top: 4px;}
+.lista-nossas-marcas div a::after {font-size: 17px;top: 5px;}
 
 .lista-nossas-marcas div a:hover {
     color: #fff;
@@ -114,8 +114,13 @@ section#nossas-marcas {
 }
 
 section#nossas-marcas .scroll {
-    overflow-x: scroll;
     padding: 24px 0;
+    overflow-x: hidden;
+    width: 100%;
+    margin-left: auto;
+    cursor: grab;
+    user-select: none;
+    position: relative;
 }
 
 section#nossas-marcas .scroll::-webkit-scrollbar {
