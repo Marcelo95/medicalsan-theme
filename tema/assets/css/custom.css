@@ -27,6 +27,10 @@ main.page-wrapper {
     overflow: hidden;
 }
 
+body.page-sobre {
+    background: #F9F9F9;
+}
+
 .single-produtos main.page-wrapper {
     padding-top: 0;
 }
@@ -109,8 +113,18 @@ footer .container {
     max-width: 800px;
 }
 
-body.page-sobre {
+.page-sobre .banner-custom .image {
+    width: 100%;
+    display: block;
+    height: 1023px;
     background: url("../../assets/images/bg-page-sobre.png") top no-repeat;
+    margin-top: -90px;
+    /* background-size: cover; */
+}
+
+.page-sobre ul#breadcrumbs {
+    position: absolute;
+    top: 108px;
 }
 
 
