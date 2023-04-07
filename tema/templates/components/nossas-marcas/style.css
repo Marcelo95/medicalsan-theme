@@ -1,6 +1,6 @@
 .lista-nossas-marcas {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -24,8 +24,8 @@
     overflow: hidden;
     border-radius: 12px;
     margin: 8px 4px;
-    height: 155px;
-    width: 208px;
+    height: 127.76px;
+    width: 233.75px;
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
@@ -34,6 +34,7 @@
     align-items: end;
     justify-content: center;
     cursor: pointer;
+    background-size: contain;
 }
 
 .lista-nossas-marcas > div > div:hover > div.text-ocult {
@@ -49,12 +50,12 @@
     /* display: flex; */
     font-size: 12px;
     padding: 16px;
-    padding-bottom: 34px;
+    /* padding-bottom: 34px; */
     color: #fff;
     background: rgba(0, 0, 0, 0.84);
     /* display: flex; */
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -64,6 +65,14 @@
     /* bottom: 0; */
     /* margin-left: -32%; */
     margin: 0;
+    font-weight: 400;
+    font-size: 10.0294px;
+    line-height: 14px;
+}
+
+.lista-nossas-marcas > div > div .text-ocult a::after {
+    font-size: 18px;
+    top: 6px;
 }
 
 .lista-nossas-marcas > div > div .text-ocult p {
@@ -71,6 +80,9 @@
     display: flex;
     align-items: center;
     margin: 0;
+    font-weight: 400;
+    font-size: 11.4798px;
+    line-height: 15px;
 }
 
 .lista-nossas-marcas div a {
@@ -80,7 +92,12 @@
     bottom: 0;
     height: auto;
     text-align: center;
+    font-weight: 400;
+    font-size: 10.0294px;
+    line-height: 14px;
 }
+
+.lista-nossas-marcas div a::after {font-size: 17px;top: 4px;}
 
 .lista-nossas-marcas div a:hover {
     color: #fff;
@@ -94,4 +111,8 @@ section#nossas-marcas h2 {
 
 section#nossas-marcas {
     margin: 59px 0px;
+}
+
+section#nossas-marcas .scroll {
+    overflow-x: auto;
 }

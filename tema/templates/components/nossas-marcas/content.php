@@ -8,9 +8,9 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
 
 ?>
 <section id="nossas-marcas">
-    <div class="container">
-        <h2>Nossas Marcas</h2>
 
+    <h2>Nossas Marcas</h2>
+    <div class="scroll">
         <div class="lista-nossas-marcas">
             <div>
                 <div style="background-image:url(<?php _e($relative_path . "/images/medicalsan.png"); ?>);">

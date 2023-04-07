@@ -41,11 +41,11 @@ jobs:
       - name: Deploy to homolog using DEVELOPER branch
         if: github.ref == 'refs/heads/developer'
         run: |
-            lftp -d -c "set net:max-retries 99999999999999999999999; set ftp:ssl-allow no; set ssl:verify-certificate no; set debug on; set ftp:passive-mode true; set net:timeout 5; open -u $FTP_USER,$FTP_PASS $FTP_HOST; mirror -R $LOCAL_PATH $REMOTE_PATH; quit"
+            lftp -d -c "set net:max-retries 99999999999999999999999; set ftp:ssl-allow no; set ssl:verify-certificate no; set debug on; set ftp:passive-mode true; set net:timeout 5; open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; mirror -R $LOCAL_PATH $REMOTE_PATH; quit"
         env:
-          FTP_HOST: ${{ secrets.FTP_SERVER }}
-          FTP_USER: ${{ secrets.FTP_USERNAME }}
-          FTP_PASS: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           REMOTE_PATH: "/wp-content/themes/medicalsan-theme"
           LOCAL_PATH: "./tema"
 
