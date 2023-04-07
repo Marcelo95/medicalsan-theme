@@ -59,8 +59,8 @@
 
                 <h2>
                     <a class="point-marker" href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
-                        <i class="fa fa-map-marker	"></i> <span>386 Business Park <br>
-                            Rodovia BR-386, km 357. <br> Estrela - RS</span>
+                        <i class="fa fa-map-marker	"></i> <span>Rua José Willibaldo Fell, 906 <br>
+                        Bairro das Indústrias <br> Estrela/RS</span>
                     </a>
 
 
