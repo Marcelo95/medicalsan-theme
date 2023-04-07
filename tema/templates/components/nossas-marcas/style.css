@@ -114,5 +114,18 @@ section#nossas-marcas {
 }
 
 section#nossas-marcas .scroll {
-    overflow-x: auto;
+    overflow-x: scroll;
+    padding: 24px 0;
+}
+
+section#nossas-marcas .scroll::-webkit-scrollbar {
+    /* display: none; */
+}
+
+
+@media(max-width:1220px){
+  .lista-nossas-marcas {
+    padding-left: 300px;
+}
+  
 }

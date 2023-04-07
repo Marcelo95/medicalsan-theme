@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to Production using MAIN branch
         if: github.ref == 'refs/heads/main'
         run: |
-            lftp -d -c "set net:max-retries 99999999999999999999999; set ftp:ssl-allow no; set ssl:verify-certificate no; set debug on; set ftp:passive-mode true; set net:timeout 5; open -u $FTP_USERNAME_PRODUCTION,$FTP_PASSWORD_PRODUCTION $FTP_SERVER_PRODUCTION; mirror -R $LOCAL_PATH_PRODUCTION $REMOTE_PATH_PRODUCTION; quit"
+            lftp -d -c "set net:max-retries 99999999999999999999999; set ftp:ssl-allow no; set ssl:verify-certificate no; set debug on; set ftp:passive-mode true; set net:timeout 5; open -u $FTP_USERNAME_PRODUCTION,$FTP_PASSWORD_PRODUCTION $FTP_SERVER_PRODUCTION; mirror -R -n $LOCAL_PATH_PRODUCTION $REMOTE_PATH_PRODUCTION; quit"
         env:
           FTP_SERVER_PRODUCTION: ${{ secrets.FTP_SERVER_PRODUCTION }}
           FTP_USERNAME_PRODUCTION: ${{ secrets.FTP_USERNAME_PRODUCTION }}
@@ -41,7 +41,7 @@ jobs:
       - name: Deploy to homolog using DEVELOPER branch
         if: github.ref == 'refs/heads/developer'
         run: |
-            lftp -d -c "set net:max-retries 99999999999999999999999; set ftp:ssl-allow no; set ssl:verify-certificate no; set debug on; set ftp:passive-mode true; set net:timeout 5; open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; mirror -R $LOCAL_PATH $REMOTE_PATH; quit"
+            lftp -d -c "set net:max-retries 99999999999999999999999; set ftp:ssl-allow no; set ssl:verify-certificate no; set debug on; set ftp:passive-mode true; set net:timeout 5; open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; mirror -R -n $LOCAL_PATH $REMOTE_PATH; quit"
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
