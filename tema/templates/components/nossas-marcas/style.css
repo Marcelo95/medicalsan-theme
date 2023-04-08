@@ -1,12 +1,9 @@
 .lista-nossas-marcas {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
 .lista-nossas-marcas img {
-    /* margin-right: 10px; */
-    /* max-width: 213px; */
     width: 100%;
 }
 
@@ -37,6 +34,26 @@
     background-size: contain;
 }
 
+.fundo-5 {
+    background: #0b023b;
+}
+
+.fundo-4 {
+    background: #001948;
+}
+
+.fundo-3 {
+    background: #6ddda0;
+}
+
+.fundo-2 {
+    background: #1b0d59;
+}
+
+.fundo-1 {
+    background-color: #00367E;
+}
+
 .lista-nossas-marcas > div > div:hover > div.text-ocult {
     display: flex;
 }
@@ -59,11 +76,11 @@
     align-items: center;
 }
 
+.lista-nossas-marcas > div > div .text-ocult > .img-mob {
+    display: none;
+}
+
 .lista-nossas-marcas > div > div .text-ocult a {
-    /* position: absolute; */
-    /* left: 50%; */
-    /* bottom: 0; */
-    /* margin-left: -32%; */
     margin: 0;
     font-weight: 400;
     font-size: 10.0294px;
@@ -113,7 +130,7 @@ section#nossas-marcas {
     margin: 59px 0px;
 }
 
-section#nossas-marcas .scroll {
+section#nossas-marcas .scroll2 {
     padding: 24px 0;
     overflow-x: hidden;
     width: 100%;
@@ -123,14 +140,94 @@ section#nossas-marcas .scroll {
     position: relative;
 }
 
-section#nossas-marcas .scroll::-webkit-scrollbar {
-    /* display: none; */
+.lista-nossas-marcas .img-mob {
+    height: 60px;
+    width: 190px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.buttons-nossas-marcas {
+    display: none;
+}
+
+@media(max-width:1230px){
+    .lista-nossas-marcas {
+    justify-content: flex-start;
+}
 }
 
 
-@media(max-width:1220px){
-  .lista-nossas-marcas {
-    padding-left: 300px;
+@media(max-width:992px){
+
+    .lista-nossas-marcas > div > div {
+    height: 206.54px;
 }
-  
+
+.lista-nossas-marcas > div > div > div.text-ocult {
+    display: flex;
+    background: transparent;
+}
+
+.lista-nossas-marcas > div > div .text-ocult > img {
+    display: block;
+    width: auto;
+}
+
+.lista-nossas-marcas > div > div > a {
+    display: none;
+}
+
+.lista-nossas-marcas > div > div {
+    background-image: none !important;
+}
+
+.lista-nossas-marcas > div > div .text-ocult p {
+    min-height: 80px;
+}
+
+    .lista-nossas-marcas > div > div .text-ocult > .img-mob {
+    display: block;
+}
+
+    .nossas-marcas-title-and-buttons {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.buttons-nossas-marcas {
+    margin-left: 5px;
+    display: flex;
+}
+
+.buttons-nossas-marcas button {
+    border: none;
+    background: none;
+    padding-left: 1px;
+}
+
+.buttons-nossas-marcas button i {
+    border: 0;
+    border-radius: 50%;
+    height: 15.75px;
+    width: 15.75px;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin-right: 0px;
+    background: #00367E;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+
+    section#nossas-marcas h2 {
+    font-weight: 700;
+    font-size: 19.8389px;
+    line-height: 23px;
+}
 }

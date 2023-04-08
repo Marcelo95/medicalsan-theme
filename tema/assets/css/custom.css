@@ -6523,8 +6523,7 @@ section.comentarios>.container {
     font-weight: 400;
 }
 
-.page-sobre #breadcrumbs a,
-.page-sobre #breadcrumbs li {
+.page-sobre #breadcrumbs a, .page-sobre #breadcrumbs li,  .page-sobre #breadcrumbs li.separator:after {
     color: black;
 }
 
