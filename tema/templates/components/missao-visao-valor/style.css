@@ -1,0 +1,106 @@
+.valores p  {
+    color: black !important;
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+}
+
+.valores .val-left {
+    margin-top: 23px;
+    padding-left: 10px;
+}
+
+.valores .val-dir {
+    padding-right: 10px;
+}
+
+.valores h2 {
+    text-align: center;
+}
+
+.valores .val-box {
+    width: 384px;
+    background: #E4EDF0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 16px 9px;
+}
+
+.valores .val-box h2 {
+    color: #00367E;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    margin: 4px;
+}
+
+.valores .val-box p {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+    text-align: center;
+}
+
+.val-text p {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+    color: #000000;
+    max-width: 706px;
+    margin-right: 136px;
+}
+
+.val-text b, .val-text strong {
+    color: #00367E;
+    display: block;
+}
+
+
+@media(max-width:992px){
+    .valores {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valores > div {
+    max-width: 300px;
+    margin: auto;
+}
+
+.val-text p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 21px;
+}
+
+.valores .val-box p {
+    font-size: 14px;
+    line-height: 18.2px;
+}
+
+.valores .val-box {
+    width: 260px;
+    padding: 10px 20px;
+}
+
+.valores .val-box h2 {
+    font-size: 21px;
+    line-height: 27px;
+}
+}
+

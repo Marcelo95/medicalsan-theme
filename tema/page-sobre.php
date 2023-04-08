@@ -7,25 +7,25 @@
 
 			if (has_post_thumbnail()) {
 				the_post_thumbnail();
-			} else {
-				echo '<img src="' . asset('images/bg-page-sobre.png') .'" />';
-			}
+			} else  { ?>
 
-			?>
+
+				<img class="desktop" src="<?php echo asset('images/bg-page-sobre.png'); ?>" />
+				<img class="mobile" src="<?php echo asset('images/bg-page-sobre-mobile.png'); ?>" />
+				
+			<?php } ?>
 		</div>
 	</div>
 </section>
 
 
-<section class="container main-page archive ">
+<section class="main-page archive ">
 
 	<div class="mt-5 mb-5">
-		<?php custom_breadcrumbs(); ?>
+		<div class="container"><?php custom_breadcrumbs(); ?></div>
 
 
-		<div class="loop">
-			<?php get_template_part("templates/content"); ?>
-		</div>
+		<?php do_action("MissaoVisaoValorComponent"); ?>
 
 	</div>
 
