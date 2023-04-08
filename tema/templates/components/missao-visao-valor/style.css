@@ -65,6 +65,7 @@
 .val-text b, .val-text strong {
     color: #00367E;
     display: block;
+    line-height: inherit;
 }
 
 

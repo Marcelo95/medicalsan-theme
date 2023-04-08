@@ -126,7 +126,7 @@ footer .container {
 
 .page-sobre ul#breadcrumbs {
     position: absolute;
-    top: 108px;
+    top: 107px;
 }
 
 
@@ -7221,6 +7221,9 @@ title-top-prod {
 div#footer-bloco-level-0 > div {
     min-width: 50%;
     max-width: 50%;
+}
+.page-sobre ul#breadcrumbs {
+    top: 53px;
 }
 
 }
