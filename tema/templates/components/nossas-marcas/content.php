@@ -150,14 +150,14 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
                     _minhaDiv.scrollTo({
                         left: _minhaDiv.scrollLeft - andar,
                         top: 0,
-                        //behavior: 'smooth'
+                        behavior: 'smooth'
                     })
                     break;
                 case "right":
                     _minhaDiv.scrollTo({
                         left: _minhaDiv.scrollLeft + andar,
                         top: 0,
-                        //behavior: 'smooth'
+                        behavior: 'smooth'
                     })
                     break;
 

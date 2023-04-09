@@ -133,14 +133,14 @@ if (count($itens)) : ?>
                 minhaDiv.scrollTo({
                     left: minhaDiv.scrollLeft - andar,
                     top: 0,
-                    //behavior: 'smooth'
+                    behavior: 'smooth'
                 })
                 break;
             case "right":
                 minhaDiv.scrollTo({
                     left: minhaDiv.scrollLeft + andar,
                     top: 0,
-                    //behavior: 'smooth'
+                    behavior: 'smooth'
                 })
                 break;
 
