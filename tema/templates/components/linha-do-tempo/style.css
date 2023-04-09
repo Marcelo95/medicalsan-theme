@@ -56,6 +56,10 @@ div#init-linha-do-tempo {
     left: -31px;
 }
 
+.navegador-safati .linha-item .item_yeaer i {
+    top: -5px;
+}
+
 .linha-item:not(.active) .item_yeaer i {background-image: none !important;}
 
 .active .item_yeaer i {
@@ -67,6 +71,10 @@ div#init-linha-do-tempo {
     background-size: auto;
     background-position: center;
     background-color: transparent;
+}
+
+.navegador-safari .active .item_yeaer i {
+    top: 1px;
 }
 
 .active .item_yeaer {
