@@ -127,7 +127,11 @@ html .carroussel-linha-do-tempo ul.slick-dots li {
     display: block;
     background: none !important;
     border: none;
-        width: 100% !important;
+    width: 100% !important;
+}
+
+.navegador-safari .carroussel-linha-do-tempo ul.slick-dots li.slick-active {
+    line-height: 2;
 }
 
 .carroussel-linha-do-tempo ul.slick-dots {
