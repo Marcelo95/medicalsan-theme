@@ -54,6 +54,7 @@ div#init-linha-do-tempo {
     background-color: #C8E2EC;
     position: relative;
     left: -31px;
+    top: -1px;
 }
 
 .navegador-safari .linha-item .item_yeaer i {
