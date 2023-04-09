@@ -277,3 +277,17 @@ $('.slider-icons-categories').slick({
         }
     ]
 });
+
+$('.carroussel-linha-do-tempo').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
+    infinite: false,
+    dots: true,
+    autoplay: false,
+    arrows: true,
+    fade: true,
+    customPaging: function(slick,index) {
+        return  '<span>' + (index + 1) + " de "+ slick.slideCount  + '</span>' ;
+    }
+});

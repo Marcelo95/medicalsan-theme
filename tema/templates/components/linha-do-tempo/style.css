@@ -4,11 +4,20 @@ section.content-linha-do-tempo {
 }
 
 section.content-linha-do-tempo .linha-item {
-    width: 392px;
+    width: 530px;
     border-left: 1px solid #fff;
     padding-left: 27px;
-    padding-bottom: 35px;
-    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+section.content-linha-do-tempo .linha-item:first-child {
+    padding-top: 159px;
+    margin-top: -56px;
+}
+
+section.content-linha-do-tempo .linha-item:last-child {
+    padding-bottom: 100px;
 }
 
 div#init-linha-do-tempo {
@@ -16,6 +25,7 @@ div#init-linha-do-tempo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .item_yeaer {
@@ -23,12 +33,17 @@ div#init-linha-do-tempo {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 136px;
+    /* line-height: 136px; */
     display: flex;
     align-items: center;
     letter-spacing: 0.05em;
     color: #C8E2EC;
     cursor: pointer;
+}
+
+.item_yeaer span {
+    position: relative;
+    left: -97px;
 }
 
 .linha-item .item_yeaer i {
@@ -60,8 +75,90 @@ div#init-linha-do-tempo {
     font-weight: 700;
     font-size: 32px;
     line-height: 33px;
-/* or 33px */
     color: #FFFFFF;
 }
 
-.linha-item {}
+.active .item_yeaer span {
+    display: inline-block;
+    /* margin-left: -30px; */
+    left: -170px;
+}
+
+section.content-linha-do-tempo .image-point {
+    width: 489px;
+    height: 312px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: block;
+}
+
+section.content-linha-do-tempo .item_bottom {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.carroussel-linha-do-tempo {
+    padding-top: 27px;
+}
+
+.carroussel-linha-do-tempo button.slick-arrow.slick-prev, .carroussel-linha-do-tempo button.slick-arrow.slick-next {
+    top: 28px;
+    background: no-repeat;
+    font-weight: 700;
+}
+
+.carroussel-linha-do-tempo button.slick-arrow.slick-next {
+    left: 96px;
+    font-weight: 700;
+}
+
+html .carroussel-linha-do-tempo ul.slick-dots li {
+    display: none;
+    background: none !important;
+    font-size: 14px;
+}
+
+.carroussel-linha-do-tempo ul.slick-dots li.slick-active {
+    display: block;
+    background: none !important;
+    border: none;
+        width: 100% !important;
+}
+
+.carroussel-linha-do-tempo ul.slick-dots {
+    top: 18px;
+    left: 30px;
+    height: 21px;
+    width: 73px;
+}
+
+.content_bottom {
+    display: none;
+    position: relative;
+}
+
+.linha-item.active .content_bottom {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 503px;
+    /* left: 0; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+h2.title-linha-do-tempo {
+    display: block;
+    width: 212px;
+    position: relative;
+    top: 41px;
+    margin-bottom: -37px;
+}
