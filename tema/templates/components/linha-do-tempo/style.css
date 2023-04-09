@@ -56,6 +56,10 @@ div#init-linha-do-tempo {
     left: -31px;
 }
 
+.navegador-safari .linha-item .item_yeaer i {
+    top: -5px;
+}
+
 .navegador-safati .linha-item .item_yeaer i {
     top: -5px;
 }
