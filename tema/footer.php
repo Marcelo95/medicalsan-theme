@@ -60,7 +60,7 @@
                 <h2>
                     <a class="point-marker" href="https://goo.gl/maps/xw6yJnY6VoMerY177" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-map-marker	"></i> <span>Rua José Willibaldo Fell, 906 <br>
-                        Bairro das Indústrias <br> Estrela/RS</span>
+                            Bairro das Indústrias <br> Estrela/RS</span>
                     </a>
 
 
@@ -108,6 +108,15 @@
             // Se não for, remove a classe que altera a cor do header
             header.classList.remove('scroll-down');
         }
+    });
+
+    $('a[href^="#"]').click(function(event) {
+        event.preventDefault();
+        let elem = $.attr(this, 'href');
+        if(elem.split("#")[1] === "") elem = "body";
+        $('html, body').animate({
+            scrollTop: $(elem).offset().top - 105
+        }, 500);
     });
 </script>
 <?php wp_footer(); ?>

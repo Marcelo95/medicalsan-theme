@@ -7,14 +7,22 @@
 
 			if (has_post_thumbnail()) {
 				the_post_thumbnail();
-			} else  { ?>
+			} else { ?>
 
 
 				<img class="desktop" src="<?php echo asset('images/bg-page-sobre.png'); ?>" />
 				<img class="mobile" src="<?php echo asset('images/bg-page-sobre-mobile.png'); ?>" />
-				
+
+				<div class="link-bottom">
+				<a href="#missao-visao-valor-link">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</div>
 			<?php } ?>
+
+
 		</div>
+
 	</div>
 </section>
 
@@ -25,7 +33,9 @@
 		<div class="container"><?php custom_breadcrumbs(); ?></div>
 
 
-		<?php do_action("MissaoVisaoValorComponent"); ?>
+		<div id="missao-visao-valor-link"></div>
+			<?php do_action("MissaoVisaoValorComponent"); ?>
+		
 
 	</div>
 

@@ -129,7 +129,17 @@ footer .container {
     top: 107px;
 }
 
+.page-sobre .link-bottom {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    margin-top: -10%;
+}
 
+.page-sobre .link-bottom a {
+    color: #0085FF;
+}
 .page-blog.archive img {
     max-width: 100%;
     border-radius: 20px;
@@ -7223,6 +7233,10 @@ div#footer-bloco-level-0 > div {
 }
 .page-sobre ul#breadcrumbs {
     top: 53px;
+    width: 390px;
+    left: 50%;
+    margin-left: -195px;
+    padding-left: 16px;
 }
 
 }
