@@ -58,7 +58,7 @@
 
 
                 <h2>
-                    <a class="point-marker" href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
+                    <a class="point-marker" href="https://goo.gl/maps/xw6yJnY6VoMerY177" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-map-marker	"></i> <span>Rua José Willibaldo Fell, 906 <br>
                         Bairro das Indústrias <br> Estrela/RS</span>
                     </a>
