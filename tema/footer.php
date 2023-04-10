@@ -110,7 +110,7 @@
         }
     });
 
-    $('a[href^="#"]').click(function(event) {
+    $('a[href^="#"]').off().click(function(event) {
         event.preventDefault();
         let elem = $.attr(this, 'href');
         if(elem.split("#")[1] === "") elem = "body";
