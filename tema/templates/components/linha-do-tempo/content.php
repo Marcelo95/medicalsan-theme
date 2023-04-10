@@ -30,7 +30,7 @@ $linha_do_tempo = [
         "points" => [
             [
                 "foto" => "2014.png",
-                "texto" => "Além de mudar para Estrela (RS), a Medical San conquista as certificações do Inmetro e da Anvisa, iniciando um ousado projeto de expansão"
+                "texto" => "Além de mudar para Estrela (RS), a Medical San conquista as certificações do Inmetro e da Anvisa, iniciando um ousado projeto de expansão."
             ]
         ]
 
