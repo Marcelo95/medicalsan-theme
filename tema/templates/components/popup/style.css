@@ -97,6 +97,7 @@ div#manual_de_instrucoes a {
 
 .myPopup iframe {
     min-width: 100%;
+    height: 428px;
 }
 
 .myPopup ul.slick-dots {

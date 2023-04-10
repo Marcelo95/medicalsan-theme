@@ -219,7 +219,7 @@ function metabox_for_produtos_2()
   $cmb_demo = new_cmb2_box(
     array(
       'id' => $prefix . 'metabox',
-      'title' => __('Carroussel', 'cmb2'),
+      'title' => __('Carroussel - (Stories)', 'cmb2'),
       'object_types' => array('produtos'), // Post type
     )
   );
