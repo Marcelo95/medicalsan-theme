@@ -115,7 +115,7 @@
         let elem = $.attr(this, 'href');
         if(elem.split("#")[1] === "") elem = "body";
         $('html, body').animate({
-            scrollTop: $(elem).offset().top - 105
+            scrollTop: $(elem).offset().top - $("header").height()
         }, 500);
     });
 </script>
