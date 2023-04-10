@@ -119,6 +119,10 @@ section.content-linha-do-tempo .item_bottom {
     padding-top: 27px;
 }
 
+.carroussel-linha-do-tempo > div {
+    width: 492px;
+}
+
 .carroussel-linha-do-tempo button.slick-arrow.slick-prev, .carroussel-linha-do-tempo button.slick-arrow.slick-next {
     top: 28px;
     background: no-repeat;
@@ -178,4 +182,58 @@ h2.title-linha-do-tempo {
     position: relative;
     top: 41px;
     margin-bottom: -37px;
+}
+
+@media (max-width:992px){
+    section.content-linha-do-tempo .linha-item {
+    width: 273px;
+    padding-top: 10px;
+}
+
+section.content-linha-do-tempo .image-point {
+    width: 253px;
+    height: 162px;
+}
+
+section.content-linha-do-tempo .item_bottom {
+    width: 253px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.linha-item.active .content_bottom {
+    position: relative;
+    margin-left: 10px;
+    width: 260px;
+}
+
+.item_yeaer span {
+    left: 0;
+}
+
+.active .item_yeaer span {
+    left: -32px;
+}
+
+.carroussel-linha-do-tempo {
+    padding-top: 5px;
+    padding-left: 0;
+    margin-left: -20px;
+}
+
+.carroussel-linha-do-tempo ul.slick-dots li.slick-active {
+    display: none;
+}
+
+.carroussel-linha-do-tempo button.slick-arrow.slick-next {
+    right: 0;
+    left: auto;
+    top: 18px;
+}
+
+.carroussel-linha-do-tempo button.slick-prev.slick-arrow {
+    right: 28px;
+    left: auto;
+    top: 18px;
+}
 }
