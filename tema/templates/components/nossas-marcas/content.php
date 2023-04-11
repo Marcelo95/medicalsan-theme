@@ -66,7 +66,7 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
                     </div>
                 </div>
             </div>
-            <div>
+   <!--         <div>
                 <div class="fundo-5" style="background-image:url(<?php _e($relative_path . "/images/tech5.png"); ?>);">
                     <a href="http://www.tech5.com.br/novosite/index.aspx" class="botao-5" target="_blank">Acesse o site</a>
                     <div class="text-ocult">
@@ -76,6 +76,7 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
                     </div>
                 </div>
             </div>
+-->
         </div>
     </div>
 </section>
