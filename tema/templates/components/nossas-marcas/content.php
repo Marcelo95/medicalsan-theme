@@ -36,7 +36,7 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
             </div>
             <div>
                 <div class="fundo-2" style="background-image:url(<?php _e($relative_path . "/images/medstart.png"); ?>);">
-                    <a href="https://www.medstart.com.br/" class="botao-5" target="_blank">Acesse o site</a>
+                    <a href="https://medstartoficial.com.br/" class="botao-5" target="_blank">Acesse o site</a>
 
                     <div class="text-ocult">
                         <div class="img-mob" style="background-image: url(<?php _e($relative_path . "/images/medstart-mobile.png"); ?>);"></div>
@@ -58,11 +58,11 @@ $relative_path = get_template_directory_uri() . str_replace(get_theme_root() . '
             </div>
             <div>
                 <div class="fundo-4" style="background-image:url(<?php _e($relative_path . "/images/vitoria.png"); ?>);">
-                    <a href="<?php _e("/404"); ?>" class="botao-5" target="_blank">Acesse o site</a>
+                    <a href="http://vitoriaeletronica.com.br/" class="botao-5" target="_blank">Acesse o site</a>
                     <div class="text-ocult">
                         <div class="img-mob" style="background-image: url(<?php _e($relative_path . "/images/vitoria-mobile.png"); ?>);"></div>
                         <p>Fornecimento de placas e circuitos eletrônicos para o mercado nacional.</p>
-                        <a href="<?php _e("/404"); ?>" class="botao-5" target="_blank">Acesse o site</a>
+                        <a href="http://vitoriaeletronica.com.br/" class="botao-5" target="_blank">Acesse o site</a>
                     </div>
                 </div>
             </div>

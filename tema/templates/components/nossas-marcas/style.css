@@ -33,6 +33,10 @@
     cursor: pointer;
     background-size: contain;
 }
+/*ocultado link temporariamente*/
+.fundo-4 a, .fundo-5 a {
+    display: none;
+}
 
 .fundo-5 {
     background: #0b023b;
