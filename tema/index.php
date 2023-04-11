@@ -26,7 +26,7 @@
             </div>
             <div class="box-text js-scroll fade-in-bottom scrolled">
                 <h4>LANÇAMENTO</h4>
-                <h2>Hyper Slim</h2>
+                <img class="logoprod" src="<?php echo asset("images/produtos/hyper-slim/logo.png"); ?>" alt="">
                 <h5>Plataforma de pulsos eletromagnéticos de alta performance</h5>
 
                 <a href="<?php echo home_url("produtos/hyper-slim"); ?>" class="botao-5"> Conheça </a>
@@ -48,7 +48,7 @@
         <?php else : ?>
             <div class="box-text js-scroll fade-in-bottom">
                 <h4>LANÇAMENTO</h4>
-                <h2>Hakon</h2>
+                <img class="logoprod" src="<?php echo asset("images/produtos/hakon/logo.png"); ?>" alt="">
                 <h5><span>Laser 4D para todos os fototipos de pele</span></h5>
 
                 <a href="<?php echo home_url("produtos/hakon"); ?>" class="botao-5"> Saiba mais </a>
@@ -72,7 +72,7 @@
             <div class="col-esq">
                 <div class="box-text js-scroll fade-in-bottom">
                     <h4>MAIS VENDIDOS</h4>
-                    <h2>Ultramed</h2>
+                    <img class="logoprod" src="<?php echo asset("images/produtos/ultramed/logo.png"); ?>" alt="">
                     <h5> <span>Rejuvenescimento com ultrassom</span> </h5>
 
                     <a href="<?php echo home_url("produtos/ultramed"); ?>" class="botao-5"> Confira </a>
@@ -88,7 +88,7 @@
             <div class="col-dir">
                 <div class="box-text js-scroll fade-in-bottom">
                     <h4>MAIS VENDIDOS</h4>
-                    <h2>Criodermis</h2>
+                    <img class="logoprod" src="<?php echo asset("images/produtos/criodermis/logo.png"); ?>" alt="">
                     <h5> <span>Criolipólise corporal e facial com
                             placas para áreas maiores</span>
                     </h5>
