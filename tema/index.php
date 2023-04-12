@@ -41,7 +41,7 @@
 </section>
 
 <section class="box-lancamento baixo js-scroll fade-in  estilo-2">
-    <div class="container js-scroll fade-in-bottom">
+    <div class="center js-scroll fade-in-bottom">
 
         <?php if (is_active_sidebar('home_widget_2')) : ?>
             <?php dynamic_sidebar('home_widget_2'); ?>

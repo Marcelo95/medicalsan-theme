@@ -4951,17 +4951,14 @@ section.box-lancamento.estilo-2 {
     align-items: center;
 }
 
-section.box-lancamento .box-image,
-section.box-lancamento .box-text {
-    width: 50%;
-    /* min-width: 340px; */
-    /* transform: scale(.96); */
-    /* transform-origin: bottom; */
-}
 
 section.box-lancamento.estilo-3 .box-text * {
     width: 100%;
     max-width: 100%;
+}
+
+img.logoprod {
+    display: block;
 }
 
 section.box-lancamento.estilo-3 .box-text {
@@ -4997,7 +4994,7 @@ section.box-lancamento .box-text *,
 .box-lancamento h2,
 .box-lancamento p,
 .box-lancamento h4 {
-    max-width: 379px;
+    max-width: 449px;
     word-break: keep-all;
     width: 100%;
 }
@@ -5005,28 +5002,28 @@ section.box-lancamento .box-text *,
 section.box-lancamento.estilo-1 img.logoprod {
     width: auto;
     max-width: initial;
-    margin-top: -8px;
-    margin-bottom: 30px;
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 38px;
 }
 
 section.box-lancamento.estilo-2 img.logoprod {
     width: auto;
     max-width: initial;
-    margin-top: 2px;
-    margin-bottom: 32px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 section.box-lancamento.estilo-3 .col-esq img.logoprod {
     width: auto;
     max-width: initial;
-    margin-top: 9px;
-    margin-bottom: 37px;
+    margin-top: 60px;
+    margin-bottom: 47px;
 }
 
-section.box-lancamento.estilo-3 .col-dir img.logoprod {width: auto;max-width: initial;margin-top: -18px;margin-bottom: 22px;}
+section.box-lancamento.estilo-3 .col-dir img.logoprod {width: auto;max-width: initial;display: block;margin-top: 44px;margin-bottom: 29px;}
 
 section.box-lancamento.estilo-3 .col .box-text h4 {
-    margin-bottom: 38px;
     font-size: 14px;
     letter-spacing: 1.305em;
     padding-left: 21px;
@@ -5140,7 +5137,6 @@ section.box-lancamento h2 {
 section.box-lancamento h4 {
     font-size: 15px;
     letter-spacing: 1.305em;
-    margin-bottom: 39px;
     margin-top: 30px;
     padding-left: 19px;
     font-weight: 700;
@@ -5198,7 +5194,12 @@ section.box-lancamento>div {
 }
 
 section.box-lancamento.baixo>div {
-    max-width: 716px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section.box-lancamento.estilo-2 .box-text {
+    width: 373px;
 }
 
 
@@ -5564,6 +5565,8 @@ section.box-lancamento.estilo-1 img.logoprod {
     min-width: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 section.box-lancamento.estilo-2 img.logoprod {
@@ -5571,14 +5574,21 @@ section.box-lancamento.estilo-2 img.logoprod {
     min-width: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 section.box-lancamento.estilo-3 .col-esq img.logoprod {
     width: 250px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 section.box-lancamento.estilo-3 .col-dir img.logoprod {
     width: 268px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    alignment-baseline: ;
 }
 }
 
@@ -6811,7 +6821,6 @@ title-top-prod {
 @media (max-width:992px) {
     .page-home section.box-lancamento h4 {
         font-size: 7px;
-        margin-bottom: 33px;
         margin-top: 60px;
     }
 
@@ -6823,7 +6832,7 @@ title-top-prod {
     .page-home section.box-lancamento h5 {
         font-size: 10px;
         margin-bottom: 25px;
-        max-width: 168px !important;
+        max-width: 199px !important;
         min-width: auto !important;
         margin: auto;
     }
@@ -6855,7 +6864,6 @@ title-top-prod {
     .page-home section.box-lancamento.estilo-3 .col .box-text h4 {
         font-size: 9px;
         margin-top: 50px;
-        margin-bottom: 38px;
     }
 
     .page-home section.box-lancamento.estilo-3 .col .box-text h5 {
