@@ -14,7 +14,7 @@
     align-items: center;
     height: 100%;
     text-decoration: none;
-    font-size: 15.61px;
+    font-size: 12.61px;
     font-weight: 500;
     line-height: 0;
 }
@@ -24,7 +24,7 @@
 }
 
 .botoes-sac a span b.maior {
-    font-size: 20.82px;
+    font-size: 17.82px;
 }
 
 .botoes-sac a .ico {
@@ -50,7 +50,7 @@
 }
 
 .botoes-sac a span b.maior {
-    font-size: 57.15px;
+    font-size: 43.15px;
 }
 
 .botoes-sac a .ico {
@@ -58,7 +58,7 @@
 }
 
 .botoes-sac a {
-    font-size: 43px;
+    font-size: 34px;
     font-weight: 400;
 }
 }
