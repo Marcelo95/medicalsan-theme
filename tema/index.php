@@ -73,7 +73,7 @@
                 <div class="box-text js-scroll fade-in-bottom">
                     <h4>MAIS VENDIDOS</h4>
                     <img class="logoprod" src="<?php echo asset("images/produtos/ultramed/logo.png"); ?>" alt="">
-                    <h5> <span>Rejuvenescimento com ultrassom</span> </h5>
+                    <h5> <span>Ultrassom, Micro e Macrofocado</span> </h5>
 
                     <a href="<?php echo home_url("produtos/ultramed"); ?>" class="botao-5"> Confira </a>
 
